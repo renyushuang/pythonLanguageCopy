@@ -74,3 +74,5 @@ def main():
             writeXmlNewString(androiidResFile, transMap)
         else:
             print('没有匹配的字段')
+
+main()

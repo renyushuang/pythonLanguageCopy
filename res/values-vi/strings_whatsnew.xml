@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. Chỉnh sửa video cung cấp hiệu ứng bộ lộc.</item>
+        <item>2. Chỉnh sửa video cho phép thêm khung hình.</item>
+        <item>3. Chỉnh sửa video cung cấp hình nền động nhá!</item>
+    </string-array>
+
+</resources>

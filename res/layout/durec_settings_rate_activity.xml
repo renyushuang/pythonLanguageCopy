@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:like_button="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/durec_common_dialog_min_width"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@color/durec_white"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="3dp"
+            card_view:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="13dp">
+
+                <ImageView
+                    android:id="@+id/durec_rate_close"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:padding="5dp"
+                    android:src="@drawable/durec_dialog_close_btn_selector" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/durec_rate_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="54dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#555555"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center_horizontal">
+
+                    <com.duapps.recorder.module.rate.like.LikeButton
+                        android:id="@+id/durec_rate_star_one"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:clickable="false"
+                        card_view:circle_start_color="@color/durec_star_circle_start_color"
+                        like_button:icon_size="26dp"
+                        like_button:icon_type="star"
+                        like_button:liked="false" />
+
+                    <com.duapps.recorder.module.rate.like.LikeButton
+                        android:id="@+id/durec_rate_star_two"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:clickable="false"
+                        like_button:circle_start_color="@color/durec_star_circle_start_color"
+                        like_button:icon_size="26dp"
+                        like_button:icon_type="star"
+                        like_button:liked="false" />
+
+                    <com.duapps.recorder.module.rate.like.LikeButton
+                        android:id="@+id/durec_rate_star_three"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:clickable="false"
+                        like_button:circle_start_color="@color/durec_star_circle_start_color"
+                        like_button:icon_size="26dp"
+                        like_button:icon_type="star"
+                        like_button:liked="false" />
+
+                    <com.duapps.recorder.module.rate.like.LikeButton
+                        android:id="@+id/durec_rate_star_four"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:clickable="false"
+                        like_button:circle_start_color="@color/durec_star_circle_start_color"
+                        like_button:icon_size="26dp"
+                        like_button:icon_type="star"
+                        like_button:liked="false" />
+
+                    <com.duapps.recorder.module.rate.like.LikeButton
+                        android:id="@+id/durec_rate_star_five"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:clickable="false"
+                        like_button:circle_start_color="@color/durec_star_circle_start_color"
+                        like_button:icon_size="26dp"
+                        like_button:icon_type="star"
+                        like_button:liked="false" />
+                </LinearLayout>
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/durec_rate_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginBottom="4dp"
+                    android:background="@drawable/durec_rate_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/durec_rate_dialog_btn"
+                    android:textColor="@color/durec_rate_btn_text_color"
+                    android:textSize="13dp" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/durec_feedback_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginBottom="15dp"
+                    android:background="@drawable/durec_common_ok_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/durec_feedback"
+                    android:layout_marginTop="11dp"
+                    android:textColor="@color/durec_common_ok_btn_text_color"
+                    android:textSize="13dp" />
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/durec_rate_icon_bg" />
+
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/durec_rate_icon" />
+
+    <ImageView
+        android:id="@+id/durec_rate_hand"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginBottom="89dp"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/durec_rate_hand" />
+</FrameLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RecordParams>
+    <AutoParamGroup>
+        <Param index="4">
+            <Resolution name="1440p">
+                <Width>2560</Width>
+                <Height>1440</Height>
+            </Resolution>
+            <BitRate name="12 Mbps">12000000</BitRate>
+            <FrameRate name="60 FPS">60</FrameRate>
+        </Param>
+
+        <Param index="0">
+            <Resolution name="1080p">
+                <Width>1920</Width>
+                <Height>1080</Height>
+            </Resolution>
+            <BitRate name="10 Mbps">10000000</BitRate>
+            <FrameRate name="60 FPS">60</FrameRate>
+        </Param>
+
+        <Param index="1">
+            <Resolution name="720p">
+                <Width>1280</Width>
+                <Height>720</Height>
+            </Resolution>
+            <BitRate name="8 Mbps">8000000</BitRate>
+            <FrameRate name="60 FPS">60</FrameRate>
+        </Param>
+
+        <Param index="3">
+            <Resolution name="540p">
+                <Width>960</Width>
+                <Height>540</Height>
+            </Resolution>
+            <BitRate name="5 Mbps">5000000</BitRate>
+            <FrameRate name="40 FPS">40</FrameRate>
+        </Param>
+
+        <Param index="2">
+            <Resolution name="480p">
+                <Width>854</Width>
+                <Height>480</Height>
+            </Resolution>
+            <BitRate name="4 Mbps">4000000</BitRate>
+            <FrameRate name="30 FPS">30</FrameRate>
+        </Param>
+
+        <Param index="5">
+            <Resolution name="360p">
+                <Width>640</Width>
+                <Height>360</Height>
+            </Resolution>
+            <BitRate name="1.5 Mbps">1500000</BitRate>
+            <FrameRate name="25 FPS">25</FrameRate>
+        </Param>
+
+        <Param index="6">
+            <Resolution name="240p">
+                <Width>426</Width>
+                <Height>240</Height>
+            </Resolution>
+            <BitRate name="1.5 Mbps">1500000</BitRate>
+            <FrameRate name="25 FPS">25</FrameRate>
+        </Param>
+    </AutoParamGroup>
+
+</RecordParams>

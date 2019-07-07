@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/durec_toolbar_layout" />
+
+    <EditText
+        android:id="@+id/textInputView"
+        android:layout_width="match_parent"
+        android:layout_height="202dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/durec_per_watermark_edit_text_bg"
+        android:gravity="left"
+        android:hint="@string/durec_enter_watermark_text"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingBottom="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:textColor="@color/durec_head_item_text_color"
+        android:textColorHint="#888888"
+        android:textSize="16dp" />
+</LinearLayout>

@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/durec_interstitial_ad_banner_background"
+            app:layout_constraintDimensionRatio="1079:1006"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/durec_interstitial_ad_banner_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/durec_transparent"
+            app:cardBackgroundColor="@color/durec_transparent"
+            app:cardCornerRadius="7dp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintDimensionRatio="16:9"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/durec_interstitial_ad_banner"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/durec_promotion_pic_placeholde"
+                android:scaleType="centerCrop"/>
+
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/durec_interstitial_banner_shadow1"
+            app:layout_constraintEnd_toEndOf="@id/durec_interstitial_ad_banner_container"
+            app:layout_constraintStart_toStartOf="@id/durec_interstitial_ad_banner_container"
+            app:layout_constraintTop_toBottomOf="@id/durec_interstitial_ad_banner_container"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/durec_interstitial_banner_shadow2"
+            app:layout_constraintEnd_toEndOf="@id/durec_interstitial_ad_banner_container"
+            app:layout_constraintStart_toStartOf="@id/durec_interstitial_ad_banner_container"
+            app:layout_constraintTop_toBottomOf="@id/durec_interstitial_ad_banner_container"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/durec_interstitial_ad_icon_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="62dp"
+            android:background="@color/durec_transparent"
+            app:cardBackgroundColor="@color/durec_transparent"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="0dp"
+            app:cardPreventCornerOverlap="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/durec_interstitial_ad_banner_container">
+
+            <ImageView
+                android:id="@+id/durec_interstitial_ad_icon"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/durec_promotion_pic_placeholde_icon"
+                android:scaleType="centerCrop"/>
+        </android.support.v7.widget.CardView>
+
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_interstitial_ad_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="20dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/durec_create_live_title_text_color"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/durec_interstitial_ad_icon_container"
+            tools:text="标题"/>
+
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_interstitial_ad_summary"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_below="@id/tv_nativead_title"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="21dp"
+            android:layout_marginEnd="45dp"
+            android:layout_marginBottom="20dp"
+            android:ellipsize="end"
+            android:textColor="@color/durec_create_live_title_text_color"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/durec_interstitial_ad_title"
+            app:layout_constraintBottom_toTopOf="@id/durec_interstitial_ad_action"
+            tools:text="描述"/>
+
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_interstitial_ad_action"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="31dp"
+            android:background="@drawable/durec_common_ok_btn_selector_reverse"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/durec_white"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="download"/>
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/durec_interstitial_ad_adflag"
+        android:layout_width="35dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/durec_common_ad_icon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+</android.support.constraint.ConstraintLayout>

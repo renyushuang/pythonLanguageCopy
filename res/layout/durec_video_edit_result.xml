@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/durec_white">
+
+    <include
+        layout="@layout/durec_toolbar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_title_bar">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/video_area"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <!-- video card -->
+                <FrameLayout
+                    android:id="@+id/video_card"
+                    android:layout_width="128dp"
+                    android:layout_height="72dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/durec_black"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/video_thumb_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        android:transitionName="player" />
+
+                    <ImageView
+                        android:id="@+id/play_btn"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/durec_media_controller_play_selector" />
+
+                    <com.duapps.screen.recorder.ui.FontTextView
+                        android:id="@+id/video_duration"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left|bottom"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginBottom="6dp"
+                        android:background="@drawable/durec_video_duration_bg"
+                        android:includeFontPadding="false"
+                        android:paddingLeft="4dp"
+                        android:paddingTop="1dp"
+                        android:paddingRight="4dp"
+                        android:paddingBottom="1dp"
+                        android:text="00:00"
+                        android:textColor="@color/durec_white"
+                        android:textSize="12dp" />
+
+                </FrameLayout>
+
+                <!-- video info(title & size) -->
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/video_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="13dp"
+                    android:maxLines="2"
+                    android:text="2015-4-4.mp4"
+                    android:textColor="#535353"
+                    android:textSize="14sp"
+                    app:layout_constraintLeft_toRightOf="@id/video_card"
+                    app:layout_constraintTop_toTopOf="@id/video_card" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/video_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="13dp"
+                    android:text="19.98MB"
+                    android:textColor="#888888"
+                    android:textSize="12sp"
+                    app:layout_constraintLeft_toLeftOf="@id/video_title"
+                    app:layout_constraintTop_toBottomOf="@id/video_title" />
+            </android.support.constraint.ConstraintLayout>
+
+            <!-- share title -->
+            <View
+                android:id="@+id/share_line_left"
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_marginTop="13dp"
+                android:layout_weight="1"
+                android:background="#bfbfbf"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/share_title"
+                app:layout_constraintTop_toBottomOf="@id/video_area" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/share_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:text="@string/durec_common_share"
+                android:textColor="#555555"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/share_line_left"
+                app:layout_constraintLeft_toRightOf="@id/share_line_left"
+                app:layout_constraintRight_toLeftOf="@id/share_line_right"
+                app:layout_constraintTop_toTopOf="@id/share_line_left" />
+
+            <View
+                android:id="@+id/share_line_right"
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_weight="1"
+                android:background="#bfbfbf"
+                app:layout_constraintBottom_toBottomOf="@id/share_line_left"
+                app:layout_constraintLeft_toRightOf="@id/share_title"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="@id/share_line_left" />
+
+            <!-- share content -->
+            <LinearLayout
+                android:id="@+id/share_content_line_1"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="15dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/share_line_left" />
+
+            <LinearLayout
+                android:id="@+id/share_content_line_2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                app:layout_constraintTop_toBottomOf="@id/share_content_line_1" />
+
+            <View
+                android:id="@+id/share_line_bottom"
+                android:layout_width="0dp"
+                android:layout_height="1px"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="#bfbfbf"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/share_content_line_2"
+                app:layout_goneMarginTop="20dp" />
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/ad_container"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="10dp"
+                android:elevation="3dp"
+                app:cardBackgroundColor="#ededed"
+                app:cardCornerRadius="2dp"
+                app:layout_constraintTop_toBottomOf="@id/share_line_bottom">
+
+            </android.support.v7.widget.CardView>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

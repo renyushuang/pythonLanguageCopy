@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="live_new_audio_name_array">
+        <item>@string/durec_common_none</item>
+        <item>Bath duck</item>
+        <item>Bingo</item>
+        <item>Coins</item>
+        <item>Dong dong dong</item>
+        <item>Doorbell</item>
+        <item>Frog</item>
+        <item>Hubble bubble</item>
+        <item>Knock knock</item>
+    </string-array>
+</resources>

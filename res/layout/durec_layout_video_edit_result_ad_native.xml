@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/nativead_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/iv_nativead_empty"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@color/durec_radio_item_disabled_text"
+            android:scaleType="centerInside"
+            android:src="@drawable/durec_advertisement_empty_ic"
+            app:layout_constraintBottom_toBottomOf="@id/iv_nativead_image"
+            app:layout_constraintLeft_toLeftOf="@id/iv_nativead_image"
+            app:layout_constraintRight_toRightOf="@id/iv_nativead_image"
+            app:layout_constraintTop_toTopOf="@id/iv_nativead_image" />
+
+        <ImageView
+            android:id="@+id/iv_nativead_image"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="W,100:191"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.gms.ads.formats.MediaView
+            android:id="@+id/media_view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/iv_nativead_image"
+            app:layout_constraintEnd_toEndOf="@id/iv_nativead_image"
+            app:layout_constraintStart_toStartOf="@id/iv_nativead_image"
+            app:layout_constraintTop_toTopOf="@id/iv_nativead_image" />
+
+        <ImageView
+            android:id="@+id/iv_nativead_adflag"
+            android:layout_width="20dp"
+            android:layout_height="13dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/durec_advertisement_flag"
+            app:layout_constraintLeft_toLeftOf="@id/iv_nativead_image"
+            app:layout_constraintTop_toTopOf="@id/iv_nativead_image" />
+
+        <ImageView
+            android:id="@+id/iv_nativead_icon"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="4dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/durec_promotion_pic_placeholde_icon"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_nativead_image" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/tv_nativead_cta"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginBottom="14dp"
+            android:background="@drawable/durec_video_edit_nativead_cta_bg_selector"
+            android:gravity="center"
+            android:textColor="@color/durec_white"
+            android:textSize="12sp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/iv_nativead_icon"
+            app:layout_constraintWidth_default="spread"
+            tools:visibility="visible" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/tv_nativead_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="14dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:textColor="@color/durec_create_live_title_text_color"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/iv_nativead_icon"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/iv_nativead_icon" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/tv_nativead_desc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="14dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/durec_nativead_text_desc"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@id/iv_nativead_icon"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_nativead_title" />
+    </android.support.constraint.ConstraintLayout>
+
+    <com.duapps.screen.recorder.ui.RemoveAdButton
+        android:id="@+id/iv_remove_ad_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="6dp"
+        android:layout_marginBottom="120dp"
+        app:layout_constraintBottom_toBottomOf="@id/nativead_container"
+        app:layout_constraintEnd_toEndOf="@id/nativead_container"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints" />
+</android.support.constraint.ConstraintLayout>

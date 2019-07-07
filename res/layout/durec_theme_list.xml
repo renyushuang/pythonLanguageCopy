@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:theme="http://schemas.android.com/android/theme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    theme:enable="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/durec_colorPrimary">
+
+    <Button
+        android:id="@+id/theme_picker_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="THEME PICK"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/theme_restore_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="THEME RESTORE"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/theme_picker_btn"
+        />
+
+    <Button
+        android:id="@+id/theme_float_btn"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:text="THEME FLOAT"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintTop_toBottomOf="@+id/theme_restore_btn"
+        />
+
+</android.support.constraint.ConstraintLayout>

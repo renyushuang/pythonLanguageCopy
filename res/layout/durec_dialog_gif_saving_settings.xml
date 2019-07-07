@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11.5dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/quality_high"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/durec_gif_saving_dialog_item_bg_selector"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp">
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="高质量"
+                android:textColor="#929292"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/durec_radiobtn_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/quality_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/durec_gif_saving_dialog_item_bg_selector"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp">
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="中质量"
+                android:textColor="#929292"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/durec_radiobtn_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/quality_low"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/durec_gif_saving_dialog_item_bg_selector"
+            android:gravity="center_vertical"
+            android:paddingBottom="10dp"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:paddingTop="10dp">
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:text="低分辨率"
+                android:textColor="#929292"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/durec_radiobtn_selector" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_weight="1"
+        android:background="#eeeeee" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/resolution"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.7"
+            android:singleLine="true"
+            android:text="分辨率"
+            android:textColor="#929292"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.3"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/resolution_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:progressDrawable="@drawable/durec_video_edit_controller_progressbar"
+                android:thumb="@drawable/durec_gif_setting_adjust_bar_thumb" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/resolution_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="10 x 200"
+                    android:textColor="@color/durec_colorPrimaryDark" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:orientation="horizontal">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/fps"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2.7"
+            android:text="FPS"
+            android:textColor="#929292"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="7.3"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.AppCompatSeekBar
+                android:id="@+id/fps_seekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="20"
+                android:paddingBottom="2dp"
+                android:paddingTop="2dp"
+                android:progressDrawable="@drawable/durec_video_edit_controller_progressbar"
+                android:thumb="@drawable/durec_gif_setting_adjust_bar_thumb" />
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="-" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="1dp"
+                    android:text="+" />
+
+                <TextView
+                    android:id="@+id/fps_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="10"
+                    android:textColor="@color/durec_colorPrimaryDark" />
+            </FrameLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

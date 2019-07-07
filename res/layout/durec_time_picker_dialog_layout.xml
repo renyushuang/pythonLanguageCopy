@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginRight="25dp"
+        android:text="@string/durec_adjust_time"
+        android:textColor="@color/durec_dialog_title"
+        android:textSize="@dimen/durec_dialog_title" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="2px"
+        android:background="#16555555" />
+
+    <com.duapps.screen.recorder.main.videos.merge.functions.common.toolview.timepicker.TimePickerView
+        android:id="@+id/time_picker_view"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+</LinearLayout>
+
+

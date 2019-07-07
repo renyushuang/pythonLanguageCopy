@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/compress_toolbar_layout"
+        layout="@layout/durec_toolbar_layout"/>
+
+    <ImageView
+        android:id="@+id/durec_video_thumb"
+        android:layout_width="0dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/durec_local_video_placeholder"
+        app:layout_constraintBottom_toTopOf="@+id/durec_resolution_sb"
+        app:layout_constraintDimensionRatio="w,16:9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/compress_toolbar_layout"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_video_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginLeft="3.3dp"
+        android:layout_marginBottom="3.3dp"
+        android:background="@drawable/durec_video_duration_bg"
+        android:includeFontPadding="false"
+        android:paddingLeft="4dp"
+        android:paddingTop="1dp"
+        android:paddingRight="4dp"
+        android:paddingBottom="1dp"
+        android:textColor="@color/durec_white"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/durec_video_thumb"
+        app:layout_constraintStart_toStartOf="@id/durec_video_thumb" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/durec_file_size_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toEndOf="@id/durec_video_thumb"
+        app:layout_constraintTop_toBottomOf="@id/compress_toolbar_layout">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_before"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/durec_video_compress_before"
+            android:textColor="@color/durec_head_item_text_color"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_after"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/durec_video_compress_after"
+            android:textColor="@color/durec_head_item_text_color"
+            android:textSize="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/durec_before" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/durec_file_size"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/durec_file_size_title"
+        app:layout_constraintTop_toBottomOf="@id/compress_toolbar_layout">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_before_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:textColor="@color/durec_main_text_color"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_after_size"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:maxLines="1"
+            android:textColor="@color/durec_colorPrimary"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/durec_before_size" />
+    </android.support.constraint.ConstraintLayout>
+
+    <com.duapps.screen.recorder.main.videos.compress.ui.SectionSeekBar
+        android:id="@+id/durec_resolution_sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_video_thumb"/>
+
+    <com.duapps.screen.recorder.main.videos.compress.ui.SectionSeekBar
+        android:id="@+id/durec_bitrate_sb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="28dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_resolution_sb"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_restore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/durec_restore"
+        android:textColor="@color/text_light_gray"
+        android:layout_marginBottom="10dp"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/durec_privacy_policy"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_privacy_policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:text="@string/durec_privacy_policy"
+        android:textColor="@color/text_light_gray"
+        android:layout_marginBottom="10dp"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/durec_restore"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_sub_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="15dp"
+        android:text="Automatically extends to an annual subscription for $34.99/year."
+        android:textColor="@color/text_light_gray"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toTopOf="@id/durec_privacy_policy"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_sub_buy_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/screen_bottom_large_btn_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="12dp"
+        android:background="@drawable/durec_common_ok_btn_selector_reverse"
+        android:gravity="center"
+        android:text="@string/durec_video_compress_no_trial_button"
+        android:textColor="@color/durec_common_ok_btn_text_color_reverse"
+        android:textSize="@dimen/screen_bottom_large_btn_text_size"
+        app:layout_constraintBottom_toTopOf="@id/durec_sub_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/durec_premium_feature_desc_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@id/durec_sub_buy_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/durec_premium_feature_mark"
+            android:layout_width="18dp"
+            android:layout_height="0dp"
+            android:src="@drawable/durec_premium_features_mark"
+            app:layout_constraintDimensionRatio="h,1:1"
+            app:layout_constraintEnd_toStartOf="@+id/durec_premium_feature_description"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_premium_feature_description"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:text="@string/durec_video_compress_desc"
+            android:textColor="@color/text_light_gray"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/durec_premium_feature_mark"
+            app:layout_constraintTop_toTopOf="parent"/>
+    </android.support.constraint.ConstraintLayout>
+
+
+    <com.duapps.screen.recorder.main.videos.ui.VideoEditProgressView
+        android:id="@+id/compress_progress_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="3dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

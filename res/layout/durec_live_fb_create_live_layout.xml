@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5ffffff"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/live_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="17dp"
+        android:padding="3dp"
+        android:src="@drawable/durec_live_createpage_setting_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/live_purchase"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toEndOf="@id/live_settings"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="center"
+        android:padding="3dp"
+        android:src="@drawable/durec_premium_entrance_icon"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/live_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="17dp"
+        android:padding="3dp"
+        android:src="@drawable/durec_live_createpage_close_selector" />
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/live_account_photo_layout"
+        android:layout_width="86dp"
+        android:layout_height="86dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="129dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="43dp"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/live_account_photo"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/durec_live_default_icon_big" />
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/loading_view"
+        android:layout_width="102dp"
+        android:layout_height="102dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="121dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:src="@drawable/durec_create_live_avatar_loading"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/live_stream_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="261dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/durec_create_live_stream_name_edittext_bg"
+        android:gravity="center"
+        android:hint="@string/durec_live_with_app"
+        android:imeActionLabel="@string/durec_common_ok"
+        android:imeOptions="actionDone"
+        android:maxLength="200"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:scrollbars="vertical"
+        android:singleLine="true"
+        android:textColor="@color/durec_create_live_title_text_color"
+        android:textColorHint="@color/durec_create_live_title_hint_color"
+        android:textSize="16dp" />
+
+    <RelativeLayout
+        android:id="@+id/live_stream_target_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/durec_create_live_stream_name_edittext_bg"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/live_stream_name">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/live_stream_target_avatar_container"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginRight="5dp"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/live_stream_target_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/durec_live_default_icon_small" />
+            </android.support.v7.widget.CardView>
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/live_stream_target"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="1"
+                android:textColor="@color/durec_create_live_title_text_color"
+                android:textSize="16dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="2dp"
+                android:src="@drawable/durec_live_list_select_dir_icon" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/live_stream_prompt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/live_start_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="17dp"
+        android:gravity="center"
+        android:textColor="@color/durec_create_live_title_text_color"
+        android:textSize="17dp"
+        android:visibility="gone" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/live_start_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/screen_bottom_large_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:background="@drawable/durec_common_ok_btn_selector_reverse"
+        android:gravity="center"
+        android:text="@string/durec_common_start"
+        android:textColor="@color/durec_common_ok_btn_text_color_reverse"
+        android:textSize="@dimen/screen_bottom_large_btn_text_size" />
+</android.support.constraint.ConstraintLayout>

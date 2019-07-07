@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="float_window_record_button_id" type="id" />
+    <item name="float_window_video_button_id" type="id" />
+    <item name="float_window_live_button_id" type="id" />
+    <item name="float_window_tools_button_id" type="id" />
+    <item name="font_typeface_image_view_id" type="id" />
+    <item name="gif_full_view" type="id" />
+    <item name="gif_draggable_view" type="id" />
+    <item name="fb_live_target_item_avatar" type="id" />
+    <item name="screenshot_draggable_view" type="id" />
+
+    <item name="setting_item_window_permission" type="id" />
+    <item name="setting_item_notify_permission" type="id" />
+    <item name="setting_item_promotion" type="id" />
+    <item name="setting_item_notification_read_permission" type="id" />
+    <item name="setting_item_usage" type="id" />
+
+    <item name="setting_item_videosettings" type="id" />
+    <item name="setting_item_controlsettings" type="id" />
+    <item name="setting_item_recordtools" type="id" />
+    <item name="setting_item_others" type="id" />
+    <item name="setting_item_debug" type="id" />
+
+    <item name="setting_item_resolution" type="id" />
+    <item name="setting_item_bitrate" type="id" />
+    <item name="setting_item_framerate" type="id" />
+    <item name="setting_item_audioon" type="id" />
+    <item name="setting_item_videolocation" type="id" />
+    <item name="setting_item_invertcolor" type="id" />
+    <item name="setting_item_sysuicrash" type="id" />
+    <item name="setting_item_recordmode" type="id" />
+    <item name="setting_item_hidefloatwhenrec" type="id" />
+    <item name="setting_item_shakestop" type="id" />
+    <item name="setting_item_onlyclosefloat" type="id" />
+    <item name="setting_item_screenshotnotnoti" type="id" />
+    <item name="setting_item_countdown" type="id" />
+    <item name="setting_item_homerec" type="id" />
+    <item name="setting_item_srceenoffcontinue" type="id" />
+    <item name="setting_item_callerPauseRecording" type="id" />
+    <item name="setting_item_screenshot" type="id" />
+    <item name="setting_item_camera" type="id" />
+    <item name="setting_item_brush" type="id" />
+    <item name="setting_item_gifrec" type="id" />
+    <item name="setting_item_showtouch" type="id" />
+    <item name="setting_item_show_touch_prompt" type="id" />
+    <item name="setting_item_watermark" type="id" />
+    <item name="setting_item_watermark_record" type="id" />
+    <item name="setting_item_watermark_live" type="id" />
+    <item name="setting_item_theme" type="id" />
+    <item name="setting_item_editshortcut" type="id" />
+    <item name="setting_item_feedshortcut" type="id" />
+    <item name="setting_item_language" type="id" />
+    <item name="setting_item_update" type="id" />
+    <item name="setting_item_faq" type="id" />
+    <item name="setting_item_feedback" type="id" />
+    <item name="setting_item_rateus" type="id" />
+    <item name="setting_item_youtubetunnel" type="id" />
+    <item name="setting_item_praisefacebook" type="id" />
+    <item name="setting_item_share" type="id" />
+    <item name="setting_item_about" type="id" />
+    <item name="setting_item_record_orientation" type="id" />
+    <item name="setting_item_ytb_logout" type="id" />
+    <item name="setting_item_user_experience" type="id" />
+    <item name="setting_item_offer_notification" type="id" />
+    <item name="setting_item_camera_frame" type="id" />
+
+    <item name="live_video_feed_click_position" type="id" />
+    <item name="brush_drag" type="id" />
+
+    <item name="live_tool_item_location" type="id" />
+    <item name="live_tool_item_location_broadcaster" type="id" />
+    <item name="live_tool_item_location_viewers" type="id" />
+    <item name="live_tool_item_donate_info" type="id" />
+    <item name="live_tool_item_news_noti" type="id" />
+    <item name="live_tool_item_donate_rank" type="id" />
+    <item name="live_tool_item_goal" type="id" />
+    <item name="live_tool_item_msg_robot" type="id" />
+
+    <item name="live_setting_item_video_resolution" type="id" />
+    <item name="live_setting_item_delay_time" type="id" />
+    <item name="live_setting_item_choose_channel_info" type="id" />
+    <item name="live_setting_item_share_video" type="id" />
+    <item name="live_setting_item_user_info" type="id" />
+    <item name="live_setting_item_logout" type="id" />
+    <item name="live_setting_set_cover" type="id" />
+    <item name="live_setting_set_pause" type="id" />
+    <item name="live_setting_item_receive_gift" type="id" />
+    <item name="live_setting_item_rtmp_server_manager" type="id" />
+
+    <item name="multicast_live_setting_item_video_resolution" type="id" />
+    <item name="multicast_live_setting_choose_ytb_channel" type="id" />
+    <item name="multicast_live_setting_share_live_address" type="id" />
+    <item name="multicast_live_setting_logout" type="id" />
+    <item name="merge_video_volume_btn" type="id" />
+</resources>

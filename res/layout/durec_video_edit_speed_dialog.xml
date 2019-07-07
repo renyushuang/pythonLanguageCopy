@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/durec_speed_dialog_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="-3dp"
+                android:gravity="left"
+                android:lines="1"
+                android:maxHeight="350dp"
+                android:maxLines="4"
+                android:text="@string/durec_edit_change_speed"
+                android:textColor="#555555"
+                android:textSize="16dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp">
+
+                <SeekBar
+                    android:id="@+id/speed_seek_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="-10dp"
+                    android:layout_marginRight="-10dp"
+                    android:maxHeight="4dp"
+                    android:minHeight="4dp"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="4dp"
+                    android:progressDrawable="@drawable/durec_volume_dialog_progressbar"
+                    android:thumb="@drawable/durec_volume_dialog_progress_thumb"/>
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/min_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@id/speed_seek_bar"
+                    android:gravity="center"
+                    android:text="0.25x"
+                    android:textColor="#6c6c6c"
+                    android:textSize="12dp"/>
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/max_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/speed_seek_bar"
+                    android:gravity="center"
+                    android:text="2.00x"
+                    android:textColor="#6c6c6c"
+                    android:textSize="12dp"/>
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/cur_speed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/speed_seek_bar"
+                    android:layout_toLeftOf="@id/max_speed"
+                    android:layout_toRightOf="@id/min_speed"
+                    android:gravity="center"
+                    android:text="1.00x"
+                    android:textColor="#6c6c6c"
+                    android:textSize="12dp"/>
+            </RelativeLayout>
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/durec_start_time"
+                android:textColor="#555555"
+                android:textSize="16dp"/>
+
+            <com.duapps.screen.recorder.main.videos.merge.functions.common.toolview.timepicker.TimePickerView
+                android:id="@+id/start_time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:itemHeight="@dimen/durec_caption_time_pick_height"
+                app:itemWidth="@dimen/durec_caption_time_pick_width"
+                app:textNormalColor="#b6b6b6"
+                app:textNormalSize="17dp"
+                app:textSelectColor="@color/durec_colorPrimary"
+                app:textSelectSize="20dp"/>
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/durec_end_time"
+                android:textColor="#555555"
+                android:textSize="16dp"/>
+
+            <com.duapps.screen.recorder.main.videos.merge.functions.common.toolview.timepicker.TimePickerView
+                android:id="@+id/end_time_picker"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                app:itemHeight="@dimen/durec_caption_time_pick_height"
+                app:itemWidth="@dimen/durec_caption_time_pick_width"
+                app:textNormalColor="#b6b6b6"
+                app:textNormalSize="17dp"
+                app:textSelectColor="@color/durec_colorPrimary"
+                app:textSelectSize="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btn_panel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <com.duapps.recorder.base.ui.styleable.CancelTextView
+            android:id="@+id/neg_btn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:singleLine="true"
+            android:text="@string/durec_common_cancel"
+            android:textAllCaps="true"
+            android:textSize="13dp"/>
+
+        <com.duapps.recorder.base.ui.styleable.ConfirmTextView
+            android:id="@+id/pos_btn"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/durec_feedback_btn_margin"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:singleLine="true"
+            android:text="@string/durec_common_confirm"
+            android:textAllCaps="true"
+            android:textSize="13dp"/>
+    </LinearLayout>
+</LinearLayout>

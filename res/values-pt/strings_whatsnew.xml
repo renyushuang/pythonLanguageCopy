@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. A edição de vídeos apoia efeitos de filtros.</item>
+        <item>2. A edição de vídeos apoia adicionar Molduras.</item>
+        <item>3. A edição de vídeos apoia fundos dinâmicos!</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/crop_preview_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.crop.toolview.CropRatioSelectableButton
+            android:id="@+id/durec_crop_ratio_free_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:bg_normal="@drawable/durec_crop_ratio_free_normal"
+            app:bg_selected="@drawable/durec_crop_ratio_free_selected"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/durec_crop_ratio_1_1_btn"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="wrap" />
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.crop.toolview.CropRatioSelectableButton
+            android:id="@+id/durec_crop_ratio_1_1_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:bg_normal="@drawable/durec_crop_ratio_1_1_normal"
+            app:bg_selected="@drawable/durec_crop_ratio_1_1_selected"
+            app:layout_constraintBottom_toBottomOf="@+id/durec_crop_ratio_free_btn"
+            app:layout_constraintEnd_toStartOf="@+id/durec_crop_ratio_4_3_btn"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintStart_toEndOf="@+id/durec_crop_ratio_free_btn"
+            app:layout_constraintWidth_default="wrap" />
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.crop.toolview.CropRatioSelectableButton
+            android:id="@+id/durec_crop_ratio_4_3_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:bg_normal="@drawable/durec_crop_ratio_4_3_normal"
+            app:bg_selected="@drawable/durec_crop_ratio_4_3_selected"
+            app:layout_constraintBottom_toBottomOf="@+id/durec_crop_ratio_free_btn"
+            app:layout_constraintEnd_toStartOf="@+id/durec_crop_ratio_3_4_btn"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintStart_toEndOf="@+id/durec_crop_ratio_1_1_btn"
+            app:layout_constraintWidth_default="wrap" />
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.crop.toolview.CropRatioSelectableButton
+            android:id="@+id/durec_crop_ratio_3_4_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:bg_normal="@drawable/durec_crop_ratio_3_4_normal"
+            app:bg_selected="@drawable/durec_crop_ratio_3_4_selected"
+            app:layout_constraintBottom_toBottomOf="@+id/durec_crop_ratio_free_btn"
+            app:layout_constraintEnd_toStartOf="@+id/durec_crop_ratio_16_9_btn"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintStart_toEndOf="@+id/durec_crop_ratio_4_3_btn"
+            app:layout_constraintWidth_default="wrap" />
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.crop.toolview.CropRatioSelectableButton
+            android:id="@+id/durec_crop_ratio_16_9_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:bg_normal="@drawable/durec_crop_ratio_16_9_normal"
+            app:bg_selected="@drawable/durec_crop_ratio_16_9_selected"
+            app:layout_constraintBottom_toBottomOf="@+id/durec_crop_ratio_free_btn"
+            app:layout_constraintEnd_toStartOf="@+id/durec_crop_ratio_9_16_btn"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintStart_toEndOf="@+id/durec_crop_ratio_3_4_btn"
+            app:layout_constraintWidth_default="wrap" />
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.crop.toolview.CropRatioSelectableButton
+            android:id="@+id/durec_crop_ratio_9_16_btn"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:bg_normal="@drawable/durec_crop_ratio_9_16_normal"
+            app:bg_selected="@drawable/durec_crop_ratio_9_16_selected"
+            app:layout_constraintBottom_toBottomOf="@+id/durec_crop_ratio_free_btn"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintStart_toEndOf="@+id/durec_crop_ratio_16_9_btn"
+            app:layout_constraintWidth_default="wrap" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <com.duapps.recorder.base.ui.styleable.ConfirmTextView
+        android:id="@+id/crop_preview_btn"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/durec_common_preview"
+        android:textSize="@dimen/durec_edit_video_tab_view_btn_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

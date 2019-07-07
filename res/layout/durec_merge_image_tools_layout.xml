@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/merge_image_area_top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/merge_image_progress_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="1">
+
+        <ImageView
+            android:id="@+id/merge_image_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:src="@drawable/durec_merge_video_and_image_close_selector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/merge_image_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:src="@drawable/durec_merge_video_and_image_confirm_selector"
+            app:layout_constraintBottom_toBottomOf="@id/merge_image_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/merge_image_close" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/merge_image_progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="22dp"
+        android:layout_marginRight="22dp"
+        android:paddingTop="5dp"
+        app:layout_constraintBottom_toTopOf="@id/merge_image_checkbox_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/merge_image_area_top"
+        app:layout_constraintVertical_weight="2">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/merge_image_cur_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/durec_colorPrimary"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="5.0s" />
+
+        <SeekBar
+            android:id="@+id/merge_image_seek_bar"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@android:color/transparent"
+            android:paddingLeft="4dp"
+            android:paddingTop="3dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="3dp"
+            android:progressDrawable="@drawable/durec_video_edit_controller_progressbar"
+            android:thumb="@drawable/durec_video_edit_controller_progress_thumb"
+            android:thumbOffset="1.5dp"
+            app:layout_constraintTop_toBottomOf="@id/merge_image_cur_duration" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/merge_image_start_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.1s"
+            android:textColor="#636262"
+            android:textSize="13dp"
+            app:layout_constraintStart_toStartOf="@id/merge_image_seek_bar"
+            app:layout_constraintTop_toBottomOf="@id/merge_image_seek_bar" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/merge_image_end_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10.0s"
+            android:textColor="#636262"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="@id/merge_image_start_duration"
+            app:layout_constraintEnd_toEndOf="@id/merge_image_seek_bar"
+            app:layout_constraintTop_toTopOf="@id/merge_image_start_duration" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/merge_image_checkbox_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/merge_image_progress_view"
+        app:layout_constraintVertical_weight="2">
+
+        <CheckBox
+            android:id="@+id/merge_image_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/merge_iamge_checkbox_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/durec_apply_to_all_images"
+            app:layout_constraintBottom_toBottomOf="@id/merge_image_checkbox"
+            app:layout_constraintStart_toEndOf="@id/merge_image_checkbox"
+            app:layout_constraintTop_toTopOf="@id/merge_image_checkbox" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

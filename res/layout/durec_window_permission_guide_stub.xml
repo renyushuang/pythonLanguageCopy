@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/durec_miui_float_window_guide_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="19dp"
+        android:orientation="vertical">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/durec_cannot_use_pop_window_prompt"
+            android:textColor="@color/durec_white"
+            android:textSize="15.3dp" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_window_permission_guide_tips"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:text="@string/durec_turn_on_pop_window_prompt"
+            android:textColor="@color/durec_white"
+            android:textSize="15.3dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/durec_window_permission_guide_gif"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="23.7dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="23.7dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13.3dp"
+        android:layout_marginRight="13.3dp"
+        android:orientation="vertical">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/durec_miui_float_window_ok_btn_selector"
+            android:gravity="center"
+            android:text="@string/durec_turn_it_on"
+            android:textColor="#c63500"
+            android:textSize="16.7dp" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_cancel_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/durec_miui_float_window_cancel_btn_selector"
+            android:gravity="center"
+            android:text="@string/durec_use_notification_to_rec"
+            android:textColor="#c63500"
+            android:textSize="16.7dp" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_single_ok_btn"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/durec_miui_float_window_ok_btn_selector"
+            android:gravity="center"
+            android:text="@string/durec_turn_it_on"
+            android:textColor="#c63500"
+            android:textSize="16.7dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/durec_window_permission_guide_checkbox_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp">
+
+            <CheckBox
+                android:id="@+id/durec_window_permission_guide_checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="2dp"
+                android:theme="@style/durec_window_guide_checkbox" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/durec_no_longer_prompted"
+                android:textColor="@color/durec_white"
+                android:textSize="13.3dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

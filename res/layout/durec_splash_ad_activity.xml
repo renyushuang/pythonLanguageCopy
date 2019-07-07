@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/durec_white">
+
+    <View
+        android:id="@+id/splash_ad_region"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="9:13"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/splash_ad_image"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_ad_region"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/splash_ad_region" />
+
+    <com.duapps.screen.recorder.main.player.DuVideoView
+        android:id="@+id/splash_ad_video_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_ad_region"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/splash_ad_region" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/splash_ad_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/durec_splash_ad_skip_bg"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:text="@string/durec_common_skip"
+        android:textColor="@color/durec_white"
+        android:textSize="17dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/splash_logo_region"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/durec_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/splash_ad_region" />
+
+    <ImageView
+        android:id="@+id/splash_logo_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/durec_icon_about"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_logo_region"
+        app:layout_constraintEnd_toStartOf="@+id/splash_app_view"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/splash_logo_region" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/splash_app_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@+id/splash_logo_region"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/splash_logo_icon"
+        app:layout_constraintTop_toTopOf="@+id/splash_logo_region">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/splash_logo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/app_name"
+            android:textColor="#535353"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/app_slogan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:includeFontPadding="false"
+            android:text="@string/durec_slogan"
+            android:textColor="#888888"
+            android:textSize="11sp"
+            app:layout_constraintTop_toBottomOf="@+id/splash_logo_name" />
+    </android.support.constraint.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/splash_ad_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/durec_advertisement_flag"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

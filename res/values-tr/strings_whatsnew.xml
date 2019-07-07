@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. Video düzenleme, filtre efektlerini destekler.</item>
+        <item>2. Video düzenleme, Çerçeve eklemeyi destekler.</item>
+        <item>3. Video düzenleme dinamik arka planları destekliyor!</item>
+    </string-array>
+
+</resources>

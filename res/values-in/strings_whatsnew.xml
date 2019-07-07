@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. Pengeditan video mendukung efek filter.</item>
+        <item>2. Pengeditan video mendukung penambahan Bingkai.</item>
+        <item>3. Pengeditan video mendukung latar belakang yang dinamis!</item>
+    </string-array>
+
+</resources>

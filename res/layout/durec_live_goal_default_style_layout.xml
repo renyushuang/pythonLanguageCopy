@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="com.duapps.screen.recorder.main.donation.ui.view.LiveGoalDefaultView">
+
+    <FrameLayout
+        android:id="@+id/goal_default_style_arrow_container"
+        android:layout_width="@dimen/durec_live_goal_arrow_size"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/goal_default_style_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/durec_live_goal_orange_vertical_arrow_selector" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/goal_default_extensible_region"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/durec_live_goal_arrow_size"
+        android:background="@color/durec_donation_goal_progress_bg">
+
+        <View
+            android:id="@+id/goal_default_percentage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/durec_live_goal_default_donation_progress_foreground"
+            tools:layout_width="30dp" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/goal_default_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="6dp"
+            android:textColor="@color/durec_black"
+            android:textSize="12sp"
+            app:fontType="regular"
+            tools:text="Sub" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/goal_default_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="6dp"
+            android:textColor="@color/durec_black"
+            android:textSize="12sp"
+            tools:text="2233/12000" />
+    </RelativeLayout>
+</merge>

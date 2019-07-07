@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/promotion_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/promotion_download_icon"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/durec_promotion_content_title_download_icon"
+        android:visibility="invisible"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/promotion_summary"
+
+        tools:visibility="visible" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/promotion_summary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/durec_promotion_download_tip"
+        android:textColor="@color/durec_colorPrimary"
+        android:textSize="14dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/promotion_download_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/promotion_banner_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="45dp"
+        android:visibility="invisible"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp"
+        app:layout_constraintDimensionRatio="h,16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/promotion_summary"
+        tools:visibility="visible">
+
+
+        <ImageView
+            android:id="@+id/promotion_banner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:background="@color/durec_black" />
+
+        <ImageView
+            android:id="@+id/promotion_new"
+            android:layout_width="40dp"
+            android:layout_height="20dp"
+            android:layout_margin="4dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/durec_promotion_mark_new_icon"
+            android:visibility="gone"
+            tools:visibility="visible" />
+    </android.support.v7.widget.CardView>
+
+
+    <ImageView
+        android:id="@+id/next_page"
+        android:layout_width="14dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="14dp"
+        android:src="@drawable/durec_promotion_download_btn_selector"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/promotion_banner_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/promotion_banner_container"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/before_page"
+        android:layout_width="14dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="14dp"
+        android:rotation="180"
+        android:src="@drawable/durec_promotion_download_btn_selector"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/promotion_banner_container"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/promotion_banner_container"
+        tools:visibility="visible" />
+
+
+</android.support.constraint.ConstraintLayout>

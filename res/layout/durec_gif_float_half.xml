@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/gif_half_view"
+    android:layout_width="@dimen/durec_gif_float_half_size"
+    android:layout_height="@dimen/durec_function_float_window_size">
+
+    <ImageView
+        android:layout_width="@dimen/durec_gif_float_half_size"
+        android:layout_height="@dimen/durec_function_float_window_size"
+        android:src="@drawable/durec_gif_float_record_on_half" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/gif_float_half_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical|left"
+        android:text="@string/durec_gif"
+        android:textColor="@color/durec_white"
+        android:textSize="@dimen/durec_gif_float_half_text_size" />
+</FrameLayout>

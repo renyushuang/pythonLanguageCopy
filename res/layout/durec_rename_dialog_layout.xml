@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:text="@string/durec_rename_video_dialog_title"
+        android:textColor="@color/durec_main_text_color"
+        android:textSize="16sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_marginBottom="4dp"
+        android:layout_marginTop="13dp"
+        android:background="@drawable/durec_feedback_edittext_bg_selector"
+        android:paddingLeft="@dimen/durec_feedback_contact_padding"
+        android:paddingRight="@dimen/durec_feedback_contact_padding">
+
+        <EditText
+            android:id="@+id/et_name_editor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="center_vertical"
+            android:inputType="text"
+            android:singleLine="true"
+            android:textColor="@color/durec_main_text_color"
+            android:textColorHint="#929292"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+</LinearLayout>

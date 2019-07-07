@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <ImageView
+        android:id="@+id/merge_bgm_toolbar_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:src="@drawable/durec_merge_delete_selector"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center"
+        android:text="@string/durec_background_music"
+        android:textColor="#585858"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@id/merge_bgm_toolbar_delete"
+        app:layout_constraintLeft_toRightOf="@id/merge_bgm_toolbar_delete"
+        app:layout_constraintRight_toLeftOf="@id/merge_bgm_toolbar_confirm"
+        app:layout_constraintTop_toTopOf="@id/merge_bgm_toolbar_confirm"
+        app:layout_constraintWidth_default="spread" />
+
+    <ImageView
+        android:id="@+id/merge_bgm_toolbar_confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:src="@drawable/durec_merge_video_and_image_confirm_selector"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:id="@+id/merge_bgm_toolbar_content_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:fillViewport="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toTopOf="@id/merge_bgm_toolbar_checkbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/merge_bgm_toolbar_delete">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.duapps.screen.recorder.main.videos.merge.functions.music.toolview.BGMRangePickView
+                android:id="@+id/merge_bgm_toolbar_range_pick"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/merge_bgm_toolbar_music_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/merge_bgm_toolbar_range_pick">
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/merge_bgm_toolbar_music_title"
+                    android:layout_width="44dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/durec_common_music"
+                    android:textColor="#585858"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="@id/merge_bgm_toolbar_music_seek_bar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/merge_bgm_toolbar_music_seek_bar" />
+
+                <SeekBar
+                    android:id="@+id/merge_bgm_toolbar_music_seek_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="5dp"
+                    android:minHeight="5dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="10dp"
+                    android:progressDrawable="@drawable/durec_volume_dialog_progressbar"
+                    android:thumb="@drawable/durec_volume_dialog_progress_thumb"
+                    android:thumbOffset="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/merge_bgm_toolbar_music_title"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/merge_bgm_toolbar_music_min_progress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="0%"
+                    android:textColor="#585858"
+                    android:textSize="12.67dp"
+                    app:layout_constraintEnd_toStartOf="@id/merge_bgm_toolbar_music_cur_progress"
+                    app:layout_constraintStart_toStartOf="@id/merge_bgm_toolbar_music_seek_bar"
+                    app:layout_constraintTop_toBottomOf="@id/merge_bgm_toolbar_music_seek_bar"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/merge_bgm_toolbar_music_cur_progress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="100%"
+                    android:textColor="#585858"
+                    android:textSize="12.67dp"
+                    app:layout_constraintEnd_toStartOf="@id/merge_bgm_toolbar_music_max_progress"
+                    app:layout_constraintStart_toEndOf="@id/merge_bgm_toolbar_music_min_progress"
+                    app:layout_constraintTop_toBottomOf="@id/merge_bgm_toolbar_music_seek_bar" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/merge_bgm_toolbar_music_max_progress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="200%"
+                    android:textColor="#585858"
+                    android:textSize="12.67dp"
+                    app:layout_constraintEnd_toEndOf="@id/merge_bgm_toolbar_music_seek_bar"
+                    app:layout_constraintStart_toEndOf="@id/merge_bgm_toolbar_music_cur_progress"
+                    app:layout_constraintTop_toBottomOf="@id/merge_bgm_toolbar_music_seek_bar" />
+            </android.support.constraint.ConstraintLayout>
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/merge_bgm_toolbar_audio_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/merge_bgm_toolbar_music_container">
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/merge_bgm_toolbar_audio_title"
+                    android:layout_width="44dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="@string/durec_common_audio"
+                    android:textColor="#585858"
+                    android:textSize="13dp"
+                    app:layout_constraintBottom_toBottomOf="@id/merge_bgm_toolbar_audio_seek_bar"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/merge_bgm_toolbar_audio_seek_bar" />
+
+                <SeekBar
+                    android:id="@+id/merge_bgm_toolbar_audio_seek_bar"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:maxHeight="5dp"
+                    android:minHeight="5dp"
+                    android:paddingStart="0dp"
+                    android:paddingTop="10dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="10dp"
+                    android:progressDrawable="@drawable/durec_volume_dialog_progressbar"
+                    android:thumb="@drawable/durec_volume_dialog_progress_thumb"
+                    android:thumbOffset="0dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/merge_bgm_toolbar_audio_title"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/merge_bgm_toolbar_audio_min_progress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:text="0%"
+                    android:textColor="#585858"
+                    android:textSize="12.67dp"
+                    app:layout_constraintEnd_toStartOf="@id/merge_bgm_toolbar_audio_cur_progress"
+                    app:layout_constraintStart_toStartOf="@id/merge_bgm_toolbar_audio_seek_bar"
+                    app:layout_constraintTop_toBottomOf="@id/merge_bgm_toolbar_audio_seek_bar"
+                    app:layout_constraintVertical_chainStyle="packed" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/merge_bgm_toolbar_audio_cur_progress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="100%"
+                    android:textColor="#585858"
+                    android:textSize="12.67dp"
+                    app:layout_constraintEnd_toStartOf="@id/merge_bgm_toolbar_audio_max_progress"
+                    app:layout_constraintStart_toEndOf="@id/merge_bgm_toolbar_audio_min_progress"
+                    app:layout_constraintTop_toBottomOf="@id/merge_bgm_toolbar_audio_seek_bar" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/merge_bgm_toolbar_audio_max_progress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="200%"
+                    android:textColor="#585858"
+                    android:textSize="12.67dp"
+                    app:layout_constraintEnd_toEndOf="@id/merge_bgm_toolbar_audio_seek_bar"
+                    app:layout_constraintStart_toEndOf="@id/merge_bgm_toolbar_audio_cur_progress"
+                    app:layout_constraintTop_toBottomOf="@id/merge_bgm_toolbar_audio_seek_bar" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <CheckBox
+        android:id="@+id/merge_bgm_toolbar_checkbox"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/merge_bgm_toolbar_checkbox_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:text="@string/durec_loop_music"
+        android:textColor="#888888"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/merge_bgm_toolbar_checkbox"
+        app:layout_constraintEnd_toStartOf="@id/merge_bgm_toolbar_preview"
+        app:layout_constraintStart_toEndOf="@id/merge_bgm_toolbar_checkbox"
+        app:layout_constraintTop_toTopOf="@id/merge_bgm_toolbar_checkbox"
+        app:layout_constraintWidth_default="spread" />
+
+    <com.duapps.recorder.base.ui.styleable.ConfirmTextView
+        android:id="@+id/merge_bgm_toolbar_preview"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginRight="15dp"
+        android:gravity="center"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:singleLine="true"
+        android:text="@string/durec_common_preview"
+        android:textAllCaps="true"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="@id/merge_bgm_toolbar_checkbox"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/merge_bgm_toolbar_checkbox_text"
+        app:layout_constraintTop_toTopOf="@id/merge_bgm_toolbar_checkbox" />
+</android.support.constraint.ConstraintLayout>

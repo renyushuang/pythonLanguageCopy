@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="52.6dp">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/look_up_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_marginTop="6dp"
+        android:drawablePadding="10dp"
+        android:drawableRight="@drawable/durec_promotion_expand_arrow"
+        android:text="@string/durec_view_more_comments"
+        android:textColor="#535353"
+        android:textSize="12dp" />
+
+    <ProgressBar
+        android:id="@+id/look_up_loading"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+</FrameLayout>

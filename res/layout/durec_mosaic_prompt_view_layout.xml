@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3000000">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_mosaic_prompt_view_prompt_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/durec_merge_mosaic_zoom_bubble_text"
+        android:textColor="@color/durec_white"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/durec_mosaic_prompt_view_prompt_iv_one"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/durec_mosaic_prompt_view_prompt_iv_one"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/durec_mosaic_prompt_zoom_out_icon"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/durec_mosaic_prompt_view_prompt_tv_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durec_mosaic_prompt_view_prompt_tv"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_mosaic_prompt_view_prompt_tv_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/durec_merge_mosaic_two_finger_move_guide"
+        android:textColor="@color/durec_white"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:textSize="20dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@+id/durec_mosaic_prompt_view_prompt_iv_two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durec_mosaic_prompt_view_prompt_iv_one"/>
+
+    <ImageView
+        android:id="@+id/durec_mosaic_prompt_view_prompt_iv_two"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:src="@drawable/durec_mosaic_prompt_zoom_in_icon"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durec_mosaic_prompt_view_prompt_tv_two"/>
+
+</android.support.constraint.ConstraintLayout>

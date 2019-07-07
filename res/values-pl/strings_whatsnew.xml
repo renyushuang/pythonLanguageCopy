@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. Edycja wideo obsługuje efekty filtrów.</item>
+        <item>2. Edycja wideo obsługuje dodawanie ramek.</item>
+        <item>3. Edycja wideo obsługuje dynamiczne tła!</item>
+    </string-array>
+
+</resources>

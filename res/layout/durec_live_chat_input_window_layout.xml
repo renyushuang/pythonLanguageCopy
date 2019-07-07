@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/panel_comment_input_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/durec_per_watermark_edit_text_bg"
+    app:layout_constraintBottom_toTopOf="@id/enable_icon_and_comment_count_container"
+    app:layout_constraintLeft_toLeftOf="@id/panel_left_arrow"
+    app:layout_constraintRight_toRightOf="@id/enable_icon_and_comment_count_container"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <EditText
+        android:id="@+id/panel_add_comment_et"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#e7e7e7"
+        android:textColor="#535353"
+        android:textColorHint="#888888"
+        android:textSize="14dp"
+        android:hint="@string/durec_live_add_comment"
+        android:imeOptions="flagNoFullscreen|flagNoExtractUi"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/panel_send_icon"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/panel_send_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:background="#e7e7e7"
+        android:src="@drawable/durec_live_historical_comment_send_icon_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/panel_add_comment_et"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ProgressBar
+        android:id="@+id/panel_send_loading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/panel_add_comment_et"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+</android.support.constraint.ConstraintLayout>

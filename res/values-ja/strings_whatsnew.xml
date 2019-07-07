@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. ビデオ編集にフィルター効果を適用することができます。</item>
+        <item>2. ビデオ編集にフレームを追加することができます。</item>
+        <item>3. ビデオ編集に動的背景を適用することができます。</item>
+    </string-array>
+
+</resources>

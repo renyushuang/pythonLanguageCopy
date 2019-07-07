@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/__picker_bg">
+
+    <FrameLayout
+        android:id="@+id/header_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_weight="0" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_view" />
+
+    <RelativeLayout
+        android:id="@+id/dir_select_btn"
+        android:layout_width="match_parent"
+        android:layout_height="48.3dp"
+        android:background="#e5f7f7f7"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/file_dir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="11.7dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:maxWidth="325dp"
+            android:text="@string/durec_all_images"
+            android:textColor="@color/durec_media_picker_filter_text_color"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="10dp"
+            android:layout_height="10dp"
+            android:layout_alignBottom="@id/file_dir"
+            android:layout_marginRight="11.7dp"
+            android:layout_toRightOf="@id/file_dir"
+            android:background="@drawable/durec_medai_picker_indicator_arrow" />
+
+    </RelativeLayout>
+
+    <ViewStub
+        android:id="@+id/durec_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout="@layout/durec_empty_for_stub"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/shadow_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:background="#b2000000"
+        android:visibility="gone" />
+
+</android.support.constraint.ConstraintLayout>

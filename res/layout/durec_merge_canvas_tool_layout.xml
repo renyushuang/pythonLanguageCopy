@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <com.duapps.screen.recorder.main.videos.merge.functions.canvasandbackground.canvas.toolview.CanvasRatioSelectableButton
+        android:id="@+id/durec_canvas_ratio_current_ratio_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:canvas_ratio_bg_normal="@drawable/durec_canvas_current_ratio_normal"
+        app:canvas_ratio_bg_selected="@drawable/durec_canvas_current_ratio_selected"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/durec_canvas_ratio_1_1_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.duapps.screen.recorder.main.videos.merge.functions.canvasandbackground.canvas.toolview.CanvasRatioSelectableButton
+        android:id="@+id/durec_canvas_ratio_1_1_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:canvas_ratio_bg_normal="@drawable/durec_crop_ratio_1_1_normal"
+        app:canvas_ratio_bg_selected="@drawable/durec_crop_ratio_1_1_selected"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/durec_canvas_ratio_current_ratio_btn"
+        app:layout_constraintEnd_toStartOf="@+id/durec_canvas_ratio_16_9_btn"
+        app:layout_constraintStart_toEndOf="@+id/durec_canvas_ratio_current_ratio_btn" />
+
+    <com.duapps.screen.recorder.main.videos.merge.functions.canvasandbackground.canvas.toolview.CanvasRatioSelectableButton
+        android:id="@+id/durec_canvas_ratio_16_9_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:canvas_ratio_bg_normal="@drawable/durec_crop_ratio_16_9_normal"
+        app:canvas_ratio_bg_selected="@drawable/durec_crop_ratio_16_9_selected"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/durec_canvas_ratio_current_ratio_btn"
+        app:layout_constraintEnd_toStartOf="@+id/durec_canvas_ratio_9_16_btn"
+        app:layout_constraintStart_toEndOf="@+id/durec_canvas_ratio_1_1_btn" />
+
+    <com.duapps.screen.recorder.main.videos.merge.functions.canvasandbackground.canvas.toolview.CanvasRatioSelectableButton
+        android:id="@+id/durec_canvas_ratio_9_16_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:canvas_ratio_bg_normal="@drawable/durec_crop_ratio_9_16_normal"
+        app:canvas_ratio_bg_selected="@drawable/durec_crop_ratio_9_16_selected"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/durec_canvas_ratio_current_ratio_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/durec_canvas_ratio_16_9_btn" />
+</android.support.constraint.ConstraintLayout>

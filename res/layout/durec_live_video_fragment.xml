@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duapps.screen.recorder.main.videos.feed.ui.ScrollChildSwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_video_swipe_refresh_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/live_videos_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/durec_fragment_background">
+
+        <ProgressBar
+            android:id="@+id/live_video_loading_more_view"
+            android:layout_width="@dimen/durec_list_footer_height"
+            android:layout_height="@dimen/durec_list_footer_height"
+            android:layout_gravity="bottom|center_horizontal"
+            android:visibility="gone"
+            android:layout_marginBottom="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/durec_live_video_category_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:clipToPadding="false"/>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/durec_live_video_recycle_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/durec_list_footer_height"/>
+
+            <com.duapps.screen.recorder.main.videos.feed.ui.FeedEmptyView
+                android:id="@+id/live_video_empty_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+    </FrameLayout>
+</com.duapps.screen.recorder.main.videos.feed.ui.ScrollChildSwipeRefreshLayout>

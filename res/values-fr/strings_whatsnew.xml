@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. Le montage vidéo soutient les effets de filtre.</item>
+        <item>2. Le montage vidéo soutient l\'ajout d\'images.</item>
+        <item>3. Le montage vidéo soutient les arrière-plans dynamiques!</item>
+    </string-array>
+
+</resources>

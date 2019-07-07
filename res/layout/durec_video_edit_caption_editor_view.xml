@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/durec_caption_editor_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/durec_white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!--顶部可以切换的tool bar-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/durec_caption_editor_tool_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#77000000"
+        android:clickable="true"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <EditText
+            android:id="@+id/durec_caption_editor_et"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/durec_merge_subtitle_edittext_bg"
+            android:maxLines="1"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintEnd_toStartOf="@+id/durec_caption_editor_tool_bar_color_confirm_icon"
+            app:layout_constraintStart_toEndOf="@+id/durec_caption_editor_tool_bar_close_icon"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/durec_caption_editor_tool_bar_close_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="5dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/durec_caption_editor_close_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+        <ImageView
+            android:id="@+id/durec_caption_editor_tool_bar_keyboard_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/durec_caption_editor_key_board_unselected"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/durec_caption_editor_tool_bar_color_typeface_icon"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/durec_caption_editor_et" />
+
+        <ImageView
+            android:id="@+id/durec_caption_editor_tool_bar_color_typeface_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/durec_caption_editor_color_tab_unselected"
+            app:layout_constraintBottom_toBottomOf="@+id/durec_caption_editor_tool_bar_keyboard_icon"
+            app:layout_constraintEnd_toStartOf="@id/durec_caption_editor_tool_bar_color_duration_icon"
+            app:layout_constraintStart_toEndOf="@id/durec_caption_editor_tool_bar_keyboard_icon"
+            app:layout_constraintTop_toTopOf="@+id/durec_caption_editor_tool_bar_keyboard_icon" />
+
+        <ImageView
+            android:id="@+id/durec_caption_editor_tool_bar_color_duration_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:paddingRight="20dp"
+            android:paddingBottom="10dp"
+            android:src="@drawable/durec_caption_editor_duration_unselected"
+            app:layout_constraintBottom_toBottomOf="@+id/durec_caption_editor_tool_bar_keyboard_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/durec_caption_editor_tool_bar_color_typeface_icon"
+            app:layout_constraintTop_toTopOf="@+id/durec_caption_editor_tool_bar_keyboard_icon" />
+
+        <ImageView
+            android:id="@+id/durec_caption_editor_tool_bar_color_confirm_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="5dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="5dp"
+            android:src="@drawable/durec_caption_editor_confirm_selector"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.2" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!--颜色和字体编辑面板-->
+    <FrameLayout
+        android:id="@+id/durec_caption_editor_color_typeface"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/durec_caption_editor_duration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/durec_caption_editor_duration">
+
+    </FrameLayout>
+
+    <!--时长调节面板-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/durec_caption_editor_duration"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@color/durec_white"
+        android:clickable="true"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_caption_editor_tool_bar">
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.common.toolview.timepicker.TimePickerView
+            android:id="@+id/caption_editor_start_time_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            app:itemHeight="@dimen/durec_caption_time_pick_height"
+            app:itemWidth="@dimen/durec_caption_time_pick_width"
+            app:layout_constraintBottom_toTopOf="@id/caption_editor_end_time_picker"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textNormalColor="#b6b6b6"
+            app:textNormalSize="17dp"
+            app:textSelectColor="@color/durec_colorPrimary"
+            app:textSelectSize="20dp" />
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.common.toolview.timepicker.TimePickerView
+            android:id="@+id/caption_editor_end_time_picker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="12dp"
+            app:itemHeight="@dimen/durec_caption_time_pick_height"
+            app:itemWidth="@dimen/durec_caption_time_pick_width"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/caption_editor_start_time_picker"
+            app:textNormalColor="#b6b6b6"
+            app:textNormalSize="17dp"
+            app:textSelectColor="@color/durec_colorPrimary"
+            app:textSelectSize="20dp" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/caption_editor_start_time_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/durec_start_time"
+            android:textColor="#555555"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/caption_editor_start_time_picker"
+            app:layout_constraintEnd_toStartOf="@id/caption_editor_start_time_picker"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/caption_editor_start_time_picker"
+            app:layout_constraintWidth_default="wrap" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/caption_editor_end_time_text"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="@string/durec_end_time"
+            android:textColor="#555555"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/caption_editor_end_time_picker"
+            app:layout_constraintEnd_toStartOf="@id/caption_editor_end_time_picker"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/caption_editor_end_time_picker"
+            app:layout_constraintWidth_default="wrap" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/caption_editor_duration"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:text="0 s"
+            android:textColor="#535353"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toTopOf="@id/caption_editor_end_time_text"
+            app:layout_constraintEnd_toEndOf="@id/caption_editor_start_time_text"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintStart_toStartOf="@id/caption_editor_start_time_text"
+            app:layout_constraintTop_toBottomOf="@id/caption_editor_start_time_text"
+            app:layout_constraintWidth_default="wrap" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="11dp"
+            android:background="#b5b5b5"
+            app:layout_constraintBottom_toTopOf="@id/caption_editor_duration"
+            app:layout_constraintEnd_toEndOf="@id/caption_editor_start_time_text"
+            app:layout_constraintStart_toStartOf="@id/caption_editor_start_time_text"
+            app:layout_constraintTop_toBottomOf="@id/caption_editor_start_time_text" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginBottom="11dp"
+            android:background="#b5b5b5"
+            app:layout_constraintBottom_toTopOf="@id/caption_editor_end_time_text"
+            app:layout_constraintEnd_toEndOf="@id/caption_editor_end_time_text"
+            app:layout_constraintStart_toStartOf="@id/caption_editor_end_time_text"
+            app:layout_constraintTop_toBottomOf="@id/caption_editor_duration" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

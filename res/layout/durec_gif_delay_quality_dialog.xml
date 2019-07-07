@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/durec_shake_sensitivity_dialog_width"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <SeekBar
+        android:id="@+id/gif_delay_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:max="900"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/gif_delay_seekbar_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/durec_colorPrimary"
+        android:textSize="11dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/gif_delay_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="延迟"
+            android:textColor="#8d8d8d"
+            android:textSize="11dp" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/gif_delay_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="延迟"
+            android:textColor="#8d8d8d"
+            android:textSize="11dp" />
+    </FrameLayout>
+
+    <SeekBar
+        android:id="@+id/gif_quality_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="10dp"
+        android:max="15"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/gif_quality_seekbar_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="@color/durec_colorPrimary"
+        android:textSize="11dp" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/gif_quality_reduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:text="质量"
+            android:textColor="#8d8d8d"
+            android:textSize="11dp" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/gif_quality_increase"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|center_vertical"
+            android:text="质量"
+            android:textColor="#8d8d8d"
+            android:textSize="11dp" />
+    </FrameLayout>
+</LinearLayout>

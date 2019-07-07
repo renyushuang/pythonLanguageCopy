@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f7f7f7">
+
+    <com.duapps.screen.recorder.ui.DuEmptyView
+        android:id="@+id/playback_comment_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/playback_comment_recycle_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingBottom="20dp"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/playback_comment_loading_more_view"
+        android:layout_width="@dimen/durec_list_footer_height"
+        android:layout_height="@dimen/durec_list_footer_height"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="5dp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/playback_comment_retry_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/durec_no_network" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/durec_fail_to_load"
+                android:textColor="#636262"
+                android:textSize="16dp" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/durec_common_ok_btn_selector_reverse"
+                android:gravity="center"
+                android:minWidth="154dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="@string/durec_common_retry"
+                android:textColor="@color/durec_common_ok_btn_text_color_reverse"
+                android:textSize="15dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/playback_comment_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ProgressBar
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</FrameLayout>

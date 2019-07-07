@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="30dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/category_name_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/durec_live_category_name_border"
+        android:paddingBottom="2dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="2dp"
+        android:text="@string/durec_all_images"
+        android:textColor="@color/durec_colorPrimary"
+        android:textSize="16dp" />
+</LinearLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/durec_white"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/durec_toolbar_layout" />
+
+        <include layout="@layout/durec_multicast_platform_edit_choose_item_layout"
+            android:id="@+id/item_live_to" />
+
+        <include layout="@layout/durec_multicast_platform_edit_choose_item_layout"
+            android:id="@+id/item_choose_game"/>
+
+        <include layout="@layout/durec_multicast_platform_edit_title_item_layout" />
+
+        <include layout="@layout/durec_multicast_platform_edit_description_item_layout" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

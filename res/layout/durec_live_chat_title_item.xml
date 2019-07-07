@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="13dp"
+    android:layout_marginTop="13.3dp"
+    android:text="@string/durec_live_chars"
+    android:textColor="@color/durec_head_item_text_color"
+    android:textSize="16sp"
+    xmlns:android="http://schemas.android.com/apk/res/android" />

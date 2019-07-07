@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/live_guide_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:gravity="center"
+            android:textColor="#e6ffffff"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="92dp">
+
+            <ImageView
+                android:id="@+id/live_guide_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/durec_live_guide_icon" />
+
+            <ImageView
+                android:id="@+id/live_guide_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="30dp"
+                android:layout_toRightOf="@+id/live_guide_icon"
+                android:src="@drawable/durec_live_guide_arrow" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/live_guide_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="-10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="100dp"
+                android:layout_toRightOf="@+id/live_guide_arrow"
+                android:gravity="left"
+                android:textColor="#e6ffffff"
+                android:textSize="14dp" />
+        </RelativeLayout>
+
+        <com.duapps.recorder.base.ui.styleable.ConfirmTextView
+            android:id="@+id/live_guide_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:layout_marginRight="37dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="@string/durec_common_start"
+            android:textSize="17dp" />
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_order_name_title"
+        android:layout_width="@dimen/durec_ytb_ads_revenue_record_video_name_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/durec_ytb_ads_revenue_record_item_margin_start"
+        android:layout_marginTop="14dp"
+        android:text="@string/durec_promotion_item"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_order_date_title"
+        android:layout_width="@dimen/durec_ytb_ads_revenue_record_view_number_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/durec_ytb_ads_revenue_record_view_count_margin_start"
+        android:gravity="center"
+        android:text="@string/durec_promotion_date"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/durec_order_name_title"
+        app:layout_constraintEnd_toStartOf="@+id/durec_order_revenue_title"
+        app:layout_constraintStart_toEndOf="@+id/durec_order_name_title" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_order_revenue_title"
+        android:layout_width="@dimen/durec_ytb_ads_revenue_record_income_width"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/durec_ytb_ads_revenue_record_view_count_margin_start"
+        android:gravity="center"
+        android:text="@string/durec_common_revenue"
+        android:textColor="#888888"
+        android:textSize="14sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/durec_order_name_title"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:id="@+id/durec_order_divide_line"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="14dp"
+        android:background="@color/durec_common_divide_line_color"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durec_order_name_title" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/durec_order_record_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durec_order_divide_line" />
+
+    <android.support.constraint.Group
+        android:id="@+id/durec_order_content_group"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:constraint_referenced_ids="durec_order_name_title,
+                                       durec_order_date_title,
+                                       durec_order_revenue_title,
+                                       durec_order_divide_line,
+                                       durec_order_record_recycler" />
+
+    <ProgressBar
+        android:id="@+id/durec_order_record_loading_view"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/durec_order_empty_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="65dp"
+        android:src="@drawable/durec_no_order"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_order_empty_message"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:text="@string/durec_no_orders_text"
+        android:textColor="#aaaaaa"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durec_order_empty_icon" />
+
+    <android.support.constraint.Group
+        android:id="@+id/durec_order_empty_group"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:constraint_referenced_ids="durec_order_empty_icon,durec_order_empty_message" />
+</android.support.constraint.ConstraintLayout>

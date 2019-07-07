@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="    <string name="durec_audio_unavailable_dialog_pos_btn">ПРОДОВЖИТИ</string>
+durec_audio_unavailable_dialog_pos_btn">ПРОДОВЖИТИ</string>
+</resources>    <string name="durec_audio_unavailable_dialog_pos_btn">ПРОДОВЖИТИ</string>
+</resources><?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="durec_audio_unavailable_dialog_pos_btn">ПРОДОВЖИТИ</string>
+</resources>    <string name="durec_audio_unavailable_dialog_pos_btn">ПРОДОВЖИТИ</string>
+    <string name="durec_audio_unavailable_dialog_pos_btn">ПРОДОВЖИТИ</string>
+</resources>

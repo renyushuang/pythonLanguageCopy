@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. ویرایش ویدئو از اثرات فیلتر پشتیبانی می کند.</item>
+        <item>2. ویرایش ویدئو از اضافه کردن فریم ها پشتیبانی می کند.</item>
+        <item>3. ویرایش ویدئو از پس زمینه های پویا پشتیبانی می کند!</item>
+    </string-array>
+
+</resources>

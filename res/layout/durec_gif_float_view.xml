@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:id="@+id/gif_draggable_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/durec_gif_icon_selector" />
+
+    <include
+        android:id="@+id/gif_draggable_halfview"
+        layout="@layout/durec_gif_float_half"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/gif_full_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/durec_gif_float_record_on"
+        android:visibility="invisible" />
+</merge>

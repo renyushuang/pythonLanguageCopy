@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. वीडियो संपादन फ़िल्टर प्रभावों का समर्थन करता है।</item>
+        <item>2. वीडियो संपादन फ़्रेम ऐड करने का समर्थन करता है।</item>
+        <item>3. वीडियो संपादन डायनामिक बैकग्राउंड का समर्थन करता है!</item>
+    </string-array>
+
+</resources>

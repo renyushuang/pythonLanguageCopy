@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/empty_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/footer_container"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/durec_list_footer_height"
+            android:layout_gravity="bottom" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/recycleview_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:paddingBottom="@dimen/durec_list_footer_height"
+                android:scrollbarStyle="outsideOverlay"
+                android:scrollbars="horizontal" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </FrameLayout>
+</merge>

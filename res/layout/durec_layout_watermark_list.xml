@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/wartermark_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/add_text_watermark"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:background="@drawable/durec_per_watermark_add_btn_bg"
+            android:gravity="center"
+            android:text="@string/durec_add_texts_watermark"
+            android:lines="1"
+            android:textSize="@dimen/durec_per_watermark_btn_text_size"
+            android:textColor="@color/durec_colorPrimary"
+            android:layout_marginBottom="16dp"
+            />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/add_image_watermark"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="@dimen/durec_per_watermark_btn_interval"
+            android:layout_weight="1"
+            android:background="@drawable/durec_per_watermark_add_btn_bg"
+            android:gravity="center"
+            android:text="@string/durec_add_image"
+            android:textColor="@color/durec_colorPrimary"
+            android:lines="1"
+            android:textSize="@dimen/durec_per_watermark_btn_text_size"
+            android:layout_marginBottom="16dp"
+            />
+    </LinearLayout>
+</LinearLayout>

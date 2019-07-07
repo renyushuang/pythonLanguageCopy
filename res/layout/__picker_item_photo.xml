@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duapps.screen.recorder.main.picture.picker.widget.SquareItemLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="2dp"
+    app:cardCornerRadius="2dp"
+    app:cardElevation="2dp">
+
+    <ImageView
+        android:id="@+id/iv_photo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/v_selected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:layout_margin="5dip"
+        android:background="@drawable/__picker_checkbox_bg"
+        android:clickable="true"
+        android:gravity="center"
+        android:includeFontPadding="false"
+        android:minHeight="@dimen/__picker_picture_select_icon_size"
+        android:minWidth="@dimen/__picker_picture_select_icon_size"
+        android:textColor="@android:color/white"
+        android:textSize="15dp" />
+
+</com.duapps.screen.recorder.main.picture.picker.widget.SquareItemLayout>

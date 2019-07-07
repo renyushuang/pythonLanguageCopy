@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.duapps.screen.recorder.main.live.platforms.rtmp.ui.ServerManagerActivity">
+
+    <include
+        android:id="@+id/durec_rtmp_manager_toolbar"
+        layout="@layout/durec_toolbar_layout" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durec_rtmp_manager_toolbar" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/tv_add"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/screen_bottom_large_btn_height"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:background="@drawable/durec_common_ok_btn_selector_reverse"
+        android:gravity="center"
+        android:text="@string/durec_robot_reply_content_add"
+        android:textColor="@color/durec_common_ok_btn_text_color_reverse"
+        android:textSize="@dimen/screen_bottom_large_btn_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

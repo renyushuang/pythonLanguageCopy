@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/durec_emoji_dialog_warn"/>
+
+    <TextView
+        android:id="@+id/attention"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/icon"
+        android:text="@string/durec_choose_sdcard_dialog_attention"
+        android:textColor="#555555"
+        android:textSize="13.3dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/attention"
+        android:layout_below="@id/attention"
+        android:layout_marginTop="10dp"
+        android:text="@string/durec_choose_sdcard_dialog_attention_msg"
+        android:textColor="#999999"
+        android:textSize="13.3dp"/>
+</RelativeLayout>

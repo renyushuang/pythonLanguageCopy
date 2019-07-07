@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <RelativeLayout
+        android:id="@+id/theme_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/durec_main_tool_bar_height"
+        app:layout_constraintBottom_toTopOf="@id/durec_theme_thumbs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="spread">
+
+        <ImageView
+            android:id="@+id/durec_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="13dp"
+            android:src="@drawable/durec_common_back_btn_selector"/>
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/durec_save"
+            android:layout_toRightOf="@+id/durec_back"
+            android:layout_marginEnd="50dp"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textColor="@color/durec_white"
+            android:textSize="20dp"/>
+
+        <ImageView
+            android:id="@+id/durec_fun"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:src="@drawable/durec_theme_delete_selector"
+            android:visibility="visible"/>
+    </RelativeLayout>
+
+    <com.duapps.recorder.module.subscription.banner.Banner
+        android:id="@+id/durec_theme_thumbs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        app:banner_auto_play="true"
+        app:banner_interval_time="3000"
+        app:banner_multi_page="true"
+        app:banner_page_spacing="30dp"
+        app:banner_show_indicator="false"
+        app:layout_constraintBottom_toTopOf="@id/theme_name"
+        app:layout_constraintTop_toBottomOf="@id/theme_toolbar"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/theme_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="#ffffff"
+        android:text="Offical Orange"
+        android:textSize="14sp"
+        android:layout_marginLeft="16dp"
+        android:lines="1"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="7dp"
+        android:gravity="start"
+        android:ellipsize="end"
+        app:layout_constraintBottom_toTopOf="@id/theme_size"
+        app:layout_constraintEnd_toStartOf="@id/theme_vip"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_theme_thumbs"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/theme_size"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="373K"
+        android:textSize="36px"
+        android:textColor="#B4ffffff"
+        android:layout_marginTop="7dp"
+        app:layout_constraintBottom_toTopOf="@id/theme_button"
+        app:layout_constraintStart_toStartOf="@id/theme_name"
+        app:layout_constraintTop_toBottomOf="@id/theme_name"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/theme_vip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/durec_theme_page_premium"
+        android:drawableStart="@drawable/durec_premium_icon"
+        android:layout_marginEnd="16dp"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        android:drawablePadding="6dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/theme_name"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/theme_free"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/durec_theme_page_free"
+        android:layout_marginEnd="16dp"
+        android:textSize="14sp"
+        android:textColor="#ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/theme_name"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/theme_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/screen_bottom_large_btn_height"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/durec_theme_download_btn_selector"
+        android:gravity="center"
+        android:text="@string/durec_common_download"
+        android:textColor="@drawable/durec_theme_download_text_color_selector"
+        android:textSize="@dimen/screen_bottom_large_btn_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/theme_size"/>
+
+    <FrameLayout
+        android:id="@+id/progressbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <android.widget.ProgressBar
+            android:layout_width="@dimen/durec_platform_login_loading_size"
+            android:layout_height="@dimen/durec_platform_login_loading_size"
+            android:layout_gravity="center"
+            android:progressDrawable="@drawable/durec_create_live_avatar_loading"
+            android:indeterminate="true"
+            />
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

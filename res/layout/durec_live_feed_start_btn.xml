@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/durec_home_recorder_cardview"
+    android:layout_width="54dp"
+    android:layout_height="54dp"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="#ff7e14"
+    app:cardCornerRadius="27dp">
+
+    <ImageView
+        android:id="@+id/durec_live_feed_start_icon"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/durec_live_feed_start_icon"/>
+
+</android.support.v7.widget.CardView>

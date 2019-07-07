@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. Η επεξεργασία βίντεο υποστηρίζει φίλτρα εφέ.</item>
+        <item>2. Η επεξεργασία βίντεο υποστηρίζει προσθήκη πλαισίων.</item>
+        <item>3. Η επεξεργασία βίντεο υποστηρίζει πολλαπλά είδη φόντου!</item>
+    </string-array>
+
+</resources>

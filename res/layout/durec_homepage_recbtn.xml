@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/durec_home_recorder_cardview"
+    android:layout_width="54dp"
+    android:layout_height="54dp"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="#ff7e14"
+    app:cardCornerRadius="27dp">
+
+    <ImageView
+        android:id="@+id/durec_home_recorder_button_normal"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:src="@drawable/durec_notification_icon" />
+
+    <FrameLayout
+        android:id="@+id/durec_home_recorder_button_recording"
+
+        android:layout_width="54dp"
+        android:layout_height="54dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/durec_home_recorder_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="7dp"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="12dp"
+            android:src="@drawable/durec_homepage_rec_stop_normal" />
+    </FrameLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/durec_close_circle"
+        android:layout_width="@dimen/durec_float_window_close_init_view_size"
+        android:layout_height="@dimen/durec_float_window_close_init_view_size"
+        android:layout_gravity="center_horizontal|bottom"
+        android:background="@drawable/durec_float_close_selector"
+        android:orientation="vertical">
+    </LinearLayout>
+</FrameLayout>

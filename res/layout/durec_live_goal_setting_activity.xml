@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+使用 CoordinatorLayout 包裹一下，可以解决 FullScreen -> Non-FullScreen 切换时的闪烁问题
+https://github.com/android-cn/android-discuss/issues/139
+-->
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/durec_white"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/durec_toolbar_layout" />
+
+    <com.duapps.screen.recorder.ui.DuScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/durec_main_tool_bar_height"
+        android:scrollbars="none">
+
+        <!-- preview -->
+        <LinearLayout
+            android:id="@+id/setting_root"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.duapps.screen.recorder.main.donation.ui.view.GoalPreviewViewPager
+                android:id="@+id/preview_view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp" />
+
+            <!-- subscribe -->
+            <RelativeLayout
+                android:id="@+id/subscribe_enable_switch_area"
+                style="@style/durec_setting_item_style">
+
+                <com.duapps.screen.recorder.ui.DuSwitchButton
+                    android:id="@+id/subscribe_enable_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/setting_item_end_element_margin_end" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/subscribe_enable_title"
+                    style="@style/durec_setting_item_title_text_multi_lines"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@id/subscribe_enable_switch"
+                    android:text="@string/subscrption_goal" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/subscribe_enable_subtitle"
+                    style="@style/durec_setting_item_subtitle_text"
+                    android:layout_alignStart="@id/subscribe_enable_title"
+                    android:layout_below="@id/subscribe_enable_title"
+                    android:layout_toLeftOf="@id/subscribe_enable_switch"
+                    android:text="@string/durec_subscrption_goal_hint" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/subscribe_goal_target_area"
+                style="@style/durec_setting_item_style"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/subscribe_end_arrow_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/setting_item_end_element_margin_end"
+                    android:src="@drawable/durec_settings_detail_btn_selector" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/subscribe_goal_target_area_title"
+                    style="@style/durec_setting_item_title_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="false"
+                    android:layout_toStartOf="@id/subscribe_end_arrow_img"
+                    android:text="@string/subscrption_goal_val" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/subscribe_goal_target_area_sub_title"
+                    style="@style/durec_setting_item_subtitle_text"
+                    android:layout_alignStart="@id/subscribe_goal_target_area_title"
+                    android:layout_below="@id/subscribe_goal_target_area_title"
+                    android:layout_toStartOf="@id/subscribe_end_arrow_img"
+                    android:text="@string/set_subscrption_goal"
+                    android:visibility="visible" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/subscribe_goal_target_area_summary"
+                    style="@style/durec_setting_item_summary_text"
+                    android:layout_alignStart="@id/subscribe_goal_target_area_title"
+                    android:layout_below="@id/subscribe_goal_target_area_sub_title"
+                    android:layout_centerVertical="false"
+                    android:layout_toStartOf="@id/subscribe_end_arrow_img"
+                    tools:text="50$" />
+            </RelativeLayout>
+
+            <!-- line -->
+            <View
+                style="@style/durec_setting_line"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="20dp" />
+
+            <!-- donation -->
+            <RelativeLayout
+                android:id="@+id/donation_enable_switch_area"
+                style="@style/durec_setting_item_style">
+
+                <com.duapps.screen.recorder.ui.DuSwitchButton
+                    android:id="@+id/donation_enable_switch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/setting_item_end_element_margin_end" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/donation_enable_title"
+                    style="@style/durec_setting_item_title_text_multi_lines"
+                    android:layout_alignParentStart="true"
+                    android:layout_toLeftOf="@id/donation_enable_switch"
+                    android:text="@string/donation_goal" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/donation_enable_subtitle"
+                    style="@style/durec_setting_item_subtitle_text"
+                    android:layout_alignStart="@id/donation_enable_title"
+                    android:layout_below="@id/donation_enable_title"
+                    android:layout_toLeftOf="@id/donation_enable_switch"
+                    android:text="@string/durec_donation_goal_hint" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/donation_goal_target_area"
+                style="@style/durec_setting_item_style"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/donation_end_arrow_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="@dimen/setting_item_end_element_margin_end"
+                    android:src="@drawable/durec_settings_detail_btn_selector" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/donation_goal_target_area_title"
+                    style="@style/durec_setting_item_title_text"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="false"
+                    android:layout_toStartOf="@id/donation_end_arrow_img"
+                    android:text="@string/donation_goal_val" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/donation_goal_target_area_sub_title"
+                    style="@style/durec_setting_item_subtitle_text"
+                    android:layout_alignStart="@id/donation_goal_target_area_title"
+                    android:layout_below="@id/donation_goal_target_area_title"
+                    android:layout_toStartOf="@id/donation_end_arrow_img"
+                    android:text="@string/set_donation_goal"
+                    android:visibility="visible" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/donation_goal_target_area_summary"
+                    style="@style/durec_setting_item_summary_text"
+                    android:layout_alignStart="@id/donation_goal_target_area_title"
+                    android:layout_below="@id/donation_goal_target_area_sub_title"
+                    android:layout_centerVertical="false"
+                    android:layout_toStartOf="@id/donation_end_arrow_img"
+                    tools:text="50$" />
+            </RelativeLayout>
+
+            <!-- line -->
+            <View
+                style="@style/durec_setting_line"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="20dp" />
+
+        </LinearLayout>
+    </com.duapps.screen.recorder.ui.DuScrollView>
+</android.support.design.widget.CoordinatorLayout>

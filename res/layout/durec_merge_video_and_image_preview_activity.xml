@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/durec_black">
+
+    <com.duapps.screen.recorder.main.videos.merge.player.ui.MergeMediaPlayer
+        android:id="@+id/merge_preview_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/durec_black" />
+
+    <com.duapps.screen.recorder.main.videos.ui.VideoEditProgressView
+        android:id="@+id/merge_preview_progress_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</FrameLayout>

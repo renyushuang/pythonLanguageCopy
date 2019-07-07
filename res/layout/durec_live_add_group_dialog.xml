@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="238dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="@dimen/durec_dialog_padding"
+        android:layout_marginRight="@dimen/durec_dialog_padding">
+
+        <EditText
+            android:id="@+id/add_group_edit_text"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/durec_live_add_group_exittext_bg"
+            android:gravity="left|center_vertical"
+            android:hint="@string/durec_enter_group_name"
+            android:imeOptions="actionSearch"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:singleLine="true"
+            android:textColor="#555555"
+            android:textColorHint="#888888"
+            android:textSize="@dimen/durec_add_group_search_hint_text_size" />
+
+        <FrameLayout
+            android:id="@+id/add_group_search"
+            android:layout_width="34.7dp"
+            android:layout_height="match_parent"
+            android:background="#fd7e2b">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/durec_live_search_icon_selector" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.duapps.screen.recorder.ui.DuMaxHeightRecyclerView
+            android:id="@+id/add_group_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fadeScrollbars="false"
+            android:scrollbars="vertical"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/add_group_loading"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/durec_dialog_padding"
+            android:layout_marginRight="@dimen/durec_dialog_padding"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/add_group_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/durec_dialog_padding"
+            android:layout_marginRight="@dimen/durec_dialog_padding"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/live_search_empty_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                tools:src="@drawable/durec_no_group_icon" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/search_empty_prompt_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="33dp"
+                android:gravity="center"
+                android:text="@string/durec_no_group"
+                android:textColor="#5f5f5f"
+                android:textSize="14dp" />
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

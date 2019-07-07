@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/durec_white"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/durec_theme_tech_notic_normal_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/durec_cn_large_image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/theme_tech_notification_bottom_bg_color"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" />
+</LinearLayout>

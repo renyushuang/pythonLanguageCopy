@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="durec_recorder_noti_start">Grabar</string>
+	<string name="durec_recorder_noti_recording_sub">Toca aquí para detener grabación.</string>
+	<string name="durec_recorder_noti_start">Grabar</string>
+	<string name="durec_recorder_noti_recording_sub">Toca aquí para detener grabación.</string>
+	<string name="durec_recorder_noti_start">Grabar</string>
+	<string name="durec_recorder_noti_recording_sub">Toca aquí para detener grabación.</string>
+	<string name="durec_recorder_noti_start">Grabar</string>
+	<string name="durec_recorder_noti_recording_sub">Toca aquí para detener grabación.</string>
+	<string name="durec_feedback_contact_distinguish_title">Contacto:</string>
+	<string name="durec_recorder_noti_start">Grabar</string>
+	<string name="durec_recorder_noti_recording_sub">Toca aquí para detener grabación.</string>
+	<string name="durec_feedback_contact_distinguish_title">Contacto:</string>
+	<string name="durec_recorder_noti_start">Grabar</string>
+	<string name="durec_recorder_noti_recording_sub">Toca aquí para detener grabación.</string>
+	<string name="durec_setting_show_touches">Mostrar toques</string>
+	<string name="durec_recorder_noti_start">Grabar</string>
+	<string name="durec_setting_show_touches">Mostrar toques</string>
+	<string name="durec_recorder_noti_start">Grabar</string>
+</resources>

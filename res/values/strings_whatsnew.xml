@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. Video editing supports filter effects.</item>
+        <item>2. Video editing supports adding Frames.</item>
+        <item>3. Video editing supports dynamic backgrounds!</item>
+    </string-array>
+
+</resources>

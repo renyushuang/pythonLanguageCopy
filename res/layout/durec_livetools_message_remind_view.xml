@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools">
+
+    <com.duapps.screen.recorder.ui.StrokeTextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="3dp"
+        android:drawablePadding="4dp"
+        android:textColor="@color/donation_golden"
+        android:textSize="@dimen/donation_info_text_size"
+        android:drawableStart="@drawable/donation_icon_portrait_layer_list"
+        custom:strokeColor="@color/durec_live_comment_stoke_color"
+        custom:strokeWidth="5px"
+        tool:text="Name" />
+
+    <com.duapps.screen.recorder.ui.StrokeTextView
+        android:id="@+id/action_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/donation_info_text_size"
+        custom:strokeColor="@color/durec_live_comment_stoke_color"
+        custom:strokeWidth="5px"
+        tool:text="Action" />
+
+</merge>

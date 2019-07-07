@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="durec_no_translate_app_name" translatable="false">DURecorder</string>
+    <string name="durec_common_progress" translatable="false">%1$d %%</string>
+    <string name="durecord_about_feedback_email" translatable="false">feedback@duapps.com</string>
+    <string name="durecord_about_protocol_prompt" translatable="false">Copyright@2016 DU Apps Studio</string>
+    <string name="durecord_button_init_time" translatable="false">00:00:00</string>
+    <string name="text_for_xml_preview_empty" translatable="false" />
+    <string name="text_for_xml_preview_middle" translatable="false">Hello World!</string>
+    <string name="text_for_xml_preview_long" translatable="false">This is long sentence to test the text view\'s property ,such as lines, ellipsize, gravity, padding, margin, text size, text color, lineSpacingExtra and so on.  </string>
+
+    <string name="settings_video_path" translatable="false">/sdcard/durec</string>
+
+    <string name="facebook_app_id" translatable="false">"250458985880535"</string>
+    <string name="fb_login_protocol_scheme" translatable="false">fb250458985880535</string>
+
+    <string name="durec_screen_vids" translatable="false">Pop Videos</string>
+
+    <string name="durec_recorder_gmail" translatable="false">durecorder2016@gmail.com</string>
+    <string name="durec_recorder_facebook_url" translatable="false">https://www.facebook.com/DURecorderOfficial</string>
+    <string name="durec_email_title" translatable="false">Email</string>
+
+    <string name="durec_reply_content_text_counts" translatable="false">%1$d/%2$d</string>
+
+    <string name="durec_record_result_ad_inner_title" translatable="false">DU Recorder Channel</string>
+
+    <string name="rush_gaming_app_name" translatable="false">Rush Gaming</string>
+
+    <string name="durec_recorder_robot_name" translatable="false">DU Recorder Bot</string>
+    <string name="durec_common_dollar" translatable="false">$ %1$d</string>
+    <string name="durec_common_dollar_string" translatable="false">$ %1$s</string>
+    <string name="durec_common_usd" translatable="false">%1$d USD</string>
+    <string name="durec_common_usd_string" translatable="false">%1$s USD</string>
+
+    <string name="durec_create_promotion_guide_name" translatable="false">20180918_194835</string>
+    <string name="durec_create_promotion_guide_duration" translatable="false">04:47</string>
+    <string name="durec_create_promotion_guide_size" translatable="false">53.62</string>
+
+    <string name="durec_percent_low_to_high" translatable="false">%1$d%% - %2$d%%</string>
+    <string name="durec_invalid_revenue_tag_string" translatable="false">#%1$s</string>
+
+    <string name="durec_common_youtube" translatable="false">YouTube</string>
+    <string name="durec_common_facebook" translatable="false">Facebook</string>
+    <string name="durec_common_twitch" translatable="false">Twitch</string>
+    <string name="durec_common_tamago" translatable="false">Tamago</string>
+    <string name="durec_common_rtmp" translatable="false">RTMP</string>
+    <string name="durec_common_twitter" translatable="false">Twitter</string>
+    <string name="durec_fb_live_title_topic" translatable="false">%1$s.\n\n #%2$s %3$s</string>
+    <string name="durec_common_file_size" translatable="false">%1$sM</string>
+    <string name="durec_common_revenue_string" translatable="false">%1$s:</string>
+    <string name="durec_dollar_low_to_high" translatable="false">$%1$s-$%2$s</string>
+    <string name="durec_content_by_unit" translatable="false">%1$s/%2$s</string>
+    <string name="durec_google_play_url" translatable="false">play.google.com</string>
+    <string name="durec_common_dollar_string_trim" translatable="false">$%1$s</string>
+    <string name="durec_price_percent_off" translatable="false">%1$s%% off</string>
+    <string name="durec_price_none" translatable="false">--</string>
+    <string name="durec_fps_fmt">%1$dFPS</string>
+
+    <string name="default_notification_channel_id" translatable="false">recorder_default_channel</string>
+
+    <string name="durec_mark_new" translatable="false">NEW</string>
+
+</resources>

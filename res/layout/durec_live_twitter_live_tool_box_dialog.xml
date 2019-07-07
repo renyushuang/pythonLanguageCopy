@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duapps.screen.recorder.ui.DuScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--摄像头开关-->
+        <ImageView
+            android:id="@+id/live_tools_item_camera_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/durec_toolbox_icon_left_margin"
+            android:layout_marginTop="@dimen/durec_toolbox_item_top_bottom_margin"
+            android:src="@drawable/durec_live_tools_camera_selector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.duapps.screen.recorder.ui.DuSwitchButton
+            android:id="@+id/live_tools_item_camera_switchbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/durec_toolbox_icon_left_margin"
+            app:layout_constraintBottom_toBottomOf="@id/live_tools_item_camera_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/live_tools_item_camera_icon" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/live_tools_item_camera_title"
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/durec_live_toolbox_text_left_margin"
+            android:ellipsize="end"
+            android:text="@string/durec_guide_camera"
+            android:textColor="@color/durec_settings_item_title_color"
+            app:layout_constraintBottom_toBottomOf="@id/live_tools_item_camera_icon"
+            app:layout_constraintEnd_toStartOf="@id/live_tools_item_camera_switchbtn"
+            app:layout_constraintStart_toEndOf="@id/live_tools_item_camera_icon"
+            app:layout_constraintTop_toTopOf="@id/live_tools_item_camera_icon" />
+
+        <View
+            android:id="@+id/live_tools_item_camera"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/live_tools_item_live_info_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!--显示直播信息-->
+        <ImageView
+            android:id="@+id/live_tools_item_live_info_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/durec_toolbox_icon_left_margin"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/durec_live_tools_live_info_icon_selector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/live_tools_item_camera_icon" />
+
+        <com.duapps.screen.recorder.ui.DuSwitchButton
+            android:id="@+id/live_tools_item_live_info_switchbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/durec_toolbox_icon_left_margin"
+            app:layout_constraintBottom_toBottomOf="@id/live_tools_item_live_info_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/live_tools_item_camera_switchbtn"
+            app:layout_constraintTop_toTopOf="@id/live_tools_item_live_info_icon" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/live_tools_item_live_info_title"
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/durec_live_toolbox_text_left_margin"
+            android:ellipsize="end"
+            android:text="@string/durec_show_live_information"
+            android:textColor="@color/durec_settings_item_title_color"
+            app:layout_constraintBottom_toBottomOf="@id/live_tools_item_live_info_icon"
+            app:layout_constraintEnd_toStartOf="@id/live_tools_item_live_info_switchbtn"
+            app:layout_constraintStart_toEndOf="@id/live_tools_item_live_info_icon"
+            app:layout_constraintTop_toBottomOf="@id/live_tools_item_camera_title"
+            app:layout_constraintTop_toTopOf="@id/live_tools_item_live_info_icon" />
+
+        <View
+            android:id="@+id/live_tools_item_live_info"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/live_tools_item_audio_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/live_tools_item_camera" />
+
+        <!--录制音频-->
+        <ImageView
+            android:id="@+id/live_tools_item_audio_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/durec_toolbox_icon_left_margin"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/durec_settings_mic_selector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/live_tools_item_live_info_icon" />
+
+        <com.duapps.screen.recorder.ui.DuSwitchButton
+            android:id="@+id/live_tools_item_audio_switchbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/durec_toolbox_icon_left_margin"
+            app:layout_constraintBottom_toBottomOf="@id/live_tools_item_audio_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/live_tools_item_live_info_switchbtn"
+            app:layout_constraintTop_toTopOf="@id/live_tools_item_audio_icon" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/live_tools_item_audio_title"
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/durec_live_toolbox_text_left_margin"
+            android:ellipsize="end"
+            android:text="@string/durec_common_audio"
+            android:textColor="@color/durec_settings_item_title_color"
+            app:layout_constraintBottom_toBottomOf="@id/live_tools_item_audio_icon"
+            app:layout_constraintEnd_toStartOf="@id/live_tools_item_audio_switchbtn"
+            app:layout_constraintStart_toEndOf="@id/live_tools_item_audio_icon"
+            app:layout_constraintTop_toBottomOf="@id/live_tools_item_live_info_title"
+            app:layout_constraintTop_toTopOf="@id/live_tools_item_audio_icon" />
+
+        <View
+            android:id="@+id/live_tools_item_audio"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/live_tools_item_brush_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/live_tools_item_live_info" />
+
+        <!--画笔功能-->
+        <ImageView
+            android:id="@+id/live_tools_item_brush_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/durec_toolbox_icon_left_margin"
+            android:layout_marginTop="24dp"
+            android:src="@drawable/durec_settings_brush_selector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/live_tools_item_audio_icon" />
+
+        <com.duapps.screen.recorder.ui.DuSwitchButton
+            android:id="@+id/live_tools_item_brush_switchbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/durec_toolbox_icon_left_margin"
+            app:layout_constraintBottom_toBottomOf="@id/live_tools_item_brush_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/live_tools_item_audio_switchbtn"
+            app:layout_constraintTop_toTopOf="@id/live_tools_item_brush_icon" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/live_tools_item_brush_title"
+            android:gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/durec_live_toolbox_text_left_margin"
+            android:ellipsize="end"
+            android:text="@string/durec_settings_brush"
+            android:textColor="@color/durec_settings_item_title_color"
+            app:layout_constraintBottom_toBottomOf="@id/live_tools_item_brush_icon"
+            app:layout_constraintStart_toEndOf="@id/live_tools_item_brush_icon"
+            app:layout_constraintTop_toBottomOf="@id/live_tools_item_audio_title"
+            app:layout_constraintTop_toTopOf="@id/live_tools_item_brush_icon" />
+
+        <ImageView
+            android:id="@+id/live_tools_item_brush_mark"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="9dp"
+            android:src="@drawable/durec_premium_features_mark"
+            app:layout_constraintStart_toEndOf="@id/live_tools_item_brush_title"
+            app:layout_constraintBottom_toBottomOf="@id/live_tools_item_brush_icon"
+            app:layout_constraintTop_toTopOf="@id/live_tools_item_brush_icon"
+            android:visibility="gone"/>
+
+        <View
+            android:id="@+id/live_tools_item_brush"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toTopOf="@+id/durec_tool_line"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/live_tools_item_audio" />
+
+        <!--分割线-->
+        <View
+            android:id="@+id/durec_tool_line"
+            style="@style/durec_setting_line"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/live_tools_item_brush_title" />
+
+        <!--分享视频连接-->
+        <ImageView
+            android:id="@+id/live_tools_item_share_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/durec_toolbox_icon_left_margin"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/durec_settings_share_app_selector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/durec_tool_line" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/live_tools_item_share_title"
+            android:gravity="left"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/durec_live_toolbox_text_left_margin"
+            android:ellipsize="end"
+            android:text="@string/durec_share_live_stream"
+            android:textColor="@color/durec_settings_item_title_color"
+            app:layout_constraintBottom_toBottomOf="@id/live_tools_item_share_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/live_tools_item_share_icon"
+            app:layout_constraintTop_toBottomOf="@id/durec_tool_line"
+            app:layout_constraintTop_toTopOf="@id/live_tools_item_share_icon" />
+
+        <View
+            android:id="@+id/live_tools_item_share"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/live_tools_item_brush" />
+    </android.support.constraint.ConstraintLayout>
+</com.duapps.screen.recorder.ui.DuScrollView>

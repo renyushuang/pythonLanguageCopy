@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/durec_local_video_item_margin"
+    android:layout_marginRight="@dimen/durec_local_video_item_margin"
+    android:background="@color/durec_white"
+    xmlns:constraint_layout="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/durec_white"
+        android:orientation="vertical"
+        card_view:cardCornerRadius="3dp"
+        card_view:cardElevation="1dp"
+        constraint_layout:layout_constraintStart_toStartOf="parent"
+        constraint_layout:layout_constraintEnd_toEndOf="parent"
+        constraint_layout:layout_constraintTop_toTopOf="parent"
+        constraint_layout:layout_constraintDimensionRatio="102:35">
+
+        <ImageView
+            android:id="@+id/banner_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/durec_cloud_image_placeholder"/>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

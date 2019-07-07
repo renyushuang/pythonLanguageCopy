@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingEnd="20dp"
+    android:paddingStart="20dp">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="20dp"
+        android:text="Text"
+        android:textColor="@color/durec_head_item_text_color"
+        android:textSize="16sp" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/text_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_title"
+        android:layout_marginEnd="45dp"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/durec_head_item_text_color"
+        android:textSize="14sp"
+        tools:text="hello world this is a test sdfs sdfs fsd sdfsdfsfads sf  " />
+
+    <View
+        android:id="@+id/edit_btn"
+        android:layout_width="16.7dp"
+        android:layout_height="16.7dp"
+        android:layout_alignBottom="@id/text_content"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/durec_per_watermark_edit_icon_selector" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/color_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_content"
+        android:layout_marginTop="20dp"
+        android:text="Color"
+        android:textColor="@color/durec_head_item_text_color"
+        android:textSize="16sp" />
+
+    <FrameLayout
+        android:id="@+id/color_picker_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/color_title"
+        >
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.caption.renderview.ColorPreviewView
+            android:id="@+id/color_picker_cursor"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_gravity="start|bottom"
+            android:padding="2dp"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="5dp"
+            android:layout_marginTop="39dp"
+            android:layout_marginBottom="22dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical">
+
+            <com.duapps.screen.recorder.main.videos.merge.functions.caption.renderview.ColorPreviewView
+                android:id="@+id/picked_color"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginEnd="14dp" />
+
+            <com.duapps.screen.recorder.main.videos.merge.functions.caption.renderview.ColorView
+                android:id="@+id/color_picker"
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/size_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/color_picker_container"
+        android:layout_marginBottom="4dp"
+        android:text="Size"
+        android:textColor="@color/durec_head_item_text_color"
+        android:textSize="16sp" />
+
+    <SeekBar
+        android:id="@+id/text_size_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/size_title"
+        android:layout_marginTop="15dp"
+        android:maxHeight="5dp"
+        android:minHeight="5dp"
+        android:progressDrawable="@drawable/durec_volume_dialog_progressbar"
+        android:thumb="@drawable/durec_volume_dialog_progress_thumb" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/text_size_min"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@id/text_size_seekbar"
+        android:layout_below="@id/text_size_seekbar"
+        android:layout_marginStart="12dp"
+        android:text="-"
+        android:layout_marginTop="-9dp"
+        android:textColor="#535353"
+        android:textSize="30dp" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/text_size_max"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/text_size_seekbar"
+        android:layout_below="@id/text_size_seekbar"
+        android:layout_marginEnd="12dp"
+        android:text="+"
+        android:layout_marginTop="-5dp"
+        android:textColor="#535353"
+        android:textSize="25dp" />
+</RelativeLayout>

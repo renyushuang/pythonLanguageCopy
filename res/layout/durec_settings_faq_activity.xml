@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/durec_background"
+    android:orientation="vertical">
+
+    <include layout="@layout/durec_toolbar_layout" />
+
+    <LinearLayout
+        android:id="@+id/durec_faq_webview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/durec_main_tool_bar_height"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/durec_faq_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="0"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:progressDrawable="@drawable/durec_faq_progressbar" />
+
+    </LinearLayout>
+</FrameLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="com.duapps.screen.recorder.main.donation.ui.view.LiveGoalCircleView">
+
+    <FrameLayout
+        android:id="@+id/goal_circle_style_arrow_container"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/durec_live_goal_arrow_size">
+
+        <ImageView
+            android:id="@+id/goal_circle_style_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|bottom"
+            android:layout_marginBottom="6dp"
+            android:src="@drawable/durec_live_goal_yellow_vertical_arrow_selector" />
+    </FrameLayout>
+
+    <com.duapps.screen.recorder.main.donation.ui.view.GoalCircleView
+        android:id="@+id/goal_circle_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/durec_live_goal_arrow_size" />
+</merge>

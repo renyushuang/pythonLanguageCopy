@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. Ang pag-eedit ng bidyo ay sumusuporta sa mga epekto ng piltro.</item>
+        <item>2. Ang pag-eedit ng bidyo ay sumusuporta sa pagdagdag ng mga Kuwadro.</item>
+        <item>3. Ang pag-eedit ng bidyo ay sumusuporta sa dinamikang mga panglikuran!</item>
+    </string-array>
+
+</resources>

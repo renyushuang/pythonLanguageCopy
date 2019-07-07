@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.duapps.screen.recorder.main.live.platforms.rtmp.ui.RTMPLiveCreateActivity">
+
+    <ImageView
+        android:id="@+id/rtmp_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="17dp"
+        android:padding="3dp"
+        android:src="@drawable/durec_live_createpage_setting_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/rtmp_purchase"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="center"
+        android:padding="3dp"
+        android:src="@drawable/durec_premium_entrance_icon"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/rtmp_settings"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rtmp_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="17dp"
+        android:padding="3dp"
+        android:src="@drawable/durec_live_createpage_close_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/rtmp_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="136dp"
+        android:src="@drawable/durec_icon_rtmp_normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/rtmp_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="11dp"
+        android:ellipsize="end"
+        android:gravity="center_horizontal"
+        android:maxLines="2"
+        android:textColor="#535353"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rtmp_icon" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/rtmp_server_addr_title"
+        style="@style/durec_setting_item_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/durec_rtmt_server_address"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rtmp_name"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/rtmp_server_addr_content"
+        style="@style/durec_setting_item_subtitle_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rtmp_server_addr_title"
+        android:ellipsize="end"
+        android:maxLines="2"/>
+
+    <View
+        android:id="@+id/rtmp_item_line1"
+        style="@style/durec_rtmp_split_line"
+        android:layout_alignLeft="@id/setting_item_title"
+        android:layout_below="@id/setting_item_summary"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rtmp_server_addr_content"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/rtmp_stream_cipher_title"
+        style="@style/durec_setting_item_title_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/durec_rtmt_stream_key"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rtmp_item_line1"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/rtmp_stream_cipher_content"
+        style="@style/durec_setting_item_subtitle_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rtmp_stream_cipher_title"
+        android:ellipsize="end"
+        android:maxLines="1"/>
+
+    <View
+        android:id="@+id/rtmp_item_line2"
+        style="@style/durec_rtmp_split_line"
+        android:layout_alignLeft="@id/setting_item_title"
+        android:layout_below="@id/setting_item_summary"
+        android:layout_marginTop="14dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rtmp_stream_cipher_content"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/rtmp_start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/screen_bottom_large_btn_height"
+        android:layout_marginBottom="30dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/durec_common_ok_btn_selector_reverse"
+        android:gravity="center"
+        android:text="@string/durec_common_start"
+        android:textColor="@color/durec_common_ok_btn_text_color_reverse"
+        android:textSize="@dimen/screen_bottom_large_btn_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>

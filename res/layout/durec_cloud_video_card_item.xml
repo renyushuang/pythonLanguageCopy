@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/durec_video_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/durec_white"
+    android:orientation="vertical"
+    card_view:cardCornerRadius="3dp"
+    card_view:cardElevation="1dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:orientation="horizontal">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="@dimen/durec_main_local_video_thumb_width"
+            android:layout_height="@dimen/durec_main_local_video_thumb_height"
+            android:layout_marginBottom="13.3dp"
+            android:layout_marginTop="13.3dp"
+            card_view:cardCornerRadius="2dp"
+            card_view:cardElevation="0dp">
+
+            <ImageView
+                android:id="@+id/video_thumb_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/durec_local_video_placeholder" />
+
+            <View
+                android:id="@+id/video_thumb_cover"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#4dffffff"
+                android:visibility="gone" />
+        </android.support.v7.widget.CardView>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="3.3dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="3.3dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/video_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="10dp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:maxLines="2"
+                android:text="@string/text_for_xml_preview_long"
+                android:textColor="@color/durec_cloud_video_title_color"
+                android:textSize="15dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/video_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/durec_share_icon_selector" />
+
+                <ImageView
+                    android:id="@+id/video_delete"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:src="@drawable/durec_delete_icon_selector" />
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/video_item_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/durec_video_card_bg" />
+
+    <View
+        android:id="@+id/video_item_cover"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/durec_common_btn_cover_selector" />
+</android.support.v7.widget.CardView>

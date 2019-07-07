@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/durec_remove_ad_btn"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="90dp"
+    android:layout_height="30dp"
+    android:gravity="bottom|right">
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:layout_width="73dp"
+        android:layout_height="16dp"
+        android:background="@drawable/durec_cust_notification_btn"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:layout_gravity="center|bottom"
+        android:singleLine="true"
+        android:text="@string/durec_remove_ad"
+        android:textColor="@color/durec_cust_notification_btn_text_color"
+        android:textSize="10sp"
+        tools:ignore="SmallSp" />
+</LinearLayout>

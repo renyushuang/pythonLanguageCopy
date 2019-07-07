@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/durec_white">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/durec_cust_notification_plr">
+
+        <ImageView
+            android:id="@+id/durec_noti_edit_progress_icon"
+            android:layout_width="@dimen/durec_cn_icon_size"
+            android:layout_height="@dimen/durec_cn_icon_size"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/durec_ic_launcher" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/durec_noti_edit_progress_text"
+            android:layout_toRightOf="@id/durec_noti_edit_progress_icon"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/durec_cust_notification_plr"
+            android:paddingRight="@dimen/durec_cust_notification_plr">
+
+            <TextView
+                android:id="@+id/durec_noti_edit_progress_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="3dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textAppearance="@style/DurecCustomNotificationContentTextAppearance" />
+
+            <ProgressBar
+                android:id="@+id/durec_noti_edit_progress_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:indeterminateOnly="false"
+                android:max="100"
+                android:maxHeight="4dp"
+                android:minHeight="4dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/durec_edit_progress_drawable" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/durec_noti_edit_progress_text"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="12dp"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/durec_colorPrimary"
+            android:textSize="12dp" />
+
+    </RelativeLayout>
+
+</FrameLayout>

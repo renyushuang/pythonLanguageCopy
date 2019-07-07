@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="durec_common_dialog_out_margin">45dp</dimen>
+    <dimen name="durec_common_dialog_min_width">295dp</dimen>
+    <dimen name="durec_feedback_btn_margin">11dp</dimen>
+    <dimen name="durec_feedback_contact_padding">7dp</dimen>
+    <dimen name="durec_feedback_content_height">85dp</dimen>
+    <dimen name="durec_divide_line_height">1px</dimen>
+    <dimen name="durec_edittext_scrollbar_width">2.7dp</dimen>
+    <dimen name="durec_edittext_scrollbar_radius">6.7dp</dimen>
+
+    <dimen name="durec_main_local_video_thumb_width">128dp</dimen>
+    <dimen name="durec_main_local_video_thumb_height">72dp</dimen>
+
+    <dimen name="durec_settings_item_icon_size">24dp</dimen>
+
+    <dimen name="durec_countdown_size">200dp</dimen>
+    <dimen name="durec_countdown_text_size">130dp</dimen>
+    <dimen name="durec_countdown_shadow_radius">2dp</dimen>
+
+    <!-- 悬浮框 -->
+    <dimen name="durec_float_little_view_size">44dp</dimen>
+    <dimen name="durec_float_center_size">44dp</dimen>
+    <dimen name="durec_float_center_sub_button_space_4">21dp</dimen>
+    <dimen name="durec_float_center_sub_button_space_3">15dp</dimen>
+    <dimen name="durec_float_center_sub_button_space_2">17dp</dimen>
+    <dimen name="durec_camera_handle_size">23dp</dimen>
+    <dimen name="durec_camera_handle_line_width">1dp</dimen>
+    <dimen name="durec_float_camera_window_size_max">300dp</dimen>
+    <dimen name="durec_float_camera_window_size_min">70dp</dimen>
+    <dimen name="durec_float_camera_window_radius">10dp</dimen>
+    <dimen name="durec_float_camera_window_edge_space">7dp</dimen>
+    <dimen name="durec_float_camera_window_size">86.7dp</dimen>
+    <dimen name="durec_float_camera_frame_camera_size">87dp</dimen>
+
+    <dimen name="durec_sub_action_button_size">40.6dp</dimen>
+    <dimen name="durec_sub_action_button_content_margin">10.6dp</dimen>
+    <dimen name="durec_sub_action_button_content_toolbox_margin">9dp</dimen>
+
+    <!--悬浮框录制时间-->
+    <dimen name="durec_float_window_time_text_size">8dp</dimen>
+    <!--share list dialog-->
+    <dimen name="durec_share_list_icon_size">35dp</dimen>
+
+    <dimen name="durec_list_footer_height">20dp</dimen>
+
+    <!-- main -->
+    <dimen name="durec_main_tool_bar_height">55dp</dimen>
+    <dimen name="durec_main_tool_bar_height_fullscreen">80dp</dimen>
+    <dimen name="durec_dialog_title">16dp</dimen>
+    <dimen name="durec_local_game_dialog_width">266.7dp</dimen>
+    <dimen name="durec_dialog_padding">13dp</dimen>
+    <dimen name="durec_dialog_padding_bottom">6dp</dimen>
+
+    <dimen name="durec_status_bar_height">25dp</dimen>
+
+    <dimen name="durec_bottom_menu_dialog_item_height">46.67dp</dimen>
+    <dimen name="durec_bottom_menu_dialog_item_margin_b">6.67dp</dimen>
+
+    <dimen name="durec_cust_notification_plr">9dp</dimen>
+
+    <dimen name="durec_head_item_height">36.6dp</dimen>
+
+    <!-- 按钮描边像素-->
+    <dimen name="durec_button_stroke_width">1px</dimen>
+
+    <dimen name="durec_float_window_close_init_view_size">100dp</dimen>
+    <dimen name="durec_float_window_close_space">3dp</dimen>
+
+    <dimen name="durec_tab_height">55dp</dimen>
+    <dimen name="durec_local_video_item_margin">7dp</dimen>
+    <dimen name="durec_picture_list_image_width">110.7dp</dimen>
+    <dimen name="durec_picture_list_image_height">110.7dp</dimen>
+    <dimen name="durec_picture_list_image_margin">3dp</dimen>
+
+    <dimen name="durec_picture_select_icon_size">24dp</dimen>
+
+    <dimen name="durec_picture_edit_image_margin">2dp</dimen>
+
+    <dimen name="durec_cn_icon_corner_radius">8dp</dimen>
+    <dimen name="durec_cn_icon_size">40dp</dimen>
+    <dimen name="durec_rate_hand_move_distance">20dp</dimen>
+
+    <!-- user guidance    relative by center of screen -->
+
+    <!--picker dimens-->
+    <dimen name="durec_picker_item_folder_height">83dp</dimen>
+
+    <dimen name="__picker_text_size_40">13.3dp</dimen>
+    <dimen name="__picker_text_size_36">12dp</dimen>
+    <dimen name="__picker_picture_select_icon_size">24dp</dimen>
+
+    <dimen name="durec_picker_video_item_height">62.3dp</dimen>
+    <dimen name="durec_picker_video_item_width">110.7dp</dimen>
+    <dimen name="durec_usage_permission_guidance_height">133.3dp</dimen>
+
+    <dimen name="durec_picker_recyclerview_pb">48.3dp</dimen>
+
+    <dimen name="durec_edit_video_tab_view_btn_text_size">20dp</dimen>
+    <dimen name="durec_time_pick_width">64dp</dimen>
+    <dimen name="durec_time_pick_height">66dp</dimen>
+    <dimen name="durec_time_pick_margin">10dp</dimen>
+
+    <dimen name="durec_bgm_dialog_width">320dp</dimen>
+
+    <dimen name="durec_text_decor_default_text_size">14dp</dimen>
+    <dimen name="durec_text_decor_min_text_size">8dp</dimen>
+    <dimen name="durec_text_decor_max_text_size">64dp</dimen>
+    <dimen name="durec_text_decor_default_space_size">7dp</dimen>
+
+    <dimen name="durec_video_loc_dialog_subhead_text_size">13dp</dimen>
+    <dimen name="durec_add_bg_picture_item_width">110dp</dimen>
+    <dimen name="durec_add_bg_picture_item_height">62dp</dimen>
+
+    <dimen name="durec_function_float_window_size">32dp</dimen>
+    <dimen name="durec_gif_float_half_size">16dp</dimen>
+    <dimen name="durec_gif_float_half_text_size">8dp</dimen>
+    <dimen name="durec_picture_list_stitch_btn_text_size">13dp</dimen>
+
+    <dimen name="durec_edit_video_snippet_container_height">43dp</dimen>
+    <dimen name="durec_edit_video_snippet_bg_height">33dp</dimen>
+    <dimen name="durec_edit_video_snippet_bg_frame_width">60dp</dimen>
+
+    <dimen name="durec_water_mark_width">100dp</dimen>
+    <dimen name="durec_water_mark_height">17dp</dimen>
+    <dimen name="durec_wm_close_size">15dp</dimen>
+
+    <dimen name="durec_water_mark_margin">2dp</dimen>
+    <dimen name="durec_water_mark_right_margin">104dp</dimen>
+    <dimen name="durec_water_mark_bottom_margin">4dp</dimen>
+
+    <dimen name="durec_shake_sensitivity_dialog_width">290dp</dimen>
+    <dimen name="durec_shake_sensitivity_seekbar_min_size">3.3dp</dimen>
+    <dimen name="durec_shake_sensitivity_seekbar_max_size">6.7dp</dimen>
+
+    <dimen name="durec_gif_pb_text_left_margin">20dp</dimen>
+    <dimen name="durec_gif_pb_text_size">13dp</dimen>
+    <dimen name="durec_gif_recording_pb_height">3dp</dimen>
+    <dimen name="durec_gif_saved_pb_height">26.7dp</dimen>
+    <dimen name="durec_toolbox_icon_left_margin">6.7dp</dimen>
+    <dimen name="durec_toolbox_text_left_margin">23.33dp</dimen>
+    <dimen name="durec_toolbox_item_top_bottom_margin">12dp</dimen>
+
+    <dimen name="durec_gif_delay_quality_dialog_width">290dp</dimen>
+
+    <dimen name="durec_gif_float_clip_top">7dp</dimen>
+
+    <dimen name="durec_caption_time_pick_width">51dp</dimen>
+    <dimen name="durec_caption_time_pick_height">40dp</dimen>
+    <dimen name="durec_caption_time_pick_margin">10dp</dimen>
+
+    <dimen name="durec_caption_scroll_view_height">110dp</dimen>
+
+    <dimen name="durec_caption_fontview_padding_top">9dp</dimen>
+    <dimen name="durec_caption_fontview_padding_left">18dp</dimen>
+    <dimen name="durec_caption_typeface_margin_top">5dp</dimen>
+    <dimen name="durec_caption_typeface_margin_left">5dp</dimen>
+    <dimen name="durec_caption_typeface_edgeSpace_horizontal">10dp</dimen>
+
+    <dimen name="durec_promotion_shrink_drawable_padding">5dp</dimen>
+    <dimen name="durec_promotion_shrink_rules_text_size">17dp</dimen>
+
+    <dimen name="durec_edit_video_intro_outro_select_picture_width">273.3dp</dimen>
+
+    <dimen name="durec_edit_video_intro_outro_element_margin_right">9dp</dimen>
+
+    <!--直播-->
+    <dimen name="durec_live_comment_window_x">15dp</dimen>
+    <dimen name="durec_live_comment_window_y">15dp</dimen>
+    <dimen name="durec_live_comment_box_width">260dp</dimen>
+    <dimen name="durec_live_comment_box_height">120dp</dimen>
+    <dimen name="durec_live_historical_comment_panel_height">31dp</dimen>
+    <dimen name="durec_live_chat_input_height">31dp</dimen>
+    <dimen name="durec_live_chat_input_to_panel_dist">7dp</dimen>
+    <dimen name="durec_live_historical_comment_panel_width">234dp</dimen>
+    <dimen name="durec_live_historical_panel_arrow_width">14dp</dimen>
+    <dimen name="durec_live_historical_panel_arrow_margin">10dp</dimen>
+    <dimen name="durec_live_toolbox_text_left_margin">20dp</dimen>
+
+    <dimen name="dugif_saving_progress_circle_edge_size">200dp</dimen>
+    <dimen name="dugif_saving_progress_circle_radius">90dp</dimen>
+    <dimen name="dugif_saving_progress_center_text_size">43dp</dimen>
+
+    <dimen name="durec_avatar_corner">1000dp</dimen>
+    <dimen name="durec_promotion_page_submit_layout_height">60dp</dimen>
+
+    <dimen name="durec_share_item_margin_bottom">15dp</dimen>
+    <dimen name="durec_share_dialog_recycler_view_max_height">500dp</dimen>
+    <dimen name="durec_recycler_view_default_max_height">300dp</dimen>
+
+    <dimen name="durec_video_feed_toolbar_title_margin">13dp</dimen>
+
+    <dimen name="durec_floating_window_center_view_size">26.7dp</dimen>
+    <dimen name="durec_welcome_guide_text_size">16dp</dimen>
+
+    <dimen name="durec_rec_result_share_icon_size">43.3dp</dimen>
+    <dimen name="durec_rec_result_share_icon_margin">12dp</dimen>
+    <dimen name="durec_rec_result_share_more_icon_padding">10dp</dimen>
+
+    <dimen name="durec_add_group_search_hint_text_size">14dp</dimen>
+    <dimen name="durec_local_video_popup_window_elevation">4dp</dimen>
+    <dimen name="durec_local_video_popup_window_x_offset">27dp</dimen>
+
+    <dimen name="durec_live_photo_size">86dp</dimen>
+    <dimen name="durec_live_photo_loading_size">102dp</dimen>
+    <dimen name="durec_live_video_feed_category_stroke_width">1dp</dimen>
+
+    <dimen name="donation_icon_width">24dp</dimen>
+    <dimen name="durec_live_reward_guidance_bubble_margin_top">16dp</dimen>
+
+    <dimen name="durec_live_detail_edit_textview_height">43.3dp</dimen>
+    <dimen name="durec_meizu_flyme_os_padding_top">2dp</dimen>
+
+    <dimen name="screen_bottom_large_btn_text_size">16sp</dimen>
+    <dimen name="screen_bottom_large_btn_height">40dp</dimen>
+    <dimen name="screen_bottom_large_btn_radius">20dp</dimen>
+    <dimen name="setting_item_end_element_margin_end">20dp</dimen>
+
+    <dimen name="color_preview_view_radius">2dp</dimen>
+    <dimen name="color_picker_cursor_margin_bottom">16dp</dimen>
+    <dimen name="color_view_cursor_border_width">1dp</dimen>
+
+    <dimen name="live_tool_donation_component_height">60dp</dimen>
+
+    <dimen name="durec_per_watermark_tool_icon_padding_right">12dp</dimen>
+    <dimen name="durec_per_watermark_tool_icon_padding_left">9dp</dimen>
+    <dimen name="durec_per_watermark_tool_icon_padding_bottom">7dp</dimen>
+    <dimen name="durec_per_watermark_item_space_margin">19dp</dimen>
+
+    <dimen name="donation_info_text_size">16sp</dimen>
+    <dimen name="donation_loop_info_text_size">12sp</dimen>
+
+    <dimen name="durec_subscribe_btn_width">100dp</dimen>
+    <dimen name="durec_baloon_tail_size">3dp</dimen>
+
+    <dimen name="durec_per_watermark_btn_interval">20dp</dimen>
+    <dimen name="durec_per_watermark_btn_text_size">17dp</dimen>
+
+    <dimen name="durec_live_pause_bg_text_size">20sp</dimen>
+
+    <dimen name="durec_whatisnew_content_text_size">14dp</dimen>
+
+    <dimen name="durec_live_component_left_margin">2dp</dimen>
+    <dimen name="durec_live_componect_top_margin">8dp</dimen>
+    <dimen name="durec_live_info_location_layout_height">33dp</dimen>
+    <dimen name="durec_live_info_location_layout_width">155dp</dimen>
+    <dimen name="durec_live_donate_info_right_margin">5dp</dimen>
+
+    <dimen name="durec_live_tools_chat_view_margin_top">17dp</dimen>
+    <dimen name="durec_live_tools_chat_view_margin_right">12dp</dimen>
+    <dimen name="durec_live_tools_chat_view_margin_bottom">68dp</dimen>
+
+    <dimen name="durec_video_edit_snippet_min_side_max_width">60dp</dimen>
+    <dimen name="durec_trim_snippet_min_side_max_width">20dp</dimen>
+
+    <dimen name="durec_youtube_connect_failed_dialog_width">267dp</dimen>
+
+    <dimen name="durec_guide_window_bubble_margin">20dp</dimen>
+    <dimen name="durec_guide_window_interval">3dp</dimen>
+
+    <dimen name="durec_guide_view_max_width">255dp</dimen>
+
+    <dimen name="durec_multi_live_platform_avatar_width">32dp</dimen>
+    <dimen name="durec_multi_live_add_channel_btn_height">32dp</dimen>
+    <dimen name="durec_multi_live_title_height">26dp</dimen>
+    <dimen name="durec_multi_live_platform_icon_margin_left">12dp</dimen>
+    <dimen name="durec_multi_live_platform_icon_margin_right">18dp</dimen>
+    <dimen name="durec_multi_live_nick_name_margin_left">12dp</dimen>
+    <dimen name="durec_multi_live_title_margin_top">7dp</dimen>
+    <dimen name="durec_multi_live_loading_margin_top">7dp</dimen>
+    <dimen name="durec_multi_live_platform_margin_top">25dp</dimen>
+    <dimen name="durec_multi_live_chat_icon_margin">15dp</dimen>
+    <dimen name="durec_multi_live_channel_margin_top">45dp</dimen>
+    <dimen name="durec_multi_create_live_title_margin_top">65dp</dimen>
+
+    <dimen name="durec_platform_login_loading_size">40dp</dimen>
+
+    <dimen name="durec_youtube_create_live_margin_top">38dp</dimen>
+    <dimen name="durec_youtube_create_live_item_margin_top">20dp</dimen>
+
+    <dimen name="dugame_goal_preview_viewpaper_margin">40dp</dimen>
+    <dimen name="dugame_goal_preview_viewpaper_padding">30dp</dimen>
+
+    <dimen name="durec_live_goal_arrow_size">17dp</dimen>
+    <dimen name="durec_donation_goal_rank_info_height">44dp</dimen>
+
+    <dimen name="durec_live_ytb_repair_dialog_margin_bottom">32dp</dimen>
+
+    <dimen name="durec_ytb_promotion_clear_confirm_msg_line_space">10dp</dimen>
+
+    <dimen name="durec_promotion_guide_text_size">18dp</dimen>
+    <dimen name="durec_promotion_guide_text_top">18dp</dimen>
+    <dimen name="durec_promotion_guide_arrow_left">153dp</dimen>
+    <dimen name="durec_promotion_guide_arrow_top">9dp</dimen>
+    <dimen name="durec_promotion_channel_menu_y_off">11dp</dimen>
+    <dimen name="durec_caption_multi_track_item_margin_bottom">7dp</dimen>
+    <dimen name="durec_caption_multi_track_item_padding">7dp</dimen>
+    <dimen name="durec_caption_multi_track_piece_slide_width">7dp</dimen>
+    <dimen name="durec_caption_multi_track_piece_h_padding">2dp</dimen>
+    <dimen name="durec_caption_multi_track_piece_v_padding">5dp</dimen>
+    <dimen name="durec_caption_multi_track_scroll_recognized_width">75dp</dimen>
+    <dimen name="durec_caption_multi_track_scroll_delta_x">4dp</dimen>
+    <dimen name="durec_caption_multi_track_bar_height">30dp</dimen>
+    <dimen name="durec_caption_multi_track_bar_scroll_y">500dp</dimen>
+
+    <dimen name="durec_home_logo_width">110dp</dimen>
+    <dimen name="durec_home_logo_height">12dp</dimen>
+    <dimen name="durec_git_convert_setting_dialog_width">260dp</dimen>
+    <dimen name="durec_merge_media_controller_height">40dp</dimen>
+    <dimen name="durec_home_title_menu_size">40dp</dimen>
+
+    <dimen name="durec_notification_record_btn_bg_width">80dp</dimen>
+
+    <dimen name="durec_merge_mosaic_time_picker_margin_top">12dp</dimen>
+    <dimen name="durec_merge_mosaic_time_picker_margin_bottom">6dp</dimen>
+
+    <dimen name="durec_ssb_indicator_margin_top">12dp</dimen>
+    <dimen name="durec_ssb_track_storke_width">4dp</dimen>
+    <dimen name="durec_ssb_thumb_radius">6.3dp</dimen>
+    <dimen name="durec_ssb_indicator_text_size">13sp</dimen>
+
+    <dimen name="durec_tools_item_margin">7dp</dimen>
+
+</resources>

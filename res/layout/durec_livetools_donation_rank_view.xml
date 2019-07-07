@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/top_donation_area"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/money_icon"
+            android:layout_width="@dimen/donation_icon_width"
+            android:layout_height="@dimen/donation_icon_width"
+            android:scaleType="center"
+            android:src="@drawable/donation_icon_landscape"
+            android:visibility="gone" />
+
+        <com.duapps.screen.recorder.ui.StrokeTextView
+            android:id="@+id/name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:textColor="@color/donation_golden"
+            android:textSize="@dimen/donation_info_text_size"
+            custom:strokeColor="@color/durec_live_comment_stoke_color"
+            custom:strokeWidth="5px" />
+
+        <com.duapps.screen.recorder.ui.StrokeTextView
+            android:id="@+id/money_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="3dp"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/donation_info_text_size"
+            custom:strokeColor="@color/durec_live_comment_stoke_color"
+            custom:strokeWidth="5px" />
+    </LinearLayout>
+
+    <com.duapps.screen.recorder.main.donation.ui.view.DonationInfinityLoopView
+        android:id="@+id/info_loop"
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+</merge>

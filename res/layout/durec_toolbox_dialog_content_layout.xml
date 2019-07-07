@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/durec_toolbox_item_top_bottom_margin"
+    android:layout_marginBottom="@dimen/durec_toolbox_item_top_bottom_margin">
+
+    <ImageView
+        android:id="@+id/tools_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/durec_toolbox_icon_left_margin"
+        android:src="@drawable/durec_float_camera_on_normal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/tools_small_red_dot"
+        android:layout_width="5.3dp"
+        android:layout_height="5.3dp"
+        android:background="@drawable/durec_small_red_dot"
+        android:visibility="visible"
+        app:layout_constraintStart_toEndOf="@+id/tools_icon"
+        app:layout_constraintTop_toTopOf="@+id/tools_icon" />
+
+    <com.duapps.screen.recorder.ui.DuSwitchButton
+        android:id="@+id/tools_switch_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/durec_toolbox_icon_left_margin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/tools_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/durec_settings_detail_btn_selector"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <android.support.constraint.Barrier
+        android:id="@+id/tools_btn_barrier"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="left"
+        app:constraint_referenced_ids="tools_switch_btn,tools_arrow" />
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@id/tools_btn_barrier"
+        app:layout_constraintStart_toEndOf="@id/tools_icon"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/tools_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/durec_toolbox_text_left_margin"
+            android:ellipsize="end"
+            android:gravity="start"
+            android:maxLines="2"
+            android:text="@string/durec_recorder_noti_camera_open"
+            android:textColor="@color/durec_settings_item_title_color"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="@string/text_for_xml_preview_long" />
+
+        <ImageView
+            android:id="@+id/tools_mark"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="9dp"
+            android:src="@drawable/durec_premium_features_mark"
+            android:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/tools_text"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

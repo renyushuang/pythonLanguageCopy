@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/durec_receive_ad_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/receive_add_detail_login_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/user_icon"
+                android:layout_width="21dp"
+                android:layout_height="21dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/durec_live_default_icon_small"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:textColor="#535353"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@+id/user_icon"
+                app:layout_constraintStart_toEndOf="@+id/user_icon"
+                app:layout_constraintTop_toTopOf="@+id/user_icon"
+                tools:text="@string/text_for_xml_preview_middle" />
+
+            <ImageView
+                android:id="@+id/user_option"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="0dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/durec_promotion_expand_arrow"
+                app:layout_constraintBottom_toBottomOf="@+id/user_name"
+                app:layout_constraintStart_toEndOf="@+id/user_name"
+                app:layout_constraintTop_toTopOf="@+id/user_name" />
+
+            <android.support.constraint.Group
+                android:id="@+id/login_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:constraint_referenced_ids="user_icon,user_name,user_option" />
+
+            <View
+                android:id="@+id/user_channel_menu_anchor"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/user_option"
+                app:layout_constraintEnd_toEndOf="@id/user_option"
+                app:layout_constraintStart_toStartOf="@id/user_icon"
+                app:layout_constraintTop_toTopOf="@id/user_option" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/user_revenue_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:ellipsize="middle"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:singleLine="true"
+                android:textColor="#535353"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toStartOf="@+id/vertical_line"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_icon"
+                tools:text="666,666,666,666.66 USD" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/user_revenue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="10dp"
+                android:text="@string/durec_common_revenue"
+                android:textColor="#888888"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toStartOf="@+id/vertical_line"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/user_revenue_value" />
+
+            <ImageView
+                android:id="@+id/revenue_right_arrow"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="9dp"
+                android:src="@drawable/durec_settings_detail_btn_selector"
+                app:layout_constraintBottom_toBottomOf="@+id/user_revenue"
+                app:layout_constraintStart_toEndOf="@+id/user_revenue"
+                app:layout_constraintTop_toTopOf="@+id/user_revenue" />
+
+            <View
+                android:id="@+id/user_revenue_click_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/user_revenue"
+                app:layout_constraintEnd_toStartOf="@+id/vertical_line"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/user_revenue_value" />
+
+            <View
+                android:id="@+id/vertical_line"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:background="#d2d2d2"
+                app:layout_constraintBottom_toBottomOf="@+id/user_revenue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/user_revenue_value"
+                app:layout_constraintVertical_bias="0.5" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/user_withdrawal_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:ellipsize="middle"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:paddingBottom="6dp"
+                android:singleLine="true"
+                android:textColor="#535353"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line"
+                app:layout_constraintTop_toBottomOf="@+id/user_icon"
+                tools:text="666,666,666,666.66 USD" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/user_withdrawal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="6dp"
+                android:paddingBottom="10dp"
+                android:text="@string/durec_common_withdrawal"
+                android:textColor="#888888"
+                android:textSize="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/vertical_line"
+                app:layout_constraintTop_toBottomOf="@+id/user_withdrawal_value" />
+
+            <ImageView
+                android:id="@+id/withdraw_right_arrow"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_marginStart="9dp"
+                android:src="@drawable/durec_settings_detail_btn_selector"
+                app:layout_constraintBottom_toBottomOf="@+id/user_withdrawal"
+                app:layout_constraintStart_toEndOf="@+id/user_withdrawal"
+                app:layout_constraintTop_toTopOf="@+id/user_withdrawal" />
+
+            <View
+                android:id="@+id/user_withdrawal_click_view"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@+id/user_withdrawal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/vertical_line"
+                app:layout_constraintTop_toTopOf="@+id/user_withdrawal_value" />
+
+            <View
+                android:id="@+id/detail_space"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_marginTop="20dp"
+                android:background="#e7e7e7"
+                app:layout_constraintTop_toBottomOf="@+id/user_withdrawal" />
+
+            <!-- promotion content item -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/promotion_content_click_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/detail_space">
+
+                <ImageView
+                    android:id="@+id/promotion_content_icon"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/durec_revenue_promotion_show_time_selector"
+                    app:layout_constraintBottom_toBottomOf="@+id/promotion_content_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/promotion_content_title" />
+
+                <View
+                    android:id="@+id/live_promotion_dot"
+                    android:layout_width="5.3dp"
+                    android:layout_height="5.3dp"
+                    android:background="@drawable/durec_small_red_dot"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toTopOf="@+id/promotion_content_icon"
+                    app:layout_constraintStart_toEndOf="@+id/promotion_content_icon"
+                    app:layout_constraintTop_toTopOf="@+id/promotion_content_icon" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/promotion_content_title"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/durec_promotion_content"
+                    android:textColor="@color/durec_settings_item_title_color"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toStartOf="@+id/promotion_content_arrow"
+                    app:layout_constraintStart_toEndOf="@+id/promotion_content_icon" />
+
+
+                <ImageView
+                    android:id="@+id/promotion_content_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/durec_settings_detail_btn_selector"
+                    app:layout_constraintBottom_toBottomOf="@+id/promotion_content_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/promotion_content_title" />
+
+                <View
+                    android:id="@+id/promotion_content_divide"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="#e8e8e8"
+                    app:layout_constraintTop_toBottomOf="@+id/promotion_content_title" />
+            </android.support.constraint.ConstraintLayout>
+
+            <!-- my promotion video item -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/my_promotion_video_click_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/promotion_content_click_view">
+
+                <ImageView
+                    android:id="@+id/my_promotion_video_icon"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/durec_revenue_promotion_video_selector"
+                    app:layout_constraintBottom_toBottomOf="@+id/my_promotion_video_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/my_promotion_video_title" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/my_promotion_video_title"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="14dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/durec_my_promotion_video"
+                    android:textColor="@color/durec_settings_item_title_color"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toStartOf="@+id/my_promotion_video_count"
+                    app:layout_constraintStart_toEndOf="@+id/my_promotion_video_icon" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/my_promotion_video_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:ellipsize="end"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:textColor="@color/durec_receiver_ad_detail_text_color"
+                    android:textSize="14dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/my_promotion_video_title"
+                    app:layout_constraintEnd_toStartOf="@+id/my_promotion_video_arrow"
+                    app:layout_constraintTop_toTopOf="@+id/my_promotion_video_title" />
+
+                <ImageView
+                    android:id="@+id/my_promotion_video_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/durec_settings_detail_btn_selector"
+                    app:layout_constraintBottom_toBottomOf="@+id/my_promotion_video_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/my_promotion_video_title" />
+
+                <View
+                    android:id="@+id/my_promotion_video_divide"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="#e8e8e8"
+                    app:layout_constraintTop_toBottomOf="@+id/my_promotion_video_title" />
+            </android.support.constraint.ConstraintLayout>
+
+            <!-- rule item -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/rule_click_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/my_promotion_video_click_view">
+
+                <ImageView
+                    android:id="@+id/rule_icon"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/durec_revenue_promotion_rules_selector"
+                    app:layout_constraintBottom_toBottomOf="@+id/rule_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/rule_title" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/rule_title"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="16dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/durec_rule_description"
+                    android:textColor="@color/durec_settings_item_title_color"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="@+id/rule_arrow"
+                    app:layout_constraintStart_toEndOf="@+id/rule_icon" />
+
+                <ImageView
+                    android:id="@+id/rule_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/durec_settings_detail_btn_selector"
+                    app:layout_constraintBottom_toBottomOf="@+id/rule_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/rule_title" />
+
+                <View
+                    android:id="@+id/rule_divide"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="#e8e8e8"
+                    app:layout_constraintTop_toBottomOf="@+id/rule_title" />
+            </android.support.constraint.ConstraintLayout>
+
+            <!-- faq item -->
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/faq_click_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@+id/rule_click_view">
+
+                <ImageView
+                    android:id="@+id/faq_icon"
+                    android:layout_width="21dp"
+                    android:layout_height="21dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/durec_revenue_promotion_faq_selector"
+                    app:layout_constraintBottom_toBottomOf="@+id/faq_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/faq_title" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/faq_title"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="14dp"
+                    android:layout_marginRight="16dp"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:singleLine="true"
+                    android:text="@string/durec_FAQ"
+                    android:textColor="@color/durec_settings_item_title_color"
+                    android:textSize="14dp"
+                    app:layout_constraintEnd_toEndOf="@+id/faq_arrow"
+                    app:layout_constraintStart_toEndOf="@+id/faq_icon" />
+
+                <ImageView
+                    android:id="@+id/faq_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:src="@drawable/durec_settings_detail_btn_selector"
+                    app:layout_constraintBottom_toBottomOf="@+id/faq_title"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/faq_title" />
+
+                <View
+                    android:id="@+id/faq_divide"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:background="#e8e8e8"
+                    app:layout_constraintTop_toBottomOf="@+id/faq_title" />
+            </android.support.constraint.ConstraintLayout>
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/receive_add_detail_login_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/screen_bottom_large_btn_height"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/durec_common_ok_btn_selector_reverse"
+        android:gravity="center"
+        android:text="@string/durec_common_login"
+        android:textColor="@color/durec_common_ok_btn_text_color_reverse"
+        android:textSize="@dimen/screen_bottom_large_btn_text_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</android.support.constraint.ConstraintLayout>

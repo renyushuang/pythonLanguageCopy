@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/tool_bar"
+        layout="@layout/durec_toolbar_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- 阴影高度5dp 总高度是55dp-->
+
+    <com.duapps.screen.recorder.ui.DuTabLayout
+        android:id="@+id/durec_music_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/durec_tab_height"
+        android:background="@color/durec_white"
+        app:layout_constraintTop_toBottomOf="@id/tool_bar"
+        app:tabIndicatorColor="@color/durec_colorPrimary"
+        app:tabIndicatorHeight="3.5dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/durec_colorPrimary"
+        app:tabTextColor="@android:color/black" />
+
+    <View
+        android:id="@+id/durec_music_tab_bar_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e3e2e2"
+        app:layout_constraintTop_toBottomOf="@id/durec_music_tab_bar" />
+
+    <com.duapps.screen.recorder.ui.DuRecorderViewPager
+        android:id="@+id/durec_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_music_tab_bar_line" />
+
+</android.support.constraint.ConstraintLayout>

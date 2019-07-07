@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_timeshow_ytb_card_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/durec_timeshow_youtube_card"
+        android:textColor="@color/durec_main_text_color"
+        android:textSize="16dp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/durec_timeshow_ytb_card_sub_title"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_default="wrap" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_timeshow_ytb_card_sub_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="20dp"
+        android:maxLines="1"
+        android:text="@string/durec_timeshow_easier_get_revenue"
+        android:textColor="#db2103"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@id/durec_timeshow_ytb_card_title"
+        app:layout_constraintLeft_toRightOf="@id/durec_timeshow_ytb_card_title"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/durec_timeshow_ytb_card_title" />
+
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_timeshow_ytb_card_des"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="22dp"
+        android:text="@string/durec_timeshow_youtube_card_description"
+        android:textColor="@color/text_light_gray"
+        android:textSize="13.3dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_timeshow_ytb_card_title" />
+
+    <ImageView
+        android:id="@+id/durec_timeshow_ytb_background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="35dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/durec_receivead_gradient_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h, 16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_timeshow_ytb_card_des" />
+
+    <View
+        android:id="@+id/durec_timeshow_ytb_shadow"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#5f000000"
+        app:layout_constraintBottom_toBottomOf="@id/durec_timeshow_ytb_background"
+        app:layout_constraintDimensionRatio="v, 42:77"
+        app:layout_constraintRight_toRightOf="@id/durec_timeshow_ytb_background"
+        app:layout_constraintTop_toTopOf="@id/durec_timeshow_ytb_background" />
+
+    <TextView
+        android:id="@+id/durec_timeshow_ytb_channel_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="8dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#f5f5f5"
+        android:textSize="6sp"
+        app:layout_constraintLeft_toLeftOf="@id/durec_timeshow_ytb_shadow"
+        app:layout_constraintRight_toLeftOf="@+id/durec_timeshow_ytb_card_close_icon"
+        app:layout_constraintTop_toTopOf="@id/durec_timeshow_ytb_shadow"
+        tools:text="From DU Recorder" />
+
+    <ImageView
+        android:id="@+id/durec_timeshow_ytb_card_close_icon"
+        android:layout_width="6dp"
+        android:layout_height="6dp"
+        android:layout_marginRight="8dp"
+        android:src="@drawable/durec_timeshow_ytb_card_close"
+        app:layout_constraintBottom_toBottomOf="@id/durec_timeshow_ytb_channel_name"
+        app:layout_constraintRight_toRightOf="@id/durec_timeshow_ytb_shadow"
+        app:layout_constraintTop_toTopOf="@id/durec_timeshow_ytb_channel_name" />
+
+    <ImageView
+        android:id="@+id/durec_timeshow_ytb_channel_icon"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintDimensionRatio="v, 1:1"
+        app:layout_constraintLeft_toLeftOf="@id/durec_timeshow_ytb_shadow"
+        app:layout_constraintRight_toRightOf="@id/durec_timeshow_ytb_shadow"
+        app:layout_constraintTop_toBottomOf="@id/durec_timeshow_ytb_channel_name"
+        tools:src="@mipmap/durec_ic_launcher" />
+
+    <TextView
+        android:id="@+id/durec_timeshow_ytb_play_url"
+        android:layout_width="0dp"
+        android:layout_height="22dp"
+        android:background="@drawable/durec_receivead_timeshow_ytb_card_play_background"
+        android:gravity="bottom"
+        android:paddingLeft="5dp"
+        android:paddingBottom="3dp"
+        android:text="@string/durec_google_play_url"
+        android:textColor="#f5f5f5"
+        android:textSize="6sp"
+        app:layout_constraintBottom_toBottomOf="@id/durec_timeshow_ytb_channel_icon"
+        app:layout_constraintLeft_toLeftOf="@id/durec_timeshow_ytb_channel_icon"
+        app:layout_constraintRight_toRightOf="@id/durec_timeshow_ytb_channel_icon" />
+
+    <View
+        android:id="@+id/durec_timeshow_ytb_card_app_des_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/durec_white"
+        app:layout_constraintBottom_toBottomOf="@+id/durec_timeshow_ytb_card_download"
+        app:layout_constraintLeft_toLeftOf="@id/durec_timeshow_ytb_channel_icon"
+        app:layout_constraintRight_toRightOf="@id/durec_timeshow_ytb_channel_icon"
+        app:layout_constraintTop_toBottomOf="@id/durec_timeshow_ytb_channel_icon" />
+
+    <TextView
+        android:id="@+id/durec_timeshow_ytb_card_app_des"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="5dp"
+        android:text="@string/durec_app_description"
+        android:textColor="@color/durec_head_item_text_color"
+        android:textSize="6sp"
+        app:layout_constraintLeft_toLeftOf="@id/durec_timeshow_ytb_channel_icon"
+        app:layout_constraintRight_toRightOf="@id/durec_timeshow_ytb_channel_icon"
+        app:layout_constraintTop_toBottomOf="@id/durec_timeshow_ytb_channel_icon" />
+
+    <TextView
+        android:id="@+id/durec_timeshow_ytb_card_download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:drawableRight="@drawable/durec_timeshow_ytb_card_share"
+        android:drawablePadding="4dp"
+        android:paddingBottom="3dp"
+        android:text="@string/durec_download_now"
+        android:textColor="#888888"
+        android:textSize="6sp"
+        app:layout_constraintLeft_toLeftOf="@id/durec_timeshow_ytb_card_app_des"
+        app:layout_constraintTop_toBottomOf="@id/durec_timeshow_ytb_card_app_des" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#e8e8e8"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

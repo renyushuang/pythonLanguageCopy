@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/live_guide_skip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right|bottom"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="23dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/durec_live_guide_skip_bg"
+            android:paddingBottom="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="5dp"
+            android:text="@string/durec_common_skip"
+            android:textColor="@color/durec_live_guide_skip_text_color"
+            android:textSize="14dp" />
+    </FrameLayout>
+
+    <com.duapps.screen.recorder.ui.DuRecorderViewPager
+        android:id="@+id/live_guide_view_paper"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.duapps.screen.recorder.main.live.common.guide.indicator.SpringIndicator xmlns:indicator="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/live_guide_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_marginBottom="50dp"
+        android:layout_marginTop="10dp"
+        indicator:indicatorBackground="@drawable/durec_live_guide_point_normal"
+        indicator:indicatorColor="@color/durec_live_guide_indicator_color"
+        indicator:indicatorMargin="5dp"
+        indicator:indicatorSize="8dp"
+        indicator:radiusMax="4dp"
+        indicator:radiusMin="2dp" />
+</LinearLayout>

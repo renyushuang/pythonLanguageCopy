@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/camera_frame_image_view"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@color/durec_black" />
+
+    <ImageView
+        android:id="@+id/camera_frame_image_selected"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#4dff7e14"
+        app:layout_constraintBottom_toBottomOf="@+id/camera_frame_image_view"
+        app:layout_constraintEnd_toEndOf="@+id/camera_frame_image_view"
+        app:layout_constraintStart_toStartOf="@+id/camera_frame_image_view"
+        app:layout_constraintTop_toTopOf="@+id/camera_frame_image_view" />
+
+    <ImageView
+        android:id="@+id/camera_frame_image_vip"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/durec_premium_icon"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ProgressBar
+        android:id="@+id/camera_frame_image_loading"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/camera_frame_image_view"
+        app:layout_constraintEnd_toEndOf="@+id/camera_frame_image_view"
+        app:layout_constraintStart_toStartOf="@+id/camera_frame_image_view"
+        app:layout_constraintTop_toTopOf="@+id/camera_frame_image_view" />
+
+</android.support.constraint.ConstraintLayout>

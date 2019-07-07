@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="266.7dp"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:id="@+id/emoji_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/durec_emoji_smile" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/emoji_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="@string/durec_update_text"
+            android:textColor="#585858"
+            android:textSize="13.3dp" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/emoji_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:lineSpacingExtra="7dp"
+            android:text="@string/text_for_xml_preview_long"
+            android:textColor="#636262"
+            android:textSize="13.3dp" />
+    </LinearLayout>
+</LinearLayout>

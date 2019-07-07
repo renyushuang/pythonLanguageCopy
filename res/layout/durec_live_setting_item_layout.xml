@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/durec_setting_item_style">
+
+    <ImageView
+        android:id="@+id/live_setting_item_icon"
+        style="@style/durec_setting_item_icon"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/durec_settings_resolution_selector" />
+
+    <FrameLayout
+        android:id="@+id/live_setting_item_right_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp">
+
+        <com.duapps.screen.recorder.ui.DuSwitchButton
+            android:id="@+id/live_setting_item_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:id="@+id/live_setting_item_right_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/durec_settings_detail_btn_selector" />
+
+        <ProgressBar
+            android:id="@+id/live_setting_item_right_loading"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/live_setting_item_title"
+        style="@style/durec_setting_item_title_text"
+        android:layout_centerVertical="false"
+        android:layout_toLeftOf="@id/live_setting_item_right_icon"
+        android:layout_toRightOf="@id/live_setting_item_icon"
+        android:text="@string/durec_setting_resolution" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/live_setting_item_subtitle"
+        style="@style/durec_setting_item_subtitle_text"
+        android:layout_below="@id/live_setting_item_title"
+        android:layout_alignLeft="@id/live_setting_item_title"
+        android:layout_toLeftOf="@id/live_setting_item_right_icon"
+        android:layout_toRightOf="@id/live_setting_item_icon"
+        android:text="@string/durec_setting_item_bitrate_subtitle"
+        android:visibility="visible" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/live_setting_item_summary"
+        style="@style/durec_setting_item_summary_text"
+        android:layout_below="@id/live_setting_item_subtitle"
+        android:layout_alignLeft="@id/live_setting_item_title"
+        android:layout_centerVertical="false"
+        android:layout_toLeftOf="@id/live_setting_item_right_icon"
+        android:layout_toRightOf="@id/live_setting_item_icon"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/durec_video_resolution_standard" />
+
+    <!-- line -->
+    <View
+        android:id="@+id/live_setting_item_line"
+        style="@style/durec_setting_line"
+        android:layout_below="@id/live_setting_item_summary"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>

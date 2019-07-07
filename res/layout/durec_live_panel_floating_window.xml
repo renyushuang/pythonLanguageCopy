@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/durec_live_panel_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp">
+
+        <ImageView
+            android:id="@+id/live_state_image_view"
+            android:layout_width="8dp"
+            android:layout_height="8dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:src="@drawable/durec_live_status_green"/>
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/live_state_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/live_state_image_view"
+            android:text="@string/durec_common_live"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="19dp">
+
+        <ImageView
+            android:id="@+id/live_audience_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/durec_live_panel_audience_count"/>
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/live_audience_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/live_audience_image_view"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/live_comment_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp">
+
+        <ImageView
+            android:id="@+id/live_comment_image_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="7dp"
+            android:src="@drawable/durec_live_panel_comment_count"/>
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/live_comment_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/live_comment_image_view"
+            android:text="0"
+            android:textColor="@android:color/white"
+            android:textSize="14dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/live_extend_arrow"
+        android:layout_width="@dimen/durec_live_historical_panel_arrow_width"
+        android:layout_height="match_parent"
+        android:layout_marginEnd="@dimen/durec_live_historical_panel_arrow_margin"
+        android:src="@drawable/durec_live_list_select_dir_icon_normal"
+        android:visibility="gone"/>
+</LinearLayout>

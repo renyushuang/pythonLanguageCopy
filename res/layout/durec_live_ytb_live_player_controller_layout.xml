@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent">
+
+    <master.flame.danmaku.ui.widget.DanmakuView
+        android:id="@+id/media_controller_comment_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <FrameLayout
+        android:id="@+id/media_controller_control_panel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!-- head panel -->
+        <RelativeLayout
+            android:id="@+id/media_controller_head_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/durec_youtube_live_player_controller_head_bg">
+
+            <ImageView
+                android:id="@+id/media_controller_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="1.33dp"
+                android:layout_marginTop="4.67dp"
+                android:padding="12dp"
+                android:src="@drawable/durec_youtube_player_back_btn_selector"/>
+
+            <LinearLayout
+                android:id="@+id/media_controller_header_func_btns"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13.33dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/media_controller_subscribe_btn"
+                    android:layout_width="@dimen/durec_subscribe_btn_width"
+                    android:layout_height="28dp"
+                    android:background="@drawable/durec_youtube_live_player_common_textbtn_bg_selector"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp">
+
+                    <ProgressBar
+                        android:id="@+id/media_controller_sub_loading"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_gravity="center"
+                        android:indeterminateDrawable="@drawable/durec_live_channel_sub_loading"
+                        android:visibility="gone"/>
+
+                    <ImageView
+                        android:id="@+id/media_controller_subscribe_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/durec_youtube_live_player_subscribe_icon_selector"/>
+
+                    <com.duapps.screen.recorder.ui.FontTextView
+                        android:id="@+id/media_controller_subscribe_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/durec_common_subscribe"
+                        android:textColor="@color/durec_youtube_live_player_common_textbtn_text_color"
+                        android:textSize="13.33dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/media_controller_donate_btn"
+                    android:layout_width="@dimen/durec_subscribe_btn_width"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="13.33dp"
+                    android:background="@drawable/durec_youtube_live_player_common_textbtn_bg_selector"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp">
+
+                    <ImageView
+                        android:id="@+id/media_controller_donate_icon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="5dp"
+                        android:src="@drawable/durec_youtube_live_player_donate_icon_selector"/>
+
+                    <com.duapps.screen.recorder.ui.FontTextView
+                        android:id="@+id/media_controller_donate_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="@string/durec_common_donate"
+                        android:textColor="@color/durec_youtube_live_player_common_textbtn_text_color"
+                        android:textSize="13.33dp"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/media_controller_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/media_controller_header_func_btns"
+                android:layout_toRightOf="@id/media_controller_back"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="@string/text_for_xml_preview_middle"
+                android:textColor="#ffffff"
+                android:textSize="20dp"/>
+        </RelativeLayout>
+
+        <!-- center pannel -->
+        <ImageView
+            android:id="@+id/media_controller_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/durec_media_controller_play_selector"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/media_controller_reload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/durec_media_controller_reload_selector"/>
+
+        <!-- foot panel -->
+        <RelativeLayout
+            android:id="@+id/media_controller_foot_panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/durec_youtube_live_player_controller_foot_bg"
+            android:minHeight="40dp">
+
+            <ImageView
+                android:id="@+id/media_controller_full_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:src="@drawable/durec_live_player_fullscreen_selector"/>
+
+            <!-- time control bar -->
+            <LinearLayout
+                android:id="@+id/media_controller_time_control_bar"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="13dp"
+                android:layout_toLeftOf="@id/media_controller_full_screen"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/media_controller_cur_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="00:00"
+                    android:textColor="#e6ffffff"
+                    android:textSize="10dp"/>
+
+                <SeekBar
+                    android:id="@+id/media_controller_progress"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:paddingTop="10dp"
+                    android:progressDrawable="@drawable/durec_video_edit_controller_progressbar"
+                    android:thumb="@drawable/durec_video_edit_controller_progress_thumb"
+                    android:thumbOffset="1.5dip"/>
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/media_controller_total_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="00:00"
+                    android:textColor="#e6ffffff"
+                    android:textSize="10dp"/>
+            </LinearLayout>
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/media_controller_watcher_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:text="@string/durec_number_watcher"
+                android:textColor="#ffffff"
+                android:textSize="12dp"/>
+
+            <!-- comment control bar -->
+            <LinearLayout
+                android:id="@+id/media_controller_comment_control_bar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="15dp"
+                android:layout_toLeftOf="@id/media_controller_full_screen"
+                android:layout_toRightOf="@id/media_controller_watcher_number"
+                android:gravity="center_vertical">
+
+                <LinearLayout
+                    android:id="@+id/media_controller_comment_edit_panel"
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="23.33dp"
+                    android:layout_marginRight="23.33dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/durec_live_player_comment_edit_text_bg"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/media_controller_comment_edit"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="@string/durec_say_something_to_live"
+                        android:imeOptions="flagNoFullscreen"
+                        android:maxLines="1"
+                        android:textColorHint="#aaaaaa"
+                        android:textSize="12dp"/>
+
+                    <ImageView
+                        android:id="@+id/media_controller_comment_send"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="6dp"
+                        android:src="@drawable/durec_send_icon_selector"
+                        android:visibility="gone"/>
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/media_controller_comment_toggle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/durec_live_comment_on_selector"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <!-- live indicator -->
+        <LinearLayout
+            android:id="@+id/media_controller_live_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|bottom"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="13.33dp"
+            android:background="@drawable/durec_live_video_feed_living_icon_bg"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="4dp"
+                android:layout_height="4dp"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/durec_live_video_feed_living_dot_bg"/>
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginBottom="1dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:layout_marginTop="1dp"
+                android:text="@string/durec_common_live"
+                android:textAllCaps="true"
+                android:textColor="@color/durec_white"
+                android:textSize="12dp"/>
+
+        </LinearLayout>
+
+    </FrameLayout>
+</FrameLayout>

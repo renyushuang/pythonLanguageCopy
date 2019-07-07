@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bgm_range_panel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical">
+
+    <ImageView
+        android:id="@+id/play_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:src="@drawable/durec_bgm_play_selector"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/cur_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="00:00"
+        android:textColor="#585858"
+        android:textSize="12.67dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/play_btn"
+        app:layout_constraintStart_toEndOf="@+id/play_btn"
+        app:layout_constraintTop_toTopOf="@+id/play_btn" />
+
+
+    <com.duapps.screen.recorder.main.videos.merge.functions.music.toolview.RangeSeekBar
+        android:id="@+id/range_seek"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        app:labelColor="@color/durec_bgm_rangebar_label_color"
+        app:labelMarginBottom="6dp"
+        app:labelSize="10dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/duration"
+        app:layout_constraintStart_toEndOf="@+id/cur_position"
+        app:layout_constraintTop_toTopOf="parent"
+        app:maskMode="besides"
+        app:needle="@drawable/durec_bgm_rangebar_cursor_needle_selector"
+        app:showLabels="true"
+        app:thumb="@drawable/durec_bgm_rangebar_cursor_thumb_selector"
+        app:trackDisabledDrawable="@drawable/durec_volume_dialog_progressbar_disable"
+        app:trackDrawable="@drawable/durec_volume_dialog_progressbar"
+        app:trackHeight="5dp" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00"
+        android:textColor="#585858"
+        android:textSize="12.67dp"
+        app:layout_constrainedHeight="true"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toBottomOf="@+id/play_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/play_btn" />
+</android.support.constraint.ConstraintLayout>

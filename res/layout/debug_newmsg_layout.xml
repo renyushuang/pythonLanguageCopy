@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <EditText
+        android:id="@+id/name"
+        android:hint="input name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/amount"
+        android:hint="input amount"
+        android:inputType="numberDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/type"
+        android:hint="input type"
+        android:inputType="number"
+        android:maxLength="1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/submit"
+        android:text="Submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/force_use_floating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="强制打开悬浮窗"/>
+
+    <com.duapps.screen.recorder.ui.StrokeTextView
+        android:id="@+id/test_span"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12345678"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        app:strokeColor="@android:color/black"
+        app:strokeWidth="5px" />
+</LinearLayout>

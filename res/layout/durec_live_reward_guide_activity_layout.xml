@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <include layout="@layout/durec_toolbar_layout" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/durec_main_tool_bar_height">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/live_reward_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="53dp"
+            android:text="@string/dination_title"
+            android:textColor="#535353"
+            android:textSize="16sp" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/live_reward_des"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/live_reward_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="@string/paypal_account_fillin_guide"
+            android:textColor="#535353"
+            android:textSize="14sp" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/live_start_setting_button"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/screen_bottom_large_btn_height"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:background="@drawable/durec_common_ok_btn_selector_reverse"
+            android:gravity="center"
+            android:text="@string/open_right_now"
+            android:textColor="@color/durec_common_ok_btn_text_color_reverse"
+            android:textSize="@dimen/screen_bottom_large_btn_text_size" />
+
+
+        <ImageView
+            android:id="@+id/live_reward_sample_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/live_start_setting_button"
+            android:layout_below="@+id/live_reward_des"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="42dp"
+            android:layout_marginTop="27dp"
+            android:src="@drawable/durec_live_reward_guide_sample" />
+
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>
+

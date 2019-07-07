@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/promotion_classic_display_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/promotion_classic_download_pic_container"
+        android:layout_width="128dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h,16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.1">
+
+
+        <ImageView
+            android:id="@+id/promotion_classic_display_pic"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/durec_no_video_icon" />
+
+        <ImageView
+            android:id="@+id/promotion_classic_display_new"
+            android:layout_width="30dp"
+            android:layout_height="15dp"
+            android:layout_margin="3dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/durec_promotion_mark_new_icon"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    </android.support.v7.widget.CardView>
+
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/promotion_classic_display_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:lineSpacingMultiplier="0.9"
+        android:maxLines="2"
+        android:textColor="@color/durec_main_text_color"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toRightOf="@id/promotion_classic_download_pic_container"
+        app:layout_constraintRight_toLeftOf="@+id/promotion_classic_display_more"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="This is the offer title " />
+
+    <ImageView
+        android:id="@+id/promotion_classic_display_icon"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/durec_receivead_content_type_download_icon"
+        android:visibility="gone"
+        app:layout_constraintLeft_toRightOf="@id/promotion_classic_download_pic_container"
+        app:layout_constraintTop_toBottomOf="@id/promotion_classic_display_title" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/promotion_classic_display_bouns"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_light_gray"
+        android:textSize="11dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/promotion_classic_display_icon"
+        app:layout_constraintLeft_toRightOf="@id/promotion_classic_display_icon"
+        app:layout_constraintRight_toLeftOf="@+id/promotion_classic_display_more"
+        app:layout_constraintTop_toTopOf="@id/promotion_classic_display_icon"
+        tools:text="1.2% - 2.1% of the order the order" />
+
+    <ImageView
+        android:id="@+id/promotion_classic_display_type_icon"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintLeft_toRightOf="@id/promotion_classic_download_pic_container"
+        app:layout_constraintTop_toBottomOf="@id/promotion_classic_display_icon"
+        tools:src="@drawable/durec_receivead_content_type_sale_icon" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/promotion_classic_display_type_bonus"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/text_light_gray"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@id/promotion_classic_display_type_icon"
+        app:layout_constraintLeft_toRightOf="@id/promotion_classic_display_type_icon"
+        app:layout_constraintRight_toLeftOf="@+id/promotion_classic_display_more"
+        app:layout_constraintTop_toTopOf="@id/promotion_classic_display_type_icon"
+        tools:text="1.2% - 2.1% of the order the order" />
+
+    <ImageView
+        android:id="@+id/promotion_classic_display_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:src="@drawable/durec_settings_detail_btn_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <View
+        android:id="@+id/ad_promotion_content_item_line"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="#e8e8e8"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="durec_recorder_noti_start">रिकॉर्ड करें</string>
+	<string name="durec_recorder_noti_recording_sub">रिकॉर्डिंग रोकने के लिए यहां टैप करें.</string>
+	<string name="durec_recorder_noti_start">रिकॉर्ड करें</string>
+	<string name="durec_recorder_noti_recording_sub">रिकॉर्डिंग रोकने के लिए यहां टैप करें.</string>
+	<string name="durec_recorder_noti_start">रिकॉर्ड करें</string>
+	<string name="durec_recorder_noti_recording_sub">रिकॉर्डिंग रोकने के लिए यहां टैप करें.</string>
+	<string name="durec_recorder_noti_start">रिकॉर्ड करें</string>
+	<string name="durec_recorder_noti_recording_sub">रिकॉर्डिंग रोकने के लिए यहां टैप करें.</string>
+	<string name="durec_feedback_contact_distinguish_title">संपर्क करें:</string>
+	<string name="durec_recorder_noti_start">रिकॉर्ड करें</string>
+	<string name="durec_recorder_noti_recording_sub">रिकॉर्डिंग रोकने के लिए यहां टैप करें.</string>
+	<string name="durec_feedback_contact_distinguish_title">संपर्क करें:</string>
+	<string name="durec_recorder_noti_start">रिकॉर्ड करें</string>
+	<string name="durec_recorder_noti_recording_sub">रिकॉर्डिंग रोकने के लिए यहां टैप करें.</string>
+	<string name="durec_setting_show_touches">स्पर्श दिखाएं</string>
+	<string name="durec_recorder_noti_start">रिकॉर्ड करें</string>
+	<string name="durec_setting_show_touches">स्पर्श दिखाएं</string>
+	<string name="durec_recorder_noti_start">रिकॉर्ड करें</string>
+</resources>

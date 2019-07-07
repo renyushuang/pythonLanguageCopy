@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3f3f3f"
+    android:orientation="vertical">
+
+    <include layout="@layout/durec_toolbar_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <com.duapps.screen.recorder.main.picture.ui.MosaicView
+            android:id="@+id/durec_picture_mosaic_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/durec_picture_edit_image_margin" />
+
+        <com.duapps.screen.recorder.main.picture.crop.CropImageView
+            android:id="@+id/durec_picture_crop_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <FrameLayout
+            android:id="@+id/durec_loading_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <ProgressBar
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="13.3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:enabled="false">
+
+        <LinearLayout
+            android:id="@+id/durec_picture_edit_mosaics_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/durec_picture_edit_btn_bg"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/durec_picture_edit_mosaics_icon_selector" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/durec_common_mosaic"
+                android:textColor="@color/durec_picture_edit_text_color"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/durec_picture_edit_crop_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/durec_picture_edit_btn_bg"
+            android:enabled="false"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/durec_picture_edit_crop_icon_selector" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/durec_common_crop"
+                android:textColor="@color/durec_picture_edit_text_color"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/durec_picture_edit_brush_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/durec_picture_edit_btn_bg"
+            android:enabled="false"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/durec_picture_edit_brush_icon_selector" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/durec_settings_brush"
+                android:textColor="@color/durec_picture_edit_text_color"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:id="@+id/durec_picture_edit_reset_view"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/durec_picture_edit_btn_bg"
+            android:enabled="false"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/durec_picture_edit_reset_icon_selector" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:text="@string/durec_common_reset"
+                android:textColor="@color/durec_picture_edit_text_color"
+                android:textSize="10dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

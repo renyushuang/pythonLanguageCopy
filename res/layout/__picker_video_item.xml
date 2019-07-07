@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="3dp"
+    android:background="@color/__picker_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/durec_video_thumb"
+                android:layout_width="@dimen/durec_picker_video_item_width"
+                android:layout_height="@dimen/durec_picker_video_item_height"
+                android:scaleType="fitXY"
+                android:src="@drawable/__picker_video_no_thumb" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/durec_video_selected"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_margin="5dip"
+                android:background="@drawable/__picker_checkbox_bg"
+                android:clickable="true"
+                android:gravity="center"
+                android:includeFontPadding="false"
+                android:minHeight="@dimen/__picker_picture_select_icon_size"
+                android:minWidth="@dimen/__picker_picture_select_icon_size"
+                android:textColor="@android:color/white"
+                android:textSize="15dp" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/durec_video_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|left"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="2dp"
+                android:background="@drawable/__picker_video_duration_bg"
+                android:paddingBottom="3dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:paddingTop="3dp"
+                android:text="05:35"
+                android:textColor="@android:color/white"
+                android:textSize="10.6dp" />
+        </android.support.v7.widget.CardView>
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_video_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            android:textColor="#535353"
+            android:textSize="10.6dp"
+            tools:text="20161031_140203" />
+    </LinearLayout>
+
+
+</FrameLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/durec_background"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/durec_no_network" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/icon"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="@string/durec_network_error"
+                android:textColor="#636262"
+                android:textSize="16dp" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/refresh"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/durec_common_ok_btn_selector_reverse"
+                android:gravity="center"
+                android:minWidth="154dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:text="@string/durec_common_retry"
+                android:textColor="@color/durec_common_ok_btn_text_color_reverse"
+                android:textSize="15dp"/>
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4" />
+    </LinearLayout>
+</merge>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="13dp"
+    card_view:cardBackgroundColor="@color/durec_white"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="3dp"
+    card_view:cardPreventCornerOverlap="false">
+
+    <ImageView
+        android:id="@+id/video_feed_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="200dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/durec_local_video_placeholder" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/durec_media_controller_play_selector" />
+    </FrameLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="@drawable/durec_promotion_video_card_desc_bg">
+
+        <LinearLayout
+            android:id="@+id/video_feed_user_info_layout"
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <FrameLayout
+                android:layout_width="37dp"
+                android:layout_height="37dp"
+                android:layout_gravity="center"
+                android:background="@drawable/durec_video_feed_avatar_frame">
+
+                <ImageView
+                    android:id="@+id/video_feed_user_image"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/durec_live_default_icon_small" />
+            </FrameLayout>
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/video_feed_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="1dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="@string/text_for_xml_preview_middle"
+                android:textColor="#ffffff"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<View-->
+                <!--android:id="@+id/blank_view"-->
+                <!--android:layout_width="47dp"-->
+                <!--android:layout_height="match_parent" />-->
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/video_feed_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="13.3dp"
+                android:layout_marginRight="13.3dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:maxLines="2"
+                android:textColor="@color/durec_white"
+                android:textSize="16.6dp" />
+
+            <ImageView
+                android:id="@+id/video_feed_share"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center_vertical"
+                android:padding="4dp"
+                android:src="@drawable/durec_promotion_share_icon_selector" />
+        </LinearLayout>
+    </FrameLayout>
+</android.support.v7.widget.CardView>

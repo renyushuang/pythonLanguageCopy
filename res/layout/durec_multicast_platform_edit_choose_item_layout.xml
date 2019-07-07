@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/durec_white"
+    android:paddingTop="24dp">
+
+    <ImageView
+        android:id="@+id/platform_edit_choose_item_right_arrow"
+        android:layout_width="45dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:paddingStart="9dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:scaleType="fitStart"
+        android:src="@drawable/durec_settings_detail_btn_selector" />
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="5dp"
+        android:layout_toStartOf="@id/platform_edit_choose_item_right_arrow"
+        android:layout_toEndOf="@id/platform_edit_choose_item_title">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/platform_edit_choose_item_summary"
+            style="@style/durec_multicast_platform_editor_item_title_text"
+            android:layout_gravity="end"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="@string/durec_common_public" />
+    </FrameLayout>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/platform_edit_choose_item_title"
+        style="@style/durec_multicast_platform_editor_item_title_text"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="2dp"
+        android:text="@string/durec_live_status" />
+
+    <!-- line -->
+    <View
+        android:id="@+id/platform_edit_choose_item_line"
+        style="@style/durec_setting_line"
+        android:layout_below="@id/platform_edit_choose_item_title"
+        android:layout_marginTop="25dp" />
+
+</RelativeLayout>

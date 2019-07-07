@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public name="durec_notification_icon" id="0x7f020000" type="drawable" />
+    <public name="durec_gray_service_noti_icon" id="0x7f020001" type="drawable" />
+</resources>

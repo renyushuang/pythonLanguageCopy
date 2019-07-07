@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/scale_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp">
+
+        <ImageView
+            android:layout_width="@dimen/durec_camera_handle_size"
+            android:layout_height="@dimen/durec_camera_handle_size"
+            android:layout_marginRight="@dimen/durec_camera_handle_line_width"
+            android:layout_marginBottom="@dimen/durec_camera_handle_line_width"
+            android:background="@drawable/durec_camera_scale_handle_bg"
+            android:src="@drawable/durec_camera_scale_selector" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/switch_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="@dimen/durec_camera_handle_size"
+            android:layout_height="@dimen/durec_camera_handle_size"
+            android:layout_marginLeft="@dimen/durec_camera_handle_line_width"
+            android:layout_marginBottom="@dimen/durec_camera_handle_line_width"
+            android:background="@drawable/durec_camera_switch_handle_bg"
+            android:src="@drawable/durec_camera_switch_selector" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/close_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|top"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="@dimen/durec_camera_handle_size"
+            android:layout_height="@dimen/durec_camera_handle_size"
+            android:layout_marginTop="@dimen/durec_camera_handle_line_width"
+            android:layout_marginRight="@dimen/durec_camera_handle_line_width"
+            android:background="@drawable/durec_camera_close_handle_bg"
+            android:src="@drawable/durec_camera_close_selector" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/camera_frame_handle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="start|top"
+        android:paddingEnd="10dp"
+        android:paddingBottom="10dp">
+
+        <ImageView
+            android:layout_width="@dimen/durec_camera_handle_size"
+            android:layout_height="@dimen/durec_camera_handle_size"
+            android:layout_marginTop="@dimen/durec_camera_handle_line_width"
+            android:layout_marginRight="@dimen/durec_camera_handle_line_width"
+            android:background="@drawable/durec_camera_frame_handle_bg"
+            android:src="@drawable/durec_camera_frame_tools_icon_white" />
+    </FrameLayout>
+
+</FrameLayout>

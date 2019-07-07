@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true">
+
+
+    <ImageView
+        android:id="@+id/merge_frame_item_imageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="6dp"
+        android:maxWidth="90dp"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h, 16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@drawable/dure_background_picture_1" />
+
+    <View
+        android:id="@+id/merge_frame_item_premium_icon"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/durec_premium_icon"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/merge_frame_item_imageview"
+        app:layout_constraintLeft_toLeftOf="@id/merge_frame_item_imageview"
+        app:layout_constraintRight_toRightOf="@id/merge_frame_item_imageview"
+        app:layout_constraintTop_toTopOf="@id/merge_frame_item_imageview"
+        tools:visibility="visible" />
+
+    <ProgressBar
+        android:id="@+id/merge_frame_item_progressbar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:max="100"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/merge_frame_item_imageview"
+        app:layout_constraintLeft_toLeftOf="@id/merge_frame_item_imageview"
+        app:layout_constraintRight_toRightOf="@id/merge_frame_item_imageview"
+        app:layout_constraintTop_toTopOf="@id/merge_frame_item_imageview"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/merge_frame_item_maskview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/merge_frame_item_imageview"
+        app:layout_constraintLeft_toLeftOf="@id/merge_frame_item_imageview"
+        app:layout_constraintRight_toRightOf="@id/merge_frame_item_imageview"
+        app:layout_constraintTop_toTopOf="@id/merge_frame_item_imageview" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/durec_cn_normal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/theme_tech_notification_top_bg_color"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="64dp"
+        android:layout_weight="0"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <ImageView
+            android:id="@+id/durec_cn_icon"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/durec_icon_small" />
+
+        <!-- 自定义通知中，不能使用自定义TextView控件-->
+        <TextView
+            android:id="@+id/durec_cn_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/app_name"
+            android:textAppearance="@style/DurecTechNotificationTitleTextAppearance"
+            android:textSize="10dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="11dp"
+        android:layout_marginTop="11dp"
+        android:background="#c7c7c7" />
+
+    <LinearLayout
+        android:id="@+id/durec_noti_buttons"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" />
+</LinearLayout>

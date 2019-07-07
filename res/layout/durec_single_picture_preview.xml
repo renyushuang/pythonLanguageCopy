@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/durec_black"
+    android:orientation="vertical">
+
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView
+        android:id="@+id/durec_preview_image_jpg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <ImageView
+        android:id="@+id/durec_preview_image_gif"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@android:color/black"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:visibility="gone"/>
+
+    <include
+        android:id="@+id/durec_preview_toolbar"
+        layout="@layout/__picker_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="top"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/durec_option_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#b2000000"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_picture_share"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:drawableTop="@drawable/durec_preview_share_selector"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="@string/durec_common_share"
+            android:textColor="#e5ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/durec_picture_delete"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_picture_delete"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:drawableTop="@drawable/durec_preview_delete_selector"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="@string/durec_common_delete"
+            android:textColor="#e5ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/durec_picture_edit"
+            app:layout_constraintStart_toEndOf="@id/durec_picture_share" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_picture_edit"
+            android:layout_width="0dp"
+            android:layout_height="56dp"
+            android:drawableTop="@drawable/durec_preview_edit_selector"
+            android:gravity="center"
+            android:padding="7dp"
+            android:text="@string/durec_common_edit"
+            android:textColor="#e5ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/durec_picture_delete" />
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

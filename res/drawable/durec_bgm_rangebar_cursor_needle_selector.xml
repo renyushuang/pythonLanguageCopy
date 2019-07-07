@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape>
+            <size
+                android:width="4dp"
+                android:height="15dp" />
+            <solid android:color="#dddddd" />
+            <stroke
+                android:width="0.67dp"
+                android:color="@color/durec_white" />
+            <corners android:radius="1.5dp" />
+        </shape>
+    </item>
+
+    <item>
+        <shape>
+            <size
+                android:width="4dp"
+                android:height="15dp" />
+            <solid android:color="@color/durec_colorAccent" />
+            <stroke
+                android:width="0.67dp"
+                android:color="@color/durec_white" />
+            <corners android:radius="1.5dp" />
+        </shape>
+    </item>
+</selector>

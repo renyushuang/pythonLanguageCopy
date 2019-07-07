@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+
+    <solid android:color="@color/durec_ytb_ads_total_income_bg_color" />
+
+    <stroke
+        android:width="1px"
+        android:color="@color/durec_ytb_ads_total_income_bg_stroke_color" />
+
+    <corners android:radius="2dp" />
+
+</shape>

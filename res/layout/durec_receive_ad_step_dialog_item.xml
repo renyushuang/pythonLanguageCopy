@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/durec_promotion_guide_undone"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_step_des"
+        app:layout_constraintTop_toTopOf="@+id/tv_step_des" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/tv_step_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:text="@string/durec_promotion_guide_set"
+        android:textColor="@color/durec_youtube_live_player_common_textbtn_text_color_reverse"
+        android:textSize="12sp"
+        app:layout_constraintLeft_toRightOf="@+id/iv_icon"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/iv_line"
+        android:layout_width="1dp"
+        android:layout_height="27dp"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/durec_bg_promotion_step_line_normal"
+        android:layerType="software"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_icon" />
+
+</android.support.constraint.ConstraintLayout>

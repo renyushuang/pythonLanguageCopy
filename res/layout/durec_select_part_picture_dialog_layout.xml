@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_part_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/durec_select_part_image_explain"
+        android:textColor="#cc000000"
+        android:textSize="12dp" />
+
+
+    <FrameLayout
+        android:layout_width="292dp"
+        android:layout_height="166dp"
+        android:layout_marginBottom="13dp"
+        android:layout_marginTop="13dp">
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.crop.renderview.CropPartView
+            android:id="@+id/durec_part_picture"
+            android:layout_width="288dp"
+            android:layout_height="162dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/durec_select_part_image_bg" />
+
+        <ProgressBar
+            android:id="@+id/durec_part_loading"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+</LinearLayout>

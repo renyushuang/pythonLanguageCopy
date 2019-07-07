@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="26dp">
+
+    <ProgressBar
+        android:id="@+id/durec_gif_pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indeterminateOnly="false"
+        android:max="100"
+        android:progressDrawable="@drawable/durec_gif_saved_progressbar" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/durec_gif_pb_text_left_margin"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="@string/durec_gif_saving"
+        android:textColor="#ccfdf5da"
+        android:textSize="@dimen/durec_gif_pb_text_size" />
+
+</FrameLayout>

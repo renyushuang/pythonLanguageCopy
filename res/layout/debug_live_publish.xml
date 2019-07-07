@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/rtmp_server_spinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/rtmp_server"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rtmp_server_spinner">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/rtmp_server_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RtmpServer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/rtmp_secret"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rtmp_server">
+
+        <android.support.design.widget.TextInputEditText
+            android:id="@+id/rtmp_secret_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="RtmpSecret" />
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:id="@+id/rtmp_start"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="start"
+        android:text="Start"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rtmp_secret" />
+
+    <Button
+        android:id="@+id/rtmp_stop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:onClick="stop"
+        android:text="Stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rtmp_start" />
+</android.support.constraint.ConstraintLayout>

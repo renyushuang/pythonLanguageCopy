@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#e8e8e8">
+
+    <LinearLayout
+        android:id="@+id/merge_media_controller"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp">
+
+        <ImageView
+            android:id="@+id/merge_media_controller_play_btn"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_weight="0"
+            android:padding="5dp"
+            android:src="@drawable/durec_video_edit_controller_play_selector" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/merge_media_controller_cur_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="0"
+            android:text="00:00.0"
+            android:textColor="#a5a5a5"
+            android:textSize="9dp" />
+
+        <com.duapps.screen.recorder.main.videos.merge.player.ui.SectionMarkSeekBar xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/merge_media_controller_progress"
+            style="@style/Widget.AppCompat.SeekBar"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:paddingLeft="4dp"
+            android:paddingTop="3dp"
+            android:paddingRight="4dp"
+            android:paddingBottom="3dp"
+            android:progressDrawable="@drawable/durec_video_edit_controller_progressbar"
+            android:thumb="@drawable/durec_video_edit_controller_progress_thumb"
+            android:thumbOffset="1.5dp"
+            app:section_mark_src="@drawable/durec_media_controller_section_mark" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/merge_media_controller_total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_weight="0"
+            android:text="00:00.0"
+            android:textColor="#a5a5a5"
+            android:textSize="9dp" />
+
+        <ImageView
+            android:id="@+id/merge_media_controller_full_screen"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:padding="5dp"
+            android:src="@drawable/durec_video_edit_controller_full_screen_selector" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/merge_media_controller_mask"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#66000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone" />
+</FrameLayout>

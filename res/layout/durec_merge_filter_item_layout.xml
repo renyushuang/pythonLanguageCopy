@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/merge_filter_item_icon"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="4dp"
+        android:src="@drawable/durec_merge_filter_effect_bg"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/merge_filter_selected_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/durec_mege_video_and_image_thumb_mongolia"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/merge_filter_item_icon"
+        app:layout_constraintEnd_toEndOf="@id/merge_filter_item_icon"
+        app:layout_constraintStart_toStartOf="@id/merge_filter_item_icon"
+        app:layout_constraintTop_toTopOf="@id/merge_filter_item_icon"
+        tools:visibility="visible" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/merge_filter_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="5dp"
+        android:ellipsize="end"
+        android:gravity="left|center_vertical"
+        android:singleLine="true"
+        android:textColor="#535353"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/merge_filter_item_icon" />
+</android.support.constraint.ConstraintLayout>

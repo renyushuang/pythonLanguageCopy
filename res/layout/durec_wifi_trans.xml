@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/durecord_about_title_bar"
+        layout="@layout/durec_toolbar_layout" />
+
+    <ImageView
+        android:layout_width="160dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="53dp"
+        android:src="@drawable/durec_wifitrans_icon" />
+
+    <TextView
+        android:id="@+id/wifi_trans_tips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginTop="56dp"
+        android:gravity="center"
+        android:text="@string/durec_wifi_transfer_msg"
+        android:textColor="#b3000000"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/wifi_trans_ipadress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="http://172.0.0.0:8888"
+        android:textColor="#ff7e14"
+        android:textSize="19dp" />
+
+    <TextView
+        android:id="@+id/wifi_trans_wifiname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="wifi name:Baidu_wifi"
+        android:textColor="#cc000000"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:text="@string/durec_wifi_transfer_prompt"
+        android:textColor="#828282"
+        android:textSize="12dp" />
+</LinearLayout>

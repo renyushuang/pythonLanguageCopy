@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.duapps.screen.recorder.ui.FontTextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/embed_info_text"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="8dp"
+    android:paddingEnd="8dp"
+    android:paddingTop="21dp"
+    android:paddingBottom="29dp"
+    android:lineSpacingExtra="9dp"
+    android:textColor="@color/durec_main_text_color"
+    android:textSize="16sp" />

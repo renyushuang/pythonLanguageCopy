@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. ভিডিও সম্পাদনা ফিল্টার এফেক্টকে সমর্থন করে। </item>
+        <item>2. ভিডিও সম্পাদনা ফ্রেম যোগ করাকে সমর্থন করে। </item>
+        <item>3. ভিডিও সম্পাদনা ডায়নামিক ব্যাকগ্রাউন্ডের সমর্থন করে! </item>
+    </string-array>
+
+</resources>

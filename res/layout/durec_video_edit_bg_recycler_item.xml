@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/durec_bg_picture_show_item_container"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="@dimen/durec_add_bg_picture_item_width"
+        android:layout_height="@dimen/durec_add_bg_picture_item_height"
+        android:layout_gravity="center"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp">
+
+        <ImageView
+            android:id="@+id/durec_bg_picture_show_item_picture"
+            android:layout_width="@dimen/durec_add_bg_picture_item_width"
+            android:layout_height="@dimen/durec_add_bg_picture_item_height"
+            android:scaleType="centerCrop" />
+
+        <View
+            android:id="@+id/durec_bg_picture_show_item_mask"
+            android:layout_width="@dimen/durec_add_bg_picture_item_width"
+            android:layout_height="@dimen/durec_add_bg_picture_item_height"
+            android:background="@drawable/durec_merge_frame_item_mask"
+            android:clickable="false"
+            android:focusable="false"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/durec_bg_picture_show_item_dynamic_icon"
+            android:layout_width="31dp"
+            android:layout_height="31dp"
+            android:layout_gravity="center"
+            android:src="@drawable/durec_bg_dynamic_bg_icon"
+            android:visibility="gone" />
+    </FrameLayout>
+</FrameLayout>

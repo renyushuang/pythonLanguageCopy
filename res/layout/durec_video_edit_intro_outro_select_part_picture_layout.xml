@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/horizontal_layout"
+        android:layout_width="265dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/h_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/durec_select_part_image_explain"
+            android:textColor="#cc000000"
+            android:textSize="13dp" />
+
+        <FrameLayout
+            android:layout_width="265dp"
+            android:layout_height="149dp"
+            android:layout_marginBottom="13dp"
+            android:layout_marginTop="13dp">
+
+            <com.duapps.screen.recorder.main.videos.merge.functions.crop.renderview.CropPartView
+                android:id="@+id/h_part_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/durec_select_part_image_bg" />
+
+            <ProgressBar
+                android:id="@+id/h_part_loading"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/vertical_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="13dp"
+        android:paddingTop="13dp"
+        android:visibility="gone">
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="176.7dp">
+
+            <com.duapps.screen.recorder.main.videos.merge.functions.crop.renderview.CropPartView
+                android:id="@+id/v_part_picture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/durec_select_part_image_bg" />
+
+            <ProgressBar
+                android:id="@+id/v_part_loading"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/v_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:text="@string/durec_select_part_image_explain"
+            android:textColor="#cc000000"
+            android:textSize="13dp" />
+    </LinearLayout>
+</LinearLayout>

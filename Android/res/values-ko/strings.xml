@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="durec_recorder_noti_start">레코딩</string>
+	<string name="durec_recorder_noti_recording_sub">여기를 터치하여 레코딩을 중지하세요.</string>
+	<string name="durec_recorder_noti_start">레코딩</string>
+	<string name="durec_recorder_noti_recording_sub">여기를 터치하여 레코딩을 중지하세요.</string>
+	<string name="durec_recorder_noti_start">레코딩</string>
+	<string name="durec_recorder_noti_recording_sub">여기를 터치하여 레코딩을 중지하세요.</string>
+	<string name="durec_recorder_noti_start">레코딩</string>
+	<string name="durec_recorder_noti_recording_sub">여기를 터치하여 레코딩을 중지하세요.</string>
+	<string name="durec_feedback_contact_distinguish_title">연락처:</string>
+	<string name="durec_recorder_noti_start">레코딩</string>
+	<string name="durec_recorder_noti_recording_sub">여기를 터치하여 레코딩을 중지하세요.</string>
+	<string name="durec_feedback_contact_distinguish_title">연락처:</string>
+	<string name="durec_recorder_noti_start">레코딩</string>
+	<string name="durec_recorder_noti_recording_sub">여기를 터치하여 레코딩을 중지하세요.</string>
+	<string name="durec_setting_show_touches">터치 보기</string>
+	<string name="durec_recorder_noti_start">레코딩</string>
+	<string name="durec_setting_show_touches">터치 보기</string>
+	<string name="durec_recorder_noti_start">레코딩</string>
+</resources>

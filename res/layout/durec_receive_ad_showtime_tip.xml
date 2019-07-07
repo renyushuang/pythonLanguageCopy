@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/durec_ad_receive_showtime_item_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#e8e8e8" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_ad_receive_ad_timeshow_tip_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="22dp"
+        android:text="@string/durec_common_raise_effect_method"
+        android:textColor="@color/durec_head_item_text_color"
+        android:textSize="16dp" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_ad_receive_ad_timeshow_tip_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="22dp"
+        android:layout_marginBottom="20dp"
+        android:textColor="@color/text_light_gray"
+        android:textSize="11dp" />
+
+</LinearLayout>

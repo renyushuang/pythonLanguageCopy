@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="4dp"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/icon_layout"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/icon_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                android:src="@drawable/durec_local_app_placeholder" />
+
+            <ImageView
+                android:id="@+id/ad_mark_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="1.5dp"
+                android:layout_marginTop="1.5dp"
+                android:src="@drawable/durec_recommend_ad" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/install_btn"
+            android:layout_toRightOf="@+id/icon_layout"
+            android:orientation="vertical">
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:maxLines="1"
+                android:textColor="#222222"
+                android:textSize="15dp" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/desc_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="left|center_vertical"
+                android:maxLines="2"
+                android:textColor="#666666"
+                android:textSize="12dp" />
+        </LinearLayout>
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/install_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="26.67dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/durec_rate_btn_selector"
+            android:gravity="center"
+            android:minWidth="60dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:text="@string/durec_common_install"
+            android:textAllCaps="true"
+            android:textColor="@color/durec_rate_btn_text_color"
+            android:textSize="10dp" />
+    </RelativeLayout>
+</LinearLayout>

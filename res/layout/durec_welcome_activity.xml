@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/durec_welcome_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.duapps.screen.recorder.ui.DuRecorderViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.duapps.screen.recorder.main.live.common.guide.indicator.SpringIndicator xmlns:indicator="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/welcome_guide_indicator"
+        android:layout_width="match_parent"
+        android:layout_height="28dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="33dp"
+        indicator:indicatorBackground="@drawable/durec_live_guide_point_normal"
+        indicator:indicatorColor="@color/durec_live_guide_indicator_color"
+        indicator:indicatorMargin="5dp"
+        indicator:indicatorSize="8dp"
+        indicator:radiusMax="4dp"
+        indicator:radiusMin="2dp" />
+</FrameLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:selectableItemBackground"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:id="@+id/item_name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/item_name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="@string/text_for_xml_preview_long"
+                android:textColor="@color/durec_radio_dialog_item_text_selector"
+                android:textSize="15dp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:src="@drawable/durec_radiobtn_selector" />
+        </LinearLayout>
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/item_subhead_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_name_layout"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="@string/text_for_xml_preview_empty"
+            android:textColor="@color/durec_subhead_text_color"
+            android:textSize="@dimen/durec_video_loc_dialog_subhead_text_size"
+            android:visibility="gone" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/item_subhead_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_subhead_one"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="@string/text_for_xml_preview_empty"
+            android:textColor="@color/durec_subhead_text_color"
+            android:textSize="@dimen/durec_video_loc_dialog_subhead_text_size"
+            android:visibility="gone" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/item_subhead_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_subhead_two"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="@string/text_for_xml_preview_empty"
+            android:textColor="@color/durec_subhead_text_color"
+            android:textSize="@dimen/durec_video_loc_dialog_subhead_text_size"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_illustrate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/durec_choose_sdcard_sd_card_unable_msg"
+        android:textColor="#999999"
+        android:textSize="13dp"
+        android:visibility="gone" />
+</LinearLayout>

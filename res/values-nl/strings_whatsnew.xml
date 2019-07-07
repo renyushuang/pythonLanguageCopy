@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. Videobewerking ondersteunt filtereffecten.</item>
+        <item>2. Videobewerking ondersteunt het toevoegen van Omlijstingen.</item>
+        <item>3. Videobewerking ondersteunt dynamische achtergronden!</item>
+    </string-array>
+
+</resources>

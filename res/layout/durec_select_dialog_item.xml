@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:paddingBottom="14dp"
+    android:paddingTop="14dp">
+
+    <FrameLayout
+        android:layout_width="50dp"
+        android:layout_height="59dp">
+
+        <ImageView
+            android:id="@+id/durec_live_platform_icon"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="bottom|center_horizontal"
+            android:src="@drawable/durec_icon_youtube_selector"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/durec_live_platform_icon_mark"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_gravity="top|end"
+            android:layout_marginStart="9dp"
+            android:src="@drawable/durec_premium_features_mark"
+            android:visibility="gone" />
+    </FrameLayout>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_live_platform_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/durec_common_youtube"
+        android:textColor="#5f5f5f"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_live_platform_icon" />
+</LinearLayout>

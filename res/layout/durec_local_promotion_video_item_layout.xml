@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/video_card"
+        android:layout_width="128dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="0dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/video_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/durec_cloud_image_placeholder"
+            />
+    </android.support.v7.widget.CardView>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/video_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|bottom"
+        android:layout_marginBottom="3.3dp"
+        android:layout_marginLeft="3.3dp"
+        android:background="@drawable/durec_video_duration_bg"
+        android:includeFontPadding="false"
+        android:paddingBottom="1dp"
+        android:paddingLeft="4dp"
+        android:paddingRight="4dp"
+        android:paddingTop="1dp"
+        android:text="05:35"
+        android:textColor="@color/durec_white"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/video_card"
+        app:layout_constraintLeft_toLeftOf="@id/video_card"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/video_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="10dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:text="2019-11-11.mpt Display promote videos generate revenues"
+        android:textColor="@color/durec_head_item_text_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/video_card"
+        app:layout_constraintStart_toEndOf="@id/video_card"
+        app:layout_constraintTop_toTopOf="@id/video_card"/>
+
+    <com.duapps.recorder.base.ui.styleable.ConfirmTextView
+        android:id="@+id/tv_add"
+        android:layout_width="0dp"
+        android:layout_height="23dp"
+        android:layout_marginLeft="14dp"
+        android:gravity="center"
+        android:text="@string/durec_rules_page_step_3"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/video_card"
+        app:layout_constraintLeft_toRightOf="@id/video_card"
+        app:layout_constraintStart_toEndOf="@id/video_card"/>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@color/durec_common_divide_line_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/video_card"/>
+
+
+</android.support.constraint.ConstraintLayout>

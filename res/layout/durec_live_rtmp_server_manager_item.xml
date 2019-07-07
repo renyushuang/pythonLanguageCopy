@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="76dp"
+    android:paddingStart="20dp">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guide_line"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4.5dp"
+        android:layout_marginStart="16dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="@color/durec_settings_item_title_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/guide_line"
+        app:layout_constraintEnd_toStartOf="@+id/iv_edit"
+        app:layout_constraintStart_toEndOf="@id/iv_check" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/tv_server_url"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4.5dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textColor="#535353"
+        android:textSize="11sp"
+        app:layout_constraintEnd_toStartOf="@+id/iv_edit"
+        app:layout_constraintStart_toStartOf="@id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/guide_line" />
+
+    <ImageView
+        android:id="@+id/iv_check"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/durec_radiobtn_selector"
+        app:layout_constraintBottom_toBottomOf="@+id/tv_name"
+        app:layout_constraintEnd_toStartOf="@+id/tv_name"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_edit"
+        android:layout_width="37dp"
+        android:layout_height="47dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/durec_rename_icon_selector"
+        app:layout_constraintEnd_toStartOf="@+id/iv_delete" />
+
+    <ImageView
+        android:id="@+id/iv_delete"
+        android:layout_width="37dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="10dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/durec_delete_icon_selector"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:background="@color/durec_divide_line_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tv_name" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="durec_activity_animation_duration">300</integer>
+    <integer name="durec_float_rec_videos_btn_animation_duration">400</integer>
+    <integer name="durec_edit_video_player_weight">10</integer>
+    <!--0. 官方橙；1. 泡沫绿；2.科幻；3.熔岩；4. 金色 -->
+    <!--5. 怪兽；6. 海洋-->
+    <integer name="durec_theme_noti_style">0</integer>
+
+    <!--0. 老通知栏主题方式； 1. 新通知栏主题方式-->
+    <integer name="durec_theme_is_new_noti_style">0</integer>
+
+    <!--通知栏样式主题上边栏，渐变背景角度，0～90度可变角度-->
+    <!--两行通知栏上半部分背景角度-->
+    <integer name="durec_theme_noti_top_bg_angle">0</integer>
+    <!--两行通知栏下半部分背景角度-->
+    <integer name="durec_theme_noti_bottom_bg_angle">0</integer>
+    <!--两行通知栏按钮背景角度-->
+    <integer name="durec_theme_noti_top_btn_bg_angle">0</integer>
+    <!--一行通知栏按钮背景角度-->
+    <integer name="durec_theme_noti_bg_angle">0</integer>
+</resources>

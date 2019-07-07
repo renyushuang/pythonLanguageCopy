@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/durec_setting_item_style">
+
+    <ImageView
+        android:id="@+id/setting_item_icon"
+        style="@style/durec_setting_item_icon"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/durec_settings_update_selector" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/setting_item_title"
+        style="@style/durec_setting_item_title_text"
+        android:layout_toRightOf="@id/setting_item_icon"
+        android:text="@string/durec_update_version" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/setting_item_version_code"
+        style="@style/durec_setting_item_summary_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="34dp" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/setting_item_update_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:layout_toRightOf="@id/setting_item_title"
+        android:background="@drawable/durec_settings_update_new_bg"
+        android:paddingBottom="0dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="0dp"
+        android:text="@string/durec_settings_version_new"
+        android:textColor="@android:color/white"
+        android:textSize="9dp" />
+
+    <!-- line -->
+    <View
+        android:id="@+id/setting_item_line"
+        style="@style/durec_setting_line"
+        android:layout_alignLeft="@id/setting_item_title"
+        android:layout_below="@id/setting_item_title"
+        android:layout_marginTop="20dp" />
+</RelativeLayout>

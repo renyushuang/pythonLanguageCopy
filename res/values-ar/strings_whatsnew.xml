@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. دعم فلتر عند تحرير الفيديو.</item>
+        <item>2. دعم إضافة الإطار عند تحرير الفيديو.</item>
+        <item>3. دعم خلفيات ديناميكية عند تحرير الفيديو.</item>
+    </string-array>
+
+</resources>

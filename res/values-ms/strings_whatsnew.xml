@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. Penyuntingan video menyokong kesan penapis.</item>
+        <item>2. Penyuntingan video menyokong menambah Bingkai.</item>
+        <item>3. Penyuntingan video menyokong latar belakang yang dinamik!</item>
+    </string-array>
+
+</resources>

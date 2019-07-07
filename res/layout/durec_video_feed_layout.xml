@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/durec_toolbar_layout" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <com.duapps.screen.recorder.ui.DuRecorderViewPager
+            android:id="@+id/feed_view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/durec_tab_height" />
+
+        <com.duapps.screen.recorder.main.videos.feed.SlidingTabLayout
+            android:id="@+id/feed_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/durec_tab_height"
+            android:background="@color/durec_white"
+            app:tl_indicator_color="@color/durec_colorPrimary"
+            app:tl_indicator_gravity="BOTTOM"
+            app:tl_textBold="SELECT"
+            app:tl_textSelectColor="@color/durec_colorPrimary"
+            app:tl_textUnselectColor="#535353"
+            app:tl_underline_color="@color/durec_transparent"
+            app:tl_underline_height="3.5dp" />
+
+        <com.duapps.screen.recorder.main.videos.feed.ui.FeedEmptyView
+            android:id="@+id/feed_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/durec_white" />
+    </FrameLayout>
+</FrameLayout>

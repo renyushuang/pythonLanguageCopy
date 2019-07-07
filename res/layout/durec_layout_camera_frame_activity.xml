@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/durec_white"
+    tools:context="com.duapps.screen.recorder.main.recorder.floatingwindow.camera.frame.CameraFrameActivity">
+
+
+    <include
+        android:id="@+id/frame_camera_toolbar"
+        layout="@layout/durec_toolbar_layout" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/frame_camera_view_root"
+        android:layout_width="174dp"
+        android:layout_height="174dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_camera_toolbar">
+
+        <com.duapps.screen.recorder.main.recorder.floatingwindow.camera.DuCameraView
+            android:id="@+id/frame_camera_view"
+            android:layout_width="87dp"
+            android:layout_height="87dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:foreground="@color/durec_black" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/frame_color_recycler_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:fadeScrollbars="false"
+        android:minHeight="160dp"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbarThumbHorizontal="@drawable/durec_camera_frame_recyclerview_thumb"
+        android:scrollbarTrackHorizontal="@drawable/durec_camera_frame_recyclerview_track"
+        android:scrollbars="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_camera_view_root"
+        tools:layout_height="160dp" />
+
+    <FrameLayout
+        android:id="@+id/frame_color_selector"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_color_recycler_view"
+        tools:visibility="visible" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/frame_color_save"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/durec_common_ok_btn_selector_reverse"
+        android:gravity="center"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:text="@string/durec_common_save"
+        android:textColor="@color/durec_white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_color_selector"
+        app:layout_goneMarginTop="40dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/frame_camera_loading"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@color/durec_white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frame_camera_toolbar">
+
+        <ProgressBar
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+</android.support.constraint.ConstraintLayout>

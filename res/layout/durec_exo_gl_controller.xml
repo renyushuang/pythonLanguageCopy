@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#e8e8e8"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp">
+
+    <ImageView
+        android:id="@+id/exo_gl_controller_play_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:src="@drawable/durec_video_edit_controller_play_selector" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/exo_gl_controller_cur_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="13dp"
+        android:layout_weight="0"
+        android:text="00:00"
+        android:textColor="#a5a5a5"
+        android:textSize="9dp" />
+
+    <SeekBar
+        android:id="@+id/exo_gl_controller_progress"
+        android:layout_width="match_parent"
+        android:layout_height="13dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_weight="1"
+        android:progressDrawable="@drawable/durec_video_edit_controller_progressbar"
+        android:thumb="@drawable/durec_video_edit_controller_progress_thumb" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/exo_gl_controller_total_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="00:00"
+        android:textColor="#a5a5a5"
+        android:textSize="9dp" />
+</LinearLayout>

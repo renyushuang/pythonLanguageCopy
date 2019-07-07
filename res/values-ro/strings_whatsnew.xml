@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. Editarea video suportă filtrele de efecte.</item>
+        <item>2. Editarea video suportă adăugarea cadrelor.</item>
+        <item>3. Editare video suportă fundalurile dinamice!</item>
+    </string-array>
+
+</resources>

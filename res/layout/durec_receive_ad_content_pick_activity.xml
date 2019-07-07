@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/durec_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/durec_ad_content_toolbar"
+        layout="@layout/durec_toolbar_layout" />
+
+    <com.duapps.screen.recorder.ui.DuTabLayout
+        android:id="@+id/durec_ad_content_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:background="@color/durec_white"
+        android:elevation="0dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/durec_ad_content_toolbar"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabPaddingBottom="0dp"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingTop="0dp"
+        tools:background="@color/durec_black"
+        tools:visibility="visible" />
+
+    <com.duapps.screen.recorder.ui.DuRecorderViewPager
+        android:id="@+id/durec_ad_content_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durec_ad_content_tab_bar" />
+
+    <ProgressBar
+        android:id="@+id/ad_receive_content_loading"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ViewStub
+        android:id="@+id/durec_empty_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout="@layout/durec_empty_for_stub"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</android.support.constraint.ConstraintLayout>

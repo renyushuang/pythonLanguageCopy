@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                             xmlns:app="http://schemas.android.com/apk/res-auto"
+                                             xmlns:tools="http://schemas.android.com/tools"
+                                             android:layout_width="match_parent"
+                                             android:layout_height="match_parent"
+                                             android:orientation="vertical">
+    <!-- splash -->
+    <TextView
+        android:id="@+id/splash_tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="44dp"
+        android:text="开屏"
+        app:layout_constraintHorizontal_bias="0.408"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/editText_splash"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/editText_splash"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="splash"
+        app:layout_constraintBottom_toBottomOf="@id/splash_tag"
+        app:layout_constraintEnd_toStartOf="@id/click_splash"
+        app:layout_constraintLeft_toRightOf="@id/splash_tag"
+        app:layout_constraintRight_toLeftOf="@id/click_splash"
+        app:layout_constraintTop_toTopOf="@id/splash_tag"/>
+
+    <Button
+        android:id="@+id/click_splash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:text="click"
+        app:layout_constraintBottom_toBottomOf="@id/splash_tag"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/editText_banner_image"
+        app:layout_constraintStart_toEndOf="@id/editText_banner_image"
+        app:layout_constraintTop_toTopOf="@id/splash_tag"
+        tools:text="click"/>
+    <!-- banner-image -->
+    <TextView
+        android:id="@+id/banner_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:text="banner-图片"
+        app:layout_constraintEnd_toStartOf="@+id/editText_banner_image"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/splash_tag"/>
+
+    <EditText
+        android:id="@+id/editText_banner_image"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="banner_image"
+        app:layout_constraintBottom_toBottomOf="@id/banner_img"
+        app:layout_constraintEnd_toStartOf="@id/click_banner_img"
+        app:layout_constraintTop_toTopOf="@id/banner_img"
+        tools:layout_editor_absoluteY="42dp"/>
+
+    <Button
+        android:id="@+id/click_banner_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="click"
+        app:layout_constraintBottom_toBottomOf="@id/banner_img"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/banner_img"
+        tools:layout_editor_absoluteY="39dp"/>
+
+    <!-- banner-video -->
+
+    <TextView
+        android:id="@+id/banner_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="76dp"
+        android:text="banner-视频"
+        app:layout_constraintEnd_toStartOf="@+id/editText_banner_video"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner_img"/>
+
+    <EditText
+        android:id="@+id/editText_banner_video"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="banner_video"
+        app:layout_constraintBottom_toBottomOf="@id/banner_video"
+        app:layout_constraintEnd_toStartOf="@id/click_banner_video"
+        app:layout_constraintStart_toEndOf="@id/banner_video"
+        app:layout_constraintTop_toTopOf="@id/banner_video"/>
+
+    <Button
+        android:id="@+id/click_banner_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="click"
+        app:layout_constraintBottom_toBottomOf="@id/banner_video"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/editText_banner_video"
+        app:layout_constraintTop_toTopOf="@id/banner_video"/>
+    <!-- install -->
+    <EditText
+        android:id="@+id/editText_install"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner_video"/>
+
+    <Button
+        android:id="@+id/button_install"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="install"
+        app:layout_constraintBottom_toBottomOf="@id/editText_install"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/editText_install"
+        app:layout_constraintTop_toTopOf="@id/editText_install"/>
+</android.support.constraint.ConstraintLayout>

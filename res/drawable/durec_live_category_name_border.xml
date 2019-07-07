@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <stroke
+        android:width="@dimen/durec_live_video_feed_category_stroke_width"
+        android:color="@color/durec_colorPrimary"/>
+
+    <corners android:radius="12dp"/>
+</shape>

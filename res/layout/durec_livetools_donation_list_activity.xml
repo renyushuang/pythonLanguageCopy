@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/durec_white"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/toolBar"
+        layout="@layout/durec_toolbar_layout"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/screen_bg"
+        android:layout_width="0dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/durec_live_reward_info_game_bg_land"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolBar" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="#80000000"
+        app:layout_constraintBottom_toBottomOf="@id/screen_bg"
+        app:layout_constraintEnd_toEndOf="@id/screen_bg"
+        app:layout_constraintStart_toStartOf="@id/screen_bg"
+        app:layout_constraintTop_toTopOf="@id/screen_bg" />
+
+    <com.duapps.screen.recorder.main.donation.ui.view.DonationRankView
+        android:id="@+id/rank_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@id/screen_bg"
+        app:layout_constraintEnd_toEndOf="@id/screen_bg"
+        app:layout_constraintStart_toStartOf="@id/screen_bg"
+        app:layout_constraintTop_toTopOf="@id/screen_bg" />
+
+    <!--排行榜开关-->
+
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/donation_list_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/durec_donation_leader_board"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/donation_list_switch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/screen_bg" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/donation_list_subtitle"
+        style="@style/durec_setting_item_subtitle_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/durec_donation_leader_board_hint"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/donation_list_switch"
+        app:layout_constraintStart_toStartOf="@id/donation_list_title"
+        app:layout_constraintTop_toBottomOf="@id/donation_list_title" />
+
+    <com.duapps.screen.recorder.ui.DuSwitchButton
+        android:id="@+id/donation_list_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/donation_list_subtitle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/donation_list_title" />
+    <!-- line -->
+    <View
+        android:id="@+id/donation_list_line"
+        style="@style/durec_setting_line"
+        android:layout_width="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/donation_list_subtitle"
+        app:layout_constraintTop_toBottomOf="@id/donation_list_subtitle" />
+
+    <View
+        android:id="@+id/donation_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/durec_transparent"
+        app:layout_constraintBottom_toBottomOf="@id/donation_list_line"
+        app:layout_constraintTop_toBottomOf="@id/screen_bg" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/top_max_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/top_max_donation"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/top_max_switch"
+        app:layout_constraintStart_toStartOf="@id/donation_list_line"
+        app:layout_constraintTop_toBottomOf="@id/donation_list_line" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/top_max_subtitle"
+        style="@style/durec_setting_item_subtitle_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/top_max_donation_desc"
+        android:visibility="visible"
+        app:layout_constraintEnd_toStartOf="@+id/top_max_switch"
+        app:layout_constraintStart_toStartOf="@id/top_max_title"
+        app:layout_constraintTop_toBottomOf="@id/top_max_title" />
+
+    <com.duapps.screen.recorder.ui.DuSwitchButton
+        android:id="@+id/top_max_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toBottomOf="@id/top_max_subtitle"
+        app:layout_constraintEnd_toEndOf="@id/donation_list_switch"
+        app:layout_constraintTop_toTopOf="@id/top_max_title" />
+    <!-- line -->
+    <View
+        android:id="@+id/top_max_line"
+        style="@style/durec_setting_line"
+        android:layout_width="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/top_max_subtitle"
+        app:layout_constraintTop_toBottomOf="@id/top_max_subtitle" />
+
+    <View
+        android:id="@+id/top_max_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/durec_transparent"
+        app:layout_constraintBottom_toBottomOf="@id/top_max_line"
+        app:layout_constraintTop_toBottomOf="@id/donation_list_line" />
+
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/rank_by_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/durec_live_tools_rank_range_title"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/rank_by_time"
+        app:layout_constraintStart_toStartOf="@id/top_max_line"
+        app:layout_constraintTop_toBottomOf="@id/top_max_line" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/rank_by_subtitle"
+        style="@style/durec_setting_item_subtitle_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/durec_live_tools_rank_range_subtitle"
+        app:layout_constraintEnd_toStartOf="@+id/rank_by_time"
+        app:layout_constraintStart_toStartOf="@id/top_max_line"
+        app:layout_constraintTop_toBottomOf="@id/rank_by_title" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/rank_by_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:text="Month"
+        android:textColor="@color/durec_settings_item_subtitle_color"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="@id/rank_by_subtitle"
+        app:layout_constraintEnd_toStartOf="@+id/rank_by_right_arrow"
+        app:layout_constraintTop_toTopOf="@id/rank_by_title" />
+
+    <ImageView
+        android:id="@+id/rank_by_right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/durec_settings_detail_btn_selector"
+        app:layout_constraintBottom_toBottomOf="@id/rank_by_time"
+        app:layout_constraintEnd_toEndOf="@id/top_max_switch"
+        app:layout_constraintTop_toTopOf="@id/rank_by_time" />
+
+    <!-- line -->
+    <View
+        android:id="@+id/rank_by_line"
+        style="@style/durec_setting_line"
+        android:layout_width="0dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/rank_by_subtitle"
+        app:layout_constraintTop_toBottomOf="@+id/rank_by_subtitle" />
+
+    <View
+        android:id="@+id/rank_by_item"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/durec_transparent"
+        app:layout_constraintBottom_toBottomOf="@id/rank_by_line"
+        app:layout_constraintTop_toBottomOf="@id/top_max_line" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. การตัดต่อวิดีโอรองรับเอฟเฟ็กต์ฟิลเตอร์</item>
+        <item>2. การตัดต่อวิดีโอรองรับการเพิ่มเฟรม</item>
+        <item>3. การตัดต่อวิดีโอรองรับพื้นหลังแบบไดนามิก!</item>
+    </string-array>
+
+</resources>

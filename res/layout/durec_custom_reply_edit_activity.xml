@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".main.live.platforms.youtube.activity.tools.CustomReplyEditActivity">
+
+    <include
+        android:id="@+id/custom_reply_content_toolbar"
+        layout="@layout/durec_toolbar_layout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <FrameLayout
+        android:id="@+id/status_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="10dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/custom_reply_content_toolbar">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="@string/durec_robot_reply_content_status"
+            android:textColor="#535353"
+            android:textSize="16dp"/>
+
+        <com.duapps.screen.recorder.ui.DuSwitchButton
+            android:id="@+id/reply_content_status_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"/>
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/tv_reply_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/durec_common_content"
+        android:textColor="#535353"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/status_container"/>
+
+    <EditText
+        android:id="@+id/textInputView"
+        android:layout_width="0dp"
+        android:layout_height="160dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/durec_per_watermark_edit_text_bg"
+        android:gravity="left"
+        android:hint="@string/durec_robot_reply_content_edit_hint"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingBottom="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp"
+        android:textColor="@color/durec_head_item_text_color"
+        android:textColorHint="#888888"
+        android:textSize="14dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_reply_content"/>
+
+    <TextView
+        android:id="@+id/textCountView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="10dp"
+        android:text="@string/durec_reply_content_text_counts"
+        android:textColor="#888888"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toTopOf="@+id/textInputView"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <RelativeLayout
+        android:id="@+id/custom_reply_duration_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="18dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputView">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/custom_reply_duration_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="false"
+            android:text="@string/durec_reply_interval"
+            android:textColor="#535353"
+            android:textSize="16dp"/>
+
+        <SeekBar
+            android:id="@+id/custom_reply_duration_seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/custom_reply_duration_title"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="13.5dp"
+            android:maxHeight="4dp"
+            android:minHeight="4dp"
+            android:paddingBottom="10.17dp"
+            android:paddingTop="10.17dp"
+            android:progressDrawable="@drawable/durec_volume_dialog_progressbar"
+            android:thumb="@drawable/durec_volume_dialog_progress_thumb"/>
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/custom_reply_duration_seekbar"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="sans-serif"
+            android:text="5min"
+            android:textColor="#CC000000"
+            android:textSize="13sp"/>
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/custom_reply_current_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/custom_reply_duration_seekbar"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="15min"
+            android:textColor="#FF7E14"
+            android:textSize="13sp"/>
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/custom_reply_max_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/custom_reply_duration_seekbar"
+            android:layout_marginRight="30dp"
+            android:fontFamily="sans-serif"
+            android:text="30min"
+            android:textColor="#CC000000"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+    <com.duapps.recorder.base.ui.styleable.ConfirmTextView
+        android:id="@+id/custom_reply_delete_btn"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/screen_bottom_large_btn_height"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:gravity="center"
+        android:text="@string/durec_common_delete"
+        android:textSize="@dimen/screen_bottom_large_btn_text_size"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:visibility="visible"/>
+
+    <FrameLayout
+        android:id="@+id/save_content_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

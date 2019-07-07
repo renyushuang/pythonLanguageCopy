@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="com.duapps.screen.recorder.main.donation.ui.view.LiveGoalDegreeView">
+
+    <FrameLayout
+        android:id="@+id/goal_degree_style_arrow_container"
+        android:layout_width="@dimen/durec_live_goal_arrow_size"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/goal_degree_style_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/durec_live_goal_white_arrow_selector" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/goal_degree_extensible_region"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/durec_live_goal_arrow_size"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <com.duapps.screen.recorder.main.donation.ui.view.GoalDegreeView
+            android:id="@+id/goal_degree_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom">
+
+            <com.duapps.screen.recorder.ui.StrokeTextView
+                android:id="@+id/goal_degree_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textColor="@color/durec_white"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                app:fontType="regular"
+                app:strokeColor="#535353"
+                app:strokeWidth="2dp"
+                tools:text="Sub" />
+
+            <com.duapps.screen.recorder.ui.StrokeTextView
+                android:id="@+id/goal_degree_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:textColor="@color/durec_white"
+                android:textSize="12dp"
+                app:strokeColor="#535353"
+                app:strokeWidth="2dp"
+                tools:text="2233/12000" />
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/durec_live_reward_info_game_bg_land" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000" />
+
+    <com.duapps.screen.recorder.main.donation.ui.view.LiveGoalViewGroup
+        android:id="@+id/goal_group_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="12dp" />
+
+    <LinearLayout
+        android:id="@+id/preview_select_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center_vertical"
+        android:paddingBottom="15dp"
+        android:paddingRight="11dp">
+
+        <ImageView
+            android:id="@+id/preview_select_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/durec_goal_setting__preview_item_select_selector" />
+
+        <TextView
+            android:id="@+id/preview_check_state_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:gravity="left"
+            android:text="@string/durec_common_choose"
+            android:textColor="@color/durec_white"
+            android:textSize="14dp" />
+    </LinearLayout>
+</merge>

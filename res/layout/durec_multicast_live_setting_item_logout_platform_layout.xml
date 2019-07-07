@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/multicast_logout_platform_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="false"
+        android:layout_marginRight="8dp" />
+
+    <ImageView
+        android:id="@+id/multicast_logout_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="false"
+        android:layout_marginRight="28dp"
+        android:src="@drawable/durec_multicast_logout_icon_selector" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/multicast_logout_platform_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@id/multicast_logout_btn"
+        android:layout_toRightOf="@id/multicast_logout_platform_icon"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:text="@string/durec_setting_resolution"
+        android:textColor="@color/durec_settings_item_title_color"
+        android:textSize="11dp" />
+
+</RelativeLayout>

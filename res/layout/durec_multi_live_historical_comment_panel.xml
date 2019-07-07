@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/durec_live_historical_comment_panel_height"
+    android:gravity="center_vertical"
+    android:paddingLeft="@dimen/durec_live_historical_panel_arrow_margin"
+    android:paddingRight="@dimen/durec_live_historical_panel_arrow_margin">
+
+    <ImageView
+        android:id="@+id/panel_left_arrow"
+        android:layout_width="@dimen/durec_live_historical_panel_arrow_width"
+        android:layout_height="match_parent"
+        android:paddingLeft="3dp"
+        android:paddingTop="1dp"
+        android:paddingRight="1dp"
+        android:paddingBottom="1dp"
+        android:background="@drawable/durec_live_historical_comment_left_arrow_bg"
+        android:src="@drawable/durec_live_historical_comment_left_icon_selector"/>
+
+    <RelativeLayout
+        android:id="@+id/enable_icon_and_comment_count_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/chat_enable_icon_container"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:gravity="center_vertical">
+
+            <com.duapps.screen.recorder.main.live.platforms.multicast.ui.EnableImageView
+                android:id="@+id/ytb_chat_enable_icon"
+                android:layout_width="@dimen/durec_live_historical_comment_panel_height"
+                android:layout_height="match_parent"
+                android:background="@color/durec_multi_live_panel_ytb_icon_color"
+                android:padding="7dp"
+                android:src="@drawable/durec_multi_live_chat_icon_white_ytb"/>
+
+            <com.duapps.screen.recorder.main.live.platforms.multicast.ui.EnableImageView
+                android:id="@+id/fb_chat_enable_icon"
+                android:layout_width="@dimen/durec_live_historical_comment_panel_height"
+                android:layout_height="match_parent"
+                android:background="@color/durec_multi_live_panel_fb_icon_color"
+                android:padding="7dp"
+                android:src="@drawable/durec_multi_live_chat_icon_white_fb"/>
+
+            <com.duapps.screen.recorder.main.live.platforms.multicast.ui.EnableImageView
+                android:id="@+id/twitch_chat_enable_icon"
+                android:layout_width="@dimen/durec_live_historical_comment_panel_height"
+                android:layout_height="match_parent"
+                android:background="@color/durec_multi_live_panel_twitch_icon_color"
+                android:padding="7dp"
+                android:src="@drawable/durec_multi_live_chat_icon_white_twitch"/>
+        </LinearLayout>
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/live_comment_counts"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/chat_enable_icon_container"
+            android:background="@drawable/durec_multi_live_chat_panel_counts_bg"
+            android:gravity="center"
+            android:paddingLeft="@dimen/durec_multi_live_chat_icon_margin"
+            android:paddingRight="@dimen/durec_multi_live_chat_icon_margin"
+            android:text="121234 comments"
+            android:textColor="@android:color/white"
+            android:textSize="15dp"/>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/panel_right_arrow"
+        android:layout_width="@dimen/durec_live_historical_panel_arrow_width"
+        android:layout_height="match_parent"
+        android:paddingLeft="1dp"
+        android:paddingTop="1dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="1dp"
+        android:background="@drawable/durec_live_historical_comment_right_arrow_bg"
+        android:src="@drawable/durec_live_historical_comment_right_icon_selector"/>
+
+</LinearLayout>

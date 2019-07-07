@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="295dp"
+              android:layout_height="wrap_content"
+              android:background="@color/durec_white"
+              android:gravity="center"
+              android:orientation="vertical"
+              android:paddingBottom="7dp"
+              android:paddingTop="7dp">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="@dimen/durec_dialog_padding"
+        android:paddingRight="@dimen/durec_dialog_padding"
+        android:gravity="left"
+        android:lineSpacingExtra="13dp"
+        android:textColor="@color/durec_main_text_color"
+        android:text="@string/durec_rtmp_start_failed"
+        android:textSize="16sp" />
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/modify_btn"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginRight="@dimen/durec_feedback_btn_margin"
+        android:layout_marginLeft="@dimen/durec_feedback_btn_margin"
+        android:layout_weight="1"
+        android:background="@drawable/durec_common_ok_btn_selector_reverse"
+        android:gravity="center"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:singleLine="true"
+        android:text="@string/durec_rtmp_modify"
+        android:textAllCaps="true"
+        android:textColor="@color/durec_white"
+        android:textSize="13dp"
+        />
+</LinearLayout>

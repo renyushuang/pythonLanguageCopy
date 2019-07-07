@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. При редакции видео поддерживается эффекты фильтра.</item>
+        <item>2. При редакции видео поддерживается добавить Рамки.</item>
+        <item>3. При редакции видео поддерживается динамические фоны!</item>
+    </string-array>
+
+</resources>

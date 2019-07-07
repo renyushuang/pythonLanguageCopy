@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <corners android:radius="@dimen/durec_float_camera_window_radius"/>
+    <stroke android:width="@dimen/durec_camera_handle_line_width" android:color="@color/durec_colorPrimary"/>
+    <solid android:color="#00000000"/>
+</shape>

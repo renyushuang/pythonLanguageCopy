@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/merge_split_area_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/merge_split_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:src="@drawable/durec_merge_video_and_image_close_selector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/merge_split_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:src="@drawable/durec_merge_video_and_image_confirm_selector"
+            app:layout_constraintBottom_toBottomOf="@id/merge_split_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/merge_split_close" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/merge_split_area_top"
+        app:layout_constraintVertical_weight="1">
+
+        <ImageView
+            android:id="@+id/merge_split_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/durec_edit_video_snippet_bg_height"
+            android:src="@drawable/durec_merge_split_add_icon_bg"
+            app:layout_constraintBottom_toTopOf="@id/merge_split_pointer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.common.toolview.multitrack.MultiTrackBar
+            android:id="@+id/merge_split_multi_track_bar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/merge_split_pointer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_default="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:trackcount="1" />
+
+        <View
+            android:id="@+id/merge_split_pointer_line"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="@color/durec_colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/merge_split_multi_track_bar"
+            app:layout_constraintEnd_toEndOf="@id/merge_split_multi_track_bar"
+            app:layout_constraintStart_toStartOf="@id/merge_split_multi_track_bar"
+            app:layout_constraintTop_toTopOf="@id/merge_split_multi_track_bar" />
+
+        <ImageView
+            android:id="@+id/merge_split_pointer"
+            android:layout_width="12dp"
+            android:layout_height="8dp"
+            android:background="@drawable/durec_caption_editor_pointer_bg"
+            app:layout_constraintBottom_toTopOf="@id/merge_split_current_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/merge_split_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0:00.0"
+            android:textColor="@color/durec_colorPrimary"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            app:layout_constraintWidth_default="wrap" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/merge_split_right_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:text="0:00.0"
+            android:textColor="#535353"
+            android:textSize="11dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/merge_split_current_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintTop_toTopOf="@id/merge_split_current_time"
+            app:layout_constraintWidth_default="wrap" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

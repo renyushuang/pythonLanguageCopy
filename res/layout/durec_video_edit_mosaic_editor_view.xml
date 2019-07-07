@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/durec_mosaic_editor_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/durec_white"
+    android:clickable="true"
+    android:focusable="true">
+
+    <!--顶部可以切换的tool bar-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/durec_mosaic_editor_tool_bar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:layout_constrainedHeight="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/durec_mosaic_editor_tool_bar_close_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:src="@drawable/durec_merge_video_and_image_close_selector"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/durec_mosaic_editor_tool_bar_confirm_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:src="@drawable/durec_merge_video_and_image_confirm_selector"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.duapps.screen.recorder.ui.DuTabLayout
+            android:id="@+id/durec_mosaic_editor_tool_bar_tab_layout"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:layout_constraintLeft_toRightOf="@id/durec_mosaic_editor_tool_bar_close_icon"
+            app:layout_constraintRight_toLeftOf="@id/durec_mosaic_editor_tool_bar_confirm_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="spread"
+            app:tabBackground="@android:color/transparent"
+            app:tabIndicatorColor="@color/durec_colorPrimary"
+            app:tabIndicatorFullWidth="false"
+            app:tabIndicatorHeight="2dp"
+            app:tabMode="fixed"
+            app:tabRippleColor="@android:color/transparent"
+            app:tabSelectedTextColor="@color/durec_colorPrimary"
+            app:tabTextAppearance="@style/LowercaseTabStyle"
+            app:tabTextColor="#535353" />
+
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/durec_mosaic_editor_duration"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clickable="true"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_mosaic_editor_tool_bar">
+
+        <!--时长调节面板-->
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.duapps.screen.recorder.main.videos.merge.functions.common.toolview.timepicker.TimePickerView
+                android:id="@+id/mosaic_editor_start_time_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/durec_merge_mosaic_time_picker_margin_top"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="@dimen/durec_merge_mosaic_time_picker_margin_bottom"
+                app:itemHeight="35dp"
+                app:itemWidth="@dimen/durec_caption_time_pick_width"
+                app:layout_constraintBottom_toTopOf="@id/mosaic_editor_end_time_picker"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:textNormalColor="#b6b6b6"
+                app:textNormalSize="15dp"
+                app:textSelectColor="@color/durec_colorPrimary"
+                app:textSelectSize="17dp" />
+
+            <com.duapps.screen.recorder.main.videos.merge.functions.common.toolview.timepicker.TimePickerView
+                android:id="@+id/mosaic_editor_end_time_picker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/durec_merge_mosaic_time_picker_margin_bottom"
+                android:layout_marginEnd="10dp"
+                android:layout_marginBottom="@dimen/durec_merge_mosaic_time_picker_margin_top"
+                app:itemHeight="35dp"
+                app:itemWidth="@dimen/durec_caption_time_pick_width"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mosaic_editor_start_time_picker"
+                app:textNormalColor="#b6b6b6"
+                app:textNormalSize="15dp"
+                app:textSelectColor="@color/durec_colorPrimary"
+                app:textSelectSize="17dp" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/mosaic_editor_start_time_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/durec_start_time"
+                android:textColor="#555555"
+                android:textSize="16dp"
+                android:gravity="center"
+                app:layout_constraintBottom_toBottomOf="@id/mosaic_editor_start_time_picker"
+                app:layout_constraintEnd_toStartOf="@id/mosaic_editor_start_time_picker"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/mosaic_editor_start_time_picker"
+                app:layout_constraintWidth_default="wrap" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/mosaic_editor_end_time_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="@string/durec_end_time"
+                android:gravity="center"
+                android:textColor="#555555"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toBottomOf="@id/mosaic_editor_end_time_picker"
+                app:layout_constraintEnd_toStartOf="@id/mosaic_editor_end_time_picker"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/mosaic_editor_end_time_picker"
+                app:layout_constraintWidth_default="wrap" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/mosaic_editor_duration"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:text="0 s"
+                android:textColor="#535353"
+                android:textSize="16dp"
+                app:layout_constraintBottom_toTopOf="@id/mosaic_editor_end_time_text"
+                app:layout_constraintEnd_toEndOf="@id/mosaic_editor_start_time_text"
+                app:layout_constraintHeight_default="wrap"
+                app:layout_constraintStart_toStartOf="@id/mosaic_editor_start_time_text"
+                app:layout_constraintTop_toBottomOf="@id/mosaic_editor_start_time_text"
+                app:layout_constraintWidth_default="wrap" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="11dp"
+                android:background="#b5b5b5"
+                app:layout_constraintBottom_toTopOf="@id/mosaic_editor_duration"
+                app:layout_constraintEnd_toEndOf="@id/mosaic_editor_start_time_text"
+                app:layout_constraintStart_toStartOf="@id/mosaic_editor_start_time_text"
+                app:layout_constraintTop_toBottomOf="@id/mosaic_editor_start_time_text" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="11dp"
+                android:background="#b5b5b5"
+                app:layout_constraintBottom_toTopOf="@id/mosaic_editor_end_time_text"
+                app:layout_constraintEnd_toEndOf="@id/mosaic_editor_end_time_text"
+                app:layout_constraintStart_toStartOf="@id/mosaic_editor_end_time_text"
+                app:layout_constraintTop_toBottomOf="@id/mosaic_editor_duration" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+
+    <!--纹理编辑面板-->
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/durec_mosaic_editor_mosaic_texture"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/durec_mosaic_editor_duration"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/durec_mosaic_editor_duration">
+
+        <ImageView
+            android:id="@+id/mosaic_edit_texture_blur"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/durec_merge_mosaic_texture_blur_selector"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mosaic_edit_texture_square"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/mosaic_edit_texture_square"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/durec_merge_mosaic_texture_square_selector"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/mosaic_edit_texture_hexagon"
+            app:layout_constraintStart_toEndOf="@+id/mosaic_edit_texture_blur"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/mosaic_edit_texture_hexagon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/durec_merge_mosaic_texture_hexagon_selector"
+            app:layout_constrainedHeight="true"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/mosaic_edit_texture_square"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

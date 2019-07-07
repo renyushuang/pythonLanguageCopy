@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/frame_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/closable_edittext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/durec_edit_video_intro_outro_element_margin_right"
+        android:background="@drawable/durec_intro_outro_edittext_bg_selector"
+        android:gravity="center"
+        android:textColor="@android:color/white" />
+
+    <ImageButton
+        android:id="@+id/closable_close_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/durec_edit_player_intro_outro_element_delete_icon_selector" />
+
+</RelativeLayout>

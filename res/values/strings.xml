@@ -1,0 +1,1404 @@
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="durec_current_language">en</string>
+
+    <string name="app_name" tools:ignore="MissingTranslation">DU Recorder</string>
+    <string name="durec_feedback_input_hint">We welcome your feedbacks</string>
+    <string name="durec_feedback">Feedback</string>
+    <string name="durec_email">Email Address (Optional)</string>
+    <string name="durec_feedback_send_fail">Sorry, an error occurred. Please try again.</string>
+    <string name="durec_feedback_send_ok">Your feedback was sent successfully. Thank you for support!</string>
+    <string name="durec_feedback_contact_distinguish_title">Contact:</string>
+    <string name="durec_common_submit">Submit</string>
+    <string name="durec_common_cancel">Cancel</string>
+    <string name="durec_common_confirm">Confirm</string>
+    <string name="durec_common_share">Share</string>
+    <string name="durec_common_delete">Delete</string>
+
+    <string name="durec_no_permission_tip">Permission to record video is required first.</string>
+
+    <string name="durec_no_space">Your storage space is less than 100M. You need to free up your storage space to record.</string>
+
+    <!-- Settings -->
+    <string name="durec_about_protocol">User Agreement</string>
+    <string name="durec_setting_video_location">Video location</string>
+    <string name="durec_setting_show_touches">Show touches</string>
+
+    <!-- Audio unavailable dialog strings-->
+    <string name="durec_audio_unavailable_dialog_title">Audio recorder is unavailable</string>
+    <string name="durec_audio_unavailable_dialog_message">Sorry, the audio can\'t be recorded.\nYou can restart your phone then retry recording to solve the problem，or tap the CONTINUE button to record a silent video.</string>
+    <string name="durec_audio_unavailable_dialog_pos_btn">CONTINUE</string>
+
+    <!-- Record stop reason -->
+    <string name="durec_stop_timeout">The video reached the max duration. Recording stopped.</string>
+    <string name="durec_drec_stop_record_for_screen_off">Screen turned off. Recording stopped.</string>
+
+    <!-- Video resolution -->
+    <string name="durec_video_resolution_standard">Standard</string>
+
+    <!-- float button -->
+    <string name="durec_floatbutton_record_file_null">Unable to find the video storage location</string>
+
+    <string name="durec_menu_about">About us</string>
+
+    <string name="durec_video_size">Size: %1$sM</string>
+
+    <string name="durec_del_success">The video has been deleted successfully.</string>
+    <string name="durec_del_fail">Failed to delete</string>
+
+    <string name="durec_common_open">Open</string>
+
+    <!-- Settings -->
+    <string name="durec_setting_resolution">Video resolution</string>
+    <string name="durec_setting_bitrate">Video quality</string>
+    <string name="durec_setting_framerate">FPS</string>
+    <string name="durec_setting_record_audio">Record audio</string>
+    <string name="durec_setting_countdown">Countdown</string>
+    <string name="durec_setting_item_countdown_subtitle">Recording will begin after the countdown</string>
+    <string name="durec_countdown_no">No countdown</string>
+    <string name="durec_setting_item_bitrate_subtitle">Higher quality means larger video file sizes</string>
+    <string name="durec_auto">Auto</string>
+    <string name="durec_setting_item_framerate_subtitle">Higher frame rate will make videos smoother but use more CPU</string>
+
+    <!-- Camera float window -->
+    <string name="durec_camera_window_error">Error while opening camera</string>
+    <string name="durec_stop_record_error">Recording error</string>
+    <string name="durec_network_error">Network is not available now.</string>
+
+    <!--note: %1$s 有用，该文案用于带有高亮文字的通知中，-->
+    <!--当文案中%1$s发生变化时，需要修改DuRecNotificationManager showRecommendNotification方法-->
+    <string name="durec_scene_recommend_content">We select a tutorial video of %1$s for you!</string>
+
+    <string name="durec_local_video_empty_prompt">You have not recorded any video yet.</string>
+
+    <string name="durec_no_browser_app">No browser or %1$s installed</string>
+
+    <string name="durec_delete_local_video_prompt">Are you sure to delete the video from your device\'s local storage?</string>
+
+    <string name="durec_setting_item_rate_us">Rate us</string>
+    <string name="durec_setting_item_rate_us_subtitle">5 stars means BEST on Google Play</string>
+
+    <string name="durec_rename_video_dialog_title">Enter the title of the video</string>
+    <string name="durec_rename_video_dialog_illegal_tip">The file name could not contain the char <xliff:g id="illegal">%1$s</xliff:g></string>
+    <string name="durec_rename_video_failed">Rename file failed</string>
+    <string name="durec_rename_video_success">Video renamed</string>
+    <string name="durec_rename_video_name_exist">Name already exists. Please choose another.</string>
+
+    <!-- 引导提示 -->
+    <!-- notificaiton settings -->
+
+    <string name="durec_setting_record_float_switch">Hide the record window when record</string>
+    <string name="durec_setting_item_record_float_subtitle">Only use the notification bar to control recording</string>
+
+    <string name="durec_record_disable_btn_text">I KNOW</string>
+
+    <!-- Shortcut -->
+    <string name="durec_shortcut_name">Screen Recorder</string>
+
+    <string name="durec_store_space">%1$sG available/%2$sG in total</string>
+    <string name="durec_update_text">What\'s new for %1$s:</string>
+
+    <string name="durec_languages">Languages</string>
+    <string name="durec_languages_dialog_title">Select a language</string>
+
+    <string name="durec_recorder_noti_start">Record</string>
+    <string name="durec_recorder_noti_resume">Resume</string>
+    <string name="durec_common_stop">Stop</string>
+    <string name="durec_recorder_noti_camera_open">Open camera</string>
+    <string name="durec_recorder_noti_ready">Recorder is ready.</string>
+    <string name="durec_recorder_noti_ready_sub">Tap here to start recording.</string>
+    <string name="durec_recorder_noti_recording">Recording in progress</string>
+    <string name="durec_recorder_noti_recording_sub">Tap here to stop recording.</string>
+
+    <string name="durec_recorder_rsl_noti_title">Recording is finished.</string>
+    <string name="durec_recorder_rsl_noti_sub_title">Tap here to check your recorded video.</string>
+    <string name="durec_recorder_rsl_noti_watch">Watch</string>
+
+    <string name="durec_recorder_noti_paused">Recording paused</string>
+    <string name="durec_recorder_noti_paused_sub">Tap here to resume recording.</string>
+
+    <string name="durec_recorder_screenshot_noti_title">Screenshot captured.</string>
+    <string name="durec_recorder_screenshot_noti_sub_title">Tap here to view your screenshot.</string>
+    <string name="durec_common_check">Check</string>
+
+    <string name="durec_video_not_found">Sorry, we didn\'t find the video.</string>
+    <string name="durec_picture_not_found">Sorry, we didn\'t find the picture.</string>
+
+    <!-- 引导 -->
+
+    <string name="durec_picture_tools_stitch">Stitch images</string>
+
+    <string name="durec_picture_list_stitch">Stitch(%1$s/%2$s)</string>
+    <string name="durec_picture_list_edit_counts">Stitched &amp; Edited (%1$s)</string>
+
+    <!-- 录屏预提醒dialog -->
+    <string name="durec_common_ok">OK</string>
+
+    <string name="durec_picture_snitch">Stitch</string>
+    <string name="durec_common_edit">Edit</string>
+    <string name="durec_picture_edit_prompt">Are you sure you want to quit? Your changes won\'t be saved.</string>
+    <string name="durec_picture_save_success">Image saved</string>
+    <string name="durec_picture_save_fail">Failed to save the image</string>
+    <string name="durec_save_screenshot_error">Save screenshot failed</string>
+    <string name="durec_picture_edit_name">Picture editing</string>
+    <string name="durec_picture_list_edit_empty">You don\'t have stitched or edited images.</string>
+
+    <string name="durec_common_mosaic">Mosaic</string>
+    <string name="durec_common_crop">Crop</string>
+    <string name="durec_picture_stitch_img_too_tiny">The height of some of the images is too low to stitch.</string>
+    <string name="durec_picture_stitch_oom_error">"Sorry, we can't stitch the images because of the shortage of RAM space. You can close other apps to free up RAM."</string>
+
+    <string name="durec_permission_fir_msg">When prompted as shown below:</string>
+    <string name="durec_permission_prompt_msg"><![CDATA[<b>%1$s</b>]]> will start capturing everything that\'s displayed on your screen.</string>
+    <string name="durec_permission_remember_text">Don\'t show again</string>
+    <string name="durec_permission_action_text">Start now</string>
+
+    <string name="durec_precise_cut_tip">Tap to make precise trimming</string>
+    <string name="durec_cut_btn_tip">Click to cut the part that you choose</string>
+    <string name="durec_cut_save_query">Do you want to save your changes?</string>
+    <string name="durec_cut_save_query_giveup">No thanks</string>
+    <string name="durec_cut_toast_success">Saved successfully</string>
+    <string name="durec_cut_video_no_space">Your storage space is not enough.</string>
+    <string name="durec_cut_video_max_file_size_tip">The file size can\'t be more than 4GB. Please shorten your edited video.</string>
+    <string name="durec_share_saving">The video is being saved...</string>
+    <string name="durec_common_preview">Preview</string>
+    <string name="durec_common_save">Save</string>
+    <string name="durec_video_list_counts">All %1$s videos</string>
+    <string name="durec_video_list_count">All %1$s video</string>
+    <string name="durec_video_list_origin_counts">Original videos (%1$s)</string>
+    <string name="durec_video_list_origin_count">Original video (%1$s)</string>
+    <string name="durec_video_list_edit_counts">Edited videos (%1$s)</string>
+    <string name="durec_video_list_edit_count">Edited video (%1$s)</string>
+    <string name="durec_choose_sdcard_title">Select the storage location</string>
+    <string name="durec_choose_sdcard_internal_storage">Internal storage</string>
+    <string name="durec_choose_sdcard_sd_card">SD card</string>
+    <string name="durec_choose_sdcard_dialog_attention_msg">Make sure you\'ve known that and would like to change storage location to SD card.</string>
+    <string name="durec_choose_sdcard_dialog_ok">OK, I accept</string>
+    <string name="durec_choose_sdcard_dialog_refuse">No, I refuse</string>
+    <string name="durec_rate_dialog_msg">Do you like %1$s?\nWe need your support!</string>
+    <string name="durec_rate_dialog_btn">Rate us 5 stars</string>
+    <string name="durec_guide_videos">Videos &amp; Settings</string>
+    <string name="durec_guide_camera">Camera</string>
+    <string name="durec_common_screenshot">Screenshot</string>
+    <string name="durec_guide_btn">Got it!</string>
+    <string name="durec_guide_for_record">Record your screen video now!</string>
+    <string name="durec_all_videos">All Videos</string>
+
+    <!-- picker strings -->
+    <string name="__picker_done">Done</string>
+    <string name="durec_media_picker_done_with_count">Done(%1$d/%2$d)</string>
+    <string name="durec_all_images">All Images</string>
+    <string name="__picker_over_max_count_tips">You can only select up to %1$d images.</string>
+    <string name="__picker_image_count">%1$d Images</string>
+    <string name="__picker_image_one_count">%1$d Image</string>
+
+    <string name="__picker_video_count">%1$d Videos</string>
+    <string name="__picker_video_one_count">%1$d Video</string>
+
+    <string name="durec_setting_shake_to_stop">Shake phone to stop recording</string>
+    <string name="durec_guide_shake_dialog_title">New function:</string>
+    <string name="durec_guide_shake_dialog_msg">Now you can shake your phone to stop recording!</string>
+    <string name="durec_unable_to_obtain_permission_prompt">As your device system lacked the necessary components related to screen recording, screen video recording is not possible. This problem is caused by your phone system, unfortunately we can not help you. Thank you for understanding!</string>
+    <string name="durec_choose_sdcard_sd_card_unable_msg">*Files can\'t be saved to your SD card.</string>
+    <string name="durec_follow_ours_facebook">Like our Facebook page</string>
+    <string name="durec_common_volume">Volume</string>
+
+    <string name="durec_play_audio_error">Failed to play the audio</string>
+
+    <string name="durec_setting_guide_open_permissions">Enable the usage access to allow us to give tips on appropriate occasions</string>
+    <string name="durec_common_enable">Enable</string>
+    <string name="durec_scene_guide_type_game">%1$s can record game videos. Record amazing game moments now!</string>
+    <string name="durec_scene_guide_type_live">%1$s can record videos so that you can watch them without Internet.</string>
+    <string name="durec_scene_guide_type_call">%1$s can record video calls. Record your important calls now!</string>
+    <string name="durec_merge_video">Merge videos</string>
+    <string name="durec_merge_video_fail_by_not_available">Sorry, merging is not available for the video.</string>
+    <string name="durec_common_video_fail">Sorry, the video was not saved. Please try again.</string>
+    <string name="durec_media_picker_done_without_count">Merge(%1$d)</string>
+    <string name="durec_wifi_transfer">Wifi transfer</string>
+    <string name="durec_wifi_transfer_wifi_needed">You need to connect to WiFi network.</string>
+    <string name="durec_wifi_transfer_name">WiFi name: %s</string>
+    <string name="durec_wifi_transfer_prompt">Make sure your device is in the same wifi environment as your computer</string>
+    <string name="durec_wifi_transfer_file_name">File name</string>
+    <string name="durec_common_size">Size</string>
+    <string name="durec_wifi_transfer_video">Videos</string>
+    <string name="durec_wifi_transfer_select_all">Select all</string>
+    <string name="durec_wifi_transfer_unselect_all">Unselect all</string>
+    <string name="durec_common_download">Download</string>
+    <string name="durec_privacy_policy">Privacy Policy</string>
+    <string name="durec_about_copy_right">Agree to the %1$s and %2$s</string>
+    <string name="durec_watermark">Watermark</string>
+    <string name="durec_enable_watermark">Enable watermark</string>
+    <string name="durec_setting_watermark_msg">Show watermark in recorded videos</string>
+    <string name="durec_watermark_enabled">Enabled</string>
+    <string name="durec_watermark_disabled">Disabled</string>
+    <string name="durec_usage_permission_guide_hint">Find and tap %1$s</string>
+    <string name="durec_common_off">Off</string>
+
+    <string name="durec_video_merge_enable">You must select at least two videos first.</string>
+    <string name="durec_scene_share_msg">Do you like %1$s?\nShare it to your friends!</string>
+    <string name="durec_scene_share_more_apps">More apps</string>
+    <string name="durec_setting_item_share_app_subtitle">Share %1$s to your friends</string>
+    <string name="durec_video_size_different_dialog_msg">The resolutions of the chosen videos are different. It may need more time to merge the videos. Tap \"Confirm\" to save your merged video.</string>
+
+    <!-- app update strings:-->
+    <string name="durec_update_title">Version %1$s is online!</string>
+    <string name="durec_update">Update</string>
+    <string name="durec_update_later">Later</string>
+    <string name="durec_update_version">Version</string>
+    <string name="durec_update_latest">This is the latest version.</string>
+
+    <string name="durec_video_edit">Edit video</string>
+    <string name="durec_common_trim">Trim</string>
+    <string name="durec_remove_middle">Remove middle</string>
+    <string name="durec_add_music">Add music</string>
+    <string name="durec_common_music">Music</string>
+    <string name="durec_common_audio">Audio</string>
+    <string name="durec_all_music">All music</string>
+    <string name="durec_background_music">BGM</string>
+    <string name="durec_loop_music">Loop music</string>
+    <string name="durec_close_loop_music_prompt">The music will be only played once if you turn it off.</string>
+    <string name="durec_no_available_music">There is no music.</string>
+    <string name="durec_nonsupport_music">This format of music is not supported.</string>
+    <string name="durec_setting_item_no_close_app_title">Not close app when you exit the floating window</string>
+    <string name="durec_setting_item_no_close_app_subtitle">Turn it on to record with notification whenever you want</string>
+    <string name="durec_internal_audio_recording_not_allow">Internal audio recording is not allowed by Android now</string>
+    <string name="durec_request_draw_overlay_permission_new_tip">Please turn on the "Draw over other apps" authorization to ensure the proper use of %1$s.</string>
+    <string name="durec_image_info">Image information</string>
+    <string name="durec_common_location">Location</string>
+    <string name="durec_common_resolution">Resolution</string>
+    <string name="durec_image_info_error">Unable to get the image information</string>
+
+    <string name="durec_settings_version_new">NEW</string>
+    <string name="durec_no_available_video">There is no video.</string>
+    <string name="durec_no_available_img">There is no image.</string>
+
+    <string name="durec_music_count">%1$d Music</string>
+    <string name="durec_edit_music">Edit music</string>
+
+    <string name="durec_edit_video_successfully_saved">Your edited video has been saved!</string>
+    <string name="durec_FAQ">FAQ</string>
+    <string name="durec_no_internet_connection">No internet connection</string>
+    <string name="durec_reload">Reload</string>
+    <string name="durec_guide_open_notification_access">Device has 1GB or less RAM. We recommend enabling notification access first to greatly improve recording stability.</string>
+    <string name="durec_setting_item_notification_access_title">We recommend enabling notification access to greatly improve recording stability</string>
+    <string name="durec_open_notification_access_fail">You can turn on the permission at any time from %1$s settings to greatly improve recording stability.</string>
+    <string name="durec_guide_cut_video_slider">Drag the slider to select the part you want to save</string>
+    <string name="durec_guide_remove_middle_video_slider">Drag the slider to select the part you want to remove</string>
+    <string name="durec_share_video_content">Recorded by %1$s – Screen recorder for Android</string>
+    <string name="durec_share_app_content">I just found %1$s – screen recorder for Android that helps me easily record my screen. Try it: %2$s</string>
+    <string name="durec_permission_sec_msg_new">Please rest assured that we do not access or archive your recorded content. Please grant the request so that we can help you to record screen.</string>
+    <string name="durec_auto_recommend">Auto (Recommended)</string>
+    <string name="durec_adjust_time">Adjust time</string>
+    <string name="durec_stitch_picture_guidance">Tap to remove the part you don\'t need</string>
+    <string name="durec_settings_brush">Brush</string>
+    <string name="durec_settings_brush_subtitle">You can draw on the screen after enabling the Brush feature</string>
+
+    <string name="durec_online_music">Online music</string>
+    <string name="durec_local_music">On device</string>
+    <string name="durec_music_type_sad">Sad</string>
+    <string name="durec_music_type_happy">Happy</string>
+    <string name="durec_music_type_romantic">Romantic</string>
+    <string name="durec_music_type_dark">Dark</string>
+    <string name="durec_music_type_calm">Calm</string>
+    <string name="durec_music_type_pop">Pop</string>
+    <string name="durec_music_type_rock">Rock</string>
+    <string name="durec_music_type_jazz">Jazz</string>
+    <string name="durec_music_type_electronic">Electronic</string>
+    <string name="durec_mobile_network_download_prompt">You are using mobile data, which might incur data charges to download the music. Tap "Confirm" to start downloading.</string>
+    <string name="durec_download_music_cancel">Music download canceled</string>
+    <string name="durec_fail_download_music">No internet connection. Failed to download the music.</string>
+    <string name="durec_mobile_network_play_prompt">You are using mobile data, which might incur data charges to play the music. Tap "Confirm" to play.</string>
+    <string name="durec_play_music_cancel">Play canceled</string>
+    <string name="durec_fail_play_music">No internet connection. Failed to play music.</string>
+    <string name="durec_common_reset">Reset</string>
+
+    <string name="durec_background_image">Background image</string>
+    <string name="durec_local_image">On device</string>
+    <string name="durec_not_support_horizontal_videos">Sorry, we don\'t support adding background images to horizontal videos.</string>
+    <string name="durec_recommended">Recommended</string>
+    <string name="durec_select_part_image">Select part of the image</string>
+    <string name="durec_select_part_image_explain">The selected part will be used as the background of the video. You can pinch to zoom the image and move the image to select the part you want.</string>
+    <string name="durec_add_subtitle">Add subtitle</string>
+    <string name="durec_enter_subtitle_prompt">Please enter the subtitle</string>
+    <string name="durec_edit_subtitle">Edit subtitle</string>
+    <string name="durec_fail_add_background_image">Failed to add background image</string>
+
+    <string name="durec_whats_new">What\'s new:</string>
+    <string name="durec_disable_notification_after_screen_shot">Disable pop-up notification after screenshots</string>
+    <string name="durec_systemui_crashed_when_start_recording">There is a device-based recording problem. You need to grant the permission to ensure the proper use of %1$s.</string>
+
+    <string name="durec_common_rotate">Rotate</string>
+
+    <string name="durec_subtitle_duration_limit_prompt">At least 1s of video needed</string>
+
+    <string name="durec_shake_sensitivity_prompt">Shake your device\nto test sensitivity</string>
+    <string name="durec_common_sensitivity">Sensitivity</string>
+    <string name="durec_low_power_to_stop_record">The recording has been automatically ended due to low battery.</string>
+    <string name="durec_low_power_record_prompt">Please charge the battery to record. If your device turns off due to low battery, your recording won\'t be saved.</string>
+
+    <string name="durec_record_toolbox">Recording toolbox</string>
+    <string name="durec_gif_recorder">GIF recorder</string>
+    <string name="durec_gid_saved">GIF saved.</string>
+    <string name="durec_gif_view_prompt">Tap here to view your GIF.</string>
+    <string name="durec_failed_save_gif">Failed to save the GIF.</string>
+    <string name="durec_common_gif">GIF (%1$s)</string>
+    <string name="durec_common_gifs">GIFs (%1$s)</string>
+    <string name="durec_cannot_stitch_gifs">You can\'t stitch GIFs. Please select again.</string>
+    <string name="durec_video_to_gif">Video to GIF</string>
+    <string name="durec_gif_limit_lenght">Drag the slider to select a segment of up to 20 seconds</string>
+    <string name="durec_gif_lenght_exceed">GIF can not exceed 20 seconds</string>
+    <string name="durec_gif_saving">Saving GIF...</string>
+    <string name="durec_gif_saved">Your GIF has been saved!</string>
+    <string name="durec_video_settings">Video settings</string>
+    <string name="durec_control_settings">Control settings</string>
+    <string name="durec_record_tools">Recording tools</string>
+    <string name="durec_common_others">Others</string>
+    <string name="durec_gif">GIF</string>
+
+    <string name="durec_picture_list_counts">All %1$s images</string>
+    <string name="durec_picture_list_count">All %1$s image</string>
+    <string name="durec_picture_list_origin_counts">Original images (%1$s)</string>
+    <string name="durec_picture_list_origin_count">Original image (%1$s)</string>
+    <string name="durec_picture_share_enable">You must select at least one image first.</string>
+    <string name="durec_picture_stitch_enable">You must select at least two images first.</string>
+    <string name="durec_delete_picture_prompt">Are you sure you want to delete the image?</string>
+    <string name="durec_picture_list_empty">You don\'t have any image.</string>
+    <string name="durec_choose_sdcard_dialog_attention">Attention: The videos and images stored in SD card will be deleted when you uninstall %1$s.</string>
+    <string name="durec_wifi_transfer_msg">Open the address on your computer\'s browser to download your videos and images</string>
+    <string name="durec_wifi_transfer_image">Image</string>
+    <string name="durec_delete_image_success">Image deleted</string>
+
+    <string name="durec_gif_record_guide">Tap to record a GIF. Tap again to stop recording.</string>
+    <string name="durec_start_time">Start time</string>
+    <string name="durec_end_time">End time</string>
+    <string name="durec_subtitles_time_warn">Please make sure the end time is after the start time.</string>
+
+    <string name="durec_time_can_be_recorded">%1$s can be recorded</string>
+    <string name="durec_available_store_space">%1$sG available</string>
+    <string name="durec_new_internal_storage">Internal storage (%1$s can be recorded)</string>
+    <string name="durec_new_sd_card">SD card (%1$s can be recorded)</string>
+    <string name="durec_restart_process_prompt">%1$s was stopped by system. We have automatically restarted %2$s for you.</string>
+
+    <string name="durec_failed_to_edit_video">Failed to edit the video</string>
+    <string name="durec_edit_image">Edit image</string>
+    <string name="durec_play_select">Play selected</string>
+    <string name="durec_remove_middle_confirm_warn">Removing the middle will undo trimming changes. Continue?</string>
+    <string name="durec_trim_confirm_warn">Trimming will undo removal of the middle. Continue?</string>
+    <string name="durec_remove_background_warn">The background image has been removed because horizontal videos are not supported.</string>
+
+    <string name="durec_video_edit_shortcut" tools:ignore="MissingTranslation">DU Rec Editor</string>
+    <string name="durec_select_video">Select a video</string>
+
+    <string name="durec_common_install">Install</string>
+    <string name="durec_mobile_network_watch_video_prompt">It will cost your traffic to watch the video. Are you sure to watch it?</string>
+    <string name="durec_common_watch">Watch</string>
+    <string name="durec_use_mobile_network_prompt">You are using the mobile network. Video play is automatically stopped to save your traffic.</string>
+
+    <string name="durec_error_youtubeplayer">There was an error initializing the YouTube player (%1$s)</string>
+    <string name="durec_youtube_link_not_found">The video link can not be found.</string>
+
+    <string name="durec_selected_count">%1$s selected</string>
+    <string name="durec_subscribe_youtube_channel">Subscribe to our YouTube channel</string>
+    <string name="durec_submit_video">Submit video</string>
+    <string name="durec_activity_video">Videos from the activity</string>
+    <string name="durec_enter_link">Enter video link of YouTube</string>
+    <string name="durec_enter_link_no_network">Sorry, you can\’t submit video link without internet connection.</string>
+    <string name="durec_enter_link_not_correct">The video link you entered is not in correct format.</string>
+    <string name="durec_success_submit_link">You have successfully submitted a video link. We\'ll check your video and put good videos on activity page.</string>
+    <string name="durec_submit_video_explain">We\'ll select good videos and put them on activity page. It will help your video get more views.</string>
+    <string name="durec_activity_rules">Activity Rules</string>
+    <string name="durec_share_a_link">Share a link</string>
+    <string name="durec_copy_link">Copy link</string>
+
+    <string name="durec_edit_speed">Speed</string>
+    <string name="durec_edit_change_speed">Change speed</string>
+    <string name="durec_edit_intro_and_outro">Intro &amp; Outro</string>
+    <string name="durec_edit_intro">Intro</string>
+    <string name="durec_edit_outro">Outro</string>
+    <string name="durec_edit_video_title">Video title</string>
+    <string name="durec_edit_description">Description</string>
+    <string name="durec_edit_video_maker">Video-maker</string>
+    <string name="durec_edit_thanks">Thanks!</string>
+    <string name="durec_edit_contact">Contact</string>
+    <string name="durec_edit_intro_tips">The selected part will be used as the intro of the video. You can pitch to zoom the image and move the image to select the part you want.</string>
+    <string name="durec_edit_outro_tips">The selected part will be used as the outro of the video. You can pitch to zoom the image and move the image to select the part you want.</string>
+    <string name="durec_edit_intro_and_outro_error">Failed to add intro/outro to video</string>
+    <string name="durec_edit_intro_and_outro_invalid">The intro and outro that you added have been removed because the video orientation has been changed. Please re-add intro and outro.</string>
+
+    <string name="durec_fail_to_login_google">Failed to login with Google. Please try again.</string>
+    <string name="durec_live_resolution">Live resolution</string>
+    <string name="durec_common_public">Public</string>
+    <string name="durec_common_private">Private</string>
+    <string name="durec_detail_private_status">Only visible to users who have been explicitly invited to watch it</string>
+    <string name="durec_common_unlisted">Unlisted</string>
+    <string name="durec_detail_unlisted_status">Visible to anyone with a link to view it</string>
+    <string name="durec_share_live_stream">Share live stream</string>
+    <string name="durec_share_live_stream_detail">I\'m streaming live with %1$s now. Watch my stream: %2$s</string>
+    <string name="durec_common_account">Account</string>
+    <string name="durec_log_out">Log out</string>
+    <string name="durec_live_with_app">My Live stream with %1$s</string>
+    <string name="durec_common_retry">Retry</string>
+    <string name="durec_common_start">Start</string>
+    <string name="durec_connect_to_youtube">Connecting to YouTube…</string>
+    <string name="durec_success_to_connected_youtube">You have been connected to YouTube</string>
+    <string name="durec_failed_to_connect_youtube">Failed to connect to YouTube</string>
+    <string name="durec_failed_to_stream_live_with_no_network">There is no network connection. Failed to start live stream.</string>
+    <string name="durec_use_mobile_network_with_live_stream">Streaming over mobile network will use a lot of data. Are you sure you want to start live streaming?</string>
+    <string name="durec_network_status_poor">The network status is poor. Please ensure that the connection is strong or try to reconnect.</string>
+    <string name="durec_uninstall_google_play_services_error">Google Play Services login required. Please install Google Play Services on your device and relaunch %1$s.</string>
+    <string name="durec_obtail_permission_prompt">Please give %1$s the permission to ensure that you can stream live with %2$s.</string>
+    <string name="durec_microphone_permission_error">Sorry, you can\'t stream live with audio without microphone permission.</string>
+    <string name="durec_live_ended">Live has ended</string>
+    <string name="durec_comment_counts">%1$s comments</string>
+    <string name="durec_show_live_information">Show Live information</string>
+    <string name="durec_common_live">Live</string>
+    <string name="durec_live_tools">Live tools</string>
+    <string name="durec_can_not_start_live_while_record">Sorry, you can\'t start Live while recording screen.</string>
+    <string name="durec_can_not_record_while_live">Sorry, you can\'t start recording while streaming Live.</string>
+    <string name="durec_created_screen_videos_shortcut">%1$s shortcut has been created automatically</string>
+    <string name="durec_common_quit">Quit</string>
+    <string name="durec_common_setting">Settings</string>
+    <string name="durec_cannot_exit_live_prompt">You can\'t exit the live window when streaming live.</string>
+    <string name="durec_failed_to_get_share_link">Failed to get share link</string>
+    <string name="durec_live_historical_panel_first_show_prompt">All comments will be shown here</string>
+
+    <string name="durec_promotion_share_text">Participate in the activity "%1$s" of %2$s: %3$s</string>
+    <string name="durec_report_youtube_url_char_limit">Your video title should contain "%1$s".</string>
+    <string name="durec_report_youtube_url_char_max_length">Your link can\'t exceed 300 characters.</string>
+    <string name="durec_user_publish_total_video">%1$s videos in total</string>
+    <string name="durec_live_guide_title_for_gameplay_live">Gameplay Live</string>
+    <string name="durec_live_guide_desc_gameplay">%1$s provides a smooth and clear live gaming experience. Share your game skills live!</string>
+    <string name="durec_live_guide_desc_series">Broadcast movies and TV series live with %1$s. Share your favorite shows with friends!</string>
+    <string name="durec_live_guide_title_for_series_live">Movie &amp; TV Series Live</string>
+    <string name="durec_live_guide_desc_tutorial">Use %1$s to stream tutorials live. Help more people get informed!</string>
+    <string name="durec_live_guide_title_for_tutorial">Tutorial Live</string>
+    <string name="durec_live_guide_title_for_more_fun">Discover more live fun</string>
+
+    <string name="durec_common_next">Next</string>
+    <string name="durec_common_skip">Skip</string>
+    <string name="durec_choose_platform">Choose a live platform</string>
+
+    <string name="durec_not_logged_facebook_prompt">Log in to Facebook first.</string>
+    <string name="durec_facebook_live_authorize_prompt">You need to authorize from Facebook to stream live</string>
+    <string name="durec_facebook_status_friends">Friends</string>
+    <string name="durec_facebook_status_friends_of_friends">Friends of friends</string>
+    <string name="durec_facebook_status_me">Only me</string>
+    <string name="durec_connecting_to_facebook">Connecting to Facebook…</string>
+    <string name="durec_success_to_connected_facebook">You have been connected to Facebook</string>
+    <string name="durec_failed_to_connect_facebook">Failed to connect to Facebook</string>
+    <string name="durec_wifi_transfer_dialog_msg_new">Are you sure you want to quit? You can\'t download videos and images from %1$s on your computer after you quit.</string>
+
+    <string name="durec_feed_video_share_text">Watch the amazing video “%1$s”: %2$s.  For more great %3$s videos: %4$s</string>
+    <string name="durec_start_live">Live Creator</string>
+    <string name="durec_open_notification_access_prompt">We strongly recommend that you turn on the notification access first. It can greatly enhance the recording stability.</string>
+    <string name="durec_tap_notification_start_record">You can also tap the notification to record</string>
+    <string name="durec_feed_video_up_next">Up next</string>
+    <string name="durec_feed_video_more">More</string>
+    <string name="durec_turn_on_float_window_permission_prompt">Please turn on the floating window permission to ensure the proper use of %1$s.</string>
+    <string name="durec_allow_notification_permission_prompt">Please allow the notifications of %1$s to ensure the proper use and improve the recording stability.</string>
+    <string name="durec_allow_float_window_permission_guide">Please enter "Security" app - Privacy permissions - floating window management and tap %1$s to turn on the floating window permission to ensure the proper use.</string>
+    <string name="durec_allow_notification_permission_guide">Please enter system settings - Notification and Status bar - Notification manager - %1$s and tap "Allow notifications" to ensure the proper use and improve the recording stability.</string>
+    <string name="durec_repair_system_ui_crash">Repair system UI crash</string>
+    <string name="durec_allow_repair_system_ui_crash_prompt">Tap and allow the permission to try to repair system UI problem</string>
+
+    <string name="durec_guide_notifaction">You can also use the notification panel to control recording.</string>
+    <string name="durec_guide_long_press_floating_window">Press and hold the floating window.</string>
+    <string name="durec_guide_close_window">Drag it to the exit button to close it.</string>
+    <string name="durec_guide_record_floating_window">You can also tap the button to start and stop recording.\nHide it on settings page if you don\'t need it.</string>
+    <string name="durec_setting_hide_homepage_recording_button">Hide the recording button on homepage</string>
+    <string name="durec_setting_record_mode">Recording mode</string>
+    <string name="durec_setting_record_mode_basic">Basic</string>
+    <string name="durec_setting_record_mode_basic_subtitle">Doesn\'t support pause and is more stable. Recommended for low-configuration devices or those that lag when recording</string>
+    <string name="durec_setting_record_mode_standard">Standard</string>
+    <string name="durec_setting_record_mode_standard_subtitle">Powerful. Recommended for most devices</string>
+    <string name="durec_common_repair">Repair</string>
+    <string name="durec_select_direction_of_corrupted_video">Select direction of the corrupted video</string>
+    <string name="durec_common_horizontal">Horizontal</string>
+    <string name="durec_common_vertical">Vertical</string>
+    <string name="durec_common_waiting">Waiting…</string>
+    <string name="durec_video_repair_success">The video has been repaired.</string>
+    <string name="durec_video_repair_failed">Failed to repair the video.</string>
+    <string name="durec_facebook_page">Page</string>
+    <string name="durec_facebook_group">Group</string>
+    <string name="durec_live_status">Live to</string>
+    <string name="durec_live_title_suffix">Live stream your amazing moments via %1$s . Share games, movies, TV shows and matches with more people: %2$s</string>
+    <string name="durec_guide_repair_again">Tap to repair again if the video still has problems</string>
+    <string name="durec_setting_create_video_editor_shortcut">Create video editor shortcut on desktop</string>
+    <string name="durec_facebook_live_share_url_subtitle_prompt">Please choose live to whom first, then share the link to ensure that you share the right link.</string>
+
+    <string name="durec_add_group">Add a group</string>
+    <string name="durec_enter_group_name">Enter full group name</string>
+    <string name="durec_no_group">We didn\'t find any groups.</string>
+    <string name="durec_failed_add_group">Failed to add the group</string>
+    <string name="durec_guide_open_popup_window_permission_text">Go to the bottom of the page and tap</string>
+    <string name="durec_account_happen_problem_prompt">We detected a problem of your account. Please log out of the current account and log in again.</string>
+    <string name="durec_live_disabled">%1$s Live will be available once we complete the live optimization. Sorry for any inconvenience.</string>
+    <string name="durec_settings_invert_color">Invert video color</string>
+    <string name="durec_settings_invert_color_subtitle">Turn it on to repair the inverted video color problem</string>
+    <string name="durec_need_camera_permission">Camera permission required to start recording. Turn on camera permission for %1$s in System Settings or change to standard recording mode.</string>
+    <string name="durec_no_permission_to_live_in_group">You don\'t have the permission to stream live in the group. Please join the group on Facebook first.</string>
+    <string name="durec_fb_live_search_group_not_available">Searching for groups is not available now. Please try again later.</string>
+
+    <string name="durec_need_login_twitch">To start streaming, you need to log in to Twitch first.</string>
+    <string name="durec_screenshot_change_location">Screenshot feature moved here</string>
+    <string name="durec_guide_start_live_text">Tap to livestream your screen</string>
+    <string name="durec_not_stop_record_when_screen_off">Keep recording when screen is off</string>
+    <string name="durec_shake_automatic_close_prompt">Recording stopped because of device motion sensor problem. We have turned off the ‘shake to stop’ feature. Tap Start to record again.</string>
+    <string name="durec_connect_to_twitch">Connecting to Twitch…</string>
+    <string name="durec_success_to_connect_twitch">You have connected to Twitch</string>
+    <string name="durec_fail_to_connect_twitch">Failed to connect to Twitch</string>
+    <string name="durec_common_rename">Rename</string>
+    <string name="durec_need_verified_youtube_account_prompt">Your account must be verified before start Live on YouTube. Please follow the verification process required by YouTube.\nAttention: Please make sure the account to be verified is the same as which you use to log in to %1$s.\nDue to YouTube restrictions, it may take 24 hours to get access to live streaming. Once activated, you can go live instantly.</string>
+
+    <string name="durec_cannot_use_pop_window_prompt">You can\'t use the pop-up window because you didn\'t turn on the pop-up window option.</string>
+    <string name="durec_turn_on_pop_window_prompt">We suggest you to turn on the pop-up window option in system settings to ensure the proper use of %1$s.</string>
+    <string name="durec_turn_it_on">Turn it on</string>
+    <string name="durec_use_notification_to_rec">Use notification to record</string>
+    <string name="durec_no_pop_window_permission_prompt">The feature is not available without permission to display the pop-up window. Please turn on the pop-up window option in system settings.</string>
+    <string name="durec_enable_pop_window_restart_app">Display pop-up window option is on. Please restart %1$s.</string>
+    <string name="durec_enable_pop_window_retry_feature">Display pop-up window option is on. Please turn on the feature again.</string>
+    <string name="durec_ytb_live_description">Description</string>
+    <string name="durec_no_microphone_permission_prompt">The microphone permission is off. Please turn on microphone permission to record audio. Or you can close the dialog to record a silent video.</string>
+    <string name="durec_fb_live_change_account_prompt">You also need to change the account you log in to %1$s if you want to use another account to livestream.</string>
+    <string name="durec_live_choose_category">Choose category</string>
+    <string name="durec_live_search_category">Search category</string>
+    <string name="durec_twitch_search_hint">Enter game name</string>
+    <string name="durec_twitch_search_no_result_prompt">We didn\'t find any related category.</string>
+
+    <string name="durec_live_recon_success">Livestream has been reconnected.</string>
+    <string name="durec_no_live">No livestream</string>
+    <string name="durec_number_watcher">%1$s watching</string>
+    <string name="durec_number_subscriber">%1$s subscribers</string>
+    <string name="durec_common_subscribe">Subscribe</string>
+    <string name="durec_common_subscribed">Subscribed</string>
+    <string name="durec_live_chars">Live chats</string>
+    <string name="durec_say_something_to_live">Say something to the live</string>
+    <string name="durec_say_something_to_video">Say something to the video</string>
+    <string name="durec_fail_to_load">Fail to load. Tap here to reload.</string>
+    <string name="durec_success_to_subscribed_youtuber">You have subscribed to the YouTuber.</string>
+    <string name="durec_cancel_to_subscription_youtuber">Subscription canceled.</string>
+    <string name="durec_need_log_in_to_subscribe">You need to log in to subscribe.</string>
+    <string name="durec_fail_to_subscribe">Failed to subscribe</string>
+    <string name="durec_fail_to_cancel_subscribe">Failed to cancel the subscription</string>
+    <string name="durec_be_the_first_comment">Be the first to comment!</string>
+    <string name="durec_need_log_in_to_comment">You need to log in to comment.</string>
+    <string name="durec_fail_to_send_comment">Failed to send the comment</string>
+    <string name="durec_common_reply">Reply</string>
+    <string name="durec_reply_to_somebody">Reply to %1$s</string>
+    <string name="durec_comment_delete">Comment deleted</string>
+    <string name="durec_fail_to_delete_comment">Failed to delete comment</string>
+    <string name="durec_number_view">%1$s views</string>
+    <string name="durec_common_comments">Comments</string>
+    <string name="durec_view_more_comments">View more comments</string>
+
+    <!--161-->
+    <string name="enable_dination">Enable the donation feature to earn tips!</string>
+    <string name="dination_title">Live donation</string>
+    <string name="paypal_account_fillin_guide">Donation feature will help you get tips when livestreaming and display donation information on your screen and on viewers\' screens!</string>
+    <string name="open_right_now">ENABLE NOW</string>
+    <string name="paypal_account_fillin_title">Enter your PayPal account</string>
+    <string name="paypal_account">PayPal account email</string>
+    <string name="paypal_account_fillin_desc">In order to collect donations, please specify a valid PayPal account email below. All donations will be transferred directly to your PayPal account. %1$s DOES NOT charge any fees.</string>
+    <string name="paypal_account_error">Please enter a correct PayPal account email</string>
+    <string name="paypal_account_save_success">PayPal account email saved</string>
+    <string name="paypal_account_save_failed">Failed to save PayPal account. Please submit again.</string>
+    <string name="paypal_account_save_cancel">The PayPal account email has not been saved. Are you sure you want to quit?</string>
+    <string name="donation_effect_audience_preview">Viewers\' screen display</string>
+    <string name="donation_effect_anchor_preview">Streamer\'s screen display</string>
+    <string name="donation_link">Donation link</string>
+    <string name="copy_to_paste">COPY</string>
+    <string name="copy_to_paste_desc">Copy the donation link to a broadcasting platform so more viewers will see it</string>
+    <string name="no_connection">Not connected</string>
+    <string name="min_donation_amount">Minimum amount</string>
+    <string name="min_donation_amount_desc">Set a reasonable amount to avoid malicious donations</string>
+    <string name="top_max_donation">Pin maximum amount</string>
+    <string name="top_max_donation_desc">If you enable this option, the maximum amount will always be shown on screen</string>
+    <string name="landscape">Landscape</string>
+    <string name="portrait">Portrait</string>
+    <string name="drag_to_move">Drag to move</string>
+    <string name="donate">Donate</string>
+    <string name="donation_hint">%1$s just donated $%2$s to you!</string>
+
+    <string name="durec_log_out_youtube_account">Log out of YouTube account</string>
+    <string name="durec_exit_featured_videos_prompt">Discover the freshest, funniest and most entertaining videos here! Come back again!</string>
+    <string name="durec_live_detail_share_content">Watch more livestreams via %1$s:</string>
+    <string name="durec_log_out_prompt">Are you sure to log out?</string>
+    <string name="durec_no_comments">No comments</string>
+    <string name="copy_success">Copied</string>
+    <string name="add_to_live_desc">Show donation link in livestream descriptions</string>
+    <string name="no_auto_append_hint">The donation link will not be shown in livestream descriptions if you disable this function.</string>
+    <string name="donation_link_template_in_live_desc">Donate via PayPal: %1$s</string>
+
+    <string name="common_internal_func_disable" translatable="false">Function Not Supported in this package!</string>
+    <string name="durec_donate_to">Donate to:</string>
+    <string name="durec_common_donate">Donate</string>
+    <string name="durec_subscribe_streamer">Subscribe to the streamer to avoid missing exciting content!</string>
+    <string name="durec_can_not_logout_warn">You can\'t log out when livestreaming.</string>
+    <string name="durec_personalized_record_watermark">Personalized watermark for recording </string>
+    <string name="durec_personalized_live_watermark">Personalized watermark for livestream</string>
+    <string name="durec_record_watermark_switch_text">When this function is enabled, a watermark will appear on videos you record</string>
+    <string name="durec_live_watermark_switch_Text">When this function is enabled, a watermark will appear on your livestreams</string>
+    <string name="durec_add_texts_watermark">Add text</string>
+    <string name="durec_add_image">Add image</string>
+    <string name="durec_watermark_drag_guide">Text and images that you add will be shown here. Drag them to set their positions.</string>
+    <string name="durec_enter_watermark_text">Enter watermark text</string>
+    <string name="durec_text_watermark">Text watermark</string>
+    <string name="durec_image_Watermark">Image watermark</string>
+    <string name="durec_common_image">Image</string>
+    <string name="durec_delete_watermark_confirm_text">Are you sure you want to delete this watermark?</string>
+    <string name="durec_limit_watermark_number_warn">You have reached the watermark limit. You can\'t add more watermarks.</string>
+    <string name="durec_common_send">Send</string>
+    <string name="durec_personalized_watermark">Personalized watermark</string>
+
+    <string name="anchor_application_guide">Become a Partner Streamer for more exposure and recommendations</string>
+    <string name="anchor_application_passed">Application approved! Gain more fans by livestreaming more often!</string>
+    <string name="anchor_application_not_passed">Application rejected. Livestream more and maintain good interaction with viewers</string>
+    <string name="anchor_varify">Partner Streamer</string>
+    <string name="apply_to_be_anchor">Apply</string>
+    <string name="anchor_right">Privileges</string>
+    <string name="anchor_right_detail">1. Exclusive partner icon\n2. Higher recommendation priority and better placements</string>
+    <string name="application_notice">Application Notes</string>
+    <string name="application_notice_detail">1. To increase your chance of acceptance, livestream games on %1$s more often to build up a fan base and maintain good interaction with viewers.\n2. Please ensure your network is stable and the picture quality is good during broadcasts.\n3. We may revoke your Partner Streamer certification if you fail to meet our Partner Streamer standards.</string>
+    <string name="start_apply">Apply Now</string>
+    <string name="fill_in_desc_first_line">After submission, you must livestream longer than 15min one time to provide a reference for our review.</string>
+    <string name="youtube_account">YouTube account</string>
+    <string name="mail_box">Email</string>
+    <string name="durec_common_game">Game</string>
+    <string name="durec_common_game_detail">Your livestream content will be listed under this game category</string>
+    <string name="facebook_account">Facebook account</string>
+    <string name="facebook_account_detail">Please enter your Facebook ID, or associated email or phone no.</string>
+    <string name="durec_common_choose">Select</string>
+    <string name="durec_common_note">Remarks</string>
+    <string name="addition_information">Optional. You can enter any additional information that will help in our review...</string>
+    <string name="submit_application">Submit</string>
+    <string name="resubmit_allication">Resubmit</string>
+    <string name="submit_success_dialog_detail">Submission successful! Broadcast a livestream longer than 15min, so we can evaluate your content quality and viewer interaction.</string>
+    <string name="go_live">Livestream Now</string>
+    <string name="subscrption_goal">Subscription goal</string>
+    <string name="durec_common_close">Disable</string>
+    <string name="subscrption_goal_val">Sub goal amount</string>
+    <string name="set_subscrption_goal">Set a goal of new subscriptions for each livestream</string>
+    <string name="donation_goal">Donation goal</string>
+    <string name="donation_goal_val">Donation goal amount</string>
+    <string name="set_donation_goal">Set a donation goal for each livestream</string>
+    <string name="paypal_unbind">Unbind</string>
+    <string name="paypal_unbind_warning">The donation function will be disabled after you unbind the PayPal account, are you sure you want to unbind?</string>
+    <string name="open_donation_link">Enable donation link</string>
+    <string name="donation_disable_warning">If disabled, your fans will not be able to donate</string>
+    <string name="mailbox_required">The Email field is required</string>
+    <string name="facebook_account_required">The Facebook account field is required</string>
+    <string name="not_finish_application">The information has not been submitted yet. Are you sure you want to quit?</string>
+    <string name="mailbox_error">Please enter a correct email</string>
+    <string name="subscription_goal_setting">Please set the number of new subs you want for each livestream</string>
+    <string name="donation_goal_setting">Please set the donation amount you want for each livestream</string>
+    <string name="subscribe_hint_new">%1$s just subscribed to you from %2$s</string>
+    <string name="durec_feed_entrance_card_title">User Guide</string>
+    <string name="durec_feed_entrance_card_desc">Here you can find a User Guide that explains the %1$s functions!</string>
+    <string name="durec_common_no">No</string>
+    <string name="durec_youtube_web_login_title">Log into YouTube</string>
+    <string name="durec_miui_alert_perm_msg">Please find and tap \"Permission Manager\" and then enable the  \"Display pop-up windows\" permission to ensure the proper use of %1$s.</string>
+
+    <string name="durec_change_account">Choose your YouTube channel</string>
+
+    <string name="durec_video_orientation">Video orientation</string>
+    <string name="durec_pause_record_when_incoming_call">Pause recording for incoming calls</string>
+    <string name="durec_live_guide_text_new">Livestream your screen! Try it out!</string>
+    <string name="durec_leave_while_and_back_soon">I am away at the moment, but will be back soon!</string>
+
+    <string name="durec_live_pause_prompt">Livestream paused.</string>
+
+    <string name="durec_live_latency">Livestream latency</string>
+    <string name="durec_live_normal_latency">Normal latency</string>
+    <string name="durec_live_normal_latency_hint">Provides the highest quality and better resolution when played to the viewer</string>
+    <string name="durec_live_low_latency">Low latency</string>
+    <string name="durec_live_low_latency_hint">Provides a short video buffering time for near real-time interaction</string>
+    <string name="durec_live_ultra_low_latency">Super-low latency</string>
+    <string name="durec_live_ultra_low_latency_hint">Real-time interaction. Does not support: DVR, subtitles, 1440p, and 4k resolution</string>
+    <string name="donation_info_setting">Donation information</string>
+    <string name="durec_donation_info_setting_hint">After enabling, you can receive donations from fans</string>
+    <string name="new_info_notification_hint">Displayed for new subscription messages and donation messages</string>
+    <string name="durec_donation_leader_board">Donation rankings</string>
+    <string name="durec_donation_leader_board_hint">Scroll to display historical donation information</string>
+    <string name="durec_live_goals">Goals</string>
+    <string name="durec_live_goals_hint">Set subscription and donation goals for livestreams</string>
+    <string name="durec_message_robot">Message bots</string>
+    <string name="durec_message_robot_hint">Automatically pushes key messages to your chat</string>
+    <string name="durec_display_duration">Display duration</string>
+    <string name="durec_subscrption_goal_hint">Subscription goals and progress are displayed on the livestream screen</string>
+    <string name="durec_donation_goal_hint">Donation goals and progress are displayed on the livestream screen</string>
+    <string name="durec_subscribe_message">Subscription messages</string>
+    <string name="durec_subscribe_message_hint">New subscriptions are automatically shown in the comments</string>
+    <string name="durec_donation_message">Donation messages</string>
+    <string name="durec_donation_message_hint">New donation information is automatically shown in the comments</string>
+    <string name="durec_welcome_message">Welcome messages</string>
+    <string name="durec_welcome_message_hint">Welcome to %1$s\'s livestream! If you like the content, please subscribe or send a donation to support the host: %2$s</string>
+    <string name="durec_custom_message">Custom messages</string>
+    <string name="durec_reply_content">Message content</string>
+    <string name="durec_reply_interval">Reply interval</string>
+    <string name="durec_change_tools_on_viewers_screen_hint">Location adjustment only affects viewers\' screen</string>
+    <string name="durec_live_tools_guidance">All livestream tools are configured here</string>
+    <string name="durec_enable_message_robot_confirm_tip">Once enabled, %1$s will become the moderator of your channel. If you cancel it, the bot functions are disabled.</string>
+    <string name="durec_enable_donation_goal_tip">You have not set donation information. After setting it, you can use the donation goals function.</string>
+    <string name="durec_go_set">GO SET</string>
+    <string name="durec_enable_donation_list_tip">You have not set donation information. After setting it, you can use the donation ranking function.</string>
+    <string name="durec_robot_default_custom_content">Welcome to the livestream!</string>
+    <string name="durec_robot_custom_content_save_failed">Failed to save reply content</string>
+
+    <string name="durec_set_cover">Set live cover</string>
+    <string name="durec_change_live_cover_operation_tips">The selection will be used as a live cover. Use two fingers to zoom in/zoom out on picture and then move it to select the part you want.</string>
+    <string name="durec_common_change">Change</string>
+    <string name="durec_failde_to_change_live_cover">Failed to change live cover. Please try again.</string>
+    <string name="durec_live_cover_size_limit">The image size exceeds 2MB and cannot be uploaded. Please select a new image.</string>
+    <string name="durec_success_to_set_cover">Live cover set. The cover will take effect the next time you use %1$s to livestream.</string>
+    <string name="durec_failed_to_connect_youtube_prompt_title">How to solve the "Failed to connect to YouTube" problem</string>
+    <string name="durec_failed_to_connect_youtube_prompt_message">Tap the button below to open the YouTube live dashboard page and wait until it has finished loading. Then, reopen the %1$s live page to start livestreaming.</string>
+    <string name="durec_failed_to_connect_youtube_prompt_sub_message">If this solution doesn\'t work, please open %1$s on your computer and wait until it has finished loading. Then, reopen the %2$s live page to start livestreaming.</string>
+    <string name="durec_start_live_guide_message_24_hour_limit">Attention: Due to YouTube restrictions, it may take 24 hours to get access to live streaming. Once activated, you can go live instantly.</string>
+    <string name="durec_attempted_fix_youtube_connect_problem">Try to livestream to see if the problem is fixed.</string>
+    <string name="durec_leave_fix_youtube_connect_problem_page_warning">The current page has not loaded, so the problem may still exist. Are you sure you want to go back?</string>
+    <string name="durec_interrupt_fix_youtube_connect_problem_warning">The problem has not been fixed. Please wait until the YouTube page has finished loading.</string>
+    <string name="durec_stop_live_prompt">Are you sure you want to stop livestreaming?</string>
+    <string name="durec_live_enabled__by_youtube_reason">Sorry, you can\'t stream live now due to a YouTube server problem. Please try again later.</string>
+    <string name="duress_miui_window_guide_title">Display pop-up window</string>
+    <string name="durec_message_robot_info_save_failed">Failed to save Message Robot Information. Please submit again.</string>
+    <string name="durec_resolution_latency_conflict">Failed to save. Resolution higher than 1080P does not support ultra-low latency.</string>
+    <string name="durec_change_tools_on_anchor_screen_hint">Location adjustment only affects your screen.\nWhen tools are also enabled for viewers, the locations on your screen shall prevail.</string>
+
+    <string name="durec_stream_simultaneously">Simultaneous streaming</string>
+    <string name="durec_link_channel">Bind channel</string>
+    <string name="durec_multiple_platform_note">Your screen will be streamed on all the channels you choose</string>
+    <string name="durec_optional">Optional</string>
+    <string name="durec_apply_to_all_streaming_title">Apply to all livestream titles</string>
+    <string name="durec_checked">ready</string>
+    <string name="durec_checking">checking</string>
+    <string name="durec_fail_to_conenct">connection failed</string>
+    <string name="durec_try_later">Server connection failed, please try again later.</string>
+    <string name="durec_live_ended_by_failed">Server connection failed, livestream ended.</string>
+    <string name="durec_ytb_live_stopped">Connection to YouTube lost</string>
+    <string name="durec_twitch_live_stopped">Connection to Twitch lost</string>
+    <string name="durec_fb_live_stopped">Connection to Facebook lost</string>
+    <string name="durec_select_one_platfrom_at_least">Select at least one channel</string>
+    <string name="durec_multiple_platform_share">I\'m streaming live on %1$s right now. Watch my stream by clicking on the link below.</string>
+    <string name="durec_failed_enable_bot_no_live">Failed to enable the bot, please enable livestreaming for your YouTube channel first</string>
+    <string name="durec_failed_set_moderator_no_bot">Failed to set moderator, the chatbot functions are still disabled</string>
+    <string name="durec_partner_streamer_requirement_reminder">Only streamers who meet the following requirements can apply for "Partner Streamer" status, otherwise your application will not be approved.</string>
+    <string name="durec_requirements">Requirements</string>
+    <string name="durec_streamer_live_game_duration">Valid gaming stream 3+ hours per week\n(Livestreams less than 5 min are not counted)</string>
+    <string name="durec_streamer_sub_nums">%1$d+ YouTube subs</string>
+    <string name="durec_streamer_benefits">Benefits</string>
+    <string name="durec_benefits_top_show">1. Top Position on the %1$s Live Page</string>
+    <string name="durec_benefits_special_flag">2. Exclusive V Badge on profile photo</string>
+    <string name="durec_hot_games">Hot games</string>
+    <string name="durec_subscibe_slogan">Subscribe to the DU Recorder official channel to get latest news and communicate with us!</string>
+    <string name="durec_failed_choose_game">Game category selection failed, please try again.</string>
+    <string name="durec_failed_connected_recorder_server">Failed to connect to %1$s server</string>
+    <string name="durec_live_with_game">%1$s livestream with %2$s!</string>
+    <string name="durec_common_title">Title</string>
+
+    <string name="durec_message_robot_re_authorize_message">Message bot function disabled. Please re-authorize %1$s to be the moderator of your channel.</string>
+    <string name="durec_message_robot_re_authorize_fail">Message bot function disabled</string>
+    <string name="durec_multi_platform_sync_title_fail">Fail to sync title on %s. Because characters "&lt;" and "&gt;" are not allowed.</string>
+    <string name="new_info_notification">Alerts</string>
+    <string name="durec_server_connection_lost">%1$s server connection lost.</string>
+    <string name="durec_stream_server_connection_lost">Stream server connection lost.</string>
+    <string name="durec_no_login_platform">No available link. Please bind a channel first.</string>
+    <string name="durec_vip_live_embed_error">Application rejected. Please select the YouTube distribution option to embed the app and apply again.</string>
+    <string name="durec_recording_gif_exit">You can\'t exit the app when recording a GIF.</string>
+    <string name="durec_fail_to_connect_service">Failed to connect to %1$s server</string>
+    <string name="durec_twitch_live_need_login">Login time out, please log in again.</string>
+
+    <string name="durec_audio_sound_alert_title">Audio alert</string>
+    <string name="durec_audio_sound_alert_detail">Play automatically for new messages</string>
+    <string name="durec_new_subscription">Subscription alert</string>
+    <string name="durec_new_donation">Donation alert</string>
+    <string name="durec_choose_audio_sound_alert">Please choose audio alert</string>
+    <string name="durec_common_none">None</string>
+    <string name="durec_robot_custom_reply_content_empty_text">No custom messages</string>
+    <string name="durec_robot_reply_content_status">Status</string>
+    <string name="durec_robot_reply_content_name">Name</string>
+    <string name="durec_robot_reply_content_name_edit_hint">This simply helps you distinguish between messages</string>
+    <string name="durec_common_content">Message</string>
+    <string name="durec_robot_reply_content_edit_hint">Enter something that you want the bot to say</string>
+    <string name="durec_robot_reply_content_name_empty_text">“Name” is required</string>
+    <string name="durec_robot_reply_content_empty_text">“Message” is required</string>
+    <string name="durec_robot_reply_content_delete_text">Are you sure you want to delete this message?</string>
+    <string name="durec_robot_reply_content_add">Add</string>
+    <string name="durec_live_add_comment">Say something…</string>
+    <string name="durec_common_selected">Selected</string>
+    <string name="durec_common_select">Select</string>
+    <string name="durec_vip_failed_message">Submission failed! Please try the following solution:</string>
+    <string name="durec_vip_failed_message_sub">Get %1$d+ subs on your YouTube channel.</string>
+    <string name="durec_vip_failed_message_embed">Enable the "Allow Embedding" option in YouTube.</string>
+    <string name="durec_common_popular">Popular</string>
+    <string name="durec_failed_choose_game_category">Failed to choose game category, please try again.</string>
+    <string name="durec_youtube_live_title_with_game_category_default">My %1$s livestream using %2$s</string>
+    <string name="durec_set_live_pause_image">Set livestream pause image</string>
+    <string name="durec_set_live_pause_image_tips">Your viewers will see this image when streaming is paused</string>
+    <string name="durec_set_live_pause_image_tips_more">The selected part will be used as the livestream pause image. You can zoom in/zoom out on the picture with two fingers. Move the picture to choose the part you want.</string>
+    <string name="durec_set_live_pause_image_success">Livestream pause image set.</string>
+    <string name="durec_set_live_pause_image_failed">Failed to set livestream pause image</string>
+    <string name="durec_subscribe_operations_frequent_warning">You have subscribed and unsubscribed too many times. You must wait one hour before subscribing to this streamer again.</string>
+    <string name="durec_fix_problem">Fix problem</string>
+    <string name="durec_fix_problem_tips">Tap the button to fix the "Scheduled end time must be after scheduled start time" problem. Please start livestreaming again after fixing the problem.</string>
+    <string name="durec_fix_problem_success">Problem fixed</string>
+    <string name="durec_fix_problem_failed">Failed to fix the problem</string>
+    <string name="durec_stop_live_for_screen_off">The livestream has ended automatically because no content was broadcast for an extended period.</string>
+    <string name="durec_no_publish_permission_in_page">You do not have permission to publish on this page.</string>
+    <string name="durec_facebook_live_lack_publish_permission">You can\'t livestream to pages or groups without the relevant content publication permissions.</string>
+    <string name="durec_vip_request_reject">Do not apply too frequently. Once rejected, you need to wait 72 hours before resubmitting.</string>
+    <string name="durec_robot_reply_content_items_counts_exceed_limit">You can add %1$d messages at most</string>
+
+    <string name="durec_subscribe_hint">%1$s just subscribed to you!</string>
+    <string name="durec_multiple_platform">Multistreaming</string>
+    <string name="durec_one_more_channel_indicator">Please connect to at least one more channel to start streaming</string>
+
+    <string name="durec_goal_style_selected_count_limit">Cannot cancel, please select at least one style</string>
+    <string name="durec_record_file_too_large_dialog_msg">Sorry, we have automatically stopped recording for you because your device doesn\'t support the storage of files larger than %1$s.</string>
+    <string name="durec_fb_live_title_hint">Please enter the stream title</string>
+
+    <string name="durec_live_tools_display_location">Live tools display</string>
+    <string name="durec_effect_audience_preview_hint">Select the tools to display when livestreaming</string>
+    <string name="durec_live_tools_display_location_broadcaster">On streamer\'s screen</string>
+    <string name="durec_live_tools_display_location_viewers">On viewers\' screens</string>
+    <string name="durec_live_tools_display_location_tool_guide_text">Enable/Disable the live tool</string>
+    <string name="durec_live_tools_display_location_orientation_guide_text">Switch to landscape/portrait</string>
+    <string name="durec_live_tools_rank_range_title">Rank by</string>
+    <string name="durec_live_tools_rank_range_subtitle">Scroll to display the 50 highest donations within the selected range</string>
+    <string name="durec_live_tools_rank_range_by_single_stream">Per Stream</string>
+    <string name="durec_live_tools_rank_range_by_week">Week</string>
+    <string name="durec_live_tools_rank_range_by_month">Month</string>
+    <string name="durec_live_tools_rank_range_by_all_time">All time</string>
+    <string name="durec_live_tools_rank_weekly_list">Weekly:</string>
+    <string name="durec_live_tools_rank_monehly_list">Monthly:</string>
+    <string name="durec_live_tools_rank_totally_list">AllTime:</string>
+    <string name="durec_check_paypal_status">Check status</string>
+    <string name="durec_fill_right_paypal_account">Please enter the correct account</string>
+    <string name="durec_fail_checked_paypal_account">Failed to check, please try again later</string>
+    <string name="durec_checked_paypal_account_available">This account can receive donations!</string>
+    <string name="durec_donation_be_limited_to_paypal">Donations to your account may be restricted by PayPal.</string>
+    <string name="durec_picture_display_duration_dialog_title">Image display duration</string>
+    <string name="durec_cannot_find_want_to_add">Can\'t find the music you want to add?</string>
+    <string name="durec_share_record_video_message">This is my video recorded with %1$s. It\'s easy to record your screen and livestream. Download link: %2$s</string>
+    <string name="durec_record_error_msg_of_succeed_save_file">Recording error, recording stopped. The video has been saved, please check the video list</string>
+
+    <string name="durec_failed_to_login_tamago">Tamago login failed. Please try again</string>
+    <string name="durec_connecting_to_tamago">Connecting to Tamago...</string>
+    <string name="durec_failed_to_connect_tamago">Failed to connect to Tamago server</string>
+    <string name="durec_tamago_account_restricted">Your Tamago account is restricted, can\'t live stream at the moment</string>
+    <string name="durec_subscribe_durecorder_on_ytb">Subscribe our channel on YouTube!</string>
+    <string name="durec_fb_login_expired">Login has expired. Please log in again.</string>
+    <string name="durec_fail_to_login_bduss">Failed to log in via %1$s. Please try again later.</string>
+    <string name="durec_fail_to_open_system_file_system">Failed to open system file manager</string>
+    <string name="durec_paypal_settings_title">PayPal Settings</string>
+    <string name="durec_choose_music_from_file_manager">Choose music from the file manager</string>
+
+    <string name="durec_solve_limited_to_paypal_title">Please also confirm in %1$s:</string>
+    <string name="durec_solve_limited_to_paypal_title_h5">PayPal Selling Tools Settings</string>
+    <string name="durec_solve_limited_to_paypal_step_1">1. You may have received an email notification from PayPal.</string>
+    <string name="durec_solve_limited_to_paypal_step_2">2. You can also check and attempt to solve this problem in %1$s.</string>
+    <string name="durec_solve_limited_to_paypal_step_2_h5">PayPal Resolution Center</string>
+    <string name="durec_solve_limited_to_paypal_step_3">3. Disable: Block payments sent to you in a currency you don\'t hold.</string>
+    <string name="durec_solve_limited_to_paypal_step_4">4. (For business account) Disable: Block payments from the "Pay Anyone" subtab of the Send Money tab.</string>
+    <string name="durec_paypal_resolution_center_title">Resolution Center</string>
+    <string name="durec_ytb_lack_of_offline_warn">Please grant us offline access to stay logged in. If you deny this request, you will be logged out in one hour. Your livestream will not be interrupted, but some live tools (comments, alerts, live information, etc.) will be disabled.</string>
+    <string name="durec_ytb_login_expired_in_one_hour">You will be logged out in an hour.</string>
+    <string name="durec_ytb_login_expired">You have been logged out. Please reauthorize to stay logged in. If you deny this request, your livestream will not be interrupted, but some live tools (comments, alerts, live information, etc.) will be disabled.</string>
+    <string name="durec_access_storage_permission_message">"Storage access" permission is needed to use this function. Please grant us "Storage access" permission and try again.</string>
+    <string name="durec_access_storage_permission_fail_toast">Failed to authorize, you cannot use this function.</string>
+    <string name="durec_access_camera_permission_message">"Camera access" permission is needed to use this function. Please grant us "Camera access" permission and try again.</string>
+    <string name="durec_access_camera_permission_fail_toast">Failed to authorize, you cannot open the camera.</string>
+    <string name="durec_access_record_audio_permission_fail_toast">Failed to authorize, the sound will not be recorded.</string>
+    <string name="durec_livestream_sync_tip">Livestream will be synchronized to %1$s</string>
+    <string name="durec_rush_gaming_download_dialog_msg">%1$s is a professional live game platform. In %2$s, viewers can watch high-definition live broadcasts while streamers can attract more viewers and make money through their livestream.</string>
+    <string name="durec_request_vip_require_embedded">The livestream is embedded</string>
+    <string name="durec_request_vip_require_embedded_detail">Only embedded streams can be shown in %1$s. You can enable this function in the YouTube settings: Creator Studio > Channel > Status and features > Enable embedded livestreams</string>
+    <string name="durec_request_vip_benefit_exclusive">Exclusive V Badge</string>
+    <string name="durec_request_vip_benefit_top_position">Top Position</string>
+    <string name="durec_request_vip_benefit_rapid_withdrawal">Rapid Withdrawal</string>
+    <string name="durec_accept_gift_alter">%1$s sent you a gift worth $%2$s \nView and withdraw it from %3$s</string>
+    <string name="durec_common_withdraw">Withdraw</string>
+    <string name="durec_live_setting_receive_gift">Gift Value</string>
+    <string name="durec_live_gift_get_failed">Failed to update the gift value</string>
+    <string name="durec_robot_available_toast">The message bot is back! Please reenable it on the live tools setting page!</string>
+    <string name="durec_rush_gaming_download_to_withdraw">You need to download %1$s and log in with the same YouTube account to withdraw the money.</string>
+
+    <string name="durec_rtmp_input">RTMP Input</string>
+    <string name="durec_rtmp_edit_server_title">Edit Server</string>
+    <string name="durec_rtmp_edit_server_desc">Please find the server address and stream key for this live broadcast platform\nCopy and paste below</string>
+    <string name="durec_rtmt_server_address">Server Address</string>
+    <string name="durec_rtmt_server_address_hint">rtmp://…</string>
+    <string name="durec_rtmt_server_address_null_alter">Please enter server address</string>
+    <string name="durec_rtmt_server_address_format_error">Server address should start with rtmp://</string>
+    <string name="durec_rtmt_stream_key">Stream Key</string>
+    <string name="durec_rtmt_stream_name">Name</string>
+    <string name="durec_rtmt_stream_name_exist_alter">This name already exists</string>
+    <string name="durec_quit_edit_server_page_alter">Are you sure you want to quit editing? The content will not be saved.</string>
+    <string name="durec_rtmp_server_custom_config">Custom %1$d</string>
+    <string name="durec_rtmp_start_failed">Unable to start live broadcast, please check that your server URL and key are entered correctly</string>
+    <string name="durec_rtmp_modify">Modify</string>
+    <string name="durec_rtmp_server_manager">Server Management</string>
+    <string name="durec_rtmp_server_cannot_delete_last_one">The last configuration item cannot be deleted</string>
+    <string name="durec_rtmp_server_delete_warnning">Are you sure to delete the %1$s configuration?</string>
+
+    <string name="durec_launch_access_storage_permission_message">"Storage access" permission is needed to use some key features, such as screen recording. Please grant "Storage access" permission to use %1$s normally.</string>
+    <string name="durec_launch_access_storage_permission_fail_toast">Authorization failed, you cannot use certain functions. </string>
+
+    <string name="durec_disable_watermark_notes_hours">Watch the video to disable the watermark for %1$d hours</string>
+    <string name="durec_disable_watermark_notes_day">Watch the video to disable the watermark for %1$d days</string>
+    <string name="durec_watch_now">Watch now</string>
+    <string name="durec_failed_disable_watermark">Failed to disable the watermark!</string>
+    <string name="durec_success_disable_watermark_hours">The watermark will be disabled for %1$d hours!</string>
+    <string name="durec_success_disable_watermark_day">The watermark will be disabled for %1$d days!</string>
+    <string name="durec_mobile_date_watch_ad_alert">You are using mobile data, which might incur data charges to play the ad. Tap "Confirm" to play.</string>
+    <string name="durec_download_ad_content_failed">Failed to download the ad content, please try later.</string>
+    <string name="durec_exit_disable_watermark_page_alert">The watermark will not be disabled if you close the ad now, are you sure to close?</string>
+    <string name="durec_cannot_goto_audio_perm_activity">The audio permission page can not be opened and recording is automatically started. To record audio, please turn on audio permission manually for %1$s in system settings.</string>
+
+    <string name="durec_view_more_by_link">View more by link</string>
+    <string name="durec_common_ad">Ad</string>
+    <string name="durec_failed_to_generate_promotion_video">Failed to generate promotion video, please choose the content you want to add first.</string>
+    <string name="durec_share_video_promotion_alert">Generate and share a promotion video to YouTube, so that you could earn revenue.</string>
+    <string name="durec_share_video_generate_promotion_video_title">Add Promotion</string>
+    <string name="durec_edit_video_promotion_alert">Add promotion content to earn revenue</string>
+    <string name="durec_common_save_as">Save as</string>
+    <string name="durec_edit_video_save_type_selection_alert">Please choose the video type to save. The normal video will not include promotion content and cannot get revenue.</string>
+    <string name="durec_promotion_video">Promotion video</string>
+    <string name="durec_normal_video">Normal video</string>
+    <string name="durec_promotion_and_revenue">Promotion and revenue</string>
+    <string name="durec_open_promotion_bubble_text">You could earn money from your livestream, check it here!</string>
+    <string name="durec_not_open_promotion_bubble_text">No promotion content added</string>
+    <string name="durec_common_revenue">Revenue</string>
+    <string name="durec_common_withdrawal">Withdrawal</string>
+    <string name="durec_time_to_show_promotion">Time to show promotion</string>
+    <string name="durec_promotion_content">Promotion content</string>
+    <string name="durec_my_promotion_video">My promotion video</string>
+    <string name="durec_rule_description">Rules</string>
+    <string name="durec_promotion_content_display_time_video">Video: intro and outro</string>
+    <string name="durec_promotion_content_display_time_video_detail">When choose to save as promotion videos, the promotion content will be added to intro and outro automatically.</string>
+    <string name="durec_promotion_content_display_time_live_pause">Live pause</string>
+    <string name="durec_promotion_content_display_time_live_pause_detail">When live to YouTube, the ad content will show on viewers\' screens when pause.</string>
+    <string name="durec_promotion_content_display_time_logo">Logo display in video</string>
+    <string name="durec_promotion_content_display_time_logo_detail">The logo and the ad name will display through the recorded video</string>
+    <string name="durec_promotion_content_display_time_video_in_video">Video display in video</string>
+    <string name="durec_promotion_content_display_time_video_in_video_detail">Promotion video will display when the video is playing.</string>
+    <string name="durec_check_ad_website">Check ad website</string>
+    <string name="durec_copy_ad_link">Copy ad link</string>
+    <string name="durec_no_promotion_content">More promotion content coming soon, please stay tuned</string>
+    <string name="durec_no_promotion_video_notice">Only videos in this list will bring in revenue. (Live videos will be listed automatically)</string>
+    <string name="durec_no_promotion_video">There is no promotion video for now</string>
+    <string name="durec_delete_promotion_video_alert">After deletion, the video will stop generating revenue. Are you sure to continue? (The source video on YouTube will not be deleted)</string>
+    <string name="durec_add_youtube_video_title">Add a YouTube video</string>
+    <string name="durec_add_youtube_video_hint">Video URL</string>
+    <string name="durec_failed_add_by_not_from_youtube">Failed to add the video. This video is not from YouTube</string>
+    <string name="durec_failed_add_by_not_the_current_channel">Failed to add the video. This video is not from the current channel.</string>
+    <string name="durec_failed_add_by_repeat">Please don\'t add repeatedly.</string>
+    <string name="durec_rules_page_start_earn_money">Start to earn money</string>
+    <string name="durec_rules_page_step_1">Enable promotion</string>
+    <string name="durec_rules_page_step_2">Generate and upload video</string>
+    <string name="durec_rules_page_step_3">Fill video URL</string>
+    <string name="durec_rules_page_step_4">Generate revenue</string>
+    <string name="durec_rules_page_tips">Tips</string>
+    <string name="durec_rules_page_tips_1">Only videos from YouTube will generate revenue.</string>
+    <string name="durec_rules_page_tips_2">The revenue will generate from the moment you fill in the video URL in %1$s</string>
+    <string name="durec_rules_page_tips_3">The revenue will be audited when withdrawing. If cheating is found, part of the amount will not be withdrawn. If you keep cheating, your account will be blocked.</string>
+    <string name="durec_go_withdraw">Go Withdraw</string>
+    <string name="durec_withdraw_update_description">Update at 16:00 (UTC+0) everyday</string>
+    <string name="durec_common_video">Video</string>
+    <string name="durec_common_view">View</string>
+    <string name="durec_add_new_promotion_video">Go to add a new video</string>
+    <string name="durec_failed_update_revenue_data">Failed to update the revenue data, please try later</string>
+    <string name="durec_withdraw_history">Withdrawal history</string>
+    <string name="durec_common_completed">Completed</string>
+    <string name="durec_common_rejected">Rejected</string>
+    <string name="durec_common_pending">Pending</string>
+    <string name="durec_video_violates_wanning">The video %1$s violates our agreement and is suspected of cheating. So it will no longer generate revenue</string>
+    <string name="durec_multi_video_violates_wanning">The video %1$s and some other videos violate our agreement and are suspected of cheating. So they will no longer generate revenue. </string>
+    <string name="durec_account_blocked_notify">The current account has been blocked. If you have any questions, please send the complaint statement email to durecorder2016@gmail.com</string>
+    <string name="durec_account_blocked_toast">The current account has been blocked. You cannot use this function</string>
+    <string name="durec_expect_bonus">Revenue: $%1$s/1000 views</string>
+    <string name="durec_common_submit_success">Submit successfully.</string>
+    <string name="durec_withdraw_submit_fail">Failed to submit PayPal account. Please try again.</string>
+    <string name="durec_disable_watermark_title">Disable watermark</string>
+    <string name="durec_no_withdraw_history">There is no withdrawal history</string>
+    <string name="durec_common_login">Login</string>
+    <string name="durec_audio_unavailable_message">Cannot record audio for now. There may be other applications that are using the voice recording (like some voice tools), please close it and try again. Or click the CONTINUE button to record a silent video.</string>
+    <string name="durec_my_promotion_video_choose_bind_ad_alert">Please choose the promotion content within the video you want to add</string>
+
+    <string name="durec_rtmp_exist_platform_warn_title">Log in to %1$s for live?</string>
+    <string name="durec_rtmp_exist_platform_warn_message">We already support the %1$s platform. You can log in to the account to livestream directly without entering RTMP address. \n You will have more live features after login.</string>
+    <string name="durec_rtmp_exist_platform_warn_user_rtmp">Use RTMP</string>
+    <string name="durec_rtmp_faq_title">RTMP stream help</string>
+
+    <string name="durec_common_paste">Paste</string>
+    <string name="durec_fail_to_choose_channel">Failed to login to the channel. Please try later.</string>
+    <string name="durec_opt_account_warn">You cannot log out the account when live streaming.</string>
+    <string name="durec_opt_channel_warn">You cannot change channel when live streaming.</string>
+    <string name="durec_choose_promotion_content_bubble_text">Please choose a promotion content first.</string>
+    <string name="durec_promotion_video_url_intro">If there is no promotion content in videos or no promotion link in video descriptions, your revenue will be canceled.</string>
+    <string name="durec_promotion_video_url_time_limit">For each video, the URL can only be submitted once.</string>
+    <string name="durec_expect_sale_order">%s of the price</string>
+    <string name="durec_select_promotion_content_failed_with_no_enabled_position">You cannot choose a promotion content without any enabled position.</string>
+    <string name="durec_timeshow_item_price">"Item pricing: %s "</string>
+    <string name="durec_timeshow_profit">Revenue: %s of the price</string>
+    <string name="durec_timeshow_product_revenue_desc">You will get the revenue once the order from your link is done. The final revenue will be based on the price of the order.</string>
+    <string name="durec_timeshow_commodity_purchase_link">Purchase link</string>
+    <string name="durec_timeshow_product_video_title">Introduce video</string>
+    <string name="durec_timeshow_product_video_subtitle">The videos will appear on your video list once downloaded. You can edit or share it directly. The purchase link will be attached.</string>
+    <string name="durec_common_downloaded">Downloaded</string>
+    <string name="durec_download_product_video_failed">Failed to download the video. Please try later.</string>
+    <string name="durec_order_amount_explain">The final revenue will be based on the order amount.</string>
+    <string name="durec_promotion_offline">Promotion offline</string>
+    <string name="durec_promotion_video_cheating">Cheating</string>
+    <string name="durec_cheating_promotion_video_title">The following videos will no longer generate revenue (because the promotion is offline, or no promotion content is attached or the video cannot be played.)</string>
+    <string name="durec_orders_invalid_title">The following orders are invalid because the order cannot be confirmed.</string>
+    <string name="durec_no_orders_text">There is no completed orders from your promotion link.</string>
+    <string name="durec_promotion_orders">Orders</string>
+    <string name="durec_promotion_item">Item</string>
+    <string name="durec_promotion_order">Order</string>
+    <string name="durec_withdraw_state_waiting_review">Waiting for review</string>
+    <string name="durec_withdraw_state_in_review">In review</string>
+    <string name="durec_withdraw_state_waiting_payment">Waiting for payment</string>
+    <string name="durec_promotion_withdraw_tip">Please enter a valid PayPal account. When your revenue exceeds %1$dUSD, the money can be withdrawn. Each month, you can apply to withdraw up to %2$d times. The withdrawal will be approved within 15 business days.</string>
+    <string name="durec_withdraw_submit_fail_by_limit_times">Failed to submit. Each month, you can apply to withdraw up to %1$d times. Please try next month.</string>
+    <string name="durec_unavailable_withdrawal_amount">%1$sUSD is not available for withdrawal.</string>
+    <string name="durec_unavailable_withdrawal_amount_tips">The item revenue will be available for withdrawal 30 days after the order is done.</string>
+    <string name="durec_failed_add_by_ad_offline">Failed to add the video. Your promotion content is offline. Please reselect a promotion content to make a new video.</string>
+    <string name="durec_failed_add_by_video_notfound">Failed to add the video. This video is deleted from YouTube or set as private.</string>
+    <string name="durec_failed_add_by_no_promotion_content">Failed to add the video. There is no promotion content in this video.</string>
+    <string name="durec_choose_language_in_live_streaming_to_tamago">Please choose the language you use when live streaming.</string>
+    <string name="durec_account_unlocked_tips">Your channel is unlocked now. You can get the revenue normally.</string>
+    <string name="durec_share_video_by_commodity_tips">The promotion video is saved! Share it and you will get the revenue when someone purchase the item you recommend.</string>
+    <string name="durec_by_from_link">Buy it from the link</string>
+    <string name="durec_choose_promotion_video_notice">Here are your promotion videos. Please choose and fill the YouTube URL.</string>
+    <string name="durec_ytb_ads_revenue_record_empty_prompt">You haven\'t submitted any URL of promotion video for the time being</string>
+    <string name="durec_ad_recourse_download_fail">Failed to download the promotion materials. Cannot generate the promotion video</string>
+    <string name="durec_contact_us">Contact us</string>
+    <string name="durec_special_thanks">Special thanks</string>
+    <string name="durec_common_not_set">NOT SET</string>
+    <string name="durec_ytb_first_share_promoted_video_to_ytb_prompt">The last step to get the revenue: fill the YouTube video URL. The revenue will be calculated from when you fill the URL.</string>
+    <string name="durec_ytb_add_promoted_video_has_existed">The video exists. No need to add it again.</string>
+    <string name="durec_ytb_add_promoted_video_success">Video has been added successfully.</string>
+    <string name="durec_ytb_add_promoted_video_not_belong_to_you">This video does not belong to your channel.</string>
+    <string name="durec_ytb_delete_promoted_video_success">Video has been deleted successfully</string>
+    <string name="durec_ytb_delete_promoted_video_failed">Failed to delete the video</string>
+    <string name="durec_generate_video_notice">Generating a promotion video…</string>
+    <string name="durec_receive_ad_detail_title">Promotion Settings</string>
+    <string name="durec_promotion_set_success">Promotion has been set successfully! You could generate the promotion video from the video list now.</string>
+    <string name="durec_withdraw_confirm_paypal_alert">Please confirm the PayPal account: %1$s to receive the revenue once approved.</string>
+    <string name="durec_add_promotion_repeat_remind">This video is a promotion video already</string>
+    <string name="durec_ytb_promotion_materials_download_prompt">Downloading the promotion materials...</string>
+    <string name="durec_ytb_promotion_expired_prompt">The promotion content you chose has expired. Please reset</string>
+    <string name="durec_promotion_guide_set">Choose promotion content</string>
+    <string name="durec_promotion_guide_share">Share promotion video to YouTube</string>
+    <string name="durec_promotion_guide_fill">Fill in YouTube video URL</string>
+    <string name="durec_promotion_guide_submit_url_tip">Submit successfully! The revenue will be shown at the "Revenue" page and updated everyday.</string>
+    <string name="durec_ytb_promotion_clear_settings">Clear settings</string>
+    <string name="durec_promotion_timeshow_get">Confirm selection</string>
+    <string name="durec_create_promotion_guide_click_here">Click here</string>
+    <string name="durec_create_promotion_guide_add_promotion">Choose \"Add promotion\" to generate a new video with the promotion content you set.</string>
+    <string name="durec_create_promotion_guide_got_it">Got it</string>
+    <string name="durec_promotion_content_title">Choose promotion content</string>
+    <string name="durec_txt_receivead_rules1">At "Promotion settings" page, you can check and manage current promotion content.</string>
+    <string name="durec_txt_receivead_rules2">Choose the promotion content and set the position to display in your video.</string>
+    <string name="durec_txt_receivead_rules3">From video list, choose "Add promotion" to generate a new video with the promotion content you set.</string>
+    <string name="durec_txt_receivead_rules4">Share promotion video to YouTube and copy the video URL.</string>
+    <string name="durec_txt_receivead_rules5">Fill in the YouTube video URL. The revenue will be calculated from when you fill the URL.</string>
+    <string name="durec_txt_receivead_rules6">The revenue will be shown at "Revenue" page and updated everyday.</string>
+    <string name="durec_receiver_ad_clear_settings_success">Cleared settings successfully!</string>
+    <string name="durec_receiver_ad_not_selected_at_least_one_ad">Failed to generate a promotion video. No promotion is set for the recorded video.</string>
+    <string name="durec_receiver_ad_no_setting_clear">There is no settings to be cleared</string>
+    <string name="durec_ytb_add_promoted_video_failed">Failed to add the video.</string>
+    <string name="durec_add_promotion_video_empty_toast">You have no promotion video yet. Please generate one from the video list first.</string>
+    <string name="durec_promotion_guide_generate">Generate videos with promotion</string>
+    <string name="durec_promotion_guide_not_set_tip">No promotion content has been set. Please choose the promotion content and set the position to display in your video first.</string>
+    <string name="durec_promotion_guide_has_generate_tip">Promotion video has been generated! Next step: share this video to YouTube to get a valid video URL.</string>
+    <string name="durec_ytb_promotion_clear_settings_prompt">After clearing the settings, you need to reselect the promotion content when generating new promotion videos.</string>
+    <string name="durec_auto_change_save_location_alert">When the selected location cannot be stored properly, it will automatically switch to the available storage location.</string>
+    <string name="durec_unknown_wifi_name">Unknown wifi name</string>
+    <string name="amount_should_under_10m">Please set the amount less than 10,000,000</string>
+    <string name="amount_should_not_less_then_1">Please set the amount at least 1</string>
+    <string name="amount_should_be_number">Only numbers available</string>
+    <string name="durec_vip_gained">You have already become our Partner Streamer. No need to apply again</string>
+    <string name="durec_robot_set_moderator_failed">Failed to set the moderator, the bot functions are still disabled.</string>
+    <string name="durec_robot_set_moderator_failed_live_not_enable">Failed to enable the bot. Please enable your YouTube channel for live streaming first.</string>
+    <string name="durec_multicast_cancel">Check cancelled</string>
+    <string name="durec_ad_receive_place_bonus">$%1$s/1000 views</string>
+    <string name="durec_facebook_play_url_invalid">Failed to get video address and play the video. Please check it on your Facebook.</string>
+    <string name="durec_live_stream_encode_error">Failed to start the live because of the video encoder error. Please try later.</string>
+    <string name="durec_music_duration_limit_prompt">Music duration can not be 0 second. Please re-adjust the music.</string>
+    <string name="durec_common_Connecting">Connecting</string>
+    <string name="durec_youtube_login_error">Failed to load login page. Please check your internet and retry.</string>
+    <string name="durec_live_no_more_than_6_hours">Live stream more than 6 hours will be stopped automatically. Please restart.</string>
+
+    <string name="durec_product_ad_first_selected_prompt">Promotion has been set successfully! Now go to make a video with promotion content. You will get the revenue when someone buys it.</string>
+    <string name="durec_product_introduction_video_downloading_prompt">Downloading the introduce video…</string>
+    <string name="durec_receivead_product_header">Item offer: get revenue by per sale</string>
+    <string name="durec_login_type_failed">Failed to login. Please try again.</string>
+
+    <string name="durec_no_longer_prompted">No longer prompted</string>
+    <string name="durec_window_permission_location_setting">Settings/Security</string>
+    <string name="durec_window_permission_location_security">Security - Manage apps - Permissions</string>
+    <string name="durec_window_permission_location_phone_manager">Phone Manager - Privacy Permissions</string>
+    <string name="durec_window_permission_location_i_manager">i Manager – Permission Management</string>
+    <string name="durec_window_permission_guide_text">Sorry, due to your device system limitations, we can\'t open the floating window permission page. You can try to open the floating window permission through %1$s in %2$s, or search for your device brand + floating window through the network to learn how to open the floating window permission.</string>
+    <string name="durec_setting_card_window_permission_title">Enable the floating window permission to use the floating window for recording and livestreaming</string>
+    <string name="durec_setting_card_notify_permission_title">Enable the notification bar permission to ensure proper use of %1$s and improve recording stability</string>
+    <string name="durec_live_interrupt_by_server">Failed to livestream. Please check if your RTMP address is incorrect, expired or not approved.</string>
+
+    <string name="durec_slogan">Make your screen your stage</string>
+
+    <string name="durec_rate_guide">5 stars means BEST</string>
+    <string name="durec_twitter_login_live_illustrate">You are now logged in with Periscope account. You will live to Periscope when the live starts. If you want to live to Twitter, please log out from setting page and log in again with Twitter account.</string>
+    <string name="durec_twitter_login_failed">Failed to log in to Twitter. Please try again.</string>
+    <string name="durec_twitter_login_connecting">Connecting to Twitter...</string>
+    <string name="durec_twitter_login_connect_failed">Failed to connect to Twitter</string>
+    <string name="durec_receivead_impression_header">Brand offer: Get revenue by video views, app downloads and activations</string>
+    <string name="durec_download_activation">Download and activation</string>
+    <string name="durec_divided_into_price_description">You will get revenue when someone downloads and activates the app from your promotion link. The revenue varies across districts.</string>
+    <string name="durec_bottom_banner">Video: bottom banner</string>
+    <string name="durec_bottom_banner_description">When the video is created, promotional banners will be added at the bottom of the video automatically.</string>
+    <string name="durec_common_downloads">Downloads</string>
+    <string name="durec_common_views">Views</string>
+    <string name="durec_download_tab_null">There is no download or activation from your promotion link now</string>
+    <string name="durec_download_online_music_toast">Downloading the current music. Please try later.</string>
+    <string name="durec_failed_add_by_no_promotion_link">Failed to add the video. There is no promotion link in the video description.</string>
+    <string name="durec_promotion_date">Date</string>
+    <string name="durec_tamago_err_no_language">Please select the language.</string>
+    <string name="durec_receive_ad_timeshow_not_choice">You have turned off all "time to show". Please enable at least one before you can select the promotion.</string>
+    <string name="durec_receive_ad_timeshow_choice_at_least_one">Can\'t select this promotion. Please set the time to show the promotion first.</string>
+    <string name="durec_download_product_video_success">The video is downloaded. Share it or you could check and edit it later from the video list.</string>
+    <string name="durec_timeshow_download_link">Download link</string>
+    <string name="durec_common_promotion">Promotion</string>
+
+    <string name="durec_no_install_app_store">No app store installed.</string>
+
+    <string name="durec_timeshow_youtube_card">YouTube Card</string>
+    <string name="durec_timeshow_youtube_card_description">Please set on YouTube Creator Studio: Video Manager > Videos > Edit > Cards > Add card > Create link > Fill in your download link</string>
+    <string name="durec_timeshow_easier_get_revenue">easier to get revenue</string>
+    <string name="durec_app_description">DU Recorder-Screen Recorder,Video Editor,Live</string>
+    <string name="durec_download_now">Download now</string>
+    <string name="durec_download_and_use_five_minutes">Download and use for 5+ minutes</string>
+
+    <string name="durec_twitter_login">Twitter login</string>
+
+    <string name="durec_timeshow_product_price_and_revenue">%1$s of %2$s (Item pricing)</string>
+
+    <string name="durec_premium_features">%1$s Premium Features</string>
+    <string name="durec_crop_video">Crop video</string>
+    <string name="durec_video_speed">Video speed</string>
+    <string name="durec_feature_set_live_pause_image">Set live-pause image</string>
+    <string name="durec_rtmp_live">RTMP live</string>
+    <string name="durec_no_ads">No ads</string>
+    <string name="durec_more_in_future">More in future…</string>
+    <string name="durec_monthly">Monthly</string>
+    <string name="durec_yearly">Yearly</string>
+    <string name="durec_six_monthly">6-Monthly</string>
+    <string name="durec_free_trial_for_days">Free Trial for %1$s days</string>
+    <string name="durec_upgrade_subscription">Upgrade the subscription</string>
+    <string name="durec_renew_subscription">Renew the subscription</string>
+    <string name="durec_restore">Restore</string>
+    <string name="durec_premium_explain_before_trial">The price varies across districts.</string>
+    <string name="durec_premium_explain_price">After the free trial, the subscription will automatically extends to an annual subscription for %1$s/%2$s.</string>
+    <string name="durec_premium_explain_cancel">You could use this function after the subscription. You could cancel it from Google Play at anytime. </string>
+    <string name="durec_premium_explain_upgrade">After the upgrade, the unused balance of the old subscription is proportional to the new subscription.</string>
+    <string name="durec_premium_explain_after_trial">You have enjoyed the free trial. Your subscription will start with %1$s/%2$s</string>
+    <string name="durec_premium_guide_prompt">You could use this function after the subscription. You could cancel it from Google Play at anytime. </string>
+    <string name="durec_premium_guide_check_more_features">Check more premium features</string>
+    <string name="durec_premium_quit_trial">Give up free trial</string>
+    <string name="durec_premium_quit_prompt">You could use the following functions after the subscription. You could cancel it from Google Play at anytime. </string>
+
+    <string name="durec_premium_sub_failed">Failed to subscribe.</string>
+    <string name="durec_premium_error_current_sub_plan">This is your current subscription plan. Please choose another plan you want to upgrade to.</string>
+    <string name="durec_premium_error_unable_downgrade">Unable to select a downgrade subscription plan, please choose an upgrade plan.</string>
+    <string name="durec_premium_error_reason">Failed to create the billing, it may because</string>
+    <string name="durec_not_login_google_account">You havn\'t loged in any account on the Google Play. </string>
+    <string name="durec_google_billing_cannot_run">Google billing cannot run on this device.</string>
+    <string name="durec_not_connect_network">Failed to connect to the internet.</string>
+    <string name="durec_premium_restore_success">Your subscription has been restored successfully!</string>
+    <string name="durec_premium_restore_failed">Failed to restore.</string>
+    <string name="durec_no_sub_plan">There is no subscription plan with the current account.</string>
+    <string name="durec_choose_file">Choose file</string>
+    <string name="durec_upload_screenshot">Upload a screenshot (optional)</string>
+    <string name="durec_upload_image_failed">Failed to upload the image. Please try again.</string>
+    <string name="durec_vip_feedback_input_hint">Your feedback will be a priority case</string>
+    <string name="durec_no_app_store_installed">No app store installed</string>
+    <string name="durec_merge_videos_and_images">Merge Videos &amp; Images</string>
+    <string name="durec_videos_and_images">Videos &amp; Images</string>
+    <string name="durec_dialog_delete_title">Are you sure to delete?</string>
+    <string name="durec_deleted_all_prompt">You have deleted all videos and images. Do you want to restart?</string>
+    <string name="durec_restart">RESTART</string>
+    <string name="durec_no_thanks">NO THANKS</string>
+    <string name="durec_tab_to_add_subtitle">Tap here to add subtitle</string>
+    <string name="durec_long_press_to_adjust_position">Long press to adjust position</string>
+    <string name="durec_feedback_upload_image_failure">Uploading the image, please submit when complete.</string>
+    <string name="durec_apply_to_all_images">Apply to all images</string>
+    <string name="durec_feature_vip_feedback">VIP feedback</string>
+    <string name="durec_googleplay_need_update">Something is wrong with Google Play. Please update Google Play and try again.</string>
+    <string name="durec_common_duration">Duration</string>
+
+    <string name="durec_divided_into_price_small_description">Your download will also bring in revenue!</string>
+    <string name="durec_divided_into_jump_google_play">Jumping to Google Play Store…</string>
+    <string name="durec_download_and_use">Download and use</string>
+
+    <string name="durec_sku_price_query_fail">Failed to update the price.</string>
+    <string name="durec_billing_service_error">Google Billing service error.</string>
+    <string name="durec_gp_1002_error">Cannot open Google Play. It may because:\n
+        1. Google Play cannot pop up. Please set from your system settings and try again: apps > Google Play > Permissions > enable "start in background".\n
+        2. Google Play or Google Billing service error.</string>
+
+    <string name="durec_promotion_notification_guide">Do you want to get notified when new promotion is available? Please set from Settings > Allow notification.</string>
+    <string name="durec_common_view_example">View example</string>
+
+    <string name="durec_promotion_display_tip">you will get revenue according your video views.</string>
+
+    <string name="durec_home_tab_promotion_bubble_prompt">Click here to earn money</string>
+
+
+    <string name="durec_promotion_bubble_entry_guide">Get revenue from the promotion center!</string>
+    <string name="durec_promotion_download_tip">You will also get the revenue when someone else downloads from your promotion link.</string>
+    <string name="durec_promotion_download_profit_tip">The revenue varies across countries or regions.</string>
+    <string name="durec_promotion_download_use_tip">It only counts as a valid download after being used for a while.</string>
+    <string name="durec_common_data_load_faild_toast">Failed to load, please try again.</string>
+    <string name="durec_common_raise_effect_method">Tips to increase promotion</string>
+    <string name="durec_promotion_video_share_auto_add_link_tips">Add promotion to your video. When sharing the video, the promotion link will be automatically attached.</string>
+    <string name="durec_promotion_download_youself_tips">The download from yourself will also bring in revenue.</string>
+    <string name="durec_promotion_copy_your_link_share_tips">Copy your promotion link, post it to group, Facebook, YouTube or other platforms so that your followers can download.</string>
+    <string name="durec_promotion_download_and_use_tips">It is easier to bring in more revenue after being used for a while.</string>
+    <string name="durec_receive_ad_promotion_dialog_title">Select promotion content</string>
+    <string name="durec_receive_ad_promotion_dialog_prompt">Select the promotion that you want to add. The generated video will not cover the original video.</string>
+    <string name="durec_common_allow_notification">Allow notification</string>
+    <string name="durec_promotion_notfication_open_introduce">Get notified when new promotion is available.</string>
+    <string name="durec_promotion_notfication_open_guide_summary">System notification is disabled. Please set from Device system settings > Notification > %1$s > Allow notification and you will get notification when there is new offer.</string>
+    <string name="durec_promotion_notfication_close_tips">You will not receive any notification.</string>
+    <string name="durec_promotion_profit_introduce_1">Check the current promotion list by clicking Promotion content.</string>
+    <string name="durec_promotion_profit_introduce_2">Download or share your promotion link. Valid download will bring you revenue.</string>
+    <string name="durec_promotion_profit_introduce_3">Add promotion to your video. When sharing the video, the promotion link will be automatically attached.</string>
+    <string name="durec_promotion_profit_introduce_4">If the revenue is calculated by video views, you have to fill in the video URL after sharing the video to YouTube</string>
+    <string name="durec_promotion_profit_introduce_5">You could check your revenue details from the revenue page and apply for withdrawal.</string>
+    <string name="durec_promotion_profit_delay_introduce">Data may be delayed by 1-2 days.</string>
+    <string name="durec_promotion_center">Promotion center</string>
+    <string name="durec_promotion_classic_download_tips">Download or share the promotion link to your followers, each valid download will bring in revenue</string>
+    <string name="durec_promotion_classic_display_tips">Add the following promotion to your video, the revenue will be calculated by the video views</string>
+    <string name="durec_promotion_share_link">I just found a great app, check it out: %1$s</string>
+    <string name="durec_common_theme">Theme</string>
+    <string name="durec_theme_page_premium">Premium</string>
+    <string name="durec_theme_page_free">Free</string>
+    <string name="durec_common_downloading">Downloading</string>
+    <string name="durec_common_apply">Apply</string>
+    <string name="durec_theme_download_failed_toast">Theme download failed, please check the network and try again.</string>
+    <string name="durec_theme_apply_failed_toast">Sorry, the theme cannot be applied.</string>
+    <string name="durec_theme_apply_success_toast">The theme has been successfully applied.</string>
+    <string name="durec_theme_has_new_version_toast">The current theme has the latest version, please go to the theme page to update and apply it!</string>
+    <string name="durec_background_picture_apply_to_all">Apply to all videos and images</string>
+
+    <string name="durec_offer_notification_pemission_guide">System notification is disabled. Please set from Device system settings > Notification > DU Recorder > Allow notification and you will get notification when there is new offer.</string>
+
+    <string name="durec_merge_media_done_count_title">Edit(%1$d)</string>
+
+    <string name="durec_theme_offical_orange">Official orange</string>
+
+    <string name="durec_vip_feedback_email">Email Address</string>
+
+    <string name="durec_subscribe_action_btn">Subscribe now</string>
+    <string name="durec_custom_watermark_guide">Do you want to add your own watermark to the videos? You could design a custom watermark as you like.</string>
+    <string name="durec_custom_watermark_btn">Custom watermark</string>
+    <string name="durec_subscribe_guide_upper_info">Enjoy advanced features</string>
+    <string name="durec_subscribe_guide_lower_info">Upgrade to %s Premium</string>
+    <string name="durec_ad_unlock_recommend_dl_by_day_singular">Download the recommended app below and open it, the \"%1$s\" feature will be available for free for %2$d day.</string>
+    <string name="durec_ad_unlock_recommend_dl_by_day_plural">Download the recommended app below and open it, the \"%1$s\" feature will be available for free for %2$d days.</string>
+    <string name="durec_ad_unlock_recommend_dl_by_times_singular">Download the recommended app below and open it, the \"%1$s\" feature will be available for free for %2$d time.</string>
+    <string name="durec_ad_unlock_recommend_dl_by_times_plural">Download the recommended app below and open it, the \"%1$s\" feature will be available for free for %2$d times.</string>
+    <string name="durec_ad_unlock_recommend_dl_btn">Download and open</string>
+    <string name="durec_ad_unlock_recommend_dl_loading_error">There is no available app, please try later.</string>
+    <string name="durec_ad_unlock_recommend_dl_success_by_day_singular">Successfully unlock the \"%1$s\" feature, now you could use it for free for %2$d day.</string>
+    <string name="durec_ad_unlock_recommend_dl_success_by_day_plural">Successfully unlock the \"%1$s\" feature, now you could use it for free for %2$d days.</string>
+    <string name="durec_ad_unlock_recommend_dl_success_by_times_singular">Successfully unlock the \"%1$s\" feature, now you could use it for free for %2$d time.</string>
+    <string name="durec_ad_unlock_recommend_dl_success_by_times_plural">Successfully unlock the \"%1$s\" feature, now you could use it for free for %2$d times.</string>
+    <string name="durec_remove_ad">Remove ads</string>
+    <string name="durec_remove_ad_by_upgrading_premium">Upgrade to %s Premium to use without any ads. It could be cancelled at anytime.</string>
+    <string name="durec_remove_ad_saving_video">%s is saving the video</string>
+
+    <string name="durec_live_guide_desc_more_fun">Choose a platform and broadcast your screen now!</string>
+    <string name="durec_premium_sub_success">Subscribed successfully!\nNow you could use all premium features!\nThank you for your support!</string>
+
+    <string name="durec_live_disable_use_rtmp_prompt">Sorry, %1$s service is unavailable. You can get RTMP address and code to use RTMP to stream to %2$s.</string>
+
+    <!--2.1.2 去水印弹框新增文案-->
+    <string name="durec_custom_watermark_guide_sec_line">You could set it later from \"Settings\" > \"Personalized watermark\".</string>
+
+    <string name="durec_common_in_use">In Use</string>
+    <string name="durec_different_themes">Different themes</string>
+    <string name="durec_apply_to_all">Apply to all</string>
+    <string name="durec_common_split">Split</string>
+    <string name="durec_merge_split_bubble_text">Click to split video into segments</string>
+    <string name="durec_merge_split_conflict_with_remove_middle">Split will clear the operation of removing middle.</string>
+    <string name="durec_merge_mosaic_zoom_bubble_text">Try zooming in and out</string>
+    <string name="durec_merge_mosaic_slide_bubble_text">Slide to draw mosaic</string>
+    <string name="durec_common_texture">Texture</string>
+    <string name="durec_common_canvas">Canvas</string>
+
+    <!-- 2.1.4视频压缩，摄像头边框，订阅sale部分 -->
+    <string name="durec_video_compress_title">Video compression</string>
+    <string name="durec_video_compress_before">Before</string>
+    <string name="durec_video_compress_after">After</string>
+    <string name="durec_video_compress_desc">This is a premium feature. You need to upgrade to %1$s Premium to compress the video.</string>
+    <string name="durec_video_compress_trial_button">Free trial and compress</string>
+    <string name="durec_video_compress_no_trial_button">Subscribe and compress</string>
+    <string name="durec_common_video_compress">Compress</string>
+    <string name="durec_video_compressing">Compressing the video...</string>
+    <string name="durec_video_compress_success_toast">Compressed successfully!</string>
+    <string name="durec_video_compress_fail_toast">Failed to compress, please try again.</string>
+    <string name="durec_subscription_sale_desc">The price will be restored to the original price after the sale event.</string>
+    <string name="durec_camera_frame_title">Camera frame</string>
+    <string name="durec_subscription_quit_title">Give up subscription</string>
+    <string name="durec_sbuscription_explain_price_no_trial">The subscription will be charged for %1$s/%2$s and will automatically renew before the current period ends.</string>
+    <string name="durec_facebook_live_unavailable_toast">Sorry, Facebook service is disabled. You can get RTMP address and code to use RTMP to stream to Facebook.</string>
+    <string name="durec_merge_at_least_one_file_broken">Broken files are automatically removed from the edit list for you.</string>
+
+    <string name="durec_video_edit_error">The phone may have performance issues and cannot continue editing. Please clean up the background app and try again later.</string>
+    <string name="durec_common_canvas_and_background">Canvas &amp; Background</string>
+    <string name="durec_common_blur">Blur</string>
+    <string name="durec_video_and_canvas_similar_proportions_warnning">The current video may cover the background when the video and the canvas have a similar scale.</string>
+    <string name="durec_common_video_frame">Frame</string>
+    <string name="durec_common_download_fail">Download failed, please check the network and try again.</string>
+    <string name="durec_merge_frame_resource_lost_error">Cannot find the frame resource of the corresponding scale, please re-download the frame.</string>
+    <string name="durec_common_video_filter">Filter</string>
+    <string name="durec_video_filter_sakura">Sakura</string>
+    <string name="durec_video_filter_air">Air</string>
+    <string name="durec_video_filter_calm">Calm</string>
+    <string name="durec_video_filter_latte">Latte</string>
+    <string name="durec_video_filter_ideal">Ideal</string>
+    <string name="durec_video_filter_antique">Antique</string>
+    <string name="durec_video_filter_records">Records</string>
+    <string name="durec_video_filter_photograph">Photograph</string>
+    <string name="durec_video_filter_deep">Deep</string>
+    <string name="durec_video_filter_romance">Romance</string>
+    <string name="durec_video_filter_whitening">Whitening</string>
+    <string name="durec_video_filter_sunset">Sunset</string>
+    <string name="durec_video_filter_sunrise">Sunrise</string>
+    <string name="durec_video_filter_nostalgia">Nostalgia</string>
+    <string name="durec_video_filter_pixar">Pixar</string>
+    <string name="durec_video_filter_memories">Memories</string>
+    <string name="durec_video_filter_emotion">Emotion</string>
+    <string name="durec_video_filter_tender">Tender</string>
+    <string name="durec_video_filter_cool">Cool</string>
+    <string name="durec_video_filter_evergreen">Evergreen</string>
+    <string name="durec_video_filter_sunny">Sunny</string>
+    <string name="durec_video_filter_inkwell">Inkwell</string>
+    <string name="durec_video_filter_sketch">Sketch</string>
+    <string name="durec_video_filter_crayon">Crayon</string>
+    <string name="durec_video_filter_warm">Warm</string>
+    <string name="durec_video_filter_fragrant">Fragrant</string>
+    <string name="durec_video_filter_vibrant">Vibrant</string>
+    <string name="durec_video_filter_fairy">Fairy</string>
+    <string name="durec_video_filter_sweets">Sweet</string>
+    <string name="durec_merge_mosaic_two_finger_move_guide">Two fingers to move</string>
+
+    <string name="durec_camera_frame_download_failed">Failed to download the frame, please try again.</string>
+
+    <string name="durec_subscription_explain_price_with_trial">After the free trial for %1$s days, the subscription will be charged for %2$s/%3$s and automatically renew.</string>
+    <string name="durec_video_compress_bitrate_too_low">The video quality cannot be lower. </string>
+    <string name="durec_video_compress_resolution_too_low">The video resolution cannot be lower. </string>
+    <string name="durec_video_compress_invalid_video_info">Failed to get this video\'s information.</string>
+    <string name="durec_subscription_sale_failed_or_ended">Failed to get sale information or the sale ended.</string>
+
+</resources>

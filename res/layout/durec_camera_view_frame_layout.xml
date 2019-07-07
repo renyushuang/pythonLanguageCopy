@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/camera_view_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/durec_transparent"
+        app:cardCornerRadius="@dimen/durec_float_camera_window_radius"
+        app:cardElevation="0dp">
+
+        <TextureView
+            android:id="@+id/camera_texture_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/camera_frame_default_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/durec_transparent"
+        app:cardCornerRadius="@dimen/durec_float_camera_window_radius"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/durec_camera_frame_default_icon"
+            android:visibility="visible" />
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/camera_frame_root_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/durec_transparent"
+        app:cardElevation="0dp">
+
+        <ImageView
+            android:id="@+id/camera_frame_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:src="@drawable/durec_camera_frame_default_icon" />
+    </android.support.v7.widget.CardView>
+
+    <ProgressBar
+        android:id="@+id/camera_frame_loading"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:visibility="gone" />
+
+</FrameLayout>

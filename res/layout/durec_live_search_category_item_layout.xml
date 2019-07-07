@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/search_category_container"
+    android:layout_width="match_parent"
+    android:layout_height="48dp">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/durec_live_add_group_item_cover_selector" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/durec_dialog_padding"
+        android:paddingRight="@dimen/durec_dialog_padding">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/category_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="@color/durec_radio_dialog_item_text_selector"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/category_add_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/durec_music_select_add_selector" />
+    </LinearLayout>
+</FrameLayout>

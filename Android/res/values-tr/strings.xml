@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+	<string name="durec_recorder_noti_start">Kaydet</string>
+	<string name="durec_recorder_noti_recording_sub">Kaydı durdurmak için buraya dokunun.</string>
+	<string name="durec_recorder_noti_start">Kaydet</string>
+	<string name="durec_recorder_noti_recording_sub">Kaydı durdurmak için buraya dokunun.</string>
+	<string name="durec_recorder_noti_start">Kaydet</string>
+	<string name="durec_recorder_noti_recording_sub">Kaydı durdurmak için buraya dokunun.</string>
+	<string name="durec_recorder_noti_start">Kaydet</string>
+	<string name="durec_recorder_noti_recording_sub">Kaydı durdurmak için buraya dokunun.</string>
+	<string name="durec_feedback_contact_distinguish_title">İletişim:</string>
+	<string name="durec_recorder_noti_start">Kaydet</string>
+	<string name="durec_recorder_noti_recording_sub">Kaydı durdurmak için buraya dokunun.</string>
+	<string name="durec_feedback_contact_distinguish_title">İletişim:</string>
+	<string name="durec_recorder_noti_start">Kaydet</string>
+	<string name="durec_recorder_noti_recording_sub">Kaydı durdurmak için buraya dokunun.</string>
+	<string name="durec_setting_show_touches">Dokunmaları göster</string>
+	<string name="durec_recorder_noti_start">Kaydet</string>
+	<string name="durec_setting_show_touches">Dokunmaları göster</string>
+	<string name="durec_recorder_noti_start">Kaydet</string>
+</resources>

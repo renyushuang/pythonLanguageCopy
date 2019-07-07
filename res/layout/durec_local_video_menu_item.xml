@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_menu_edit_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:drawableStart="@drawable/durec_trim_icon_selector"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical|left"
+        android:minWidth="137dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:text="@string/durec_common_edit"
+        android:textColor="@color/durec_menu_text_color"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/durec_menu_edit_click_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/durec_menu_edit_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/durec_menu_edit_layout" />
+
+    <View
+        android:id="@+id/durec_menu_line_one"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="#c1c1c1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_menu_edit_layout" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_menu_delete_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:drawableStart="@drawable/durec_delete_icon_selector"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical|left"
+        android:minWidth="137dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:text="@string/durec_common_delete"
+        android:textColor="@color/durec_menu_text_color"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durec_menu_line_one" />
+
+    <View
+        android:id="@+id/durec_menu_delete_click_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/durec_menu_delete_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/durec_menu_delete_layout" />
+
+    <View
+        android:id="@+id/durec_menu_line_two"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="#c1c1c1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_menu_delete_layout" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_menu_rename_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:drawableStart="@drawable/durec_rename_icon_selector"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical|left"
+        android:minWidth="137dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:text="@string/durec_common_rename"
+        android:textColor="@color/durec_menu_text_color"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_menu_line_two" />
+
+    <View
+        android:id="@+id/durec_menu_rename_click_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/durec_menu_rename_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/durec_menu_rename_layout" />
+
+    <View
+        android:id="@+id/durec_menu_line_three"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="#c1c1c1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_menu_rename_layout" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_menu_compress_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:drawableStart="@drawable/durec_compress_icon_selector"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical|left"
+        android:paddingLeft="23dp"
+        android:text="@string/durec_common_video_compress"
+        android:textColor="@color/durec_menu_text_color"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/durec_menu_line_four"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_menu_line_three" />
+
+    <ImageView
+        android:id="@+id/durec_menu_compress_premium_mark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="23dp"
+        android:src="@drawable/durec_premium_features_mark"
+        app:layout_constraintBottom_toTopOf="@+id/durec_menu_line_four"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/durec_menu_compress_layout"
+        app:layout_constraintTop_toBottomOf="@id/durec_menu_line_three" />
+
+    <View
+        android:id="@+id/durec_menu_compress_click_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/durec_menu_compress_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/durec_menu_compress_layout" />
+
+    <View
+        android:id="@+id/durec_menu_line_four"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="#c1c1c1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_menu_compress_layout" />
+
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_menu_add_ads_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:drawableStart="@drawable/durec_video_pop_promotion_selector"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical|left"
+        android:minWidth="137dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:text="@string/durec_share_video_generate_promotion_video_title"
+        android:textColor="@color/durec_menu_text_color"
+        android:textSize="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_menu_line_four" />
+
+    <View
+        android:id="@+id/durec_menu_add_ads_click_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="@id/durec_menu_add_ads_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/durec_menu_add_ads_layout" />
+</android.support.constraint.ConstraintLayout>

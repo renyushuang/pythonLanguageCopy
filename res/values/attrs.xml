@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="base_recyclerview">
+        <attr name="orientation">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="FontTextView">
+        <attr name="fontType" format="reference">
+            <enum name="light" value="1" />
+            <enum name="regular" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="StrokeTextView">
+        <attr name="strokeWidth" format="dimension" />
+        <attr name="strokeColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CropImageView">
+        <attr name="highlightColor" format="reference|color" />
+        <attr name="showThirds" format="boolean" />
+        <attr name="showCircle" format="boolean" />
+        <attr name="showHandles">
+            <enum name="changing" value="0" />
+            <enum name="always" value="1" />
+            <enum name="never" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="LikeButton">
+        <attr name="icon_type" format="string" />
+        <attr name="icon_size" format="dimension|reference" />
+        <attr name="like_drawable" format="reference" />
+        <attr name="unlike_drawable" format="reference" />
+        <attr name="dots_primary_color" format="color|reference" />
+        <attr name="dots_secondary_color" format="color|reference" />
+        <attr name="circle_start_color" format="color|reference" />
+        <attr name="circle_end_color" format="color|reference" />
+        <attr name="liked" format="boolean" />
+        <attr name="is_enabled" format="boolean" />
+        <attr name="anim_scale_factor" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="RangeSeekBar">
+        <attr name="trackHeight" format="dimension" />
+        <attr name="trackDrawable" format="reference" />
+        <attr name="trackDisabledDrawable" format="reference" />
+        <attr name="thumb" format="reference" />
+        <attr name="needle" format="reference" />
+        <attr name="showLabels" format="boolean" />
+        <attr name="labelSize" format="dimension" />
+        <attr name="labelColor" format="color|reference" />
+        <attr name="labelMarginBottom" format="dimension" />
+        <attr name="max" format="integer" />
+        <attr name="maskMode">
+            <enum name="center" value="0" />
+            <enum name="besides" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TimePickerView">
+        <attr name="itemWidth" format="dimension" />
+        <attr name="itemHeight" format="dimension" />
+        <attr name="textNormalSize" format="dimension" />
+        <attr name="textSelectSize" format="dimension" />
+        <attr name="textNormalColor" format="color|reference" />
+        <attr name="textSelectColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressView">
+        <attr name="circle_color" format="color|reference" />
+        <attr name="arc_color" format="color|reference" />
+        <attr name="text_color" format="color|reference" />
+        <attr name="circle_radius" format="dimension|reference" />
+        <attr name="circle_stroke_width" format="dimension|reference" />
+        <attr name="arc_stroke_width" format="dimension|reference" />
+        <attr name="center_text_size" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SpringIndicator">
+        <!--tab item bg -->
+        <attr name="indicatorBackground" format="reference" />
+        <!--indicator bg color-->
+        <attr name="indicatorColor" format="reference" />
+        <!--indicator bg colors. should equals your titles count-->
+        <attr name="indicatorColors" format="reference" />
+        <!--max indicator radius-->
+        <attr name="radiusMax" format="dimension" />
+        <!--min indicator radius when moving-->
+        <attr name="radiusMin" format="dimension" />
+        <attr name="indicatorSize" format="dimension" />
+        <attr name="indicatorMargin" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="progressColor" format="color|reference" />
+        <attr name="backgroundColor" format="color|reference" />
+        <attr name="innerBackgroundColor" format="color|reference" />
+        <attr name="innerBackgroundDrawable" format="reference" />
+        <attr name="maxProgress" format="integer" />
+        <attr name="progress" format="integer" />
+        <attr name="progressWidth" format="dimension|reference" />
+        <attr name="startDegree" format="integer" />
+    </declare-styleable>
+
+
+    <!-- indicator -->
+    <!-- 设置显示器颜色 -->
+    <attr name="tl_indicator_color" format="color" />
+    <!-- 设置显示器高度 -->
+    <attr name="tl_indicator_height" format="dimension" />
+    <!-- 设置显示器固定宽度 -->
+    <attr name="tl_indicator_width" format="dimension" />
+    <!-- 设置显示器margin,当indicator_width大于0,无效 -->
+    <attr name="tl_indicator_margin_left" format="dimension" />
+    <attr name="tl_indicator_margin_top" format="dimension" />
+    <attr name="tl_indicator_margin_right" format="dimension" />
+    <attr name="tl_indicator_margin_bottom" format="dimension" />
+    <!-- 设置显示器圆角弧度-->
+    <attr name="tl_indicator_corner_radius" format="dimension" />
+    <!-- 设置显示器上方还是下方,只对圆角矩形有用-->
+    <attr name="tl_indicator_gravity" format="enum">
+        <enum name="TOP" value="48" />
+        <enum name="BOTTOM" value="80" />
+    </attr>
+    <!-- 设置显示器为常规|三角形|背景色块|-->
+    <attr name="tl_indicator_style" format="enum">
+        <enum name="NORMAL" value="0" />
+        <enum name="TRIANGLE" value="1" />
+        <enum name="BLOCK" value="2" />
+    </attr>
+    <!-- 设置显示器长度与title一样长,只有在STYLE_NORMAL并且indicatorWidth小于零有效-->
+    <attr name="tl_indicator_width_equal_title" format="boolean" />
+    <!-- 设置显示器支持动画-->
+    <attr name="tl_indicator_anim_enable" format="boolean" />
+    <!-- 设置显示器动画时间-->
+    <attr name="tl_indicator_anim_duration" format="integer" />
+    <!-- 设置显示器支持动画回弹效果-->
+    <attr name="tl_indicator_bounce_enable" format="boolean" />
+
+    <!-- underline -->
+    <!-- 设置下划线颜色 -->
+    <attr name="tl_underline_color" format="color" />
+    <!-- 设置下划线高度 -->
+    <attr name="tl_underline_height" format="dimension" />
+    <!-- 设置下划线上方还是下方-->
+    <attr name="tl_underline_gravity" format="enum">
+        <enum name="TOP" value="48" />
+        <enum name="BOTTOM" value="80" />
+    </attr>
+
+    <!-- divider -->
+    <!-- 设置分割线颜色 -->
+    <attr name="tl_divider_color" format="color" />
+    <!-- 设置分割线宽度 -->
+    <attr name="tl_divider_width" format="dimension" />
+    <!-- 设置分割线的paddingTop和paddingBottom -->
+    <attr name="tl_divider_padding" format="dimension" />
+
+    <!-- tab -->
+    <!-- 设置tab的paddingLeft和paddingRight -->
+    <attr name="tl_tab_padding" format="dimension" />
+    <!-- 设置tab大小等分 -->
+    <attr name="tl_tab_space_equal" format="boolean" />
+    <!-- 设置tab固定大小 -->
+    <attr name="tl_tab_width" format="dimension" />
+
+    <!-- title -->
+    <!-- 设置字体大小 -->
+    <attr name="tl_textsize" format="dimension" />
+    <!-- 设置字体选中颜色 -->
+    <attr name="tl_textSelectColor" format="color" />
+    <!-- 设置字体未选中颜色 -->
+    <attr name="tl_textUnselectColor" format="color" />
+    <!-- 设置字体加粗 -->
+    <attr name="tl_textBold" format="enum">
+        <enum name="NONE" value="0" />
+        <enum name="SELECT" value="1" />
+        <enum name="BOTH" value="2" />
+    </attr>
+    <!-- 设置字体全大写 -->
+    <attr name="tl_textAllCaps" format="boolean" />
+
+    <declare-styleable name="SlidingTabLayout">
+        <!-- indicator -->
+        <attr name="tl_indicator_color" />
+        <attr name="tl_indicator_height" />
+        <attr name="tl_indicator_width" />
+        <attr name="tl_indicator_margin_left" />
+        <attr name="tl_indicator_margin_top" />
+        <attr name="tl_indicator_margin_right" />
+        <attr name="tl_indicator_margin_bottom" />
+        <attr name="tl_indicator_corner_radius" />
+        <attr name="tl_indicator_gravity" />
+        <attr name="tl_indicator_style" />
+        <attr name="tl_indicator_width_equal_title" />
+
+        <!-- underline -->
+        <attr name="tl_underline_color" />
+        <attr name="tl_underline_height" />
+        <attr name="tl_underline_gravity" />
+
+        <!-- divider -->
+        <attr name="tl_divider_color" />
+        <attr name="tl_divider_width" />
+        <attr name="tl_divider_padding" />
+
+        <!-- tab -->
+        <attr name="tl_tab_padding" />
+        <attr name="tl_tab_space_equal" />
+        <attr name="tl_tab_width" />
+
+        <!-- title -->
+        <attr name="tl_textsize" />
+        <attr name="tl_textSelectColor" />
+        <attr name="tl_textUnselectColor" />
+        <attr name="tl_textBold" />
+        <attr name="tl_textAllCaps" />
+
+    </declare-styleable>
+
+    <declare-styleable name="DuMaxHeightRecyclerView">
+        <attr name="maxHeight" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleTimerView">
+        <attr name="ct_circle_color" format="color|reference" />
+        <attr name="ct_circle_radius" format="dimension|reference" />
+        <attr name="ct_circle_width" format="dimension|reference" />
+        <attr name="ct_text_color" format="color|reference" />
+        <attr name="ct_text_size" format="dimension|reference" />
+        <attr name="ct_duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CropRatioSelectableButton">
+        <attr name="bg_normal" format="reference|color" />
+        <attr name="bg_selected" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="Banner">
+        <attr name="banner_auto_play" format="boolean" />
+        <attr name="banner_multi_page" format="boolean" />
+        <attr name="banner_interval_time" format="integer" />
+        <attr name="banner_scroll_time" format="integer" />
+        <attr name="banner_expose_width" format="dimension" />
+        <attr name="banner_page_spacing" format="dimension" />
+        <attr name="banner_show_indicator" format="boolean" />
+        <attr name="indicator_select_width" format="dimension" />
+        <attr name="indicator_default_width" format="dimension" />
+        <attr name="indicator_select_height" format="dimension" />
+        <attr name="indicator_default_height" format="dimension" />
+        <attr name="indicator_space" format="dimension" />
+        <attr name="indicator_margin_bottom" format="dimension" />
+        <attr name="indicator_select_drawable" format="reference" />
+        <attr name="indicator_default_drawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="SectionMarkSeekBar">
+        <attr name="section_mark_src" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MultiTrackBar">
+        <attr name="trackcount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CanvasRatioSelectableButton">
+        <attr name="canvas_ratio_bg_normal" format="reference|color" />
+        <attr name="canvas_ratio_bg_selected" format="reference|color" />
+    </declare-styleable>
+</resources>

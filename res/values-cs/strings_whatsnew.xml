@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. Úprava videa podporuje efekty filtrů.</item>
+        <item>2. Úprava videa podporuje přidávání rámců.</item>
+        <item>3. Úprava videa podporuje dynamická pozadí!</item>
+    </string-array>
+
+</resources>

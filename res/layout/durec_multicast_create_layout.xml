@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <!--顶部各种小按钮-->
+
+    <ImageView
+        android:id="@+id/live_settings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="17dp"
+        android:padding="3dp"
+        android:src="@drawable/durec_live_createpage_setting_selector"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/live_purchase"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginTop="10dp"
+        android:padding="3dp"
+        android:scaleType="center"
+        android:src="@drawable/durec_premium_entrance_icon"
+        android:visibility="gone"
+        app:layout_constraintStart_toEndOf="@id/live_settings"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/live_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="14dp"
+        android:layout_marginTop="17dp"
+        android:padding="3dp"
+        android:src="@drawable/durec_live_createpage_close_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--标题-->
+    <TextView
+        android:id="@+id/multi_live_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/durec_multi_create_live_title_margin_top"
+        android:gravity="center"
+        android:text="@string/durec_stream_simultaneously"
+        android:textColor="@color/durec_colorPrimary"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--各个平台-->
+    <com.duapps.screen.recorder.main.live.platforms.multicast.ui.InterceptClickEventLinearLayout
+        android:id="@+id/multi_platform_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/durec_multi_live_channel_margin_top"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        app:layout_constraintTop_toBottomOf="@id/multi_live_title">
+
+        <include
+            android:id="@+id/platform_youtube"
+            layout="@layout/durec_multicast_create_platform_include" />
+
+        <include
+            android:id="@+id/platform_facebook"
+            layout="@layout/durec_multicast_create_platform_include"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/durec_multi_live_platform_margin_top" />
+
+        <include
+            android:id="@+id/platform_twitch"
+            layout="@layout/durec_multicast_create_platform_include"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/durec_multi_live_platform_margin_top" />
+
+    </com.duapps.screen.recorder.main.live.platforms.multicast.ui.InterceptClickEventLinearLayout>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/live_start_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/screen_bottom_large_btn_height"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/durec_common_ok_btn_selector_reverse"
+        android:gravity="center"
+        android:text="@string/durec_common_start"
+        android:textColor="@color/durec_common_ok_btn_text_color_reverse"
+        android:textSize="@dimen/screen_bottom_large_btn_text_size"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/live_stream_sync_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="17dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="@string/durec_livestream_sync_tip"
+        android:textColor="@color/durec_create_live_title_hint_color"
+        android:textSize="14dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/live_start_button"
+        tools:visibility="visible" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/live_stream_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#ee2c2c"
+        android:textSize="14dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/live_stream_sync_tip"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/multi_platform_container"
+        tools:text="Fail to Connect to youtube"
+        tools:visibility="visible" />
+
+</android.support.constraint.ConstraintLayout>

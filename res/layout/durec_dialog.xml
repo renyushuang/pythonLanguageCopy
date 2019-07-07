@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="@dimen/durec_local_game_dialog_width"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="@color/durec_white"
+    app:cardCornerRadius="3.3dp"
+    app:cardElevation="4dp"
+    app:cardPreventCornerOverlap="false"
+    tools:layout_height="200dp"
+    tools:layout_width="@dimen/durec_local_game_dialog_width">
+
+    <!-- Tips1: 如果不存在标题，但是存在关闭按钮，则需要内容区域与关闭按钮距离为0 -->
+    <!-- Tips2: 只有一个按钮时，两边的margin和单个按钮距离其边缘margin一致-->
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/dialog_close"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="@dimen/durec_dialog_padding"
+            android:padding="5dp"
+            android:src="@drawable/durec_dialog_close_btn_selector"
+            android:visibility="gone"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:visibility="visible" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/durec_dialog_padding"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="5dp"
+            android:ellipsize="end"
+            android:gravity="left"
+            android:textColor="@color/durec_dialog_title"
+            android:textSize="@dimen/durec_dialog_title"
+            android:visibility="gone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/dialog_close"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintWidth_default="spread"
+            app:layout_goneMarginRight="@dimen/durec_dialog_padding"
+            tools:text="@string/durec_feedback"
+            tools:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/dugame_quickaction_line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/durec_divide_line_height"
+            android:layout_marginTop="13dp"
+            android:src="@color/durec_divide_line_color"
+            app:layout_constraintTop_toBottomOf="@id/title" />
+
+        <android.support.constraint.Group
+            android:id="@+id/title_panel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:constraint_referenced_ids="title, dugame_quickaction_line"
+            tools:visibility="visible" />
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/btn_panel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingLeft="@dimen/durec_dialog_padding"
+            android:paddingRight="@dimen/durec_dialog_padding"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintWidth_default="spread"
+            tools:visibility="visible">
+
+            <com.duapps.recorder.base.ui.styleable.CancelTextView
+                android:id="@+id/neg_btn"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:singleLine="true"
+                android:text="@string/durec_common_cancel"
+                android:textAllCaps="true"
+                android:textSize="13dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@id/pos_btn"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_default="spread"
+                tools:visibility="visible" />
+
+            <com.duapps.recorder.base.ui.styleable.ConfirmTextView
+                android:id="@+id/pos_btn"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/durec_feedback_btn_margin"
+                android:gravity="center"
+                android:paddingLeft="18dp"
+                android:paddingRight="18dp"
+                android:singleLine="true"
+                android:text="@string/durec_common_confirm"
+                android:textAllCaps="true"
+                android:textSize="13dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@id/neg_btn"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintWidth_default="spread"
+                app:layout_goneMarginLeft="0dp"
+                tools:visibility="visible" />
+        </android.support.constraint.ConstraintLayout>
+
+        <ScrollView
+            android:id="@+id/content_panel_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/btn_panel"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/dugame_quickaction_line">
+
+            <FrameLayout
+                android:id="@+id/content_panel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="13dp"
+
+                android:paddingLeft="@dimen/durec_dialog_padding"
+                android:paddingRight="@dimen/durec_dialog_padding">
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/message"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:gravity="center"
+                    android:lineSpacingExtra="13dp"
+                    android:textColor="@color/durec_main_text_color"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    tools:text="@string/durec_audio_unavailable_dialog_message"
+                    tools:visibility="visible" />
+            </FrameLayout>
+        </ScrollView>
+    </android.support.constraint.ConstraintLayout>
+
+    <FrameLayout
+        android:id="@+id/durec_loading_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:visibility="gone">
+
+        <ProgressBar
+            android:layout_width="@dimen/durec_platform_login_loading_size"
+            android:layout_height="@dimen/durec_platform_login_loading_size"
+            android:layout_gravity="center" />
+    </FrameLayout>
+</android.support.v7.widget.CardView>

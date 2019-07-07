@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            app:cardCornerRadius="2dp"
+            app:cardElevation="2dp">
+
+            <ImageView
+                android:id="@+id/durec_picture_list_image"
+                android:layout_width="@dimen/durec_picture_list_image_width"
+                android:layout_height="@dimen/durec_picture_list_image_height" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/durec_gif_mark"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="right|bottom"
+                android:layout_margin="3.3dp"
+                android:background="@drawable/durec_gif_bg"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="@string/durec_gif"
+                android:textColor="@color/durec_colorPrimary"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/durec_picture_list_tick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|right"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_picture_list_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/durec_picture_select_background"
+            android:gravity="center"
+            android:includeFontPadding="false"
+            android:minHeight="@dimen/durec_picture_select_icon_size"
+            android:minWidth="@dimen/durec_picture_select_icon_size"
+            android:textColor="@color/durec_white"
+            android:textSize="15dp" />
+    </LinearLayout>
+</FrameLayout>

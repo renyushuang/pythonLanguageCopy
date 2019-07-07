@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. 视频编辑支持滤镜效果。</item>
+        <item>2. 视频编辑支持添加边框。</item>
+        <item>3. 视频编辑支持动态背景啦！</item>
+    </string-array>
+
+</resources>

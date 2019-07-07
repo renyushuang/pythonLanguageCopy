@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_ad_receive_showtime_item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/durec_main_text_color"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/durec_ad_receive_showtime_item_subtitle"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/durec_ad_receive_showtime_item_benefit"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintWidth_default="wrap"
+        tools:text="Recorded video: Head and tail Recorded video: Head and tail" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_ad_receive_showtime_item_benefit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="9dp"
+        android:textColor="@color/durec_withdraw_history_status_rejected"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="@id/durec_ad_receive_showtime_item_title"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toRightOf="@id/durec_ad_receive_showtime_item_title"
+        app:layout_constraintRight_toLeftOf="@+id/durec_ad_receive_showtime_item_switch"
+        tools:text="1$/cpm" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_ad_receive_showtime_item_subtitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="22dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="10dp"
+        android:textColor="@color/text_light_gray"
+        android:textSize="11dp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/durec_ad_receive_showtime_item_switch"
+        app:layout_constraintTop_toBottomOf="@id/durec_ad_receive_showtime_item_title"
+        app:layout_constraintWidth_default="wrap"
+        tools:text="put ad into head and tail put ad into head and tail put ad into head and tail " />
+
+    <LinearLayout
+        android:id="@+id/durec_ad_receive_showtime_show_example_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:background="?android:selectableItemBackground"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_ad_receive_showtime_item_subtitle">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_ad_receive_showtime_show_example"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="@string/durec_common_preview"
+            android:textColor="@color/text_light_gray"
+            android:textSize="13dp" />
+
+        <ImageView
+            android:id="@+id/durec_ad_receive_showtime_show_example_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/durec_grey_arrow_expand" />
+
+    </LinearLayout>
+
+    <Space
+        android:id="@+id/durec_ad_receive_showtime_space"
+        android:layout_width="0dp"
+        android:layout_height="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_ad_receive_showtime_show_example_layout"
+        app:layout_constraintVertical_bias="0" />
+
+    <com.duapps.screen.recorder.ui.DuSwitchButton
+        android:id="@+id/durec_ad_receive_showtime_item_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/durec_ad_receive_showtime_item_background"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginRight="43dp"
+        android:layout_marginBottom="35dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="h, 16:9"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_ad_receive_showtime_space" />
+
+
+    <ImageView
+        android:id="@+id/durec_ad_receive_showtime_item_intro_outro_ad"
+        android:layout_width="20dp"
+        android:layout_height="13dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/durec_advertisement_flag"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/durec_ad_receive_showtime_item_background"
+        app:layout_constraintTop_toTopOf="@id/durec_ad_receive_showtime_item_background" />
+
+    <LinearLayout
+        android:id="@+id/durec_ad_receive_showtime_logo_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/durec_ad_receive_showtime_item_background"
+        app:layout_constraintTop_toTopOf="@id/durec_ad_receive_showtime_item_background">
+
+        <ImageView
+            android:id="@+id/durec_ad_receive_showtime_item_logo"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:scaleType="centerCrop"
+            tools:src="@mipmap/durec_ic_launcher" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_ad_receive_showtime_item_logo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:maxLines="1"
+            android:textColor="@color/durec_white"
+            android:textSize="8dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/durec_ad_receive_showtime_item_videoonvideo"
+        android:layout_width="92dp"
+        android:layout_height="51dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/durec_ad_receive_showtime_item_background"
+        app:layout_constraintLeft_toLeftOf="@id/durec_ad_receive_showtime_item_background"
+        tools:src="@mipmap/durec_ic_launcher" />
+
+    <ImageView
+        android:id="@+id/durec_ad_receive_showtime_item_videoonvideo_ad"
+        android:layout_width="20dp"
+        android:layout_height="13dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="6dp"
+        android:src="@drawable/durec_advertisement_flag"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/durec_ad_receive_showtime_item_videoonvideo"
+        app:layout_constraintTop_toTopOf="@id/durec_ad_receive_showtime_item_videoonvideo" />
+
+    <ImageView
+        android:id="@+id/durec_ad_receive_showtime_item_videoonvideo_video_icon"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:src="@drawable/durec_youtube_player_countdown_bg"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/durec_ad_receive_showtime_item_videoonvideo"
+        app:layout_constraintLeft_toLeftOf="@id/durec_ad_receive_showtime_item_videoonvideo"
+        app:layout_constraintRight_toRightOf="@id/durec_ad_receive_showtime_item_videoonvideo"
+        app:layout_constraintTop_toTopOf="@id/durec_ad_receive_showtime_item_videoonvideo"
+        tools:src="@mipmap/durec_ic_launcher" />
+
+    <android.support.constraint.Group
+        android:id="@+id/durec_ad_receive_showtime_item_videoonvideo_group"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:constraint_referenced_ids="durec_ad_receive_showtime_item_videoonvideo,
+                                       durec_ad_receive_showtime_item_videoonvideo_video_icon,
+                                       durec_ad_receive_showtime_item_videoonvideo_ad" />
+
+    <ImageView
+        android:id="@+id/durec_ad_receive_showtime_item_bottom_banner"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@id/durec_ad_receive_showtime_item_background"
+        app:layout_constraintLeft_toLeftOf="@id/durec_ad_receive_showtime_item_background"
+        app:layout_constraintRight_toRightOf="@id/durec_ad_receive_showtime_item_background" />
+
+    <ImageView
+        android:id="@+id/durec_ad_receive_showtime_item_bottom_banner_ad"
+        android:layout_width="20dp"
+        android:layout_height="13dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="3dp"
+        android:src="@drawable/durec_advertisement_flag"
+        android:visibility="gone"
+        app:layout_constraintLeft_toLeftOf="@id/durec_ad_receive_showtime_item_bottom_banner"
+        app:layout_constraintTop_toTopOf="@id/durec_ad_receive_showtime_item_bottom_banner" />
+
+    <android.support.constraint.Group
+        android:id="@+id/durec_ad_receive_showtime_item_bottom_banner_group"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:constraint_referenced_ids="durec_ad_receive_showtime_item_bottom_banner,
+                                       durec_ad_receive_showtime_item_bottom_banner_ad" />
+
+    <View
+        android:id="@+id/durec_ad_receive_showtime_item_bottom_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#e8e8e8"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</android.support.constraint.ConstraintLayout>

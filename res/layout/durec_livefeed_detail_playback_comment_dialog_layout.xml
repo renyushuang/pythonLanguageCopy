@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/durec_white"
+    android:orientation="vertical">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/reply_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46.7dp"
+        android:gravity="center"
+        android:text="@string/durec_common_reply"
+        android:textColor="#535353"
+        android:textSize="14dp" />
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/durec_live_playback_comment_dialog_line" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/delete_btn"
+        android:layout_width="match_parent"
+        android:layout_height="46.7dp"
+        android:gravity="center"
+        android:text="@string/durec_common_delete"
+        android:textColor="#535353"
+        android:textSize="14dp" />
+</LinearLayout>

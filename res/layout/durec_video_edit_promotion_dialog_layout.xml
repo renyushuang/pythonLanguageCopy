@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:lineSpacingExtra="7dp"
+        android:text="@string/durec_edit_video_save_type_selection_alert"
+        android:textColor="@color/durec_main_text_color"
+        android:textSize="13.3dp" />
+
+    <com.duapps.recorder.base.ui.styleable.ConfirmTextView
+        android:id="@+id/durec_promotion_btn"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="@string/durec_promotion_video"
+        android:textSize="14sp" />
+
+    <com.duapps.recorder.base.ui.styleable.ConfirmTextView
+        android:id="@+id/durec_normal_btn"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="@string/durec_normal_video"
+        android:textSize="14sp" />
+</LinearLayout>

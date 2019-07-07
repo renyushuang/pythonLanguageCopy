@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="durec_countdown" translatable="false">
+        <item>@string/durec_countdown_no</item>
+        <item>3s</item>
+        <item>5s</item>
+        <item>10s</item>
+    </string-array>
+
+    <color name="color_picker_1">#ffffff</color>
+    <color name="color_picker_2">#cccccc</color>
+    <color name="color_picker_3">#7f7f7f</color>
+    <color name="color_picker_6">#000000</color>
+    <color name="color_picker_7">#bd8245</color>
+    <color name="color_picker_8">#7e0003</color>
+    <color name="color_picker_9">#c90004</color>
+    <color name="color_picker_10">#f80008</color>
+    <color name="color_picker_11">#fc4f06</color>
+    <color name="color_picker_12">#ff7e14</color>
+    <color name="color_picker_13">#ffe919</color>
+    <color name="color_picker_14">#9bec00</color>
+    <color name="color_picker_15">#71c303</color>
+    <color name="color_picker_16">#92f1f6</color>
+    <color name="color_picker_17">#0887ff</color>
+    <color name="color_picker_18">#0500ff</color>
+    <color name="color_picker_19">#773fdd</color>
+    <color name="color_picker_20">#72008d</color>
+    <color name="color_picker_21">#ef00ff</color>
+    <color name="color_picker_22">#fa1194</color>
+    <color name="color_picker_23">#febdd5</color>
+
+    <integer-array name="dugif_color_picker_array">
+        <item>@color/color_picker_1</item>
+        <item>@color/color_picker_2</item>
+        <item>@color/color_picker_3</item>
+        <item>@color/color_picker_6</item>
+        <item>@color/color_picker_7</item>
+        <item>@color/color_picker_8</item>
+        <item>@color/color_picker_9</item>
+        <item>@color/color_picker_10</item>
+        <item>@color/color_picker_11</item>
+        <item>@color/color_picker_12</item>
+        <item>@color/color_picker_13</item>
+        <item>@color/color_picker_14</item>
+        <item>@color/color_picker_15</item>
+        <item>@color/color_picker_16</item>
+        <item>@color/color_picker_17</item>
+        <item>@color/color_picker_18</item>
+        <item>@color/color_picker_19</item>
+        <item>@color/color_picker_20</item>
+        <item>@color/color_picker_21</item>
+        <item>@color/color_picker_22</item>
+        <item>@color/color_picker_23</item>
+    </integer-array>
+
+    <array name="durec_premium_feature_name_array">
+        <item>@string/durec_personalized_watermark</item>
+        <item>@string/durec_settings_brush</item>
+        <item>@string/durec_crop_video</item>
+        <item>@string/durec_video_speed</item>
+        <item>@string/durec_feature_set_live_pause_image</item>
+        <item>@string/durec_multiple_platform</item>
+        <item>@string/durec_feature_vip_feedback</item>
+        <item>@string/durec_rtmp_live</item>
+        <item>@string/durec_no_ads</item>
+        <item>@string/durec_different_themes</item>
+        <item>@string/durec_common_mosaic</item>
+        <item>@string/durec_video_compress_title</item>
+        <item>@string/durec_camera_frame_title</item>
+        <item>@string/durec_common_video_filter</item>
+        <item>@string/durec_common_video_frame</item>
+    </array>
+
+    <array name="durec_premium_feature_icon_array">
+        <item>@drawable/durec_feature_personal_watermark</item>
+        <item>@drawable/durec_feature_brush</item>
+        <item>@drawable/durec_feature_crop_video</item>
+        <item>@drawable/durec_feature_video_speed</item>
+        <item>@drawable/durec_feature_live_cover</item>
+        <item>@drawable/durec_feature_multistreaming</item>
+        <item>@drawable/durec_feature_vip_feedback</item>
+        <item>@drawable/durec_feature_rtmp</item>
+        <item>@drawable/durec_feature_no_ad</item>
+        <item>@drawable/durec_feature_theme</item>
+        <item>@drawable/durec_feature_mosaic</item>
+        <item>@drawable/durec_feature_compress</item>
+        <item>@drawable/durec_feature_camera_frame</item>
+        <item>@drawable/durec_feature_video_filter</item>
+        <item>@drawable/durec_feature_video_frame</item>
+    </array>
+</resources>

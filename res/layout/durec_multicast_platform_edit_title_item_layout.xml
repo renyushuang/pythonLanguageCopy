@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/durec_white"
+    android:orientation="vertical">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        style="@style/durec_multicast_platform_editor_item_title_text"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="23dp"
+        android:text="@string/durec_common_title" />
+
+    <EditText
+        android:id="@+id/platform_edit_title_item_input_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/durec_per_watermark_edit_text_bg"
+        android:gravity="left"
+        android:hint="@string/durec_live_with_app"
+        android:lineSpacingMultiplier="1.5"
+        android:paddingBottom="10dp"
+        android:paddingLeft="11dp"
+        android:paddingRight="11dp"
+        android:paddingTop="10dp"
+        android:textColor="@color/durec_head_item_text_color"
+        android:textColorHint="#888888"
+        android:textSize="12dp" />
+
+    <LinearLayout
+        android:id="@+id/platform_edit_title_item_check_box_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/platform_edit_title_item_check_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="6dp" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/durec_apply_to_all_streaming_title"
+            android:textColor="#888888"
+            android:textSize="12dp" />
+    </LinearLayout>
+
+    <!-- line -->
+    <View
+        android:id="@+id/platform_edit_title_item_line"
+        style="@style/durec_setting_line"
+        android:layout_marginTop="25dp" />
+
+</LinearLayout>

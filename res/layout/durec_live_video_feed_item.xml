@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/durec_video_container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/durec_local_video_item_margin"
+    android:layout_marginRight="@dimen/durec_local_video_item_margin"
+    android:background="@color/durec_white">
+
+    <ImageView
+        android:id="@+id/live_video_feed_thumbnail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"/>
+
+    <RelativeLayout
+        android:id="@+id/live_video_feed_living_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/durec_live_video_feed_living_icon_bg">
+
+        <View
+            android:id="@+id/live_video_feed_living_icon_dot"
+            android:layout_width="4dp"
+            android:layout_height="4dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/durec_live_video_feed_living_dot_bg"/>
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/live_video_feed_living_icon_dot"
+            android:paddingBottom="3dp"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:paddingTop="3dp"
+            android:text="@string/durec_common_live"
+            android:textAllCaps="true"
+            android:textColor="@color/durec_white"
+            android:textSize="12dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/durec_promotion_video_card_desc_bg"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="8dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/live_video_feed_avatar_container"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                app:cardCornerRadius="18dp"
+                app:cardElevation="0dp">
+
+                <ImageView
+                    android:id="@+id/live_video_feed_avatar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/durec_live_default_icon_big"/>
+            </android.support.v7.widget.CardView>
+
+            <ImageView
+                android:id="@+id/live_video_feed_live_broadcaster_icon"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:layout_alignBottom="@id/live_video_feed_avatar_container"
+                android:layout_marginLeft="-8dp"
+                android:layout_toRightOf="@id/live_video_feed_avatar_container"
+                android:src="@drawable/durec_live_video_feed_broadcaster_icon"
+                android:visibility="invisible"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/live_video_feed_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:paddingRight="4dp"
+                android:textColor="@color/durec_white"
+                android:textSize="14dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/live_video_feed_user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxEms="12"
+                    android:maxLines="1"
+                    android:textColor="@color/durec_colorPrimary"
+                    android:textSize="12dp"/>
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/live_video_feed_game_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="11dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/durec_live_video_feed_category_color"
+                    android:textSize="12dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

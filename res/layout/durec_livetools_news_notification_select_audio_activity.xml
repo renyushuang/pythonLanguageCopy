@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/durec_white"
+    android:orientation="vertical">
+
+    <include layout="@layout/durec_toolbar_layout" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="left|center_vertical"
+        android:text="@string/durec_choose_audio_sound_alert"
+        android:textStyle="bold"
+        android:textColor="@color/durec_head_item_text_color"
+        android:textSize="16dp" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/live_new_notification_sound_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

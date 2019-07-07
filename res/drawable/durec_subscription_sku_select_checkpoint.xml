@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 右侧选中的圆圈-外圈 -->
+    <item>
+        <shape
+            android:shape="oval">
+            <solid android:color="@color/durec_white"/>
+            <stroke
+                android:color="#ff7e14"
+                android:width="1dp"/>
+            <size
+                android:width="20dp"
+                android:height="20dp"/>
+        </shape>
+    </item>
+    <!-- 右侧选中的圆圈-实心圆心 -->
+    <item
+        android:left="5dp"
+        android:top="5dp"
+        android:right="5dp"
+        android:bottom="5dp">
+        <shape
+            android:shape="oval">
+            <solid android:color="#ff7e14"/>
+            <size
+                android:width="10dp"
+                android:height="10dp"/>
+        </shape>
+    </item>
+</layer-list>

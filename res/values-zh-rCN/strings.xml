@@ -1,0 +1,1381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="durec_current_language">zhcn</string>
+
+    <string name="app_name">小熊录屏</string>
+    <string name="durec_feedback_input_hint">我们欢迎你的反馈</string>
+    <string name="durec_feedback">反馈</string>
+    <string name="durec_email">邮箱地址（可选）</string>
+    <string name="durec_feedback_send_fail">抱歉，出错了！请重试。</string>
+    <string name="durec_feedback_send_ok">你的反馈已成功发送。感谢你的支持！</string>
+    <string name="durec_feedback_contact_distinguish_title">联系：</string>
+    <string name="durec_common_submit">提交</string>
+    <string name="durec_common_cancel">取消</string>
+    <string name="durec_common_confirm">确认</string>
+    <string name="durec_common_share">分享</string>
+    <string name="durec_common_delete">删除</string>
+
+    <string name="durec_no_permission_tip">抱歉，需要先允许我们的屏幕录制权限申请，才能进行录制。</string>
+
+    <string name="durec_no_space">你的存储空间小于100M。请清理存储空间之后再进行录制。</string>
+
+    <!-- Settings -->
+    <string name="durec_about_protocol">用户协议</string>
+    <string name="durec_setting_video_location">视频存储位置</string>
+    <string name="durec_setting_show_touches">显示点击操作</string>
+
+    <!-- Audio unavailable dialog strings-->
+    <string name="durec_audio_unavailable_dialog_title">当前无法录制音频</string>
+    <string name="durec_audio_unavailable_dialog_pos_btn">继续</string>
+
+    <!-- Record stop reason -->
+    <string name="durec_stop_timeout">视频已达到最大长度。录制已停止。</string>
+    <string name="durec_drec_stop_record_for_screen_off">屏幕已黑屏。录制已停止。</string>
+
+    <!-- Video resolution -->
+    <string name="durec_video_resolution_standard">标准</string>
+
+    <!-- float button -->
+    <string name="durec_floatbutton_record_file_null">找不到视频存储位置</string>
+
+    <string name="durec_menu_about">关于我们</string>
+
+    <string name="durec_video_size">大小：%1$sM</string>
+
+    <string name="durec_del_success">视频已成功删除。</string>
+    <string name="durec_del_fail">删除失败</string>
+
+    <!-- New game notification -->
+    <string name="durec_common_open">开启</string>
+
+    <!-- Settings -->
+    <string name="durec_setting_resolution">视频分辨率</string>
+    <string name="durec_setting_bitrate">视频码率</string>
+    <string name="durec_setting_framerate">视频帧率</string>
+    <string name="durec_setting_record_audio">录制音频</string>
+    <string name="durec_setting_countdown">倒计时</string>
+    <string name="durec_setting_item_countdown_subtitle">录制会在倒计时结束后开始</string>
+    <string name="durec_countdown_no">无倒计时</string>
+    <string name="durec_setting_item_bitrate_subtitle">高码率会增大视频文件大小</string>
+    <string name="durec_auto">自动</string>
+    <string name="durec_setting_item_framerate_subtitle">高帧率会使视频更流畅，但需要更多CPU资源</string>
+
+    <!-- Camera float window -->
+    <string name="durec_camera_window_error">开启摄像头时出错</string>
+    <string name="durec_stop_record_error">录制视频时发生错误</string>
+    <string name="durec_network_error">网络当前不可用。</string>
+
+    <!--note: %1$s 有用，该文案用于带有高亮文字的通知中，-->
+    <!--当文案中%1$s发生变化时，需要修改DuRecNotificationManager showRecommendNotification方法-->
+    <string name="durec_scene_recommend_content">我们为你精选了 %1$s 的教学视频！</string>
+
+    <string name="durec_local_video_empty_prompt">尚未录制任何视频。</string>
+
+    <string name="durec_no_browser_app">未安装浏览器或%1$s</string>
+
+    <string name="durec_delete_local_video_prompt">确定要从本地存储中删除该视频吗？</string>
+
+    <string name="durec_setting_item_rate_us">给我们评分</string>
+    <string name="durec_setting_item_rate_us_subtitle">5星是Google Play上的最佳评分</string>
+
+    <string name="durec_rename_video_dialog_title">输入视频标题</string>
+    <string name="durec_rename_video_dialog_illegal_tip">名称中不能包含 <xliff:g id="illegal">%1$s</xliff:g> 字符</string>
+    <string name="durec_rename_video_failed">视频重命名失败</string>
+    <string name="durec_rename_video_success">视频重命名成功</string>
+    <string name="durec_rename_video_name_exist">此名称已存在，请修改。</string>
+
+    <!-- 引导提示 -->
+    <!-- notificaiton settings -->
+
+    <string name="durec_setting_record_float_switch">录制时隐藏悬浮窗</string>
+    <string name="durec_setting_item_record_float_subtitle">仅使用通知栏控制录屏</string>
+
+    <string name="durec_record_disable_btn_text">好的</string>
+
+    <!-- Shortcut -->
+    <string name="durec_shortcut_name">录屏工具</string>
+
+    <string name="durec_store_space">可用 %1$sGB/共 %2$sGB</string>
+    <string name="durec_available_store_space">可用 %1$sGB</string>
+    <string name="durec_update_text">%1$s 的新功能：</string>
+
+    <string name="durec_languages">语言</string>
+    <string name="durec_languages_dialog_title">选择语言</string>
+
+    <string name="durec_recorder_noti_start">录制</string>
+    <string name="durec_recorder_noti_resume">继续</string>
+    <string name="durec_common_stop">停止</string>
+    <string name="durec_recorder_noti_camera_open">开启摄像头</string>
+    <string name="durec_recorder_noti_ready">录屏程序可用</string>
+    <string name="durec_recorder_noti_ready_sub">点击开始录屏。</string>
+    <string name="durec_recorder_noti_recording">录制进行中</string>
+    <string name="durec_recorder_noti_recording_sub">点击这里停止录制。</string>
+
+    <string name="durec_recorder_rsl_noti_title">录制完成</string>
+    <string name="durec_recorder_rsl_noti_sub_title">点击查看已录制的视频。</string>
+    <string name="durec_recorder_rsl_noti_watch">查看</string>
+
+    <string name="durec_recorder_noti_paused">录制暂停</string>
+    <string name="durec_recorder_noti_paused_sub">点击继续录屏。</string>
+
+    <string name="durec_recorder_screenshot_noti_title">已成功截屏</string>
+    <string name="durec_recorder_screenshot_noti_sub_title">点击查看你的截图。</string>
+    <string name="durec_common_check">查看</string>
+
+    <string name="durec_video_not_found">很抱歉，找不到视频。</string>
+    <string name="durec_picture_not_found">很抱歉，找不到截图。</string>
+
+    <!-- 引导 -->
+
+    <string name="durec_picture_tools_stitch">图片拼接</string>
+
+    <string name="durec_picture_list_stitch">拼接 (%1$s/%2$s)</string>
+    <string name="durec_picture_list_edit_counts">编辑过的截图 (%1$s)</string>
+
+    <!-- 录屏预提醒dialog -->
+    <string name="durec_common_ok">确定</string>
+
+    <string name="durec_picture_snitch">拼接</string>
+    <string name="durec_common_edit">编辑</string>
+    <string name="durec_picture_edit_prompt">确定要离开吗？你的修改将不会被保存。</string>
+    <string name="durec_picture_save_success">图片已保存</string>
+    <string name="durec_picture_save_fail">图片保存失败</string>
+    <string name="durec_save_screenshot_error">截屏保存失败</string>
+    <string name="durec_picture_edit_name">图片编辑</string>
+    <string name="durec_picture_list_edit_empty">当前没有编辑过的截图。</string>
+
+    <string name="durec_common_mosaic">马赛克</string>
+    <string name="durec_common_crop">裁切</string>
+    <string name="durec_picture_stitch_img_too_tiny">部分图片的高度太低，无法拼接。</string>
+    <string name="durec_picture_stitch_oom_error">抱歉，由于内存不足，无法完成图片拼接。你可以关闭其它应用来释放内存。</string>
+
+    <string name="durec_permission_fir_msg">当出现如下图的提示时：</string>
+
+    <string name="durec_precise_cut_tip">点击进行精确剪切</string>
+    <string name="durec_cut_btn_tip">点此截取你选中的部分</string>
+    <string name="durec_cut_save_query">希望保存当前的修改吗？</string>
+    <string name="durec_cut_save_query_giveup">不用了</string>
+    <string name="durec_cut_toast_success">保存成功</string>
+    <string name="durec_share_saving">视频保存中...</string>
+    <string name="durec_common_preview">预览</string>
+    <string name="durec_common_save">保存</string>
+    <string name="durec_video_list_counts">共 %1$s 个视频</string>
+    <string name="durec_video_list_count">共 %1$s 个视频</string>
+    <string name="durec_video_list_origin_counts">原始视频 (%1$s)</string>
+    <string name="durec_video_list_origin_count">原始视频 (%1$s)</string>
+    <string name="durec_video_list_edit_counts">已编辑的视频 (%1$s)</string>
+    <string name="durec_video_list_edit_count">已编辑的视频 (%1$s)</string>
+    <string name="durec_choose_sdcard_title">选择存储位置</string>
+    <string name="durec_choose_sdcard_internal_storage">内部存储</string>
+    <string name="durec_choose_sdcard_sd_card">SD卡</string>
+    <string name="durec_choose_sdcard_dialog_attention_msg">请知晓并确认你愿意将存储位置切换到SD卡。</string>
+    <string name="durec_choose_sdcard_dialog_ok">好的，我接受</string>
+    <string name="durec_choose_sdcard_dialog_refuse">不，我拒绝</string>
+    <string name="durec_rate_dialog_msg">你喜欢 %1$s 吗？\n我们需要你的支持！</string>
+    <string name="durec_rate_dialog_btn">给我们5星评分</string>
+    <string name="durec_guide_videos">视频与设置</string>
+    <string name="durec_guide_camera">摄像头</string>
+    <string name="durec_common_screenshot">截屏</string>
+    <string name="durec_guide_btn">知道了！</string>
+    <string name="durec_guide_for_record">开始录制你的屏幕吧！</string>
+    <string name="durec_permission_prompt_msg"><![CDATA[<b>%1$s</b>]]> 将开始截取您的屏幕上显示的所有内容。</string>
+    <string name="durec_permission_remember_text">不再显示</string>
+    <string name="durec_permission_action_text">立即开始</string>
+    <string name="durec_all_videos">所有视频</string>
+
+    <string name="__picker_done">完成</string>
+    <string name="durec_media_picker_done_with_count">完成(%1$d/%2$d)</string>
+    <string name="durec_all_images">所有图片</string>
+    <string name="__picker_image_count">%1$d 图片</string>
+    <string name="__picker_image_one_count">%1$d 图片</string>
+    <string name="__picker_video_count">%1$d 视频</string>
+    <string name="__picker_video_one_count">%1$d 视频</string>
+
+    <string name="durec_cut_video_no_space">你的存储空间不足。</string>
+    <string name="__picker_over_max_count_tips">最多只能选择 %1$d 张图片。</string>
+    <string name="durec_setting_shake_to_stop">通过摇一摇结束录屏</string>
+    <string name="durec_guide_shake_dialog_title">新功能：</string>
+    <string name="durec_guide_shake_dialog_msg">你可以通过摇一摇手机来停止录制！</string>
+    <string name="durec_unable_to_obtain_permission_prompt">由于你的手机系统缺少录屏相关的必要组件，无法进行录屏。该问题由手机系统导致，很遗憾我们无法为你提供帮助。感谢你的理解！</string>
+    <string name="durec_choose_sdcard_sd_card_unable_msg">文件无法保存至SD卡。</string>
+    <string name="durec_follow_ours_facebook">为我们的Facebook点赞</string>
+    <string name="durec_common_volume">音量</string>
+    <string name="durec_play_audio_error">音频播放失败</string>
+
+    <string name="durec_audio_unavailable_dialog_message">抱歉，当前无法录制音频。\n你可以尝试重启设备后再进行录制来解决该问题，或者点击“继续”按钮来录制一个无声视频。</string>
+    <string name="durec_setting_guide_open_permissions">允许我们查看应用使用情况，以便在合适的场景为你提供引导</string>
+    <string name="durec_common_enable">启用</string>
+    <string name="durec_scene_guide_type_game">%1$s 可以录制游戏视频。现在就来录制你的精彩游戏瞬间吧！</string>
+    <string name="durec_scene_guide_type_live">%1$s 可以录制在线视频，你在无网络的时候也可以观看这些视频！</string>
+    <string name="durec_scene_guide_type_call">%1$s 可以录制视频通话。记录你重要的通话吧！</string>
+    <string name="durec_merge_video">视频拼接</string>
+    <string name="durec_merge_video_fail_by_not_available">抱歉，无法对该视频进行拼接。</string>
+    <string name="durec_common_video_fail">抱歉，视频未成功保存。请重试。</string>
+    <string name="durec_media_picker_done_without_count">拼接(%1$d)</string>
+    <string name="durec_wifi_transfer">WiFi传输</string>
+    <string name="durec_wifi_transfer_name">WiFi名称：%s</string>
+    <string name="durec_wifi_transfer_prompt">请保证你的设备与电脑使用的是同一WiFi</string>
+    <string name="durec_wifi_transfer_file_name">文件名</string>
+    <string name="durec_common_size">大小</string>
+    <string name="durec_wifi_transfer_video">视频</string>
+    <string name="durec_wifi_transfer_select_all">全选</string>
+    <string name="durec_wifi_transfer_unselect_all">取消全选</string>
+    <string name="durec_common_download">下载</string>
+    <string name="durec_privacy_policy">隐私权政策</string>
+    <string name="durec_about_copy_right">同意 %1$s 和 %2$s</string>
+    <string name="durec_watermark">水印</string>
+    <string name="durec_enable_watermark">启用水印</string>
+    <string name="durec_setting_watermark_msg">在录制的视频上显示水印</string>
+    <string name="durec_watermark_enabled">已启用</string>
+    <string name="durec_watermark_disabled">未启用</string>
+    <string name="durec_wifi_transfer_wifi_needed">你需要先连接到WiFi网络。</string>
+    <string name="durec_usage_permission_guide_hint">找到%1$s并点击</string>
+    <string name="durec_common_off">关</string>
+
+    <string name="durec_scene_share_msg">你喜欢%1$s吗？\n把它分享给你的朋友吧！</string>
+    <string name="durec_scene_share_more_apps">更多应用</string>
+    <string name="durec_setting_item_share_app_subtitle">将%1$s分享给你的朋友</string>
+    <string name="durec_video_size_different_dialog_msg">你选中的视频分辨率不同，拼接可能会花费较长时间。请点击“确认”按钮保存你拼接的视频。</string>
+
+    <string name="durec_update_title">%1$s 版本已上线！</string>
+    <string name="durec_update">升级</string>
+    <string name="durec_update_later">暂不升级</string>
+    <string name="durec_update_version">版本</string>
+    <string name="durec_update_latest">当前已是最新版本</string>
+
+    <string name="durec_video_edit">视频编辑</string>
+    <string name="durec_common_trim">剪切</string>
+    <string name="durec_remove_middle">删除中间</string>
+    <string name="durec_add_music">添加音乐</string>
+    <string name="durec_common_music">音乐</string>
+    <string name="durec_common_audio">音频</string>
+    <string name="durec_all_music">所有音乐</string>
+    <string name="durec_background_music">背景音乐</string>
+    <string name="durec_loop_music">循环音乐</string>
+    <string name="durec_close_loop_music_prompt">如果你关闭它，音乐仅会播放一次。</string>
+    <string name="durec_no_available_music">当前没有可用的音乐。</string>
+    <string name="durec_nonsupport_music">不支持此格式的音乐。</string>
+    <string name="durec_setting_item_no_close_app_title">关闭悬浮窗时不退出应用</string>
+    <string name="durec_setting_item_no_close_app_subtitle">开启后，你可以随时使用通知栏进行录屏</string>
+    <string name="durec_internal_audio_recording_not_allow">因为安卓系统不允许录制内部音频，请使用扬声器</string>
+    <string name="durec_request_draw_overlay_permission_new_tip">请开启“允许出现在其他应用上”权限，以便您能正常使用%1$s。</string>
+    <string name="durec_image_info">图片信息</string>
+    <string name="durec_common_location">存储位置</string>
+    <string name="durec_common_resolution">分辨率</string>
+    <string name="durec_image_info_error">无法获取到图片信息</string>
+
+    <string name="durec_music_count">%1$d 音乐</string>
+    <string name="durec_edit_music">调整音乐</string>
+
+    <string name="durec_edit_video_successfully_saved">你编辑的视频已成功保存！</string>
+    <string name="durec_FAQ">常见问题</string>
+    <string name="durec_no_internet_connection">无法连接网络</string>
+    <string name="durec_reload">刷新</string>
+    <string name="durec_guide_open_notification_access">由于你的设备内存未超过1GB，我们强烈推荐你开启通知读取权限，再进行录屏。这能够显著提高录屏稳定性。</string>
+    <string name="durec_setting_item_notification_access_title">我们推荐你开启通知读取权限，这可以显著提高录制稳定性</string>
+    <string name="durec_open_notification_access_fail">你可以随时在%1$s的设置页开启该权限，以提高录屏稳定性。</string>
+    <string name="durec_guide_cut_video_slider">拖动滑块来选择你要保留的部分</string>
+    <string name="durec_guide_remove_middle_video_slider">拖动滑块来选择你要删除的部分</string>
+    <string name="durec_share_video_content">由%1$s录制</string>
+    <string name="durec_share_app_content">我刚刚发现了%1$s，一款好用的安卓录屏软件，能够帮我轻松录制游戏、直播等屏幕视频！现在就来试试吧：%2$s</string>
+    <string name="durec_permission_sec_msg_new">请允许授权要求，以便我们帮助你录制屏幕。 我们不会获取你录制的内容，请放心授权。</string>
+    <string name="durec_auto_recommend">自动（推荐）</string>
+    <string name="durec_adjust_time">调整时间</string>
+    <string name="durec_stitch_picture_guidance">点击这里移除图片上不需要的部分</string>
+    <string name="durec_settings_brush">画笔</string>
+    <string name="durec_settings_brush_subtitle">开启画笔功能后可在屏幕上进行绘制</string>
+
+    <string name="durec_online_music">在线音乐</string>
+    <string name="durec_local_music">本地音乐</string>
+    <string name="durec_music_type_sad">悲伤</string>
+    <string name="durec_music_type_happy">欢快</string>
+    <string name="durec_music_type_romantic">浪漫</string>
+    <string name="durec_music_type_dark">忧郁</string>
+    <string name="durec_music_type_calm">平静</string>
+    <string name="durec_music_type_pop">流行</string>
+    <string name="durec_music_type_rock">摇滚</string>
+    <string name="durec_music_type_jazz">爵士乐</string>
+    <string name="durec_music_type_electronic">电子音乐</string>
+    <string name="durec_mobile_network_download_prompt">你当前使用的是移动网络，下载该音乐会耗费流量。点击确定按钮即可开始下载音乐。</string>
+    <string name="durec_download_music_cancel">已取消音乐下载</string>
+    <string name="durec_fail_download_music">无网络连接，无法下载该音乐。</string>
+    <string name="durec_mobile_network_play_prompt">你当前使用的是移动网络，播放该音乐会耗费流量。点击确定按钮即可开始播放音乐。</string>
+    <string name="durec_play_music_cancel">已取消音乐播放</string>
+    <string name="durec_fail_play_music">无网络连接，无法播放该音乐。</string>
+    <string name="durec_common_reset">复原</string>
+
+    <string name="durec_background_image">背景图片</string>
+    <string name="durec_local_image">本地图片</string>
+    <string name="durec_not_support_horizontal_videos">抱歉，不支持为横屏视频添加背景图片。</string>
+    <string name="durec_recommended">推荐</string>
+    <string name="durec_select_part_image">选择图片区域</string>
+    <string name="durec_select_part_image_explain">选中的部分会用作视频背景。可通过双指操作放大/缩小图片。移动图片来选择你想要的部分。</string>
+    <string name="durec_add_subtitle">添加字幕</string>
+    <string name="durec_enter_subtitle_prompt">请输入字幕</string>
+    <string name="durec_edit_subtitle">编辑字幕</string>
+    <string name="durec_fail_add_background_image">添加背景图片失败</string>
+    <string name="durec_cut_video_max_file_size_tip">文件大小不能超过4GB。请缩短你编辑的视频。</string>
+    <string name="durec_video_merge_enable">你必须先选择至少两个视频。</string>
+    <string name="durec_settings_version_new">新功能</string>
+    <string name="durec_no_available_video">没有可用的视频。</string>
+    <string name="durec_no_available_img">没有可用的图片。</string>
+
+    <string name="durec_whats_new">新版本特性：</string>
+    <string name="durec_disable_notification_after_screen_shot">截图成功后不弹出通知</string>
+    <string name="durec_systemui_crashed_when_start_recording">在你开始录屏时，发生了一个由设备系统引发的问题。你需要进行授权，以便正常使用%1$s。</string>
+
+    <string name="durec_common_rotate">旋转</string>
+    <string name="durec_subtitle_duration_limit_prompt">至少需要1秒的视频</string>
+
+    <string name="durec_shake_sensitivity_prompt">摇晃设备来测试\n摇一摇灵敏度</string>
+    <string name="durec_common_sensitivity">灵敏度</string>
+    <string name="durec_low_power_to_stop_record">设备当前电量低，已为您自动结束录屏。</string>
+    <string name="durec_low_power_record_prompt">请充电后再进行录制。若设备因低电量自动关机，您录制的视频将无法保存。</string>
+
+    <string name="durec_record_toolbox">录制工具</string>
+    <string name="durec_gif_recorder">GIF录制</string>
+    <string name="durec_gid_saved">GIF已成功保存</string>
+    <string name="durec_gif_view_prompt">点击查看你的GIF图片。</string>
+    <string name="durec_failed_save_gif">录制GIF时发生错误</string>
+    <string name="durec_common_gif">GIF (%1$s)</string>
+    <string name="durec_common_gifs">GIF (%1$s)</string>
+    <string name="durec_cannot_stitch_gifs">GIF图片不支持拼接，请重新选择图片</string>
+    <string name="durec_video_to_gif">视频转GIF</string>
+    <string name="durec_gif_limit_lenght">移动滑块选择20s以内的视频片段</string>
+    <string name="durec_gif_lenght_exceed">GIF时长不能超过20秒</string>
+    <string name="durec_gif_saving">GIF正在保存…</string>
+    <string name="durec_gif_saved">GIF已成功保存！</string>
+    <string name="durec_video_settings">视频设置</string>
+    <string name="durec_control_settings">控制设置</string>
+    <string name="durec_record_tools">录制工具</string>
+    <string name="durec_common_others">其它</string>
+    <string name="durec_gif">GIF</string>
+
+    <string name="durec_picture_list_counts">共 %1$s 张图片</string>
+    <string name="durec_picture_list_count">共 %1$s 张图片</string>
+    <string name="durec_picture_list_origin_counts">原始图片 (%1$s)</string>
+    <string name="durec_picture_list_origin_count">原始图片 (%1$s)</string>
+    <string name="durec_picture_share_enable">需要至少选中一张图片。</string>
+    <string name="durec_picture_stitch_enable">需要至少选中两张图片。</string>
+    <string name="durec_delete_picture_prompt">确定要删除图片吗？</string>
+    <string name="durec_picture_list_empty">当前没有任何图片。</string>
+    <string name="durec_choose_sdcard_dialog_attention">请注意：当你卸载%1$s时，存储在SD卡上的使用%1$s录制的内容将会被一并删除。</string>
+    <string name="durec_wifi_transfer_msg">在电脑浏览器中打开该网址，以便下载视频和图片</string>
+    <string name="durec_wifi_transfer_image">图片</string>
+    <string name="durec_delete_image_success">图片已成功删除</string>
+
+    <string name="durec_gif_record_guide">点击按钮开始录制GIF。再次点击该按钮结束录制。</string>
+    <string name="durec_start_time">开始时间</string>
+    <string name="durec_end_time">结束时间</string>
+    <string name="durec_subtitles_time_warn">请保证结束时间在开始时间之后。</string>
+
+    <string name="durec_time_can_be_recorded">可录制 %1$s</string>
+    <string name="durec_new_internal_storage">内部存储（可录制 %1$s）</string>
+    <string name="durec_new_sd_card">SD卡（可录制 %1$s）</string>
+    <string name="durec_restart_process_prompt">%1$s进程已被系统停止。我们已为你自动重启%2$s。</string>
+
+    <string name="durec_failed_to_edit_video">视频编辑失败</string>
+    <string name="durec_edit_image">图片编辑</string>
+    <string name="durec_play_select">播放所选</string>
+    <string name="durec_remove_middle_confirm_warn">进行移除中段操作，会清除之前的剪切操作。确认要继续吗？</string>
+    <string name="durec_trim_confirm_warn">进行剪切操作，会清除之前的移除中段操作。确认要继续吗？</string>
+    <string name="durec_remove_background_warn">不支持为横屏视频添加背景。已自动去除背景。</string>
+
+    <string name="durec_common_install">下载</string>
+    <string name="durec_mobile_network_watch_video_prompt">您正在使用移动网络，观看视频会花费你的流量。确定要观看视频吗?</string>
+    <string name="durec_common_watch">观看</string>
+    <string name="durec_use_mobile_network_prompt">您正在使用移动网络，为节省您的流量， 视频播放会自动停止。</string>
+    <string name="durec_video_edit_shortcut">视频编辑</string>
+    <string name="durec_select_video">选择一个视频</string>
+
+    <string name="durec_error_youtubeplayer">初始化 YouTube 播放器时发生错误 (%1$s)</string>
+    <string name="durec_youtube_link_not_found">找不到视频链接。</string>
+
+    <string name="durec_selected_count">已选择%1$s个</string>
+    <string name="durec_subscribe_youtube_channel">订阅我们的YouTube频道</string>
+    <string name="durec_submit_video">投稿</string>
+    <string name="durec_activity_video">活动视频</string>
+    <string name="durec_enter_link">输入YouTube视频链接</string>
+    <string name="durec_enter_link_no_network">抱歉，需要连接网络才能提交视频链接。</string>
+    <string name="durec_enter_link_not_correct">你输入的视频链接格式不正确。</string>
+    <string name="durec_success_submit_link">你已经成功提交了视频链接。我们会对视频进行确认，并将优质视频放置到活动页面。</string>
+    <string name="durec_submit_video_explain">我们会选择优质视频，并将其放置到活动页面。这能够帮助你的视频获得更多观看。</string>
+    <string name="durec_activity_rules">活动规则</string>
+    <string name="durec_copy_link">复制链接</string>
+    <string name="durec_share_a_link">分享链接</string>
+
+    <string name="durec_edit_speed">速度</string>
+    <string name="durec_edit_change_speed">变速</string>
+    <string name="durec_edit_intro_and_outro">片头和片尾</string>
+    <string name="durec_edit_intro">片头</string>
+    <string name="durec_edit_outro">片尾</string>
+    <string name="durec_edit_video_title">视频标题</string>
+    <string name="durec_edit_description">描述</string>
+    <string name="durec_edit_video_maker">视频作者</string>
+    <string name="durec_edit_thanks">谢谢</string>
+    <string name="durec_edit_contact">联系方式</string>
+    <string name="durec_edit_intro_tips">选中的部分会用作视频片头。可通过双指操作放大/缩小图片。移动图片来选择你想要的部分。</string>
+    <string name="durec_edit_outro_tips">选中的部分会用作视频片尾。可通过双指操作放大/缩小图片。移动图片来选择你想要的部分。</string>
+    <string name="durec_edit_intro_and_outro_error">添加片头片尾时出错</string>
+    <string name="durec_edit_intro_and_outro_invalid">由于视频横竖屏发生变化，你所添加的片头或片尾已被自动移除。请重新添加片头片尾。</string>
+    <string name="durec_fail_to_login_google">登录Google账号失败，请重试。</string>
+    <string name="durec_live_resolution">直播分辨率</string>
+    <string name="durec_common_public">公开</string>
+    <string name="durec_common_private">私享</string>
+    <string name="durec_detail_private_status">私享直播仅对被邀请观看直播的用户可见</string>
+    <string name="durec_common_unlisted">不公开</string>
+    <string name="durec_detail_unlisted_status">不公开的直播对拥有该直播链接的用户可见</string>
+    <string name="durec_share_live_stream">分享直播地址</string>
+    <string name="durec_share_live_stream_detail">我正在使用%1$s进行直播。来看我的直播：%2$s</string>
+    <string name="durec_common_account">账号</string>
+    <string name="durec_log_out">退出登录</string>
+    <string name="durec_live_with_app">我使用%1$s进行的直播</string>
+    <string name="durec_common_retry">重试</string>
+    <string name="durec_common_start">开始</string>
+    <string name="durec_connect_to_youtube">正在连接YouTube…</string>
+    <string name="durec_success_to_connected_youtube">已成功连接</string>
+    <string name="durec_failed_to_connect_youtube">连接失败</string>
+    <string name="durec_failed_to_stream_live_with_no_network">当前无网络连接，无法开始直播。</string>
+    <string name="durec_use_mobile_network_with_live_stream">你当前使用的是移动网络，直播会消耗你的流量。确定要开始直播吗？</string>
+    <string name="durec_network_status_poor">当前网络状态不佳。请保证网络通畅或尝试重连。</string>
+    <string name="durec_uninstall_google_play_services_error">登录需要使用Google Play服务。请安装Google Play服务，之后重新启动%1$s。</string>
+    <string name="durec_obtail_permission_prompt">请对%1$s进行授权，以便你能正常使用%2$s进行直播。</string>
+    <string name="durec_microphone_permission_error">抱歉，当前无法直播音频。</string>
+    <string name="durec_live_ended">直播已结束</string>
+    <string name="durec_comment_counts">%1$s条评论</string>
+    <string name="durec_show_live_information">展示直播信息</string>
+    <string name="durec_common_live">直播中</string>
+    <string name="durec_live_tools">直播工具</string>
+    <string name="durec_can_not_start_live_while_record">抱歉，录屏中无法开始直播。</string>
+    <string name="durec_can_not_record_while_live">抱歉，直播中无法开始录屏。</string>
+    <string name="durec_created_screen_videos_shortcut">已为你自动创建%1$s快捷方式。</string>
+    <string name="durec_exit_featured_videos_prompt">为你精选最新鲜、最有趣、最流行的视频，你想要的全在这里！多来看看吧！</string>
+    <string name="durec_common_quit">退出</string>
+    <string name="durec_common_setting">设置</string>
+
+    <string name="durec_cannot_exit_live_prompt">无法在直播中关闭悬浮窗。</string>
+
+    <string name="durec_failed_to_get_share_link">无法获取分享链接</string>
+    <string name="durec_live_historical_panel_first_show_prompt">所有评论都会展示在这里</string>
+
+    <string name="durec_promotion_share_text">立即参加"%1$s"的线上活动%2$s: %3$s</string>
+    <string name="durec_report_youtube_url_char_limit">视频标题中需包含"%1$s"才可提交</string>
+    <string name="durec_report_youtube_url_char_max_length">链接字符数上限为300个字符</string>
+    <string name="durec_user_publish_total_video">共%1$s个视频</string>
+    <string name="durec_live_guide_title_for_gameplay_live">畅快游戏，轻松直播</string>
+    <string name="durec_live_guide_desc_gameplay">%1$s提供流畅清晰的游戏直播体验。在直播中和大家一起交流你的游戏技巧吧！</string>
+    <string name="durec_live_guide_desc_series">用%1$s直播电影、电视剧，和朋友一起分享你喜爱的节目！</string>
+    <string name="durec_live_guide_title_for_series_live">大家一起看电影</string>
+    <string name="durec_live_guide_desc_tutorial">用%1$s直播教程内容，让更多人了解更多知识！</string>
+    <string name="durec_live_guide_title_for_tutorial">教程直播</string>
+    <string name="durec_live_guide_title_for_more_fun">更多直播场景等待你去探索</string>
+
+    <string name="durec_common_next">下一步</string>
+    <string name="durec_common_skip">跳过</string>
+    <string name="durec_choose_platform">选择直播平台</string>
+    <string name="durec_not_logged_facebook_prompt">你需要先登录Facebook。</string>
+    <string name="durec_facebook_live_authorize_prompt">你需要在Facebook完成授权，才能开始直播。</string>
+    <string name="durec_facebook_status_friends">朋友</string>
+    <string name="durec_facebook_status_friends_of_friends">朋友的朋友</string>
+    <string name="durec_facebook_status_me">只有我</string>
+    <string name="durec_connecting_to_facebook">正在连接到Facebook…</string>
+    <string name="durec_success_to_connected_facebook">已成功连接</string>
+    <string name="durec_failed_to_connect_facebook">连接失败</string>
+    <string name="durec_wifi_transfer_dialog_msg_new">确定要退出吗？退出后将无法继续在电脑下载%1$s的视频与图片。</string>
+
+    <string name="durec_feed_video_share_text">查看精彩视频 “%1$s”: %2$s.  来%3$s看更多精彩视频：%4$s</string>
+    <string name="durec_start_live">直播</string>
+
+    <string name="durec_open_notification_access_prompt">为了保证录制中的稳定性，我们强烈建议你开启读取通知权限。</string>
+    <string name="durec_tap_notification_start_record">你也可以点击通知开始录制</string>
+    <string name="durec_feed_video_up_next">下一个视频</string>
+    <string name="durec_feed_video_more">更多</string>
+    <string name="durec_turn_on_float_window_permission_prompt">请开启悬浮窗权限，以保证%1$s的正常使用。</string>
+    <string name="durec_allow_notification_permission_prompt">请开启通知栏权限，以保证%1$s的正常使用，并提升录制稳定性。</string>
+    <string name="durec_allow_float_window_permission_guide">请打开手机管家应用，进入权限隐私-悬浮窗管理页面，开启%1$s的悬浮窗权限，以保证应用的正常使用。</string>
+    <string name="durec_allow_notification_permission_guide">请打开系统设置，进入通知与状态栏-通知管理页面，找到%1$s并点击，开启“允许通知”，以保证产品的正常使用，并提升录制稳定性。</string>
+    <string name="durec_repair_system_ui_crash">修复系统UI崩溃问题</string>
+    <string name="durec_allow_repair_system_ui_crash_prompt">请点击这里并开启权限，修复系统UI崩溃问题</string>
+
+    <string name="durec_guide_notifaction">你也可以使用通知栏控制录屏。</string>
+    <string name="durec_guide_long_press_floating_window">请长按悬浮窗。</string>
+    <string name="durec_guide_close_window">将悬浮窗移动至退出按钮，来退出应用。</string>
+    <string name="durec_guide_record_floating_window">点击这里也可以开始和结束录制！\n如果你不需要它，可以在设置页面选择隐藏。</string>
+    <string name="durec_setting_hide_homepage_recording_button">隐藏首页录屏按钮</string>
+    <string name="durec_setting_record_mode">录制模式</string>
+    <string name="durec_setting_record_mode_basic">基础</string>
+    <string name="durec_setting_record_mode_basic_subtitle">不支持暂停，更稳定，推荐配置较差/录制卡顿的设备使用</string>
+    <string name="durec_setting_record_mode_standard">标准</string>
+    <string name="durec_setting_record_mode_standard_subtitle">功能强大，推荐大部分设备使用</string>
+    <string name="durec_common_repair">修复</string>
+    <string name="durec_select_direction_of_corrupted_video">请选择该损坏视频的拍摄方向</string>
+    <string name="durec_common_horizontal">横屏</string>
+    <string name="durec_common_vertical">竖屏</string>
+    <string name="durec_common_waiting">等待修复...</string>
+    <string name="durec_video_repair_success">视频已修复完成。</string>
+    <string name="durec_video_repair_failed">视频修复失败。</string>
+    <string name="durec_facebook_page">主页</string>
+    <string name="durec_facebook_group">小组</string>
+    <string name="durec_live_status">直播到</string>
+    <string name="durec_live_title_suffix">使用%1$s 直播屏幕上的精彩瞬间，与更多人分享你喜欢的游戏、影视、球赛：%2$s</string>
+    <string name="durec_guide_repair_again">如果修复后的视频仍有问题，你可以点此重新尝试修复</string>
+    <string name="durec_setting_create_video_editor_shortcut">在桌面创建视频编辑快捷方式</string>
+    <string name="durec_facebook_live_share_url_subtitle_prompt">请先选择目标观众再分享，以确保所分享链接的正确性</string>
+
+    <string name="durec_add_group">添加一个小组</string>
+    <string name="durec_enter_group_name">输入小组名称</string>
+    <string name="durec_no_group">未搜索到小组。</string>
+    <string name="durec_failed_add_group">添加小组失败</string>
+    <string name="durec_guide_open_popup_window_permission_text">请滑到页面底部并点击</string>
+    <string name="durec_account_happen_problem_prompt">你的账号存在问题，请退出当前账号后重新登录。</string>
+    <string name="durec_live_disabled">我们正在优化%1$s直播功能，优化完成后会立即开放。抱歉为你的使用带来不便。</string>
+    <string name="durec_settings_invert_color">反转视频颜色</string>
+    <string name="durec_settings_invert_color_subtitle">开启该项以修复视频颜色反转问题</string>
+    <string name="durec_need_camera_permission">需要开启摄像头权限才能开始录制。请在系统设置页面为%1$s开启摄像头权限，或切换到标准模式进行录制。</string>
+    <string name="durec_no_permission_to_live_in_group">你没有在该小组直播的权限。请先在Facebook上加入该小组。</string>
+    <string name="durec_fb_live_search_group_not_available">搜索小组功能当前不可用。请稍后再试。</string>
+
+    <string name="durec_need_login_twitch">你需要先登录Twitch账号才能开始直播。</string>
+    <string name="durec_screenshot_change_location">截屏功能移动到这里了</string>
+    <string name="durec_guide_start_live_text">点此对你的屏幕进行直播</string>
+    <string name="durec_not_stop_record_when_screen_off">灭屏不停止录制</string>
+    <string name="durec_shake_automatic_close_prompt">设备传感器问题导致录制自动停止，我们已为你关闭摇一摇停止录屏功能。请重新开始录制。</string>
+    <string name="durec_connect_to_twitch">正在连接到Twitch…</string>
+    <string name="durec_success_to_connect_twitch">已成功连接</string>
+    <string name="durec_fail_to_connect_twitch">连接失败</string>
+
+    <string name="durec_common_rename">重命名</string>
+    <string name="durec_need_verified_youtube_account_prompt">你需要先验证YouTube账号，才能开始直播。请按照YouTube的指示进行账号认证。\n注意：请保证你验证的账号与你登录%1$s的是同一账号。\n由于YouTube的限制，你可能需要等待 24 小时才能使用直播功能。激活后，你就能立即开始直播了。</string>
+
+    <string name="durec_cannot_use_pop_window_prompt">悬浮窗权限未开启，录屏悬浮窗无法正常使用。</string>
+    <string name="durec_turn_on_pop_window_prompt">我们建议你在系统设置中开启悬浮窗权限，保证%1$s的正常使用。</string>
+    <string name="durec_turn_it_on">去开启</string>
+    <string name="durec_use_notification_to_rec">使用通知栏录制</string>
+    <string name="durec_no_pop_window_permission_prompt">由于悬浮窗权限未开启，该功能无法正常使用。请在系统设置中开启悬浮窗权限。</string>
+    <string name="durec_enable_pop_window_restart_app">悬浮窗权限已开启，请重新启动%1$s。</string>
+    <string name="durec_enable_pop_window_retry_feature">悬浮窗权限已开启，请重新打开你要启用的功能。</string>
+    <string name="durec_ytb_live_description">描述</string>
+    <string name="durec_no_microphone_permission_prompt">麦克风权限未开启。请开启麦克风权限，以录制音频。关闭对话框可录制一个无声音的视频。</string>
+    <string name="durec_fb_live_change_account_prompt">要切换账号，你需要同时切换在%1$s的登录账号。</string>
+    <string name="durec_live_choose_category">选择分类</string>
+    <string name="durec_live_search_category">搜索分类</string>
+    <string name="durec_twitch_search_hint">输入游戏名称</string>
+    <string name="durec_twitch_search_no_result_prompt">未找到相关分类。</string>
+    <string name="durec_live_recon_success">直播重连成功。</string>
+
+    <!-- 161 -->
+    <string name="enable_dination">开启直播打赏，通过直播赚钱！</string>
+    <string name="dination_title">直播打赏</string>
+    <string name="paypal_account_fillin_guide">开启打赏功能可以帮助您在直播的过程中获得金钱支持，并在您的画面和观众的画面上展示打赏信息。</string>
+    <string name="open_right_now">马上开启</string>
+    <string name="paypal_account_fillin_title">输入你的PayPal帐号</string>
+    <string name="paypal_account">PayPal帐号邮箱</string>
+    <string name="paypal_account_fillin_desc">为了获得打赏，请输入一个有效的PayPal帐户邮箱。所有打赏会直接进入你的Paypal账户，%1$s不从中抽取任何费用。</string>
+    <string name="paypal_account_error">请输入正确的PayPal帐户邮箱</string>
+    <string name="paypal_account_save_success">已成功保存PayPal账户信息</string>
+    <string name="paypal_account_save_failed">PayPal账户信息保存失败。请重新提交。</string>
+    <string name="paypal_account_save_cancel">PayPal账户信息未保存。确定要离开吗？</string>
+    <string name="donation_effect_audience_preview">观众屏幕展示效果</string>
+    <string name="donation_effect_anchor_preview">主播屏幕展示效果</string>
+    <string name="donation_link">打赏链接</string>
+    <string name="copy_to_paste">复制</string>
+    <string name="copy_to_paste_desc">复制打赏链接到直播平台，让更多观众看到</string>
+    <string name="no_connection">未绑定</string>
+    <string name="min_donation_amount">最小金额</string>
+    <string name="min_donation_amount_desc">设置一个合理的金额，以避免恶意打赏</string>
+    <string name="top_max_donation">置顶最高金额打赏</string>
+    <string name="top_max_donation_desc">开启后，最高金额打赏会一直在屏幕上展示</string>
+    <string name="landscape">横屏</string>
+    <string name="portrait">竖屏</string>
+    <string name="drag_to_move">拖拽以移动</string>
+
+    <string name="durec_donate_to">打赏给：</string>
+
+    <string name="donate">打赏</string>
+    <string name="donation_hint">%1$s刚刚为你打赏%2$s美元！</string>
+
+
+    <string name="durec_no_live">无直播内容</string>
+    <string name="durec_number_watcher">%1$s人正在观看</string>
+    <string name="durec_number_subscriber">%1$s位订阅者</string>
+    <string name="durec_common_subscribe">订阅</string>
+    <string name="durec_common_subscribed">已订阅</string>
+    <string name="durec_live_chars">聊天</string>
+    <string name="durec_say_something_to_live">一起聊聊吧</string>
+    <string name="durec_say_something_to_video">一起聊聊吧</string>
+    <string name="durec_fail_to_load">加载失败。点此重新加载。</string>
+    <string name="durec_success_to_subscribed_youtuber">已在YouTube成功订阅该主播。</string>
+    <string name="durec_cancel_to_subscription_youtuber">已在YouTube取消订阅该主播。</string>
+    <string name="durec_need_log_in_to_subscribe">你需要先登录才能进行订阅。</string>
+    <string name="durec_fail_to_subscribe">订阅失败</string>
+    <string name="durec_fail_to_cancel_subscribe">取消订阅失败</string>
+    <string name="durec_be_the_first_comment">还没人发言，快来抢沙发</string>
+    <string name="durec_need_log_in_to_comment">你需要先登录才能发布评论。</string>
+    <string name="durec_fail_to_send_comment">评论发送失败</string>
+    <string name="durec_common_reply">回复</string>
+    <string name="durec_reply_to_somebody">回复%1$s</string>
+    <string name="durec_comment_delete">评论删除成功</string>
+    <string name="durec_fail_to_delete_comment">评论删除失败</string>
+    <string name="durec_number_view">%1$s次播放</string>
+    <string name="durec_common_comments">评论</string>
+    <string name="durec_view_more_comments">查看更多回复</string>
+    <string name="durec_log_out_youtube_account">退出YouTube登录</string>
+    <string name="durec_live_detail_share_content">使用%1$s看更多直播:</string>
+    <string name="durec_log_out_prompt">确认要退出登录吗？</string>
+    <string name="durec_no_comments">当前无评论</string>
+    <string name="copy_success">复制成功</string>
+    <string name="add_to_live_desc">添加到直播描述</string>
+    <string name="no_auto_append_hint">关闭后，将不会在直播描述后自动添加打赏链接</string>
+    <string name="donation_link_template_in_live_desc">通过PayPal打赏：%1$s</string>
+
+    <string name="durec_common_donate">打赏</string>
+    <string name="durec_subscribe_streamer">即刻订阅主播，不错过精彩内容！</string>
+    <string name="durec_can_not_logout_warn">直播中无法退出登录。</string>
+    <string name="durec_personalized_record_watermark">自定义水印 - 录屏</string>
+    <string name="durec_personalized_live_watermark">自定义水印 - 直播</string>
+    <string name="durec_record_watermark_switch_text">开启该功能，水印会出现在你录制的视频上</string>
+    <string name="durec_live_watermark_switch_Text">开启该功能，水印会出现在你的直播上</string>
+    <string name="durec_add_texts_watermark">添加文字</string>
+    <string name="durec_add_image">添加图片</string>
+    <string name="durec_watermark_drag_guide">添加的文字或图片会在这里显示，你可以拖动来调整它的位置。</string>
+    <string name="durec_enter_watermark_text">输入文字水印内容</string>
+    <string name="durec_text_watermark">文字水印</string>
+    <string name="durec_image_Watermark">图片水印</string>
+    <string name="durec_common_image">图片</string>
+    <string name="durec_delete_watermark_confirm_text">确定要删除该水印吗？</string>
+    <string name="durec_limit_watermark_number_warn">水印数量已达到上限，无法继续添加。</string>
+    <string name="durec_common_send">发送</string>
+    <string name="durec_personalized_watermark">自定义水印</string>
+
+    <string name="anchor_application_guide">成为认证主播，获得更多曝光和推荐</string>
+    <string name="anchor_application_passed">申请通过！经常直播可以获得更多的粉丝哦！</string>
+    <string name="anchor_application_not_passed">申请未通过，请多多直播，并保持和观众的良好互动</string>
+    <string name="anchor_varify">认证主播</string>
+    <string name="apply_to_be_anchor">申请成为认证主播</string>
+    <string name="anchor_right">特权</string>
+    <string name="anchor_right_detail">1.专属认证图标\n2.更优先的推荐和更好的展示位</string>
+    <string name="application_notice">申请说明</string>
+    <string name="application_notice_detail">1.经常使用%1$s进行游戏直播，有一定的粉丝基础，保持和观众的良好互动，都可以提高通过率哦\n2.请保持直播过程中的网络稳定，画面清晰\n3.当您的条件不符合认证主播标准时，我们有可能会撤销您的认证</string>
+    <string name="start_apply">开始申请</string>
+    <string name="fill_in_desc_first_line">提交后，需进行一次不少于15分钟的直播，作为审核的参考</string>
+    <string name="youtube_account">YouTube账号</string>
+    <string name="mail_box">邮箱</string>
+    <string name="durec_common_game">游戏</string>
+    <string name="durec_common_game_detail">您的直播内容将在此游戏分类下展示</string>
+    <string name="facebook_account">FaceBook账号</string>
+    <string name="facebook_account_detail">请填写您的facebook id或关联的邮箱、电话</string>
+    <string name="durec_common_choose">选择</string>
+    <string name="durec_common_note">备注</string>
+    <string name="addition_information">选填。您可以填写一些额外的说明来帮助我们进行审核…</string>
+    <string name="submit_application">提交申请</string>
+    <string name="resubmit_allication">重新提交</string>
+    <string name="submit_success_dialog_detail">提交成功！请进行一次不少于15分钟的直播，我们会将您直播时的内容质量和互动情况作为参考</string>
+    <string name="go_live">去直播</string>
+    <string name="subscrption_goal">订阅目标</string>
+    <string name="durec_common_close">关闭</string>
+    <string name="subscrption_goal_val">目标订阅数</string>
+    <string name="set_subscrption_goal">设定单次直播的目标新增订阅数</string>
+    <string name="donation_goal">打赏目标</string>
+    <string name="donation_goal_val">目标打赏金额</string>
+    <string name="set_donation_goal">设定单次直播的目标打赏金额</string>
+    <string name="paypal_unbind">解绑</string>
+    <string name="paypal_unbind_warning">解绑后打赏功能将不可用，是否仍要解绑？</string>
+    <string name="open_donation_link">开启打赏链接</string>
+    <string name="donation_disable_warning">关闭后，你的粉丝将不能进行打赏</string>
+    <string name="mailbox_required">请填写邮箱</string>
+    <string name="facebook_account_required">请填写FB账号</string>
+    <string name="not_finish_application">申请信息未提交，确定离开吗？</string>
+    <string name="mailbox_error">请输入正确的邮箱</string>
+    <string name="subscription_goal_setting">请设置您每次直播想要获得的新增粉丝数</string>
+    <string name="donation_goal_setting">请设置您每次直播想要获得的打赏金额</string>
+    <string name="subscribe_hint_new">%1$s在%2$s订阅了你</string>
+
+    <string name="durec_feed_entrance_card_title">使用指南</string>
+    <string name="durec_feed_entrance_card_desc">在这里你可以找到%1$s的功能使用指南！</string>
+    <string name="durec_common_no">不用了</string>
+    <string name="durec_youtube_web_login_title">登录至YouTube</string>
+    <string name="durec_miui_alert_perm_msg">请点击“权限管理”，并开启“显示悬浮窗”权限，以保证您能够正常使用%1$s进行录制。</string>
+
+    <string name="durec_video_orientation">视频方向</string>
+    <string name="durec_pause_record_when_incoming_call">来电时暂停录制</string>
+    <string name="durec_live_guide_text_new">来试试直播你的屏幕吧！</string>
+    <string name="durec_leave_while_and_back_soon">离开一会，马上回来！</string>
+    <string name="durec_change_account">选择YouTube频道</string>
+
+    <string name="durec_live_pause_prompt">直播已暂停</string>
+    <string name="durec_live_latency">直播延迟时间</string>
+    <string name="durec_live_normal_latency">正常延迟</string>
+    <string name="durec_live_normal_latency_hint">在观看者播放时提供最高的画质和更高的分辨率</string>
+    <string name="durec_live_low_latency">低延迟</string>
+    <string name="durec_live_low_latency_hint">近乎实时的互动，非常短的播放缓冲时间</string>
+    <string name="durec_live_ultra_low_latency">超低延迟</string>
+    <string name="durec_live_ultra_low_latency_hint">实时互动。不支持：DVR、字幕、1440p 和 4k 分辨率</string>
+    <string name="donation_info_setting">打赏信息</string>
+    <string name="durec_donation_info_setting_hint">开启后，才能接受粉丝打赏</string>
+    <string name="new_info_notification_hint">当有新的订阅消息和打赏消息时展示</string>
+    <string name="durec_donation_leader_board">打赏排行榜</string>
+    <string name="durec_donation_leader_board_hint">滚动展示历史打赏信息</string>
+    <string name="durec_live_goals">直播目标</string>
+    <string name="durec_live_goals_hint">设置直播时的订阅目标和打赏目标</string>
+    <string name="durec_message_robot">消息机器人</string>
+    <string name="durec_message_robot_hint">自动推送关键消息到您的评论中</string>
+    <string name="durec_display_duration">单条展示时长</string>
+    <string name="durec_subscrption_goal_hint">订阅目标及完成情况将会展示在直播屏幕上</string>
+    <string name="durec_donation_goal_hint">打赏目标及完成情况将会展示在直播屏幕上</string>
+    <string name="durec_subscribe_message">订阅消息</string>
+    <string name="durec_subscribe_message_hint">当有新增的订阅时自动发送评论</string>
+    <string name="durec_donation_message">打赏消息</string>
+    <string name="durec_donation_message_hint">当有新增的打赏信息时自动发送评论</string>
+    <string name="durec_welcome_message">欢迎消息</string>
+    <string name="durec_welcome_message_hint">欢迎来到%1$s的直播间！喜欢直播内容，就请通过订阅和打赏来支持主播吧: %2$s</string>
+    <string name="durec_custom_message">自定义消息</string>
+    <string name="durec_reply_content">消息内容</string>
+    <string name="durec_reply_interval">回复间隔</string>
+    <string name="durec_change_tools_on_viewers_screen_hint">位置调整只在观众的屏幕生效</string>
+    <string name="durec_live_tools_guidance">所有的直播工具都在这里进行设置</string>
+    <string name="durec_enable_message_robot_confirm_tip">开启后，%1$s将成为您房间的管理员，如不设置管理员，机器人功能将不能使用。</string>
+    <string name="durec_enable_donation_goal_tip">您还没有设置打赏信息，设置后，才能使用打赏目标功能。</string>
+    <string name="durec_go_set">去设置</string>
+    <string name="durec_enable_donation_list_tip">您还没有设置打赏信息，设置后，才能使用打赏排行榜功能。</string>
+    <string name="durec_robot_default_custom_content">欢迎进入直播间！</string>
+    <string name="durec_robot_custom_content_save_failed">回复内容保存失败</string>
+
+    <string name="durec_set_cover">设置直播封面</string>
+    <string name="durec_change_live_cover_operation_tips">选中的部分会用作直播封面。可通过双指操作放大/缩小图片。移动图片来选择你想要的部分。</string>
+    <string name="durec_common_change">更换</string>
+    <string name="durec_failde_to_change_live_cover">修改封面图片失败，请重试。</string>
+    <string name="durec_live_cover_size_limit">图片大小超过2MB，无法上传。请重新选择图片。</string>
+    <string name="durec_success_to_set_cover">已成功设置直播封面。你所设置的封面会在下一次使用%1$s开播后生效。</string>
+    <string name="durec_failed_to_connect_youtube_prompt_title">如何解决“无法连接到YouTube”问题</string>
+    <string name="durec_failed_to_connect_youtube_prompt_message">点击下方按钮，打开YouTube直播页面，等待页面完全加载。然后，重新打开%1$s直播页面并开始直播。</string>
+    <string name="durec_failed_to_connect_youtube_prompt_sub_message">如上述方法无效，请在电脑上打开以下页面%1$s ，并等待页面完全加载。然后，重新打开%2$s直播页面并开始直播。</string>
+    <string name="durec_start_live_guide_message_24_hour_limit">注意：由于YouTube的限制，你可能需要等待 24 小时才能使用直播功能。激活后，你就能立即开始直播了。</string>
+    <string name="durec_attempted_fix_youtube_connect_problem">已尝试修复问题，请重新开始直播。</string>
+    <string name="durec_leave_fix_youtube_connect_problem_page_warning">当前页面尚未加载完成，修复可能不成功，确认要返回吗？</string>
+    <string name="durec_interrupt_fix_youtube_connect_problem_warning">问题未修复，请等待YouTube页面加载完成后再返回。</string>
+    <string name="durec_stop_live_prompt">确定要停止直播吗？</string>
+    <string name="durec_live_enabled__by_youtube_reason">抱歉，由于YouTube服务器的问题，现在无法直播。请稍后再试。</string>
+    <string name="duress_miui_window_guide_title">展示悬浮窗</string>
+    <string name="durec_message_robot_info_save_failed">消息机器人信息保存失败。请重新提交。</string>
+    <string name="durec_resolution_latency_conflict">保存失败。分辨率高于1080P的直播不支持超低延迟选项。</string>
+    <string name="durec_change_tools_on_anchor_screen_hint">位置调整只在你的屏幕生效。\n当某个直播工具同时对主播和观众开启时，则以主播显示的工具展示效果为准。</string>
+
+    <string name="durec_stream_simultaneously">同步推流</string>
+    <string name="durec_link_channel">绑定频道</string>
+    <string name="durec_multiple_platform_note">您的屏幕内容将会被直播到您勾选的频道</string>
+    <string name="durec_optional">非必填项</string>
+    <string name="durec_apply_to_all_streaming_title">应用到所有直播标题</string>
+    <string name="durec_checked">准备就绪</string>
+    <string name="durec_checking">检测中</string>
+    <string name="durec_fail_to_conenct">无法连接</string>
+    <string name="durec_try_later">服务器连接失败，请稍后再试</string>
+    <string name="durec_live_ended_by_failed">服务器连接失败，直播已结束</string>
+    <string name="durec_ytb_live_stopped">YouTube直播已断开</string>
+    <string name="durec_twitch_live_stopped">Twitch直播已断开</string>
+    <string name="durec_fb_live_stopped">Facebook直播已断开</string>
+    <string name="durec_select_one_platfrom_at_least">请至少选择一个平台</string>
+    <string name="durec_multiple_platform_share">我正在使用%1$s进行直播。可以通过以下平台观看到我的直播： </string>
+    <string name="durec_failed_enable_bot_no_live">开启失败，请先为您的YouTube频道启用直播功能</string>
+    <string name="durec_failed_set_moderator_no_bot">管理员设置失败，聊天机器人功能未开启</string>
+    <string name="durec_partner_streamer_requirement_reminder">只有符合条件的主播申请才可以通过主播申请审核，否则你的申请将会被拒绝。</string>
+    <string name="durec_requirements">要求</string>
+    <string name="durec_streamer_live_game_duration">每周直播游戏时长大于3h\n（小于5分钟的直播不计入）</string>
+    <string name="durec_streamer_sub_nums">YouTube订阅大于%1$d</string>
+    <string name="durec_streamer_benefits">好处</string>
+    <string name="durec_benefits_top_show">1. 直播内容在%1$s直播页面优先展示</string>
+    <string name="durec_benefits_special_flag">2. 头像添加专属V标识</string>
+    <string name="durec_hot_games">热门游戏</string>
+    <string name="durec_subscibe_slogan">订阅DU Recorder官方频道，获取最新资讯，与我们实时互动！</string>
+    <string name="durec_failed_choose_game">选择游戏分类失败，请重试。</string>
+    <string name="durec_failed_connected_recorder_server">连接%1$s服务器失败</string>
+    <string name="durec_live_with_game">%1$s的直播！（使用%2$s直播）</string>
+    <string name="durec_common_title">标题</string>
+
+    <string name="durec_message_robot_re_authorize_message">消息机器人功能暂不可用，请重新授权%1$s为您的频道管理员。</string>
+    <string name="durec_message_robot_re_authorize_fail">消息机器人功能不可用</string>
+    <string name="durec_multi_platform_sync_title_fail">%s直播标题同步失败。请确保标题中不含"&lt;"和"&gt;"。</string>
+    <string name="new_info_notification">消息提醒</string>
+    <string name="durec_server_connection_lost">%1$s服务器连接失败</string>
+    <string name="durec_stream_server_connection_lost">视频流服务器连接失败</string>
+    <string name="durec_no_login_platform">没有可分享的直播地址，请先绑定频道。</string>
+    <string name="durec_vip_live_embed_error">申请未通过。请在YouTube中开启直播嵌入功能后重新申请。</string>
+    <string name="durec_recording_gif_exit">录制动图时无法退出</string>
+    <string name="durec_fail_to_connect_service">连接到%1$s服务器失败</string>
+    <string name="durec_twitch_live_need_login">登录超时，请重新登录</string>
+
+    <string name="durec_audio_sound_alert_title">音效提示</string>
+    <string name="durec_audio_sound_alert_detail">当有新消息时自动播放</string>
+    <string name="durec_new_subscription">订阅音效</string>
+    <string name="durec_new_donation">打赏音效</string>
+    <string name="durec_choose_audio_sound_alert">请选择提示音效</string>
+    <string name="durec_common_none">无</string>
+    <string name="durec_robot_custom_reply_content_empty_text">还没有自定义回复</string>
+    <string name="durec_robot_reply_content_status">开启状态</string>
+    <string name="durec_robot_reply_content_name">名称</string>
+    <string name="durec_robot_reply_content_name_edit_hint">只用于帮助你区分回复内容</string>
+    <string name="durec_common_content">内容</string>
+    <string name="durec_robot_reply_content_edit_hint">请输入需要发送至评论的内容</string>
+    <string name="durec_robot_reply_content_name_empty_text">“名称”不能为空</string>
+    <string name="durec_robot_reply_content_empty_text">“内容”不能为空</string>
+    <string name="durec_robot_reply_content_delete_text">确定要删除这条自定义回复吗?</string>
+    <string name="durec_robot_reply_content_add">添加</string>
+    <string name="durec_live_add_comment">说点什么…</string>
+    <string name="durec_common_selected">已选择</string>
+    <string name="durec_common_select">选择</string>
+    <string name="durec_vip_failed_message">提交失败！请尝试以下解决方案：</string>
+    <string name="durec_vip_failed_message_sub">在YouTube 频道获得%1$d+的订阅;</string>
+    <string name="durec_vip_failed_message_embed">在YouTube中开启“允许可嵌入”选项；</string>
+    <string name="durec_common_popular">热门游戏</string>
+    <string name="durec_failed_choose_game_category">选择游戏分类失败，请重试。</string>
+    <string name="durec_youtube_live_title_with_game_category_default">%1$s直播（使用%2$s直播）</string>
+    <string name="durec_set_live_pause_image">设置直播暂停图片</string>
+    <string name="durec_set_live_pause_image_tips">直播暂停时，你的观众将会看到该图片</string>
+    <string name="durec_set_live_pause_image_tips_more">选中的部分会用作直播暂停图片。可通过双指操作放大/缩小图</string>
+    <string name="durec_set_live_pause_image_success">已成功设置直播暂停图片</string>
+    <string name="durec_set_live_pause_image_failed">设置直播暂停图片失败</string>
+    <string name="durec_subscribe_operations_frequent_warning">订阅与取消订阅的操作过于频繁。1小时内你无法再订阅该主播。</string>
+    <string name="durec_fix_problem">修复问题</string>
+    <string name="durec_fix_problem_tips">点击下方按钮，修复“直播结束时间必须在直播开始时间之后”的问题。问题修复后，请重新尝试开播。</string>
+    <string name="durec_fix_problem_success">修复成功</string>
+    <string name="durec_fix_problem_failed">修复失败</string>
+    <string name="durec_stop_live_for_screen_off">由于长时间没有直播内容，直播已停止。</string>
+    <string name="durec_no_publish_permission_in_page">当前账号没有这个主页的内容发布权限</string>
+    <string name="durec_facebook_live_lack_publish_permission">不能直播到没有发布内容权限的主页或小组</string>
+    <string name="durec_vip_request_reject">请不要频繁申请。历史申请被拒绝后72小时才可以重新申请哦！ </string>
+    <string name="durec_robot_reply_content_items_counts_exceed_limit">最多可以添加%1$d条自定义消息</string>
+
+    <string name="durec_subscribe_hint">%1$s刚刚订阅了你！</string>
+
+    <string name="durec_multiple_platform">同步推流</string>
+    <string name="durec_one_more_channel_indicator">再登录一个平台就可以开始直播啦！</string>
+
+    <string name="durec_goal_style_selected_count_limit">不能取消选择，请至少选择一种样式</string>
+    <string name="durec_record_file_too_large_dialog_msg">抱歉，由于您的设备不支持储存大于 %1$s的文件，视频录制已自动停止并保存。</string>
+    <string name="durec_fb_live_title_hint">请填写直播标题</string>
+    <string name="durec_live_tools_display_location">直播工具展示位置</string>
+    <string name="durec_effect_audience_preview_hint">调整直播工具在直播时的展示位置</string>
+    <string name="durec_live_tools_display_location_broadcaster">在主播屏幕</string>
+    <string name="durec_live_tools_display_location_viewers">在观众屏幕</string>
+    <string name="durec_live_tools_display_location_tool_guide_text">开启/关闭某个直播工具</string>
+    <string name="durec_live_tools_display_location_orientation_guide_text">切换到横屏/竖屏</string>
+    <string name="durec_live_tools_rank_range_title">排行榜范围</string>
+    <string name="durec_live_tools_rank_range_subtitle">滚动展示选定范围内的50条最高金额打赏信息</string>
+    <string name="durec_live_tools_rank_range_by_single_stream">单次直播</string>
+    <string name="durec_live_tools_rank_range_by_week">最近一周</string>
+    <string name="durec_live_tools_rank_range_by_month">最近一个月</string>
+    <string name="durec_live_tools_rank_range_by_all_time">全部</string>
+    <string name="durec_live_tools_rank_weekly_list">周榜：</string>
+    <string name="durec_live_tools_rank_monehly_list">月榜：</string>
+    <string name="durec_live_tools_rank_totally_list">总榜：</string>
+    <string name="durec_check_paypal_status">检测账号</string>
+    <string name="durec_fill_right_paypal_account">请输入正确的账号</string>
+    <string name="durec_fail_checked_paypal_account">检测失败，请稍后重试</string>
+    <string name="durec_checked_paypal_account_available">当前账号可以用于接收打赏！</string>
+    <string name="durec_donation_be_limited_to_paypal">打赏到您的账户可能会被PayPal限制</string>
+    <string name="durec_picture_display_duration_dialog_title">图片展示时间</string>
+    <string name="durec_cannot_find_want_to_add">没有找到想要添加的音乐？</string>
+    <string name="durec_share_record_video_message">这是我使用%1$s录制的视频。使用这个App录制屏幕内容或者进行直播都很方便，下载地址：%2$s</string>
+    <string name="durec_record_error_msg_of_succeed_save_file">录制出错，已停止录制。视频已保存，请在视频列表查看</string>
+    <string name="durec_failed_to_login_tamago">登录Tamago失败，请重试</string>
+    <string name="durec_connecting_to_tamago">正在连接Tamago...</string>
+    <string name="durec_failed_to_connect_tamago">Tamago服务器连接失败</string>
+    <string name="durec_tamago_account_restricted">您的Tamago账户受限，暂时无法直播</string>
+    <string name="durec_subscribe_durecorder_on_ytb">在YouTube上订阅我们的频道！</string>
+    <string name="durec_fb_login_expired">登录已超时，正在重新登录</string>
+    <string name="durec_fail_to_login_bduss">无法通过%1$s登录，请稍后重试</string>
+    <string name="durec_fail_to_open_system_file_system">无法打开系统文件管理器</string>
+    <string name="durec_paypal_settings_title">PayPal设置</string>
+    <string name="durec_choose_music_from_file_manager">从文件管理器中选择音乐</string>
+    <string name="durec_solve_limited_to_paypal_title">请在%1$s中确认:</string>
+    <string name="durec_solve_limited_to_paypal_title_h5">PayPal Selling Tools设置</string>
+    <string name="durec_solve_limited_to_paypal_step_1">1.您可能收到了一封来自PayPal的邮件</string>
+    <string name="durec_solve_limited_to_paypal_step_2">2.您也可以在%1$s查看并尝试解决这个问题.</string>
+    <string name="durec_solve_limited_to_paypal_step_2_h5">PayPal Resolution Center</string>
+    <string name="durec_solve_limited_to_paypal_step_3">3.关闭: 拒绝接受以我未持有的币种进行的付款</string>
+    <string name="durec_solve_limited_to_paypal_step_4">4.(对于商业账户) 关闭: 禁止通过“付款”页面转账给我</string>
+    <string name="durec_paypal_resolution_center_title">Resolution Center</string>
+    <string name="durec_ytb_lack_of_offline_warn">请授予离线访问权限。如果拒绝，登录将会在1小时后失效。你的直播不会被终止，但是一些直播工具（评论，直播信息，消息通知等）将无法正常使用。</string>
+    <string name="durec_ytb_login_expired_in_one_hour">登录将在1小时后失效。</string>
+    <string name="durec_ytb_login_expired">登录已失效。请重新授权。如果拒绝，你的直播不会被终止，但是一些直播工具（评论，直播信息，消息通知等）将无法正常使用。</string>
+    <string name="durec_access_storage_permission_message">“系统存储权限”未开启，无法使用此功能。请先开启“系统存储权限”后再试。</string>
+    <string name="durec_access_storage_permission_fail_toast">授权失败，无法使用此功能。</string>
+    <string name="durec_access_camera_permission_message">"相机权限"未开启，无法打开摄像头。请先开启“相机权限”后再试。</string>
+    <string name="durec_access_camera_permission_fail_toast">授权失败，无法打开摄像头。</string>
+    <string name="durec_access_record_audio_permission_fail_toast">授权失败，声音不会被录制。</string>
+    <string name="durec_livestream_sync_tip">直播将会同步到%1$s</string>
+    <string name="durec_rush_gaming_download_dialog_msg">%1$s是一个专业的游戏直播平台，粉丝可以通过%2$s收看高质量的游戏直播，赠送礼物，主播可以通过%2$s获得关注，赚取收入。</string>
+    <string name="durec_request_vip_require_embedded">直播是可嵌入的</string>
+    <string name="durec_request_vip_require_embedded_detail">只有可嵌入的直播可以在%1$s内展示。您可以在YouTube设置中开启可嵌入选项：创作者工作室>频道>状态和功能>开启嵌入直播。</string>
+    <string name="durec_request_vip_benefit_exclusive">专属V标</string>
+    <string name="durec_request_vip_benefit_top_position">热门推荐</string>
+    <string name="durec_request_vip_benefit_rapid_withdrawal">快速提现</string>
+    <string name="durec_accept_gift_alter">%1$s送了你一件价值$%2$s的礼物。\n请通过%3$s查看并提现。</string>
+    <string name="durec_common_withdraw">提现</string>
+    <string name="durec_live_setting_receive_gift">礼物总价值</string>
+    <string name="durec_live_gift_get_failed">礼物价值数据更新失败</string>
+    <string name="durec_robot_available_toast">消息机器人回来啦！请在工具设置页中重新开启！</string>
+    <string name="durec_rush_gaming_download_to_withdraw">您需要下载%1$s，并使用同样的YouTube账号进行登录，才能进行提现。</string>
+
+    <string name="durec_rtmp_input">RTMP直播</string>
+    <string name="durec_rtmp_edit_server_title">编辑服务器</string>
+    <string name="durec_rtmp_edit_server_desc">请找到这个直播平台的服务器地址和流密码，\n复制粘贴在下面</string>
+    <string name="durec_rtmt_server_address">服务器地址</string>
+    <string name="durec_rtmt_server_address_hint">rtmp://…</string>
+    <string name="durec_rtmt_server_address_null_alter">请填写服务器地址</string>
+    <string name="durec_rtmt_server_address_format_error">服务器地址以rtmp://开头</string>
+    <string name="durec_rtmt_stream_key">流密码（播放路径/串流码/密钥）</string>
+    <string name="durec_rtmt_stream_name">名称</string>
+    <string name="durec_rtmt_stream_name_exist_alter">该名称已存在</string>
+    <string name="durec_quit_edit_server_page_alter">确认要退出编辑吗？输入的内容将不会保存</string>
+    <string name="durec_rtmp_server_custom_config">自定义%1$d</string>
+    <string name="durec_rtmp_start_failed">无法开始直播，请检查你的服务器网址、密钥是否填写正确</string>
+    <string name="durec_rtmp_modify">去修改</string>
+    <string name="durec_rtmp_server_manager">服务器管理</string>
+    <string name="durec_rtmp_server_cannot_delete_last_one">最后一个配置项不可删除</string>
+    <string name="durec_rtmp_server_delete_warnning">确认删除%1$s配置吗</string>
+
+    <string name="durec_launch_access_storage_permission_message">“系统存储权限”未开启，请授权以保证%1$s屏幕录制等核心功能的正常使用。</string>
+    <string name="durec_launch_access_storage_permission_fail_toast">授权失败，部分功能将无法正常使用。</string>
+
+    <string name="durec_disable_watermark_notes_hours">观看广告，可享受%1$d小时去水印。</string>
+    <string name="durec_disable_watermark_notes_day">观看广告，可享受%1$d天去水印。</string>
+    <string name="durec_watch_now">立即观看</string>
+    <string name="durec_failed_disable_watermark">水印关闭失败！</string>
+    <string name="durec_success_disable_watermark_hours">水印将关闭%1$d小时！</string>
+    <string name="durec_success_disable_watermark_day">水印将关闭%1$d天！</string>
+    <string name="durec_mobile_date_watch_ad_alert">当前处于移动网络环境，继续播放可能产生流量费用，是否继续？</string>
+    <string name="durec_download_ad_content_failed">广告数据加载失败，请稍后重试。</string>
+    <string name="durec_exit_disable_watermark_page_alert">现在退出将无法关闭水印，是否退出？</string>
+    <string name="durec_cannot_goto_audio_perm_activity">无法打开音频权限页面，已自动开始视频录制。如想录制音频，请在系统设置中为%1$s手动开启音频权限。</string>
+
+    <string name="durec_view_more_by_link">点击链接看更多</string>
+    <string name="durec_common_ad">推广</string>
+    <string name="durec_failed_to_generate_promotion_video">无法生成推广视频，请先选择一则有效的推广内容</string>
+    <string name="durec_share_video_promotion_alert">生成一个含有推广内容的视频，再分享到YouTube，可以赚取分成。</string>
+    <string name="durec_share_video_generate_promotion_video_title">生成推广</string>
+    <string name="durec_edit_video_promotion_alert">添加推广内容， 可以赚分成</string>
+    <string name="durec_common_save_as">保存为</string>
+    <string name="durec_edit_video_save_type_selection_alert">请选择要保存的视频类型。普通视频不会添加推广内容，不会获得收益。</string>
+    <string name="durec_promotion_video">推广视频</string>
+    <string name="durec_normal_video">普通视频</string>
+    <string name="durec_promotion_and_revenue">推广内容和收入</string>
+    <string name="durec_open_promotion_bubble_text">边直播边赚钱，快来开启！</string>
+    <string name="durec_not_open_promotion_bubble_text">当前未添加推广内容</string>
+    <string name="durec_common_revenue">收入</string>
+    <string name="durec_common_withdrawal">可提现</string>
+    <string name="durec_time_to_show_promotion">推广内容展示时机</string>
+    <string name="durec_promotion_content">推广内容</string>
+    <string name="durec_my_promotion_video">我的推广视频</string>
+    <string name="durec_rule_description">规则说明</string>
+    <string name="durec_promotion_content_display_time_video">录制视频：片头片尾</string>
+    <string name="durec_promotion_content_display_time_video_detail">选择保存视频为推广视频时，将自动添加推广内容素材到视频的片头和片尾。</string>
+    <string name="durec_promotion_content_display_time_live_pause">直播暂停时</string>
+    <string name="durec_promotion_content_display_time_live_pause_detail">直播到YouTube并选择暂停时，将在暂停画面展示推广内容。</string>
+    <string name="durec_promotion_content_display_time_logo">视频中展示Logo</string>
+    <string name="durec_promotion_content_display_time_logo_detail">Logo和推广名称将会在视频播放时展示</string>
+    <string name="durec_promotion_content_display_time_video_in_video">画中画视频</string>
+    <string name="durec_promotion_content_display_time_video_in_video_detail">推广视频将会在直播画面中，每隔一段时间展示一次。</string>
+    <string name="durec_check_ad_website">查看广告网站</string>
+    <string name="durec_copy_ad_link">复制广告链接</string>
+    <string name="durec_no_promotion_content">更多推广内容即将上架，敬请期待</string>
+    <string name="durec_no_promotion_video_notice">只有添加到列表中的视频，才会开始计算收益。（直播内容不需要再次手动添加）</string>
+    <string name="durec_no_promotion_video">当前暂未添加带有推广内容的视频</string>
+    <string name="durec_delete_promotion_video_alert">删除后，视频将无法产生收益，是否继续。（该操作不会删除源视频）</string>
+    <string name="durec_add_youtube_video_title">添加YouTube视频</string>
+    <string name="durec_add_youtube_video_hint">视频地址</string>
+    <string name="durec_failed_add_by_not_from_youtube">无法添加。该视频不是YouTube的视频</string>
+    <string name="durec_failed_add_by_not_the_current_channel">无法添加。该视频不属于当前登录的channel</string>
+    <string name="durec_failed_add_by_repeat">请勿重复添加</string>
+    <string name="durec_rules_page_start_earn_money">开始赚钱</string>
+    <string name="durec_rules_page_step_1">开启推广</string>
+    <string name="durec_rules_page_step_2">生成视频并分享</string>
+    <string name="durec_rules_page_step_3">填写视频地址</string>
+    <string name="durec_rules_page_step_4">分成结算</string>
+    <string name="durec_rules_page_tips">说明</string>
+    <string name="durec_rules_page_tips_1">目前只有YouTube视频可以赚取收益</string>
+    <string name="durec_rules_page_tips_2">视频收益从添加到%1$s的一刻开始计算</string>
+    <string name="durec_rules_page_tips_3">提现时将审核视频收入，如果作弊行为被发现，部分金额将无法提现。严重者，将会封号处理。</string>
+    <string name="durec_go_withdraw">去提现</string>
+    <string name="durec_withdraw_update_description">*收入情况每日16：00（UTC+0）更新</string>
+    <string name="durec_common_video">视频</string>
+    <string name="durec_common_view">观看数</string>
+    <string name="durec_add_new_promotion_video">去添加一个新视频</string>
+    <string name="durec_failed_update_revenue_data">收入数据刷新失败，请稍后重试</string>
+    <string name="durec_withdraw_history">历史提现</string>
+    <string name="durec_common_completed">已完成</string>
+    <string name="durec_common_rejected">已拒绝</string>
+    <string name="durec_common_pending">审核中</string>
+    <string name="durec_video_violates_wanning">视频%1$s违规，不再产生收入</string>
+    <string name="durec_multi_video_violates_wanning">%1$s等多条视频违规，不再产生收入。</string>
+    <string name="durec_account_blocked_notify">当前账户已被封禁，如有问题，请发送申诉说明邮件到durecorder2016@gmail.com</string>
+    <string name="durec_account_blocked_toast">账号已被封禁，无法使用此功能</string>
+    <string name="durec_expect_bonus">预计分成：$%1$s/1000views</string>
+    <string name="durec_common_submit_success">提交成功。</string>
+    <string name="durec_withdraw_submit_fail">提交PayPal账号失败，请稍后重试。</string>
+    <string name="durec_disable_watermark_title">关闭水印</string>
+    <string name="durec_no_withdraw_history">当前没有提现历史</string>
+    <string name="durec_common_login">登录</string>
+    <string name="durec_audio_unavailable_message">当前无法录制音频。可能是当前有其他应用正在占用录音（如语音工具），请关闭后重试。或者点击继续录制一个无声的视频。</string>
+    <string name="durec_my_promotion_video_choose_bind_ad_alert">请先选择要添加的视频中所包含的推广内容</string>
+
+    <string name="durec_rtmp_exist_platform_warn_title">登录%1$s进行直播？</string>
+    <string name="durec_rtmp_exist_platform_warn_message">我们已经支持%1$s平台，只需要登录帐号即可直播，无需输入RTMP地址。\n 登录后您将拥有更多直播功能</string>
+    <string name="durec_rtmp_exist_platform_warn_user_rtmp">使用RTMP</string>
+    <string name="durec_rtmp_faq_title">RTMP直播帮助</string>
+
+    <string name="durec_common_paste">粘贴</string>
+    <string name="durec_fail_to_choose_channel">切换频道失败，请重试。</string>
+    <string name="durec_opt_account_warn">直播中无法退出当前账号。</string>
+    <string name="durec_opt_channel_warn">直播中无法选择更换频道。</string>
+    <string name="durec_choose_promotion_content_bubble_text">先去选择一个推广内容吧！</string>
+    <string name="durec_promotion_video_url_intro">如果提交的视频中不含推广内容，或视频描述中不含推广链接，您的分成将会被取消。</string>
+    <string name="durec_promotion_video_url_time_limit">一个视频只可以提交一次视频URL，提交后不可修改</string>
+    <string name="durec_expect_sale_order">成交价格的%s</string>
+    <string name="durec_select_promotion_content_failed_with_no_enabled_position">无法选择未开启任何广告位的推广内容。</string>
+    <string name="durec_timeshow_item_price">商品单价：%s </string>
+    <string name="durec_timeshow_profit">收益：成交价格的%s</string>
+    <string name="durec_timeshow_product_revenue_desc">通过你的链接成交的订单将会给你带来分成。最终分成价格以订单实际价格为准。</string>
+    <string name="durec_timeshow_commodity_purchase_link">商品购买链接</string>
+    <string name="durec_timeshow_product_video_title">商品介绍视频</string>
+    <string name="durec_timeshow_product_video_subtitle">下载后可以在视频列表中查看，可以进行编辑或直接分享，分享时，视频描述中将会带有商品的购买链接。</string>
+    <string name="durec_common_downloaded">已下载</string>
+    <string name="durec_download_product_video_failed">视频下载失败，请重试。</string>
+    <string name="durec_order_amount_explain">分成以订单金额为准。</string>
+    <string name="durec_promotion_offline">推广内容下线</string>
+    <string name="durec_promotion_video_cheating">违规</string>
+    <string name="durec_cheating_promotion_video_title">以下视频不再继续产生收益（推广内容已下线，或您的视频中不含推广内容，或视频无法播放）</string>
+    <string name="durec_orders_invalid_title">以下订单失效，订单未能确认</string>
+    <string name="durec_no_orders_text">暂时没有已成交的订单</string>
+    <string name="durec_promotion_orders">订单</string>
+    <string name="durec_promotion_item">商品</string>
+    <string name="durec_promotion_order">订单</string>
+    <string name="durec_withdraw_state_waiting_review">待审核</string>
+    <string name="durec_withdraw_state_in_review">审核中</string>
+    <string name="durec_withdraw_state_waiting_payment">待打款</string>
+    <string name="durec_promotion_withdraw_tip">请输入一个有效的PayPal账号。收入达到%1$dUSD后可以发起提现，每月最多可提现%2$d次。我们将会在15个工作日内处理您的请求。</string>
+    <string name="durec_withdraw_submit_fail_by_limit_times">提交失败！每个账号每月最多可发起%1$d次提现申请，请下个月再来吧！</string>
+    <string name="durec_unavailable_withdrawal_amount">%1$sUSD 不可用于提现</string>
+    <string name="durec_unavailable_withdrawal_amount_tips">商品订单成交30天后，可以对该收益进行提现操作。</string>
+    <string name="durec_failed_add_by_ad_offline">提交失败。当前推广内容已下线，请使用新的推广内容制作视频。</string>
+    <string name="durec_failed_add_by_video_notfound">提交失败。该视频已在YouTube上删除或私密视频。</string>
+    <string name="durec_failed_add_by_no_promotion_content">提交失败。该视频中不含推广内容。</string>
+    <string name="durec_choose_language_in_live_streaming_to_tamago">请选择你在直播时所用到的语言</string>
+    <string name="durec_account_unlocked_tips">当前账号已被解除锁定，可以正常产生收益。</string>
+    <string name="durec_share_video_by_commodity_tips">视频已制作完成，快去分享吧! 如果有人购买你推荐的商品，你将获得分成哦! </string>
+    <string name="durec_by_from_link">通过下方链接购买</string>
+    <string name="durec_choose_promotion_video_notice">这里是你生成过的推广视频，请选择已经上传至YouTube的视频并填写对应的URL。</string>
+    <string name="durec_ytb_ads_revenue_record_empty_prompt">当前还没有提交任何推广视频的URL</string>
+    <string name="durec_ad_recourse_download_fail">推广素材下载失败，暂时无法生成推广视频</string>
+    <string name="durec_contact_us">联系我们</string>
+    <string name="durec_special_thanks">特别感谢</string>
+    <string name="durec_common_not_set">未设置</string>
+    <string name="durec_ytb_first_share_promoted_video_to_ytb_prompt">最后一步：填写视频在YouTube的URL地址。收益将会在填写URL后开始计算！</string>
+    <string name="durec_ytb_add_promoted_video_has_existed">视频已存在，不需要重复添加。</string>
+    <string name="durec_ytb_add_promoted_video_success">视频添加成功。</string>
+    <string name="durec_ytb_add_promoted_video_not_belong_to_you">此视频不属于当前频道。</string>
+    <string name="durec_ytb_delete_promoted_video_success">视频删除成功</string>
+    <string name="durec_ytb_delete_promoted_video_failed">删除视频失败</string>
+    <string name="durec_generate_video_notice">推广视频生成中</string>
+    <string name="durec_receive_ad_detail_title">推广设置</string>
+    <string name="durec_promotion_set_success">推广设置完成，快去视频列表生成一个带有推广内容的视频吧！</string>
+    <string name="durec_withdraw_confirm_paypal_alert">请再次确认，您申请提现至PayPal账户：%1$s，一旦申请通过，将无法修改。</string>
+    <string name="durec_add_promotion_repeat_remind">这已经是一个推广视频了。</string>
+    <string name="durec_ytb_promotion_materials_download_prompt">推广素材下载中…</string>
+    <string name="durec_ytb_promotion_expired_prompt">当前设置的推广内容已过期，请重新设置</string>
+    <string name="durec_promotion_guide_set">设置要展示的推广内容</string>
+    <string name="durec_promotion_guide_share">分享视频至YouTube</string>
+    <string name="durec_promotion_guide_fill">填写YouTube视频地址</string>
+    <string name="durec_promotion_guide_submit_url_tip">提交成功！视频的收益情况将在收入页面每日更新！</string>
+    <string name="durec_ytb_promotion_clear_settings">清除设置</string>
+    <string name="durec_promotion_timeshow_get">确认领取</string>
+    <string name="durec_create_promotion_guide_click_here">点击这里</string>
+    <string name="durec_create_promotion_guide_add_promotion">选择“生成推广”来制作一个推广视频，此视频包含之前选择的推广内容。</string>
+    <string name="durec_create_promotion_guide_got_it">知道了</string>
+    <string name="durec_promotion_content_title">选择推广内容</string>
+    <string name="durec_txt_receivead_rules1">在推广设置页，查看并管理自己当前的推广内容。</string>
+    <string name="durec_txt_receivead_rules2">选择要添加到视频中的推广内容及不同的展示位置。</string>
+    <string name="durec_txt_receivead_rules3">通过视频列表生成一个含有推广内容的视频。</string>
+    <string name="durec_txt_receivead_rules4">分享推广视频到YouTube并复制视频的地址。</string>
+    <string name="durec_txt_receivead_rules5">填写视频在YouTube的URL地址。收益将会在填写URL后开始计算。</string>
+    <string name="durec_txt_receivead_rules6">视频的收益情况将在收入页面每日更新。</string>
+    <string name="durec_receiver_ad_clear_settings_success">推广内容设置项清除成功！</string>
+    <string name="durec_receiver_ad_not_selected_at_least_one_ad">无法生成推广视频，当前未设置对录制的视频展示推广内容。</string>
+    <string name="durec_receiver_ad_no_setting_clear">当前没有设置项需要清除</string>
+    <string name="durec_ytb_add_promoted_video_failed">视频添加失败。</string>
+    <string name="durec_add_promotion_video_empty_toast">当前没有已生成的推广视频，请先去视频列表页生成。</string>
+    <string name="durec_promotion_guide_generate">生成含有推广内容的视频</string>
+    <string name="durec_promotion_guide_not_set_tip">当前未设置推广内容，请先选择推广内容并设置您视频中展示推广内容的位置。</string>
+    <string name="durec_promotion_guide_has_generate_tip">推广视频已生成！下一步：分享此视频至YouTube以获取一个有效的视频地址。</string>
+    <string name="durec_ytb_promotion_clear_settings_prompt">清除设置后，你需要在下一次生成推广视频前，重新选择想要添加的推广内容。</string>
+    <string name="durec_auto_change_save_location_alert">当前选择位置无法正常存储时，将会自动切换到可用的存储位置。</string>
+    <string name="durec_unknown_wifi_name">未知wifi名称</string>
+
+    <string name="amount_should_under_10m">请设置小于10,000,000的数值</string>
+    <string name="amount_should_not_less_then_1">请设置不小于1的数值</string>
+    <string name="amount_should_be_number">只能输入数字</string>
+    <string name="durec_vip_gained">您已经成为认证主播啦！无需重复申请</string>
+    <string name="durec_robot_set_moderator_failed">管理员设置失败，聊天机器人功能未开启。</string>
+    <string name="durec_robot_set_moderator_failed_live_not_enable">开启失败，请先为您的YouTube频道启用直播功能。</string>
+    <string name="durec_multicast_cancel">检测已取消</string>
+    <string name="durec_ad_receive_place_bonus">$%1$s/1000 观看</string>
+    <string name="durec_facebook_play_url_invalid">未能获取视频地址，无法播放。请前往你的Facebook查看。</string>
+    <string name="durec_live_stream_encode_error">开播失败，编码错误。请重试。</string>
+    <string name="durec_music_duration_limit_prompt">音乐长度不能为0秒，请重新设置。</string>
+    <string name="durec_common_Connecting">连接中</string>
+    <string name="durec_youtube_login_error">打开登录页面失败，请检查网络后重试。</string>
+    <string name="durec_live_no_more_than_6_hours">超过6小时的直播将被自动停止，请重新开始。</string>
+
+    <string name="durec_product_ad_first_selected_prompt">推广设置完成。快去制作推广视频吧！每当有人购买你推广的商品，你就会获得分成哦！</string>
+    <string name="durec_product_introduction_video_downloading_prompt">正在下载商品介绍视频…</string>
+    <string name="durec_receivead_product_header">电商推广：根据销售结算分成</string>
+    <string name="durec_login_type_failed">登录失败，请重试。</string>
+
+    <string name="durec_no_longer_prompted">此后不再提示</string>
+    <string name="durec_window_permission_location_setting">系统设置/安全中心</string>
+    <string name="durec_window_permission_location_security">安全中心-应用中心-权限</string>
+    <string name="durec_window_permission_location_phone_manager">手机管家-隐私权限</string>
+    <string name="durec_window_permission_location_i_manager">I管家–权限管理</string>
+    <string name="durec_window_permission_guide_text">很抱歉，由于您的设备系统限制，无法直接打开悬浮窗权限页面。您可尝试到%2$s为%1$s开启悬浮窗权限，也可通过网络搜索您的手机品牌+悬浮窗来了解如何开启悬浮窗权限。</string>
+    <string name="durec_setting_card_window_permission_title">去开启悬浮窗权限，以便使用悬浮窗进行录制和直播</string>
+    <string name="durec_setting_card_notify_permission_title">去开启通知栏权限，以保证%1$s的正常使用，提高录制稳定性</string>
+    <string name="durec_live_interrupt_by_server">无法直播，请检查RTMP地址是否错误、过期、或未通过审核</string>
+
+    <string name="durec_slogan">全球1亿玩家都爱用的录屏APP</string>
+
+    <string name="durec_no_install_app_store">您没有安装应用商店</string>
+    <string name="durec_rate_guide">5星是最佳评分</string>
+    <string name="durec_twitter_login_live_illustrate">当前正使用Periscope账号登录，开播后将推流到Periscope。如需要直播到Twitter，请通过设置页退出后重新选择Twitter登录。</string>
+    <string name="durec_twitter_login_failed">登录到Twitter失败了，请重试。</string>
+    <string name="durec_twitter_login_connecting">正在连接Twitter...</string>
+    <string name="durec_twitter_login_connect_failed">连接到Twitter失败</string>
+    <string name="durec_receivead_impression_header">品牌推广：根据视频观看次数和app激活次数结算分成</string>
+    <string name="durec_download_activation">下载并激活</string>
+    <string name="durec_divided_into_price_description">当有人通过你的购买链接下载并激活使用后，你将获得一定的分成。分成金额通常因地区不同而不同。</string>
+    <string name="durec_bottom_banner">视频：底部横幅</string>
+    <string name="durec_bottom_banner_description">生成视频时，会自动在视频的底部添加横幅样式的推广内容。</string>
+    <string name="durec_common_downloads">下载</string>
+    <string name="durec_common_views">观看</string>
+    <string name="durec_download_tab_null">当前没有通过您的推广链接带来的下载及激活记录</string>
+    <string name="durec_download_online_music_toast">正在下载当前音乐，请稍后再试。</string>
+    <string name="durec_failed_add_by_no_promotion_link">添加视频失败。视频描述中不含推广链接。</string>
+    <string name="durec_promotion_date">日期</string>
+    <string name="durec_tamago_err_no_language">请选择一种语言。</string>
+    <string name="durec_receive_ad_timeshow_not_choice">已关闭所有的展示时机。请至少选择一个展示时机以选择此推广内容。</string>
+    <string name="durec_receive_ad_timeshow_choice_at_least_one">无法选择此推广内容，请先选择推广内容的展示时机。</string>
+    <string name="durec_download_product_video_success">视频下载完成。快去分享吧！或者你可以稍后通过视频列表进行查看/编辑后再进行分享。</string>
+    <string name="durec_timeshow_download_link">下载链接</string>
+    <string name="durec_common_promotion">推广</string>
+
+    <string name="durec_timeshow_youtube_card">YouTube信息卡</string>
+    <string name="durec_timeshow_youtube_card_description">请在YouTube创作者工作室中设置：视频管理器>视频>修改>卡片（信息卡）>添加卡片>创建链接>填写你的下载链接</string>
+    <string name="durec_timeshow_easier_get_revenue">可更快获得收入</string>
+    <string name="durec_download_and_use_five_minutes">下载并使用5分钟以上</string>
+    <string name="durec_timeshow_product_price_and_revenue">%1$s of %2$s (商品单价)</string>
+    <string name="durec_divided_into_price_small_description">你自己的下载也会带来分成哦！</string>
+    <string name="durec_divided_into_jump_google_play">正在跳转到Google Play Store…</string>
+    <string name="durec_download_and_use">下载并使用</string>
+
+    <string name="durec_premium_features">%1$s高级功能</string>
+    <string name="durec_crop_video">剪裁视频</string>
+    <string name="durec_video_speed">视频变速</string>
+    <string name="durec_feature_set_live_pause_image">设置直播暂停图片</string>
+    <string name="durec_rtmp_live">RTMP直播</string>
+    <string name="durec_no_ads">无广告</string>
+    <string name="durec_more_in_future">更多功能更新中…</string>
+    <string name="durec_monthly">月</string>
+    <string name="durec_yearly">年</string>
+    <string name="durec_six_monthly">6个月</string>
+    <string name="durec_free_trial_for_days">免费试用%1$s天</string>
+    <string name="durec_upgrade_subscription">升级订阅方案</string>
+    <string name="durec_renew_subscription">续订</string>
+    <string name="durec_restore">恢复购买</string>
+    <string name="durec_premium_explain_before_trial">不同地区价格可能不同。</string>
+    <string name="durec_premium_explain_price">试用结束后，将以%1$s/%2$s自动续订。</string>
+    <string name="durec_premium_explain_cancel">你可以在Google Play Store中随时取消。</string>
+    <string name="durec_premium_explain_upgrade">升级后，旧订阅的未使用余额将按比例应用到新订阅。</string>
+    <string name="durec_premium_explain_after_trial">您已试用过，开始订阅后将按照%1$s/%2$s开始扣费。</string>
+    <string name="durec_premium_guide_prompt">订阅后，即可使用这个高级功能。此订阅可以随时取消。</string>
+    <string name="durec_premium_guide_check_more_features">了解更多高级功能</string>
+    <string name="durec_premium_quit_trial">放弃免费试用</string>
+    <string name="durec_premium_quit_prompt">订阅后，以下功能可以免费使用。此订阅可以随时取消。</string>
+
+    <string name="durec_premium_sub_failed">订阅失败。</string>
+    <string name="durec_premium_error_current_sub_plan">您当前就是这个订阅方案，请选择要升级的订阅方案。</string>
+    <string name="durec_premium_error_unable_downgrade">无法选择时间更短的订阅方案，请重新选择。</string>
+    <string name="durec_premium_error_reason">当前无法创建订单，可能的原因</string>
+    <string name="durec_not_login_google_account">您当前未登录谷歌账号</string>
+    <string name="durec_google_billing_cannot_run">当前设备无法运行Google Billing</string>
+    <string name="durec_not_connect_network">未能连接到互联网</string>
+    <string name="durec_premium_restore_success">已成功同步您当前账号的订阅信息。</string>
+    <string name="durec_premium_restore_failed">恢复失败。</string>
+    <string name="durec_no_sub_plan">您当前登录的账号没有生效中的订阅内容。</string>
+    <string name="durec_choose_file">选择文件</string>
+    <string name="durec_upload_screenshot">上传截图（可选）</string>
+    <string name="durec_upload_image_failed">图片上传失败，请重试。</string>
+    <string name="durec_vip_feedback_input_hint">我们会优先处理您的反馈</string>
+    <string name="durec_no_app_store_installed">您没有安装应用商店</string>
+    <string name="durec_merge_videos_and_images">视频拼接</string>
+    <string name="durec_videos_and_images">视频和图片</string>
+    <string name="durec_dialog_delete_title">确定要删除吗？</string>
+    <string name="durec_deleted_all_prompt">你已经删除所有视频和图片，是否重新开始？</string>
+    <string name="durec_restart">重新开始</string>
+    <string name="durec_no_thanks">不，谢谢</string>
+    <string name="durec_tab_to_add_subtitle">点击添加字幕</string>
+    <string name="durec_long_press_to_adjust_position">长按调整字幕位置</string>
+    <string name="durec_feedback_upload_image_failure">图片上传中，请完成后再提交。</string>
+    <string name="durec_apply_to_all_images">应用到所有图片</string>
+    <string name="durec_feature_vip_feedback">VIP问题反馈</string>
+    <string name="durec_googleplay_need_update">Google Play异常。请升级Google Play后重试。</string>
+    <string name="durec_common_duration">时长</string>
+
+    <string name="durec_sku_price_query_fail">价格更新失败</string>
+    <string name="durec_billing_service_error">Google Billing服务错误</string>
+    <string name="durec_gp_1002_error">无法启动Google Play。可能的原因：\n
+        1. Google Play被禁止弹出。请在系统设置中更改设置并重试：应用 > Google Play > 权限管理 > 允许“后台弹出界面”；\n
+        2. Google Play或Google Billing服务错误。</string>
+
+    <string name="durec_promotion_notification_guide">当有新的推广内容上线时，是否希望及时获得通知？可以通过设置 > 允许通知 开启。</string>
+
+    <string name="durec_promotion_bubble_entry_guide">来推广中心赚钱！</string>
+    <string name="durec_promotion_download_tip">当有其他人通过你的推广链接下载并激活时，你也会获得一定的收益。</string>
+    <string name="durec_promotion_download_profit_tip">最终收益将根据国家或地区的不同而不同。</string>
+    <string name="durec_promotion_download_use_tip">使用一段时间后才会被记为有效下载！</string>
+    <string name="durec_common_data_load_faild_toast">加载失败，请重试</string>
+    <string name="durec_common_raise_effect_method">提升推广效率的方法</string>
+    <string name="durec_promotion_video_share_auto_add_link_tips">在视频中添加推广素材，分享视频时，将自动带有推广链接；</string>
+    <string name="durec_promotion_download_youself_tips">自己下载也可以获得收入；</string>
+    <string name="durec_promotion_copy_your_link_share_tips">复制你的推广链接，发布到社群、FB、YouTube等平台，让你的关注者都来下载此推广；</string>
+    <string name="durec_promotion_download_and_use_tips">下载后真实的使用此产品，更容易获得收入；</string>
+    <string name="durec_receive_ad_promotion_dialog_title">选择推广内容</string>
+    <string name="durec_receive_ad_promotion_dialog_prompt">选择想要添加到的推广，生成后的视频不会覆盖原视频；</string>
+    <string name="durec_common_allow_notification">允许通知</string>
+    <string name="durec_promotion_notfication_open_introduce">当有新的推广内容时，及时获得通知</string>
+    <string name="durec_promotion_notfication_open_guide_summary">系统推送未开启。通过手机设置>通知>%1$s>允许通知开启后，才能接受推广更新的通知。</string>
+    <string name="durec_promotion_notfication_close_tips">你将不会收到任何通知推送。</string>
+    <string name="durec_promotion_profit_introduce_1">进入推广内容页面，查看当前生效的推广内容</string>
+    <string name="durec_promotion_profit_introduce_2">下载或分享推广链接给其他人下载，有效的下载会为你带来收入</string>
+    <string name="durec_promotion_profit_introduce_3">在视频中添加推广素材，分享视频时，将自动带有推广链接；</string>
+    <string name="durec_promotion_profit_introduce_4">如果是按照观看数收费类型的推广，在分享到YouTube后，回填URL地址后开始计费</string>
+    <string name="durec_promotion_profit_introduce_5">可以在收入页面查看收入细节并申请提现</string>
+    <string name="durec_promotion_profit_delay_introduce">数据可能会延迟1-2天</string>
+    <string name="durec_promotion_center">推广中心</string>
+    <string name="durec_promotion_classic_download_tips">直接下载或分享给其他人下载，每个有效下载将会带来分成</string>
+    <string name="durec_promotion_classic_display_tips">在你制作的视频中加入下面的推广素材，将会根据视频的观看次数结算分成</string>
+    <string name="durec_promotion_share_link">我发现了一个特别棒的应用，点这个链接查看：%1$s</string>
+    <string name="durec_common_theme">主题</string>
+    <string name="durec_theme_page_premium">高级</string>
+    <string name="durec_theme_page_free">免费</string>
+    <string name="durec_common_downloading">下载中</string>
+    <string name="durec_common_apply">应用</string>
+    <string name="durec_theme_download_failed_toast">主题下载失败，请检查网络后重试。</string>
+    <string name="durec_theme_apply_failed_toast">抱歉，该主题无法应用</string>
+    <string name="durec_theme_apply_success_toast">主题应用成功</string>
+    <string name="durec_theme_has_new_version_toast">当前主题有最新版本了，请到主题页更新和使用吧！</string>
+    <string name="durec_background_picture_apply_to_all">应用到所有视频和图片</string>
+    <string name="durec_theme_offical_orange">官方橙</string>
+
+    <string name="durec_merge_media_done_count_title">编辑(%1$d)</string>
+
+    <string name="durec_vip_feedback_email">邮箱地址</string>
+
+    <string name="durec_subscribe_action_btn">立即订阅</string>
+    <string name="durec_custom_watermark_guide">你是否希望在视频中添加属于你自己的水印？你可以随意设置自定义水印。</string>
+    <string name="durec_custom_watermark_btn">自定义水印</string>
+    <string name="durec_subscribe_guide_upper_info">享受更多高级功能</string>
+    <string name="durec_subscribe_guide_lower_info">升级到%s Premium</string>
+    <string name="durec_ad_unlock_recommend_dl_by_day_singular">下载以下的推荐应用并打开，即可免费解锁并使用%1$s功能%2$d天</string>
+    <string name="durec_ad_unlock_recommend_dl_by_day_plural">下载以下的推荐应用并打开，即可免费解锁并使用%1$s功能%2$d天</string>
+    <string name="durec_ad_unlock_recommend_dl_by_times_singular">下载以下的推荐应用并打开，即可免费解锁并使用%1$s功能%2$d次</string>
+    <string name="durec_ad_unlock_recommend_dl_by_times_plural">下载以下的推荐应用并打开，即可免费解锁并使用%1$s功能%2$d次</string>
+    <string name="durec_ad_unlock_recommend_dl_btn">下载并打开应用</string>
+    <string name="durec_ad_unlock_recommend_dl_loading_error">当前没有可以下载的应用</string>
+    <string name="durec_ad_unlock_recommend_dl_success_by_day_singular">%1$s功能解锁成功，可以免费使用%2$d天。</string>
+    <string name="durec_ad_unlock_recommend_dl_success_by_day_plural">%1$s功能解锁成功，可以免费使用%2$d天。</string>
+    <string name="durec_ad_unlock_recommend_dl_success_by_times_singular">%1$s功能解锁成功，可以免费使用%2$d次。</string>
+    <string name="durec_ad_unlock_recommend_dl_success_by_times_plural">%1$s功能解锁成功，可以免费使用%2$d次。</string>
+    <string name="durec_remove_ad">去广告</string>
+    <string name="durec_remove_ad_by_upgrading_premium">升级到%s Premium来去除所有的广告。可以随时取消。</string>
+    <string name="durec_remove_ad_saving_video">%s正在保存视频</string>
+    <string name="durec_live_guide_desc_more_fun">选择一个平台并开始屏幕直播吧！</string>
+    <string name="durec_premium_sub_success">订阅成功！\n您可以使用所有的高级功能啦！\n感谢您的支持！</string>
+
+    <string name="durec_live_disable_use_rtmp_prompt">由于当前%1$s服务不可用，为您提供RTMP直播功能，您可以从%2$s平台获取RTMP地址和推流码进行直播</string>
+
+    <!--2.1.2 去水印弹框新增文案-->
+    <string name="durec_custom_watermark_guide_sec_line">你也可以稍后在\“设置\” > \“自定义水印\”中进行设置。</string>
+
+    <string name="durec_common_in_use">使用中</string>
+    <string name="durec_different_themes">不同主题</string>
+    <string name="durec_apply_to_all">应用到所有</string>
+    <string name="durec_common_split">分割</string>
+    <string name="durec_merge_split_bubble_text">将视频分割成片段</string>
+    <string name="durec_merge_split_conflict_with_remove_middle">分割将清除删除中间的编辑操作</string>
+    <string name="durec_merge_mosaic_zoom_bubble_text">尝试下放大和缩小</string>
+    <string name="durec_merge_mosaic_slide_bubble_text">滑动来绘制马赛克</string>
+    <string name="durec_common_texture">纹理</string>
+    <string name="durec_common_canvas">画布</string>
+    <string name="durec_video_compress_title">视频压缩</string>
+    <string name="durec_video_compress_before">压缩前</string>
+    <string name="durec_video_compress_after">压缩后</string>
+    <string name="durec_video_compress_desc">这是一个高级功能，升级成为%1$sPremium后即可进行视频压缩。</string>
+    <string name="durec_video_compress_trial_button">免费试用并压缩</string>
+    <string name="durec_video_compress_no_trial_button">订阅并压缩</string>
+    <string name="durec_common_video_compress">压缩</string>
+    <string name="durec_video_compressing">视频正在压缩中</string>
+    <string name="durec_video_compress_success_toast">压缩成功！</string>
+    <string name="durec_video_compress_fail_toast">压缩失败，请重试。</string>
+    <string name="durec_subscription_sale_desc">活动结束后即恢复原价！</string>
+    <string name="durec_camera_frame_title">摄像头边框</string>
+    <string name="durec_subscription_quit_title">放弃订阅</string>
+    <string name="durec_sbuscription_explain_price_no_trial">订阅后，将扣除%1$s/%2$s并在到期后自动续订。</string>
+    <string name="durec_facebook_live_unavailable_toast">抱歉，Facebook服务暂不可用。你可以使用RTMP地址直播到Facebook。</string>
+    <string name="durec_merge_at_least_one_file_broken">发现破损的文件，自动为您从编辑列表中移除。</string>
+
+    <string name="durec_camera_frame_download_failed">视频边框下载失败，请重试。</string>
+    <string name="durec_subscription_explain_price_with_trial">%1$s天试用期结束后，订阅将会以%2$s/%3$s的价格扣除并自动续费。</string>
+
+    <string name="durec_video_edit_error">手机可能出现性能问题无法继续编辑，请清理后台应用稍后重试。</string>
+    <string name="durec_common_canvas_and_background">画布和背景</string>
+    <string name="durec_common_blur">模糊</string>
+    <string name="durec_video_and_canvas_similar_proportions_warnning">当前视频与画布比例相近时可能会盖住背景。</string>
+    <string name="durec_common_video_frame">边框</string>
+    <string name="durec_common_download_fail">下载失败，请检查网络后重试。</string>
+    <string name="durec_merge_frame_resource_lost_error">找不到对应比例的边框资源，请重新下载边框</string>
+    <string name="durec_common_video_filter">滤镜</string>
+    <string name="durec_video_filter_sakura">樱花</string>
+    <string name="durec_video_filter_air">空气</string>
+    <string name="durec_video_filter_calm">冷静</string>
+    <string name="durec_video_filter_latte">牛奶</string>
+    <string name="durec_video_filter_ideal">理想</string>
+    <string name="durec_video_filter_antique">古董</string>
+    <string name="durec_video_filter_records">记录</string>
+    <string name="durec_video_filter_photograph">照片</string>
+    <string name="durec_video_filter_deep">深邃</string>
+    <string name="durec_video_filter_romance">浪漫</string>
+    <string name="durec_video_filter_whitening">美白</string>
+    <string name="durec_video_filter_sunset">日落</string>
+    <string name="durec_video_filter_sunrise">日出</string>
+    <string name="durec_video_filter_nostalgia">怀旧</string>
+    <string name="durec_video_filter_pixar">皮克斯</string>
+    <string name="durec_video_filter_memories">回忆</string>
+    <string name="durec_video_filter_emotion">情感</string>
+    <string name="durec_video_filter_tender">温柔</string>
+    <string name="durec_video_filter_cool">酷爽</string>
+    <string name="durec_video_filter_evergreen">常绿</string>
+    <string name="durec_video_filter_sunny">晴朗</string>
+    <string name="durec_video_filter_inkwell">墨水</string>
+    <string name="durec_video_filter_sketch">草图</string>
+    <string name="durec_video_filter_crayon">蜡笔</string>
+    <string name="durec_video_filter_warm">温暖</string>
+    <string name="durec_video_filter_fragrant">芳香</string>
+    <string name="durec_video_filter_vibrant">活力</string>
+    <string name="durec_video_filter_fairy">仙女</string>
+    <string name="durec_video_filter_sweets">甜蜜</string>
+    <string name="durec_merge_mosaic_two_finger_move_guide">双指移动</string>
+
+    <string name="durec_video_compress_bitrate_too_low">视频码率无法调至更低。</string>
+    <string name="durec_video_compress_resolution_too_low">视频分辨率无法调至更低。</string>
+    <string name="durec_video_compress_invalid_video_info">无法获得此视频的相关信息。</string>
+    <string name="durec_subscription_sale_failed_or_ended">特惠活动数据拉取失败或活动已结束。</string>
+
+</resources>

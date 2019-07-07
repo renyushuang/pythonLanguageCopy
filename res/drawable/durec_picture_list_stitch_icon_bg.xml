@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/durec_picture_list_stitch_enable" android:state_selected="false" />
+    <item android:drawable="@drawable/durec_picture_list_stitch_normal" />
+
+</selector>

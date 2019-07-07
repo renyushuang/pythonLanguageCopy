@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.common.toolview.timepicker.wheel.WheelView
+            android:id="@+id/time_hour"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text=":"
+            android:textColor="#80555555"
+            android:textSize="26dp" />
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.common.toolview.timepicker.wheel.WheelView
+            android:id="@+id/time_minute"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text=":"
+            android:textColor="#80555555"
+            android:textSize="26dp" />
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.common.toolview.timepicker.wheel.WheelView
+            android:id="@+id/time_second"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="."
+            android:textColor="#80555555"
+            android:textSize="26dp" />
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.common.toolview.timepicker.wheel.WheelView
+            android:id="@+id/time_100ms"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</FrameLayout>
+
+

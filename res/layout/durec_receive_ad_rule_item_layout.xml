@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/recommended_picture_container"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/rule_text"
+        android:layout_width="232dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="19dp"
+        android:cursorVisible="false"
+        android:focusable="false"
+        android:scrollbars="none"
+        android:textColor="@color/durec_head_item_text_color"
+        android:textSize="12dp" />
+
+    <ImageView
+        android:id="@+id/rule_img"
+        android:layout_width="@dimen/durec_dimen_rule_bmp_width"
+        android:layout_height="@dimen/durec_dimen_rule_bmp_height"
+        android:layout_marginTop="15dp"
+        android:padding="1dp"
+        android:scaleType="fitCenter" />
+</LinearLayout>

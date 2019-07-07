@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="durec_main_local_video_thumb_width">110dp</dimen>
+    <dimen name="durec_main_local_video_thumb_height">61.9dp</dimen>
+
+    <dimen name="durec_cust_notification_plr">12dp</dimen>
+
+    <dimen name="dugif_saving_progress_circle_edge_size">150dp</dimen>
+    <dimen name="dugif_saving_progress_circle_radius">70dp</dimen>
+    <dimen name="dugif_saving_progress_center_text_size">30dp</dimen>
+
+    <!--multi platform live-->
+    <dimen name="durec_multi_live_channel_margin_top">25dp</dimen>
+    <dimen name="durec_multi_live_platform_margin_top">15dp</dimen>
+    <dimen name="durec_multi_create_live_title_margin_top">45dp</dimen>
+
+    <dimen name="durec_ytb_ads_revenue_record_video_name_text_size">10sp</dimen>
+    <dimen name="durec_ytb_ads_revenue_record_view_count_text_size">12sp</dimen>
+    <dimen name="durec_ytb_ads_revenue_record_item_margin_start">16dp</dimen>
+    <dimen name="durec_ytb_ads_revenue_record_view_count_margin_start">10dp</dimen>
+    <dimen name="durec_ytb_ads_revenue_record_video_name_width">121dp</dimen>
+    <dimen name="durec_ytb_ads_revenue_record_view_number_width">80dp</dimen>
+    <dimen name="durec_ytb_ads_revenue_record_income_width">80dp</dimen>
+
+    <dimen name="durec_merge_mosaic_time_picker_margin_top">8dp</dimen>
+    <dimen name="durec_merge_mosaic_time_picker_margin_bottom">0dp</dimen>
+
+</resources>

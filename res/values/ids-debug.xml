@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="setting_item_debug_whitebox" type="id" />
+    <item name="setting_item_debug_clear_receive_ad_download" type="id" />
+    <item name="setting_item_debug_tiemshow_database" type="id" />
+    <item name="setting_item_debug_entrance" type="id" />
+    <item name="setting_item_debug_encodelevel" type="id" />
+    <item name="setting_item_debug_gifconfig" type="id" />
+    <item name="setting_item_debug_fps" type="id" />
+    <item name="setting_item_debug_ytb_login" type="id" />
+    <item name="setting_item_debug_whatsnew" type="id" />
+    <item name="setting_item_debug_firebase_token" type="id" />
+    <item name="setting_item_debug_show_toast" type="id" />
+    <item name="setting_item_debug_start_activity" type="id" />
+    <item name="setting_item_debug_exit_platform" type="id" />
+    <item name="setting_item_debug_max_live_time" type="id" />
+    <item name="setting_item_debug_rtmp_log_switch" type="id" />
+    <item name="setting_item_debug_h264_log_switch" type="id" />
+    <item name="setting_item_debug_kill_my_pid" type="id" />
+    <item name="setting_item_debug_newmsg_alert" type="id" />
+    <item name="setting_item_debug_input_op_manually" type="id" />
+    <item name="setting_item_debug_show_live_encode_parmas" type="id" />
+    <item name="setting_item_debug_flavor" type="id" />
+    <item name="setting_item_debug_country" type="id" />
+    <item name="setting_item_debug_installreport" type="id" />
+    <item name="setting_item_debug_ytb_web_login" type="id" />
+    <item name="setting_item_debug_window_type" type="id" />
+    <item name="setting_item_debug_flavor_version" type="id" />
+    <item name="setting_item_debug_country_code" type="id" />
+    <item name="setting_item_debug_live_duration_show_rate" type="id" />
+    <item name="setting_item_debug_billing" type="id" />
+    <item name="setting_item_debug_promotion_flip_style_enable" type="id" />
+    <item name="setting_item_debug_offer_notification" type="id" />
+    <item name="setting_item_debug_token" type="id" />
+    <item name="setting_item_debug_dialog_all" type="id" />
+
+
+    <!-- dialog_大全-->
+    <item name="setting_item_dialog_promotion_step" type="id" />
+    <item name="setting_item_dialog_share_dialog" type="id" />
+    <item name="setting_item_dialog_home_page_info" type="id" />
+    <item name="setting_item_dialog_donation_disable" type="id" />
+    <item name="setting_item_dialog_youtube_live_game_search" type="id" />
+    <item name="setting_item_dialog_rtmp_server_edit" type="id" />
+    <item name="setting_item_dialog_mobile_net" type="id" />
+    <item name="setting_item_dialog_livefeed_detail_playback" type="id" />
+    <item name="setting_item_dialog_speed" type="id" />
+    <item name="setting_item_dialog_delete_confirm" type="id" />
+    <item name="setting_item_dialog_ytb_subscribe_guide" type="id" />
+    <item name="setting_item_dialog_record_result" type="id" />
+    <item name="setting_item_dialog_save_confirm" type="id" />
+    <item name="setting_item_dialog_live_end" type="id" />
+    <item name="setting_item_dialog_shake" type="id" />
+    <item name="setting_item_dialog_live_repair" type="id" />
+    <item name="setting_item_dialog_select_resolution" type="id" />
+    <item name="setting_item_dialog_rename_video" type="id" />
+    <item name="setting_item_dialog_promotion_video" type="id" />
+    <item name="setting_item_dialog_time_picker" type="id" />
+    <item name="setting_item_dialog_select_part" type="id" />
+    <item name="setting_item_dialog_preview_image" type="id" />
+    <item name="setting_item_dialog_rate" type="id" />
+    <item name="setting_item_dialog_scene_share" type="id" />
+    <item name="setting_item_dialog_bgm_volume" type="id" />
+    <item name="setting_item_dialog_facebook_target" type="id" />
+    <item name="setting_item_dialog_live_component_switch" type="id" />
+    <item name="setting_item_dialog_sub_success" type="id" />
+
+</resources>

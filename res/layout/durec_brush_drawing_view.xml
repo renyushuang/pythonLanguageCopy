@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/durec_brush_drawing_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/durec_brush_config_bg"
+        android:orientation="horizontal"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp">
+
+        <ImageView
+            android:id="@+id/durec_brush_drawing_screenshot"
+            android:layout_width="46dp"
+            android:layout_height="32dp"
+            android:padding="5dp"
+            android:src="@drawable/durec_brush_screenshot_selector" />
+
+        <ImageView
+            android:id="@+id/durec_brush_drawing_eraser"
+            android:layout_width="46dp"
+            android:layout_height="32dp"
+            android:padding="3dp"
+            android:src="@drawable/durec_brush_eraser_normal" />
+
+        <ImageView
+            android:id="@+id/durec_brush_drawing_cancel"
+            android:layout_width="46dp"
+            android:layout_height="34dp"
+            android:padding="6dp"
+            android:src="@drawable/durec_brush_cancel_selector" />
+
+        <ImageView
+            android:id="@+id/durec_brush_drawing_pick"
+            android:layout_width="46dp"
+            android:layout_height="32dp"
+            android:padding="5dp"
+            android:src="@drawable/durec_brush_colorpick_selector" />
+
+        <ImageView
+            android:id="@+id/durec_brush_drawing_close"
+            android:layout_width="46dp"
+            android:layout_height="32dp"
+            android:padding="5dp"
+            android:src="@drawable/durec_brush_tools_close_selector" />
+    </LinearLayout>
+
+</FrameLayout>

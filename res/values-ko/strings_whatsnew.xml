@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. 동영상 편집에 필터효과를 지원합니다.</item>
+        <item>2. 동영상 편집에 프레임 추가를 지원합니다.</item>
+        <item>3. 동영상 편집에 다이나믹 백그라운드 추가를 지원합니다!</item>
+    </string-array>
+
+</resources>

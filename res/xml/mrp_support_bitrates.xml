@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<BitRateGroup>
+    <BitRate name="Auto">0</BitRate>
+    <BitRate name="12 Mbps">12000000</BitRate>
+    <BitRate name="8 Mbps">8000000</BitRate>
+    <BitRate name="5 Mbps">5000000</BitRate>
+    <BitRate name="4 Mbps">4000000</BitRate>
+    <BitRate name="3 Mbps">3000000</BitRate>
+    <BitRate name="2 Mbps">2000000</BitRate>
+    <BitRate name="1.5 Mbps">1500000</BitRate>
+    <BitRate name="1 Mbps">1000000</BitRate>
+</BitRateGroup>
+

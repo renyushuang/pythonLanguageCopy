@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/live_historical_comment_display_panel_horizontal"
+    android:layout_width="@dimen/durec_live_historical_comment_panel_width"
+    android:layout_height="@dimen/durec_live_historical_comment_panel_height"
+    android:layout_gravity="top"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/live_historical_comment_icon_horizontal_left"
+        android:layout_width="@dimen/durec_live_historical_panel_arrow_width"
+        android:layout_height="match_parent"
+        android:paddingLeft="3dp"
+        android:paddingRight="1dp"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:layout_marginStart="@dimen/durec_live_historical_panel_arrow_margin"
+        android:background="@drawable/durec_live_historical_comment_left_arrow_bg"
+        android:src="@drawable/durec_live_historical_comment_left_icon_selector"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/live_comment_counts_horizontal"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@drawable/durec_live_historical_comment_panel_bg"
+        android:textSize="15dp"/>
+
+    <ImageView
+        android:id="@+id/live_historical_comment_icon_horizontal_right"
+        android:layout_width="@dimen/durec_live_historical_panel_arrow_width"
+        android:layout_height="match_parent"
+        android:paddingLeft="1dp"
+        android:paddingTop="1dp"
+        android:paddingRight="3dp"
+        android:paddingBottom="1dp"
+        android:layout_marginEnd="@dimen/durec_live_historical_panel_arrow_margin"
+        android:background="@drawable/durec_live_historical_comment_right_arrow_bg"
+        android:src="@drawable/durec_live_historical_comment_right_icon_selector"/>
+</LinearLayout>

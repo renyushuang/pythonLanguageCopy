@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="durec_subscribe_btn_width">120dp</dimen>
+    <dimen name="durec_per_watermark_btn_text_size">13dp</dimen>
+</resources>

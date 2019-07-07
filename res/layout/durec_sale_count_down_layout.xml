@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_sale_count_down_time_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/durec_bg_sale_count_down"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:text="00:00:00"
+        android:textColor="#ff4800"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/durec_sale_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:scaleType="center"
+        android:src="@drawable/durec_home_sale"
+        app:layout_constraintBottom_toBottomOf="@id/durec_sale_count_down_time_tv"
+        app:layout_constraintLeft_toLeftOf="@id/durec_sale_count_down_time_tv"
+        app:layout_constraintRight_toRightOf="@id/durec_sale_count_down_time_tv" />
+
+    <Space
+        android:id="@+id/durec_space"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginLeft="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/durec_sale_count_down_time_tv"
+        app:layout_constraintBottom_toTopOf="@id/durec_sale_count_down_time_tv"
+        app:layout_constraintLeft_toLeftOf="@id/durec_sale_count_down_time_tv" />
+
+    <ImageView
+        android:id="@+id/durec_sale_vip_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="center"
+        android:src="@drawable/durec_premium_entrance_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/durec_space" />
+
+</android.support.constraint.ConstraintLayout>

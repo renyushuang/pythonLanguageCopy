@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c0000000"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <com.duapps.screen.recorder.main.videos.merge.functions.common.saving.CircleProgressView
+                android:id="@+id/share_cutting_progress"
+                android:layout_width="@dimen/dugif_saving_progress_circle_edge_size"
+                android:layout_height="@dimen/dugif_saving_progress_circle_edge_size"
+                android:background="#00000000"
+                app:arc_color="@color/durec_white"
+                app:arc_stroke_width="3.5dp"
+                app:center_text_size="@dimen/dugif_saving_progress_center_text_size"
+                app:circle_color="@color/durec_white"
+                app:circle_radius="@dimen/dugif_saving_progress_circle_radius"
+                app:circle_stroke_width="1.5dp"
+                app:text_color="@color/durec_white" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/cutting_progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center"
+                android:text="@string/durec_share_saving"
+                android:textColor="#ffffff"
+                android:textSize="16dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/share_cutting_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="@drawable/durec_video_save_btn_bg"
+        android:gravity="center"
+        android:text="@string/durec_common_cancel"
+        android:textColor="#ff555555"
+        android:textSize="18dp" />
+</LinearLayout>

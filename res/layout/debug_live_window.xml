@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/durec_transparent_colorPrimary">
+
+    <TextView
+        android:id="@+id/encode_bps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EBps:"
+        android:textColor="@color/durec_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/encode_fps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="EFps:"
+        android:textColor="@color/durec_white"
+        app:layout_constraintStart_toEndOf="@id/encode_bps"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/net_transfer_bps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NBps:"
+        android:textColor="@color/durec_white"
+        app:layout_constraintTop_toBottomOf="@id/encode_bps" />
+
+    <TextView
+        android:id="@+id/net_transfer_fps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:text="NFps:"
+        android:textColor="@color/durec_white"
+        app:layout_constraintStart_toEndOf="@id/net_transfer_bps"
+        app:layout_constraintTop_toBottomOf="@id/encode_bps" />
+
+    <TextView
+        android:id="@+id/drop_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/durec_white"
+        android:visibility="visible"
+        app:layout_constraintTop_toBottomOf="@id/net_transfer_bps" />
+
+
+</android.support.constraint.ConstraintLayout>

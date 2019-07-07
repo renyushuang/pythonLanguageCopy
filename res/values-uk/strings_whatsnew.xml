@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. Редагування відео підтримує ефекти фільтрів.</item>
+        <item>2. Редагування відео підтримує додавання кадрів.</item>
+        <item>3. Редагування відео підтримує динамічні фони!</item>
+    </string-array>
+
+</resources>

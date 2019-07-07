@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="durec_whatsnew_text">
+        <item>1. La edición de video soporta efectos de filtro.</item>
+        <item>2. La edición de video soporta la adición de marcos.</item>
+        <item>3. ¡La edición de video soporta fondos dinámicos!</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 主题颜色 -->
+    <color name="durec_colorPrimary">#ff7e14</color>
+    <color name="durec_colorPrimaryDark">#cd5c00</color>
+    <color name="durec_colorAccent">#ff7e14</color>
+    <color name="durec_transparent_colorPrimary">#4cff7e14</color>
+    <color name="durec_translucent_colorAccent">#99ff7e14</color>
+
+    <color name="durec_dialog_title">#e53c3c3c</color>
+    <color name="durec_head_item_text_color">#535353</color>
+    <color name="durec_main_text_color">#555555</color>
+    <color name="durec_tip_text_color">#c1c0c0</color>
+    <color name="text_light_gray">#888888</color>
+    <color name="durec_subhead_text_color">#8d8d8d</color>
+    <color name="durec_disable_text_color">#99929292</color>
+
+    <color name="durec_notif_background">#00000000</color>
+
+
+    <color name="durec_background">#f7f7f7</color>
+    <color name="durec_fragment_background">#f2f2f2</color>
+    <color name="durec_transparent_background">#e6000000</color>
+    <color name="durec_head_item_background">#e9e9e9</color>
+    <color name="durec_noti_action_bg">#eeeeee</color>
+    <color name="durec_preview_toolbar_bg">#b2000000</color>
+
+    <color name="durec_divide_line_color">#26000000</color>
+    <color name="durec_common_divide_line_color">#E6E6E6</color>
+
+    <!-- 颜色常量 -->
+    <color name="durec_white">#ffffff</color>
+    <color name="durec_black">#000000</color>
+    <color name="durec_gray_bright_dark">#dddddd</color>
+    <color name="durec_shadow_color">#40892100</color>
+    <color name="durec_transparent">#00000000</color>
+
+    <!--       业务相关，不随主题改变         -->
+    <!-- 首页视频 -->
+    <color name="durec_video_card_text_color">#777777</color>
+    <color name="durec_local_video_item_selected_color">#4dffffff</color>
+    <color name="durec_cloud_video_item_disabled_color">#26000000</color>
+
+    <!-- 视频编辑&拼接 -->
+    <color name="__picker_bg">#e7e7e7</color>
+    <color name="__picker_text_80">#a3a2a2</color>
+    <color name="__picker_common_primary">#f3f3f3</color>
+
+    <color name="durec_draggable_crop_cover_color">#550ff000</color>
+    <color name="durec_caption_typeface_normal_color">#626262</color>
+    <color name="durec_caption_piece_normal_bg_color">#f9d2b2</color>
+    <color name="durec_caption_piece_long_press_bg_color">#fcae6f</color>
+    <color name="durec_caption_no_space_to_add_anchor_line_color">#d6d6d6</color>
+    <color name="durec_caption_no_space_to_add_center_time_color">#cfcfcf</color>
+
+    <!-- 直播，直播工具, 直播Feed -->
+    <color name="durec_live_guide_indicator_color">#e6ffffff</color>
+    <color name="durec_live_guide_background">#b3000000</color>
+    <color name="durec_live_comment_user_name_color">#ff7f14</color>
+    <color name="durec_live_comment_stoke_color">#3d3d3d</color>
+    <color name="durec_live_pause_bg_start_color">#eb6c41</color>
+    <color name="durec_live_pause_bg_end_color">#f7993b</color>
+    <color name="durec_create_live_title_hint_color">#888888</color>
+    <color name="durec_create_live_title_text_color">#535353</color>
+    <color name="durec_multi_live_panel_bg_color">#ccfd7e2b</color>
+    <color name="durec_multi_live_panel_ytb_icon_color">#ccf80d21</color>
+    <color name="durec_multi_live_panel_fb_icon_color">#cc3c5a9c</color>
+    <color name="durec_multi_live_panel_twitch_icon_color">#cc6443a3</color>
+
+    <color name="durec_live_video_feed_category_normal_color">#929292</color>
+    <color name="donation_golden">#ffe200</color>
+    <color name="subscribe_brown">#ff7e14</color>
+    <color name="durec_donation_goal_progress_bg">#dedede</color>
+
+    <color name="durec_live_video_feed_category_color">#aaaaaa</color>
+
+    <!-- 设置&其他 -->
+    <color name="durec_star_circle_start_color">#f39800</color>
+    <color name="durec_share_item_app_label_color">#929292</color>
+
+    <!-- 广告 -->
+    <color name="durec_radio_item_disabled_text">#cccccc</color>
+    <color name="durec_nativead_text_desc">#8F9090</color>
+
+    <!-- 推广 -->
+    <color name="durec_ytb_ads_prompt_bg_color">#99000000</color>
+    <color name="durec_ytb_ads_invalid_revenue_record_color">#c7c7c7</color>
+    <color name="durec_ytb_ads_total_income_bg_color">#fff2e5</color>
+    <color name="durec_ytb_ads_total_income_bg_stroke_color">#ff7e14</color>
+    <color name="durec_withdraw_history_status_completed">#4db528</color>
+    <color name="durec_withdraw_history_status_rejected">#d90707</color>
+    <color name="durec_withdraw_history_status_pending">#ff7e14</color>
+    <color name="durec_revenue_tab_stroke">#bfbfbf</color>
+    <color name="durec_revenue_tab_solid">#f7f7f7</color>
+    <color name="durec_receivead_revenue_amount">#e5631a</color>
+
+    <!-- 付费订阅 -->
+    <color name="durec_subscription_corner_bg">#E93223</color>
+    <color name="durec_premium_bg_color">#fffbf3</color>
+
+    <!--主题可替换色-->
+    <color name="theme_rec_count_down">#ff7e14</color>
+    <color name="theme_rec_count_down_bg">#40892100</color>
+    <color name="theme_rec_time_view_text_color">#ffffff</color>
+
+    <color name="theme_notification_top_bg_color">#ffffff</color>
+    <color name="theme_durec_colorPrimary">#ff7e14</color>
+    <color name="theme_durec_colorPrimaryDark">#cd5c00</color>
+
+    <color name="theme_rec_btn_stroke_bg">#0ec499</color>
+    <color name="theme_rec_btn_stroke_bg_dark">#089675</color>
+
+
+    <!--主题可替换 通知栏 科幻色值-->
+    <color name="theme_tech_rec_btn_bg">#2ce6f7</color>
+    <color name="theme_tech_rec_btn_bg_dark">#0faebd</color>
+
+    <color name="theme_tech_notification_btn_text_color">#000000</color>
+    <color name="theme_tech_notification_top_bg_color">#103f53</color>
+    <color name="theme_tech_notification_bottom_bg_color">#105163</color>
+
+    <!--主题可替换 通知栏 绿色色值-->
+    <color name="theme_green_rec_btn_bg">#54d68a</color>
+    <color name="theme_green_rec_btn_bg_dark">#36a46c</color>
+    <color name="theme_green_rec_btn_stroke_bg">#0ec499</color>
+    <color name="theme_green_rec_btn_stroke_bg_dark">#089675</color>
+
+    <color name="theme_color_notification_btn_text_color">#ffffff</color>
+    <color name="theme_green_notification_top_bg_color">#ffffff</color>
+    <color name="theme_green_notification_bottom_bg_color">#eeeeee</color>
+
+    <!--主题可替换 通知栏 熔岩色值-->
+    <color name="theme_lava_rec_btn_end_bg">#feae00</color>
+    <color name="theme_lava_rec_btn_start_bg">#ff3200</color>
+    <color name="theme_tech_rec_btn_end_bg_dark">#b17a00</color>
+    <color name="theme_tech_rec_btn_start_bg_dark">#b22600</color>
+
+    <color name="theme_lava_notification_btn_text_color">#000000</color>
+    <color name="theme_lava_notification_top_bg_start_color">#4a0b03</color>
+    <color name="theme_lava_notification_top_bg_end_color">#000000</color>
+
+    <color name="theme_lava_notification_bottom_bg_color">#000000</color>
+
+    <!--主题可替换 通知栏 金色色值-->
+    <color name="theme_golden_rec_btn_end_bg">#ca8b34</color>
+    <color name="theme_golden_rec_btn_start_bg">#eccc71</color>
+    <color name="theme_golden_rec_btn_end_bg_dark">#9f6517</color>
+    <color name="theme_golden_rec_btn_start_bg_dark">#b59729</color>
+
+    <color name="theme_golden_notification_btn_text_color">#3b311c</color>
+    <color name="theme_golden_notification_top_bg_end_color">#694e16</color>
+    <color name="theme_golden_notification_top_bg_start_color">#1d1c1c</color>
+    <color name="theme_golden_notification_bottom_bg_end_color">#cb9843</color>
+    <color name="theme_golden_notification_bottom_bg_start_color">#eacc71</color>
+
+    <color name="durec_progress_background">#dcdcdc</color>
+
+    <!--通知栏上，下部分背景渐变色设置-->
+    <color name="theme_notification_top_bg_start_color">#ffffff</color>
+    <color name="theme_notification_top_bg_end_color">#ffffff</color>
+    <color name="theme_notification_bottom_bg_start_color">#eeeeee</color>
+    <color name="theme_notification_bottom_bg_end_color">#eeeeee</color>
+    <!--通知栏录制按钮背景渐变色-->
+    <color name="theme_notification_rec_btn_end_bg">#ff7e14</color>
+    <color name="theme_notification_rec_btn_start_bg">#ff7e14</color>
+
+    <!--通知栏录制按钮文案颜色-->
+    <color name="theme_notification_rec_btn_text_color">#ffffff</color>
+
+    <!--通知栏录一行布局ICON下方Title的颜色-->
+    <color name="durec_theme_notification_icon_title">#de000000</color>
+
+    <!--通知栏录Title text color-->
+    <color name="durec_theme_notification_content_title">#de000000</color>
+    <!--通知栏录Subtext text color-->
+    <color name="durec_theme_notification_content_subtext">#8a000000</color>
+
+    <!-- SectionSeekBar -->
+    <color name="durec_ssb_indeterminate_track_color">#d1d0d0</color>
+    <color name="durec_ssb_left_indicator_text_color">#cc000000</color>
+
+    <color name="durec_camera_frame_translate_dot">#91908f</color>
+
+</resources>

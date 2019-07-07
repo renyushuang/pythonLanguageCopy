@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="60dp"
+    android:layout_height="25dp"
+    android:orientation="horizontal"
+    android:gravity="center">
+    <TextView
+        android:id="@+id/durec_cn_small_button"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/durec_theme_tech_notification_btn"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="3dp"
+        android:paddingRight="3dp"
+        android:singleLine="true"
+        android:text="@string/durec_common_open"
+        android:textColor="@color/theme_tech_notification_btn_text_color"
+        android:textSize="14sp" />
+</LinearLayout>

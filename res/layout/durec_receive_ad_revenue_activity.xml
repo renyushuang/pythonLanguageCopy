@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/durec_white">
+
+    <!--tool bar-->
+    <include
+        android:id="@+id/durec_ads_revenue_toolbar"
+        layout="@layout/durec_toolbar_layout" />
+
+    <!-- 总收入面板 -->
+    <View
+        android:id="@+id/durec_ads_revenue_text_total_income_top"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/durec_ads_revenue_toolbar" />
+
+    <View
+        android:id="@+id/durec_ads_revenue_text_total_income_bottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="13dp"
+        app:layout_constraintTop_toBottomOf="@+id/durec_ads_revenue_update_time" />
+
+    <!--背景-->
+    <View
+        android:id="@+id/durec_ads_revenue_bg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/durec_ytb_ads_total_income_bg"
+        app:layout_constraintBottom_toTopOf="@+id/durec_ads_revenue_text_total_income_bottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/durec_ads_revenue_text_total_income_top" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_ads_revenue_text_total_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:text="@string/durec_common_revenue"
+        android:textColor="#e5631a"
+        android:textSize="14dp"
+        app:layout_constraintStart_toStartOf="@+id/durec_ads_revenue_bg"
+        app:layout_constraintTop_toTopOf="@+id/durec_ads_revenue_bg" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_ads_revenue_total_income"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/durec_common_usd"
+        android:textColor="#e5631a"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="@+id/durec_ads_revenue_text_total_income"
+        app:layout_constraintTop_toBottomOf="@+id/durec_ads_revenue_text_total_income" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_ads_revenue_update_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="14dp"
+        android:text="@string/durec_promotion_profit_delay_introduce"
+        android:textColor="#b3e5631a"
+        android:textSize="11dp"
+        app:layout_constraintEnd_toEndOf="@+id/durec_ads_revenue_bg"
+        app:layout_constraintStart_toStartOf="@+id/durec_ads_revenue_text_total_income"
+        app:layout_constraintTop_toBottomOf="@+id/durec_ads_revenue_total_income" />
+
+
+    <ImageView
+        android:id="@+id/durec_ads_revenue_total_income_right_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="14dp"
+        android:src="@drawable/durec_ytb_ads_revenue_withdraw_right_arrow"
+        app:layout_constraintBottom_toBottomOf="@+id/durec_ads_revenue_bg"
+        app:layout_constraintEnd_toEndOf="@+id/durec_ads_revenue_bg"
+        app:layout_constraintTop_toTopOf="@+id/durec_ads_revenue_bg" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_ads_revenue_text_withdraw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:text="@string/durec_go_withdraw"
+        android:textColor="#e5631a"
+        android:textSize="11dp"
+        app:layout_constraintBottom_toBottomOf="@+id/durec_ads_revenue_bg"
+        app:layout_constraintEnd_toStartOf="@+id/durec_ads_revenue_total_income_right_arrow"
+        app:layout_constraintTop_toTopOf="@+id/durec_ads_revenue_bg" />
+
+    <com.duapps.screen.recorder.ui.DuTabLayout
+        android:id="@+id/durec_revenue_tab"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:background="@color/durec_white"
+        app:layout_constraintTop_toBottomOf="@+id/durec_ads_revenue_text_total_income_bottom"
+        app:tabGravity="fill"
+        app:tabIndicatorHeight="0dp"
+        app:tabMode="fixed"
+        app:tabPaddingBottom="0dp"
+        app:tabPaddingEnd="0dp"
+        app:tabPaddingStart="0dp"
+        app:tabPaddingTop="0dp" />
+
+    <com.duapps.screen.recorder.ui.DuRecorderViewPager
+        android:id="@+id/durec_revenue_view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durec_revenue_tab" />
+
+
+</android.support.constraint.ConstraintLayout>

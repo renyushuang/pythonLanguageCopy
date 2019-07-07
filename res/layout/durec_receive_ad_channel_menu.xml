@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_menu_change_channel_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="47dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/durec_live_settings_choose_channel_selector"
+        android:gravity="center_vertical|left"
+        android:minWidth="137dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:text="@string/durec_change_account"
+        android:textColor="@color/durec_menu_text_color"
+        android:textSize="16dp" />
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="0dp"
+        android:layout_height="1px"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:background="#c1c1c1"
+        app:layout_constraintEnd_toEndOf="@id/durec_menu_change_channel_layout"
+        app:layout_constraintStart_toStartOf="@id/durec_menu_change_channel_layout"
+        app:layout_constraintTop_toBottomOf="@id/durec_menu_change_channel_layout" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_menu_logout_layout"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/durec_live_settings_logout_selector"
+        android:gravity="center_vertical|left"
+        android:minWidth="137dp"
+        android:paddingLeft="23dp"
+        android:paddingRight="23dp"
+        android:text="@string/durec_log_out"
+        android:textColor="@color/durec_menu_text_color"
+        android:textSize="16dp"
+        app:layout_constraintEnd_toEndOf="@id/durec_menu_change_channel_layout"
+        app:layout_constraintStart_toStartOf="@id/durec_menu_change_channel_layout"
+        app:layout_constraintTop_toBottomOf="@id/line_1" />
+
+</android.support.constraint.ConstraintLayout>

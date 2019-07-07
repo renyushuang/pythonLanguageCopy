@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="durec_main_local_video_thumb_width">128dp</dimen>
+    <dimen name="durec_main_local_video_thumb_height">72dp</dimen>
+
+    <dimen name="live_tool_donation_component_height">60dp</dimen>
+
+    <dimen name="donation_info_text_size">18sp</dimen>
+    <dimen name="donation_loop_info_text_size">14sp</dimen>
+
+    <dimen name="durec_dimen_5dp">5dp</dimen>
+    <dimen name="durec_dimen_16dp">16dp</dimen>
+    <dimen name="durec_dimen_rule_bmp_width">234dp</dimen>
+    <dimen name="durec_dimen_rule_bmp_height">399dp</dimen>
+
+    <dimen name="durec_merge_mosaic_time_picker_margin_top">12dp</dimen>
+    <dimen name="durec_merge_mosaic_time_picker_margin_bottom">6dp</dimen>
+
+</resources>

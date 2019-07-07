@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="durec_edit_video_tab_view_btn_text_size">14dp</dimen>
+
+    <dimen name="durec_promotion_shrink_rules_text_size">14dp</dimen>
+
+    <dimen name="durec_subscribe_btn_width">110dp</dimen>
+
+    <dimen name="durec_per_watermark_btn_text_size">12dp</dimen>
+</resources>

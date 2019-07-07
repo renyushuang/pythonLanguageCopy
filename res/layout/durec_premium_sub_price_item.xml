@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/durec_sub_item_bg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/durec_sub_item_background_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_premium_feature_recycler_view"/>
+
+    <ImageView
+        android:id="@+id/durec_sub_item_checker"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="11dp"
+        android:src="@drawable/durec_sub_item_checkpoint_selector"
+        app:layout_constraintBottom_toBottomOf="@id/durec_sub_item_bg"
+        app:layout_constraintEnd_toEndOf="@id/durec_sub_item_bg"
+        app:layout_constraintTop_toTopOf="@id/durec_sub_item_bg"/>
+    <!-- progressbar -->
+    <ProgressBar
+        android:id="@+id/durec_sub_progressbar"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:indeterminate="true"
+        android:indeterminateDrawable="@drawable/durec_sub_item_progressbar_gray"
+        app:layout_constraintBottom_toBottomOf="@id/durec_sub_item_bg"
+        app:layout_constraintStart_toStartOf="@id/durec_sub_item_bg"
+        app:layout_constraintEnd_toEndOf="@id/durec_sub_item_bg"
+        app:layout_constraintTop_toTopOf="@id/durec_sub_item_bg"
+        />
+    <!-- 套餐价格 -->
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_sub_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:textColor="@color/durec_subscription_time_color"
+        android:lines="1"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@id/durec_sub_item_bg"
+        app:layout_constraintStart_toStartOf="@id/durec_sub_item_bg"
+        app:layout_constraintTop_toTopOf="@id/durec_sub_item_bg"/>
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_sub_period"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/durec_subscription_time_color"
+        android:lines="1"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/durec_sub_item_bg"
+        app:layout_constraintStart_toEndOf="@id/durec_sub_price"
+        app:layout_constraintTop_toTopOf="@id/durec_sub_item_bg"/>
+
+    <!-- 原价/单价区域 -->
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_sub_extra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="38dp"
+        android:textSize="11sp"
+        android:textColor="@color/durec_subscription_time_color"
+        android:lines="1"
+        app:layout_constraintBottom_toBottomOf="@id/durec_sub_item_bg"
+        app:layout_constraintEnd_toEndOf="@id/durec_sub_item_bg"
+        app:layout_constraintTop_toTopOf="@id/durec_sub_item_bg"/>
+
+    <!-- 折扣标识 -->
+    <TextView
+        android:id="@+id/durec_sub_discount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/durec_white"
+        android:paddingStart="5dp"
+        android:paddingEnd="5dp"
+        android:textSize="12sp"
+        android:background="@drawable/durec_sub_discount_bg"
+        android:layout_marginBottom="3dp"
+        android:layout_marginStart="15dp"
+        app:layout_constraintBottom_toTopOf="@id/durec_sub_price"
+        app:layout_constraintStart_toStartOf="@id/durec_sub_item_bg"/>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="85dp"
+    android:layout_height="85dp">
+
+    <ImageView
+        android:id="@+id/merge_media_thumb"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="7.5dp"
+        android:src="@drawable/dure_background_picture_9"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/merge_media_thumb_selected_view"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="7.5dp"
+        android:background="@drawable/durec_mege_video_and_image_thumb_mongolia"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/merge_media_thumb_draggable_bg"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_margin="7.5dp"
+        android:background="#4dffffff"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/merge_media_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/durec_video_white_icon"
+        app:layout_constraintStart_toStartOf="@+id/merge_media_thumb"
+        app:layout_constraintTop_toTopOf="@+id/merge_media_thumb" />
+
+    <ImageView
+        android:id="@+id/merge_media_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/durec_edit_player_delete_icon_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/merge_media_duration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        android:layout_marginStart="2dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/durec_video_duration_bg"
+        android:paddingLeft="5dp"
+        android:paddingTop="3dp"
+        android:paddingRight="5dp"
+        android:paddingBottom="3dp"
+        android:textColor="@android:color/white"
+        android:textSize="10.6dp"
+        app:layout_constraintBottom_toBottomOf="@+id/merge_media_thumb"
+        app:layout_constraintStart_toStartOf="@+id/merge_media_thumb"
+        tools:text="05:35" />
+</android.support.constraint.ConstraintLayout>

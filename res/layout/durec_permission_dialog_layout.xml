@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/durec_white"
+    android:gravity="left"
+    android:orientation="vertical"
+    android:paddingBottom="7dp"
+    android:paddingTop="7dp">
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:lineSpacingExtra="8dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:text="@string/durec_permission_fir_msg"
+        android:textColor="@color/durec_black"
+        android:textSize="14sp" />
+
+    <include layout="@layout/durec_permission_prompt_layout" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:lineSpacingExtra="8dp"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp"
+        android:text="@string/durec_permission_sec_msg_new"
+        android:textColor="@color/durec_main_text_color"
+        android:textSize="14sp" />
+</LinearLayout>

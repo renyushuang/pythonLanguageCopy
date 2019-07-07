@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:parentTag="com.duapps.screen.recorder.main.donation.ui.view.LiveGoalColourfulView">
+
+    <FrameLayout
+        android:id="@+id/goal_colourful_style_arrow_container"
+        android:layout_width="@dimen/durec_live_goal_arrow_size"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/goal_colourful_style_arrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="6dp"
+            android:src="@drawable/durec_live_goal_orange_vertical_arrow_selector" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/goal_colourful_extensible_region"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/durec_live_goal_arrow_size">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16.5dp"
+            android:background="@drawable/durec_live_goal_colourful_progress_background" />
+
+        <View
+            android:id="@+id/goal_colourful_percentage"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="16.5dp"
+            android:background="@drawable/durec_live_goal_colourful_donation_progress_foreground"
+            tools:layout_width="30dp" />
+
+        <com.duapps.screen.recorder.ui.StrokeTextView
+            android:id="@+id/goal_colourful_value"
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:paddingLeft="33dp"
+            android:textColor="@color/durec_white"
+            android:textSize="10sp"
+            app:strokeColor="#535353"
+            app:strokeWidth="2dp"
+            tools:text="2233/12000" />
+
+        <ImageView
+            android:id="@+id/goal_colourful_icon"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/durec_live_goal_colourful_blue_icon" />
+    </FrameLayout>
+</merge>

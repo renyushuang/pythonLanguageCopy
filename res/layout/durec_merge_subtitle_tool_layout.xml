@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:focusable="true">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/merge_subtitle_area_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/merge_subtitle_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:padding="10dp"
+            android:src="@drawable/durec_merge_video_and_image_close_selector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/merge_subtitle_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="10dp"
+            android:src="@drawable/durec_merge_video_and_image_confirm_selector"
+            app:layout_constraintBottom_toBottomOf="@id/merge_subtitle_close"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/merge_subtitle_close" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/merge_subtitle_area_top"
+        app:layout_constraintVertical_weight="1">
+
+        <com.duapps.screen.recorder.main.videos.merge.functions.common.toolview.multitrack.MultiTrackBar
+            android:id="@+id/merge_subtitle_multi_track_bar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toTopOf="@id/merge_subtitle_pointer"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_default="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:trackcount="3" />
+
+        <!--指针的竖线-->
+        <View
+            android:id="@+id/merge_subtitle_pointer_line"
+            android:layout_width="1dp"
+            android:layout_height="0dp"
+            android:background="@color/durec_colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/merge_subtitle_multi_track_bar"
+            app:layout_constraintEnd_toEndOf="@id/merge_subtitle_multi_track_bar"
+            app:layout_constraintStart_toStartOf="@id/merge_subtitle_multi_track_bar"
+            app:layout_constraintTop_toTopOf="@id/merge_subtitle_multi_track_bar" />
+
+        <!--指针-->
+        <ImageView
+            android:id="@+id/merge_subtitle_pointer"
+            android:layout_width="12dp"
+            android:layout_height="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/durec_caption_editor_pointer_bg"
+            app:layout_constraintBottom_toTopOf="@id/merge_subtitle_time"
+            app:layout_constraintEnd_toEndOf="@id/merge_subtitle_multi_track_bar"
+            app:layout_constraintStart_toStartOf="@id/merge_subtitle_multi_track_bar" />
+
+        <!--当前时间-->
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/merge_subtitle_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:text="0:00.0"
+            android:textColor="@color/durec_colorPrimary"
+            android:textSize="11dp"
+            app:layout_constraintBottom_toTopOf="@id/merge_subtitle_add_btn"
+            app:layout_constraintEnd_toEndOf="@id/merge_subtitle_multi_track_bar"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintStart_toStartOf="@id/merge_subtitle_multi_track_bar"
+            app:layout_constraintWidth_default="wrap" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/merge_subtitle_right_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:text="0:00.0"
+            android:textColor="#535353"
+            android:textSize="11dp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/merge_subtitle_time"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHeight_default="wrap"
+            app:layout_constraintTop_toTopOf="@id/merge_subtitle_time"
+            app:layout_constraintWidth_default="wrap" />
+
+        <ImageView
+            android:id="@+id/merge_subtitle_add_btn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:src="@drawable/durec_caption_editor_add_icon_bg"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

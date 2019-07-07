@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/__picker_bg_material_item"
+    android:orientation="horizontal"
+    android:paddingLeft="8.3dip"
+    android:paddingTop="7.3dp"
+    android:paddingRight="8.3dp"
+    android:paddingBottom="7.3dp">
+
+    <ImageView
+        android:id="@+id/iv_dir_cover"
+        android:layout_width="79dip"
+        android:layout_height="79dip"
+        android:layout_marginRight="10dip"
+        android:scaleType="centerCrop" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left|center"
+        android:orientation="vertical">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/tv_dir_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left|center"
+            android:textColor="@color/durec_head_item_text_color"
+            android:textSize="@dimen/__picker_text_size_40" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/tv_dir_count"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="left|center"
+            android:textColor="@color/__picker_text_80"
+            android:textSize="@dimen/__picker_text_size_36" />
+    </LinearLayout>
+</LinearLayout>

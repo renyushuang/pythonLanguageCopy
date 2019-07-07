@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="260dp"
+    android:layout_height="wrap_content"
+    android:background="#00ffffff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            card_view:cardBackgroundColor="@color/durec_white"
+            card_view:cardCornerRadius="7dp"
+            card_view:cardElevation="3dp"
+            card_view:cardPreventCornerOverlap="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="13dp">
+
+                <ImageView
+                    android:id="@+id/durec_scene_share_close"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:padding="5dp"
+                    android:src="@drawable/durec_dialog_close_btn_selector" />
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/durec_scene_share_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginTop="54dp"
+                    android:gravity="center_horizontal"
+                    android:textColor="#555555"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:id="@+id/durec_scene_share_more_app_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal">
+
+                        <ImageView
+                            android:id="@+id/durec_scene_share_first"
+                            android:layout_width="46.7dp"
+                            android:layout_height="46.7dp"
+                            android:layout_marginLeft="13.3dp"
+                            android:layout_marginRight="13.3dp"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/durec_scene_share_second"
+                            android:layout_width="46.7dp"
+                            android:layout_height="46.7dp"
+                            android:layout_marginLeft="13.3dp"
+                            android:layout_marginRight="13.3dp"
+                            android:visibility="gone" />
+
+                        <ImageView
+                            android:id="@+id/durec_scene_share_third"
+                            android:layout_width="46.7dp"
+                            android:layout_height="46.7dp"
+                            android:layout_marginLeft="13.3dp"
+                            android:layout_marginRight="13.3dp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/durec_scene_share_more_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="5dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center"
+                        android:paddingTop="5dp">
+
+                        <com.duapps.screen.recorder.ui.FontTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="7dp"
+                            android:paddingBottom="3dp"
+                            android:text="@string/durec_scene_share_more_apps"
+                            android:textColor="@color/durec_scene_share_more_text_color"
+                            android:textSize="12dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/durec_scene_share_more_selector" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/durec_scene_share_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/durec_rate_btn_selector"
+                    android:gravity="center"
+                    android:text="@string/durec_common_share"
+                    android:textAllCaps="true"
+                    android:textColor="@color/durec_rate_btn_text_color"
+                    android:textSize="13dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/durec_rate_icon_bg" />
+
+    <ImageView
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/durec_rate_icon" />
+</FrameLayout>

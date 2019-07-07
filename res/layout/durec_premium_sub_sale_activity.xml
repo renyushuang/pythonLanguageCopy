@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <com.duapps.recorder.module.subscription.banner.Banner
+        android:id="@+id/durec_sub_sale_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:banner_auto_play="true"
+        app:banner_interval_time="3000"
+        app:banner_multi_page="true"
+        app:banner_page_spacing="11dp"
+        app:banner_show_indicator="true"
+        app:indicator_default_drawable="@drawable/shape_banner_default_indicator"
+        app:indicator_default_height="2dp"
+        app:indicator_default_width="12dp"
+        app:indicator_select_drawable="@drawable/shape_banner_select_indicator"
+        app:indicator_select_height="2dp"
+        app:indicator_select_width="12dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/durec_close_iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="15dp"
+        android:src="@drawable/durec_dialog_close_btn_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/durec_sale_time_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/durec_sale_price_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/durec_sub_sale_banner"
+        app:layout_constraintVertical_weight="1">
+
+        <ImageView
+            android:id="@+id/durec_sale_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/durec_sale_icon"
+            app:layout_constraintBottom_toTopOf="@+id/durec_sale_clock_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.6"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <ImageView
+            android:id="@+id/durec_sale_clock_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/durec_sale_clock_icon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/durec_sale_count_down_time_tv"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/durec_sale_iv" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_sale_count_down_time_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:textColor="#dc220b"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="@id/durec_sale_clock_iv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/durec_sale_clock_iv"
+            app:layout_constraintTop_toTopOf="@id/durec_sale_clock_iv"
+            tools:text="23:12:35" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/durec_sale_price_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/durec_sale_tip_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_sale_time_layout"
+        app:layout_constraintVertical_weight="0.7">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_sale_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/durec_colorAccent"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/durec_sale_original_price_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintVertical_chainStyle="packed"
+            tools:text="$49.99/Year" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_sale_original_price_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:textColor="#555555"
+            android:textSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/durec_sale_price_tv"
+            tools:text="$69.99" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/durec_sale_tip_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/durec_sale_bottom_layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_sale_price_layout"
+        app:layout_constraintVertical_weight="0.6">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_sale_tip_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginEnd="19dp"
+            android:text="@string/durec_subscription_sale_desc"
+            android:textColor="#555555"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toTopOf="@+id/durec_sale_view_more_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_sale_view_more_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="19dp"
+            android:drawableRight="@drawable/durec_settings_detail_btn_nomal"
+            android:drawablePadding="5dp"
+            android:gravity="start"
+            android:text="@string/durec_premium_guide_check_more_features"
+            android:textColor="@color/text_light_gray"
+            android:textSize="13dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/durec_sale_tip_tv" />
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/durec_sale_bottom_layout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durec_sale_tip_layout"
+        app:layout_constraintVertical_weight="1">
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_sale_subscribe_btn"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/screen_bottom_large_btn_height"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="12dp"
+            android:background="@drawable/durec_common_ok_btn_selector_reverse"
+            android:gravity="center"
+            android:text="@string/durec_subscribe_action_btn"
+            android:textColor="@color/durec_common_ok_btn_text_color_reverse"
+            android:textSize="@dimen/screen_bottom_large_btn_text_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_sale_explain_tv"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="12dp"
+            android:text="@string/durec_sbuscription_explain_price_no_trial"
+            android:textColor="@color/text_light_gray"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/durec_sale_subscribe_btn" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_sale_restore_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp"
+            android:text="@string/durec_restore"
+            android:textColor="@color/text_light_gray"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toStartOf="@+id/durec_sale_privacy_tv"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/durec_sale_explain_tv" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/durec_sale_privacy_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="40dp"
+            android:text="@string/durec_privacy_policy"
+            android:textColor="@color/text_light_gray"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="@id/durec_sale_restore_tv"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/durec_sale_restore_tv"
+            app:layout_constraintTop_toTopOf="@id/durec_sale_restore_tv" />
+
+    </android.support.constraint.ConstraintLayout>
+</android.support.constraint.ConstraintLayout>

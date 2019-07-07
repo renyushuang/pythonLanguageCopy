@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="thanks_title" translatable="false">Special thanks to these DU Recorder users for their great help with the translation.</string>
+
+    <string name="thanks_subtitle" translatable="false">If you are willing to help with any part of the translation, please contact us at durecorder2016@gmail.com.</string>
+
+    <string name="thanks_country_hugarian" translatable="false">Hungarian</string>
+    <string name="thanks_country_hugarian_names" translatable="false">Attila Zsigmond, Krisztián Gábor</string>
+
+    <string name="thanks_country_azerbaycan" translatable="false">Azərbaycan</string>
+    <string name="thanks_country_azerbaycan_names" translatable="false">LockedWorld</string>
+
+</resources>

@@ -1,0 +1,339 @@
+<resources>
+
+    <style name="DurecAppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/durec_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/durec_colorPrimaryDark</item>
+        <item name="colorAccent">@color/durec_colorAccent</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="textAppearanceLargePopupMenu">@style/PopupMenuTextView</item>
+        <item name="textAppearanceSmallPopupMenu">@style/PopupMenuTextView</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="DurecAppTheme" parent="DurecAppTheme.Base">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+        <item name="android:overlapAnchor">false</item>
+        <item name="overlapAnchor">false</item>
+        <item name="android:windowAnimationStyle">@style/DurecDefaultActivityAnimation</item>
+        <item name="android:dropDownListViewStyle">@style/PopupMenuListView</item>
+        <item name="textAppearanceLargePopupMenu">@style/PopupMenuTextView</item>
+        <item name="textAppearanceSmallPopupMenu">@style/PopupMenuTextView</item>
+    </style>
+
+    <!-- Base application theme with white background. -->
+    <style name="DurecAppThemeWhiteBG" parent="DurecAppTheme">
+        <item name="android:windowBackground">@color/durec_white</item>
+    </style>
+
+    <style name="MediaPreviewTheme" parent="DurecAppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="FullScreenTransparentTheme" parent="DurecAppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Theme.AppCompat.Translucent" parent="DurecAppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="GuideTheme" parent="DurecAppTheme">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="Theme.Translucent.NoFullscreen" parent="DurecAppTheme">
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+    </style>
+
+    <style name="PlayerTheme" parent="DurecAppTheme">
+        <item name="android:windowBackground">@color/durec_black</item>
+        <item name="android:windowAnimationStyle">@style/DurecDefaultActivityAnimation</item>
+    </style>
+
+    <style name="AthenaLiveTheme" parent="DurecAppTheme">
+        <item name="android:windowBackground">@color/durec_black</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="PopupMenuListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">@drawable/durec_popup_menu_listview_divider</item>
+        <item name="android:dividerHeight">1px</item>
+    </style>
+
+    <style name="PopupMenuTextView">
+        <item name="android:textColor">@color/durec_popup_menu_text_color</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="DurecTheme.CustomDialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimAmount">0.5</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/durec_common_dialog_anim</item>
+        <item name="colorPrimary">@color/durec_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/durec_colorPrimaryDark</item>
+        <item name="colorAccent">@color/durec_colorAccent</item>
+    </style>
+
+    <style name="DialogActivityStyle" parent="Theme.AppCompat.Light.Dialog">
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+    </style>
+
+    <style name="durec_bottom_dialog_anim">
+        <item name="android:windowEnterAnimation">@anim/durec_dialog_in_from_bottom</item>
+        <item name="android:windowExitAnimation">@anim/durec_dialog_out_to_bottom</item>
+    </style>
+
+    <style name="durec_common_dialog_anim">
+        <item name="android:windowEnterAnimation">@anim/durec_dialog_zoom_in</item>
+        <item name="android:windowExitAnimation">@anim/durec_dialog_zoom_out</item>
+    </style>
+
+    <!-- Settings style -->
+    <style name="durec_setting_item_text">
+        <item name="android:gravity">left</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="durec_setting_item_title_text" parent="durec_setting_item_text">
+        <item name="android:textColor">@color/durec_settings_item_title_color</item>
+        <item name="android:textSize">16dp</item>
+        <item name="android:layout_marginEnd">5dp</item>
+        <item name="android:layout_marginStart">19dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="durec_setting_item_subtitle_text" parent="durec_setting_item_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/durec_settings_item_subtitle_color</item>
+        <item name="android:textSize">12dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_centerVertical">false</item>
+    </style>
+
+    <style name="durec_setting_item_summary_text" parent="durec_setting_item_text">
+        <item name="android:textColor">#ffa414</item>
+        <item name="android:textSize">11dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="durec_setting_item_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@color/durec_white</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="durec_setting_item_icon">
+        <item name="android:layout_width">@dimen/durec_settings_item_icon_size</item>
+        <item name="android:layout_height">@dimen/durec_settings_item_icon_size</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="durec_setting_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.6dp</item>
+        <item name="android:background">#e8e8e8</item>
+    </style>
+
+    <style name="durec_rtmp_split_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.6dp</item>
+        <item name="android:background">#e2e2e2</item>
+    </style>
+
+    <!-- 5.0之后Notification的默认字体样式 -->
+    <style name="DurecCustomNotificationTitleTextAppearance">
+        <item name="android:textColor">#de000000</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="DurecCustomNotificationContentTextAppearance">
+        <item name="android:textColor">#8a000000</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <!-- 5.0之后Notification 绿色主题默认字体样式 -->
+    <style name="DurecGreenNotificationTitleTextAppearance">
+        <item name="android:textColor">#de000000</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="DurecGreenNotificationContentTextAppearance">
+        <item name="android:textColor">#8a000000</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <!-- 5.0之后Notification 科幻主题的默认字体样式 -->
+    <style name="DurecTechNotificationTitleTextAppearance">
+        <item name="android:textColor">#d0f9fc</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="DurecTechNotificationContentTextAppearance">
+        <item name="android:textColor">#2ce6f7</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <!-- 5.0之后Notification的熔岩字体样式 -->
+    <style name="DurecLavaNotificationTitleTextAppearance">
+        <item name="android:textColor">#ffe300</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="DurecLavaNotificationContentTextAppearance">
+        <item name="android:textColor">#ff4100</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <!-- 5.0之后Notification 金色主题的默认字体样式 -->
+    <style name="DurecGoldenNotificationTitleTextAppearance">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <style name="DurecGoldenNotificationContentTextAppearance">
+        <item name="android:textColor">#c8a552</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+
+    <style name="durec_setting_item_icon_multi_lines" parent="durec_setting_item_icon">
+        <item name="android:layout_centerVertical">false</item>
+        <item name="android:layout_marginTop">27dp</item>
+    </style>
+
+    <style name="durec_setting_item_title_text_multi_lines" parent="durec_setting_item_title_text">
+        <item name="android:layout_centerVertical">false</item>
+    </style>
+
+    <style name="DurecDefaultActivityAnimation">
+        <item name="android:activityCloseEnterAnimation">@anim/durec_anim_quiet</item>
+        <item name="android:activityCloseExitAnimation">@anim/durec_add_activiity_out_to_right
+        </item>
+        <item name="android:activityOpenEnterAnimation">@anim/durec_add_activiity_in_from_right
+        </item>
+        <item name="android:activityOpenExitAnimation">@anim/durec_anim_quiet</item>
+    </style>
+
+    <style name="VideoEditSecondaryTheme" parent="DurecAppTheme">
+        <item name="android:windowBackground">@color/durec_transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="TransparentTheme" parent="DurecAppTheme.Base">
+        <item name="android:windowBackground">@color/durec_transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="LowercaseTabStyle" parent="Widget.Design.TabLayout">
+        <item name="textAllCaps">false</item>
+        <item name="android:textSize">14dp</item>
+    </style>
+
+    <style name="TranslucentActivityTheme" parent="DurecAppTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="DialogActivityTheme" parent="TranslucentActivityTheme">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="DialogActivityDimTheme" parent="DialogActivityTheme">
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="PhotoPickerTheme" parent="DurecAppTheme">
+        <item name="android:dropDownListViewStyle">@style/PhotoPickerTheme.DropDownListView</item>
+    </style>
+
+    <style name="PhotoPickerTheme.DropDownListView" parent="@android:style/Widget.Holo.ListView.DropDown">
+        <item name="android:divider">@drawable/__picker_divider</item>
+        <item name="android:dividerHeight">1px</item>
+        <item name="android:selectableItemBackground">@drawable/__picker_item_bg</item>
+    </style>
+
+    <style name="durec_heads_up_window_anim" parent="Base.Animation.AppCompat.DropDownUp">
+        <item name="android:windowEnterAnimation">@anim/durec_top_in</item>
+        <item name="android:windowExitAnimation">@anim/durec_top_out</item>
+    </style>
+
+    <style name="durec_bottom_sheet_window_anim" parent="Base.Animation.AppCompat.DropDownUp">
+        <item name="android:windowEnterAnimation">@anim/durec_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/durec_bottom_out</item>
+    </style>
+
+    <style name="durec_setting_category">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingBottom">6.7dp</item>
+        <item name="android:paddingTop">20dp</item>
+        <item name="android:background">@color/durec_white</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#e76617</item>
+        <item name="android:gravity">left</item>
+    </style>
+
+    <style name="LiveGuideTheme" parent="DurecAppTheme">
+        <item name="android:windowBackground">@color/durec_live_guide_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+    </style>
+
+    <style name="FullScreenTheme" parent="DurecAppTheme">
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="durec_multicast_platform_editor_item_title_text" parent="durec_setting_item_title_text">
+        <item name="android:layout_centerVertical">false</item>
+        <item name="android:layout_marginEnd">0dp</item>
+        <item name="android:layout_marginStart">0dp</item>
+        <item name="android:layout_marginTop">0dp</item>
+    </style>
+
+    <style name="durec_window_guide_checkbox" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/durec_white</item>
+        <item name="colorControlActivated">@color/durec_white</item>
+    </style>
+</resources>

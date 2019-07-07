@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/new_picker_toolbar_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/durec_transparent"
+    app:cardBackgroundColor="@color/durec_transparent"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="3dp"
+    card_view:cardPreventCornerOverlap="false">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/new_picker_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/new_picker_toolbar_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:padding="13dp"
+                android:src="@drawable/durec_common_back_btn_selector" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/new_picker_toolbar_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:gravity="left"
+                android:singleLine="true"
+                android:textColor="@android:color/white"
+                android:textSize="20dp"
+                tools:text="@string/app_name" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/new_picker_toolbar_done_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/durec_new_media_picker_done_btn_selector"
+                android:enabled="false"
+                android:gravity="center"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="@string/__picker_done"
+                android:textColor="@color/durec_new_media_picker_done_btn_text_color"
+                android:textSize="13.3dp"
+                android:visibility="gone"
+                tools:visibility="visible" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+</android.support.v7.widget.CardView>

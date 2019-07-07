@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_margin="3.5dp"
+        app:cardCornerRadius="5dp"
+        app:cardElevation="2dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="w,20:19"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/durec_picture_tools_item_bg">
+
+            <ImageView
+                android:id="@+id/tools_icon"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="5dp"
+                app:layout_constraintBottom_toTopOf="@id/tools_name"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:src="@drawable/durec_tools_stitch_video_icon" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/tools_name"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="2dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="2"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/durec_colorPrimary"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tools_icon"
+                tools:text="@string/durec_video_edit" />
+        </android.support.constraint.ConstraintLayout>
+
+        <View
+            android:id="@+id/tools_new_mark"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/durec_new_tool_mark_icon"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/tools_premium_mark"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="6dp"
+            android:layout_gravity="top|right"
+            android:background="@drawable/durec_premium_features_mark"
+            android:visibility="gone" />
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

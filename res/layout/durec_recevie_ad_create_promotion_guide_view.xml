@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b2000000">
+
+
+    <include
+        android:id="@+id/durec_receivead_guide_fake_local_video_item"
+        layout="@layout/durec_local_video_item"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="150dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/durec_receivead_guide_fake_local_video_item_popwindow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="45dp"
+        app:cardBackgroundColor="@color/durec_white"
+        app:layout_constraintRight_toRightOf="@id/durec_receivead_guide_fake_local_video_item"
+        app:layout_constraintTop_toTopOf="@id/durec_receivead_guide_fake_local_video_item">
+
+        <include layout="@layout/durec_local_video_menu_item" />
+    </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:id="@+id/durec_receivead_guide_top_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginRight="23dp"
+        android:src="@drawable/durec_receive_ad_bottom_arrow"
+        app:layout_constraintBottom_toTopOf="@id/durec_receivead_guide_fake_local_video_item"
+        app:layout_constraintRight_toRightOf="@id/durec_receivead_guide_fake_local_video_item" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_receivead_guide_click_here"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="40dp"
+        android:text="@string/durec_create_promotion_guide_click_here"
+        android:textColor="@color/durec_white"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@id/durec_receivead_guide_top_arrow"
+        app:layout_constraintRight_toRightOf="@id/durec_receivead_guide_fake_local_video_item" />
+
+    <ImageView
+        android:id="@+id/durec_receivead_guide_bottom_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="100dp"
+        android:layout_marginTop="4dp"
+        android:src="@drawable/durec_receive_ad_top_arrow"
+        app:layout_constraintRight_toRightOf="@id/durec_receivead_guide_fake_local_video_item"
+        app:layout_constraintTop_toBottomOf="@id/durec_receivead_guide_fake_local_video_item_popwindow" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_receivead_guide_choose_ad_promotion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:text="@string/durec_create_promotion_guide_add_promotion"
+        android:textColor="@color/durec_white"
+        android:textSize="16dp"
+        app:layout_constraintLeft_toLeftOf="@id/durec_receivead_guide_fake_local_video_item"
+        app:layout_constraintRight_toRightOf="@id/durec_receivead_guide_fake_local_video_item"
+        app:layout_constraintTop_toBottomOf="@id/durec_receivead_guide_bottom_arrow"
+        app:layout_goneMarginRight="20dp" />
+
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/durec_receivead_guide_got_it"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:background="@drawable/durec_common_ok_btn_selector_reverse"
+        android:gravity="center"
+        android:text="@string/durec_create_promotion_guide_got_it"
+        android:textColor="@color/durec_common_ok_btn_text_color_reverse"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <android.support.constraint.Group
+        android:id="@+id/durec_receivead_guide_top_arrows"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:constraint_referenced_ids="durec_receivead_guide_top_arrow,
+        durec_receivead_guide_click_here"
+        tools:visibility="gone" />
+
+
+    <android.support.constraint.Group
+        android:id="@+id/durec_receivead_guide_menus"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:constraint_referenced_ids="durec_receivead_guide_fake_local_video_item_popwindow,
+                                       durec_receivead_guide_bottom_arrow,
+                                       durec_receivead_guide_choose_ad_promotion,
+                                       durec_receivead_guide_got_it"
+        tools:visibility="visible" />
+
+</android.support.constraint.ConstraintLayout>
+

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+        <ImageView
+            android:id="@+id/user_avatar_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#33000000" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/durec_user_video_avatar_bg"
+                android:padding="3.33dp">
+
+                <ImageView
+                    android:id="@+id/user_avatar"
+                    android:layout_width="53dp"
+                    android:layout_height="53dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/durec_live_default_icon_big" />
+            </FrameLayout>
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/text_for_xml_preview_middle"
+                android:textColor="#f2ffffff"
+                android:textSize="14dp" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/user_video_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="@string/text_for_xml_preview_middle"
+                android:textColor="#ccffffff"
+                android:textSize="11dp" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/user_video_recycle_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.duapps.screen.recorder.main.videos.feed.ui.FeedEmptyView
+            android:id="@+id/user_video_empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/durec_white" />
+    </FrameLayout>
+</LinearLayout>

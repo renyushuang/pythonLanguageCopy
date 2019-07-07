@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/durec_twitch_webview_errorpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/durec_background">
+
+        <FrameLayout
+            android:id="@+id/durec_twitch_errorpage_container"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center_horizontal"
+                android:layout_marginTop="180dp"
+                android:src="@drawable/durec_no_network" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="330dp"
+                android:gravity="center"
+                android:text="@string/durec_network_status_poor"
+                android:textColor="#636262"
+                android:textSize="17dp" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/durec_twitch_webview_errorpage_retry"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:background="@drawable/durec_common_ok_btn_selector_reverse"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:paddingTop="10dp"
+                android:text="@string/durec_common_retry"
+                android:textColor="@color/durec_common_ok_btn_text_color_reverse"
+                android:textSize="17dp" />
+        </FrameLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/durec_twitch_webview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/durec_twitch_pb"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:progressDrawable="@drawable/durec_faq_progressbar" />
+
+    </LinearLayout>
+</FrameLayout>

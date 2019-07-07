@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:overScrollMode="ifContentScrolls"
+    android:scrollbarStyle="insideOverlay"
+    android:scrollbars="vertical">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingEnd="2dp"
+        android:paddingStart="2dp"
+        android:paddingTop="3dp">
+
+        <FrameLayout
+            android:id="@+id/play_btn"
+            android:layout_width="288dp"
+            android:layout_height="161dp">
+
+            <ImageView
+                android:id="@+id/thumb"
+                android:layout_width="288dp"
+                android:layout_height="161dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/durec_local_video_placeholder" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/durec_media_controller_play_selector" />
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="15dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/durec_live_result_dialog_watch_count" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/watch_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="22.67dp"
+                android:layout_marginStart="6.67dp"
+                android:gravity="center"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/durec_live_result_dialog_comment_count" />
+
+            <com.duapps.screen.recorder.ui.FontTextView
+                android:id="@+id/comment_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="6.67dp"
+                android:gravity="center"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <!-- extra info panel -->
+        <FrameLayout
+            android:id="@+id/extra_info_panel"
+            android:layout_width="288dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            tools:background="#333333"
+            tools:layout_height="100dp"
+            tools:visibility="visible" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

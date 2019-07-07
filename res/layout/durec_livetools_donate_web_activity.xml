@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@color/durec_background"
+             android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/durec_transparent"
+        app:cardBackgroundColor="@color/durec_transparent"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="3dp"
+        card_view:cardPreventCornerOverlap="false">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/durec_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/durec_main_tool_bar_height"
+            android:background="@color/durec_colorPrimary"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentInsetLeft="0dp"
+            app:contentInsetStart="0dp"
+            app:navigationIcon="@null">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/durec_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="13dp"
+                    android:src="@drawable/durec_common_back_btn_selector"/>
+
+                <ImageView
+                    android:id="@+id/durec_close"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:padding="13dp"
+                    android:src="@drawable/durec_live_white_close_selector"/>
+
+                <com.duapps.screen.recorder.ui.FontTextView
+                    android:id="@+id/durec_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@id/durec_close"
+                    android:layout_toRightOf="@id/durec_back"
+                    android:ellipsize="end"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:text="@string/app_name"
+                    android:textColor="@color/durec_white"
+                    android:textSize="20dp"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/durec_webview_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/durec_main_tool_bar_height"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ProgressBar
+            android:id="@+id/durec_pb"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_weight="0"
+            android:indeterminateOnly="false"
+            android:max="100"
+            android:progressDrawable="@drawable/durec_faq_progressbar"/>
+
+    </LinearLayout>
+</FrameLayout>

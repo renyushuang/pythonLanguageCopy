@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginEnd="@dimen/durec_common_dialog_out_margin"
+    android:layout_marginStart="@dimen/durec_common_dialog_out_margin"
+    card_view:cardBackgroundColor="#ffffff"
+    card_view:cardCornerRadius="7dp"
+    card_view:cardElevation="3dp"
+    card_view:cardPreventCornerOverlap="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/durec_common_dialog_min_width"
+        android:orientation="vertical"
+        android:paddingLeft="13dp"
+        android:paddingRight="13dp">
+
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:textColor="@color/durec_main_text_color"
+            android:textSize="16sp"
+            tools:text="@string/donation_goal_val" />
+
+        <com.duapps.screen.recorder.ui.FontTextView
+            android:id="@+id/sub_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="start"
+            android:gravity="center_vertical"
+            android:textColor="@color/text_light_gray"
+            android:textSize="12sp"
+            android:layout_marginBottom="10dp"
+            tools:text="@string/set_donation_goal" />
+
+        <EditText
+            android:id="@+id/input_editor"
+            android:layout_width="match_parent"
+            android:layout_height="33dp"
+            android:layout_marginBottom="13dp"
+            android:background="@drawable/durec_feedback_edittext_bg_selector"
+            android:gravity="start|center_vertical"
+            android:paddingStart="@dimen/durec_feedback_contact_padding"
+            android:paddingEnd="@dimen/durec_feedback_contact_padding"
+            android:singleLine="true"
+            android:textColor="@color/durec_main_text_color"
+            android:textColorHint="#b1b1b1"
+            android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.duapps.recorder.base.ui.styleable.CancelTextView
+                android:id="@+id/cancel_btn"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/durec_common_cancel"
+                android:textAllCaps="true"
+                android:textSize="14sp" />
+
+            <com.duapps.recorder.base.ui.styleable.ConfirmTextView
+                android:id="@+id/send_btn"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="@dimen/durec_feedback_btn_margin"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/durec_common_submit"
+                android:textAllCaps="true"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

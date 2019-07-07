@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/durec_setting_item_style"
+    android:clickable="false">
+
+    <ImageView
+        android:id="@+id/multicast_logout_item_icon"
+        style="@style/durec_setting_item_icon"
+        android:layout_centerVertical="false"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/durec_setting_item_ytb_logout_selector" />
+
+    <com.duapps.screen.recorder.ui.FontTextView
+        android:id="@+id/multicast_logout_item_title"
+        style="@style/durec_setting_item_title_text"
+        android:layout_centerVertical="false"
+        android:layout_toRightOf="@id/multicast_logout_item_icon"
+        android:text="@string/durec_log_out" />
+
+    <LinearLayout
+        android:id="@+id/multicast_logout_item_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/multicast_logout_item_title"
+        android:layout_below="@id/multicast_logout_item_title"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/multicast_logout_item_icon"
+        android:orientation="vertical" />
+
+    <!-- line -->
+    <View
+        android:id="@+id/multicast_logout_item_line"
+        style="@style/durec_setting_line"
+        android:layout_alignLeft="@id/multicast_logout_item_icon"
+        android:layout_below="@id/multicast_logout_item_container"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

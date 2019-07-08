@@ -1,0 +1,78 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- 首页 -->
+    <string name="common_home">Home</string>
+    <string name="common_downloads">Downloads</string>
+    <string name="common_browser">Browser</string>
+    <string name="browser_search_hint">Search video or paste a URL…</string>
+    <string name="browser_default_page_helper_text">How to download videos</string>
+    <string name="browser_book_mark_title">Bookmarks</string>
+
+    <!-- 主界面 -->
+
+    <!-- 主界面 弹窗-->
+    <string name="bookmark_added">Bookmark added</string>
+    <string name="bookmark_edit">Edit bookmark</string>
+    <string name="common_address">Address</string>
+    <string name="bookmark_deleted">Bookmark deleted</string>
+    <!-- 主界面 更多弹窗-->
+    <string name="history">History</string>
+    <string name="cache_clear">Clear cache</string>
+    <string name="cookie_clear">Clear cookie</string>
+    <string name="cache_cleared">Cache cleared</string>
+    <string name="cookie_cleared">Cookie cleared</string>
+
+    <!-- 主界面 嗅探引导弹框 -->
+    <string name="no_video_found_title">No video found</string>
+    <string name="no_video_found_content">Please play the video first so that we can detect the download URL, then tap the download button.</string>
+    <string name="ytb_do_not_download_content">Due to policy restrictions, videos on YouTube cannot be downloaded. Please download from other websites.</string>
+    <string name="tab_reached_limit">The number of tabs has reached the limit</string>
+
+    <!-- 书签列表页 -->
+
+    <string name="bookmark_empty">No bookmark</string>
+
+    <!-- 历史列表页 -->
+    <string name="history_delete_all_description">Are you sure to clear history?</string>
+    <string name="history_no_history">No history</string>
+    <!-- 下载tab-->
+    <string name="common_downloading">Downloading</string>
+    <string name="common_downloaded">Downloaded</string>
+    <string name="downloads_state_paused">Paused</string>
+    <string name="downloads_state_failed">Failed</string>
+    <string name="downloads_state_interrupted">Interrupted</string>
+    <string name="downloads_state_wait">Wait for download</string>
+    <string name="downloads_state_network_exception">Download interrupted because of network error</string>
+    <string name="downloads_state_network_restore">The network is normal. Download resumed.</string>
+    <string name="downloads_state_cancel_tip">Are you sure to delete the download task?</string>
+    <string name="downloads_state_mobile_network_download_tip">You are using mobile data, are you sure to continue downloading?</string>
+    <string name="downloads_state_start_download">Start download…</string>
+    <string name="downloads_state_download_complete">Download completed</string>
+    <string name="downloads_state_download_failed">Download failed</string>
+
+    <!-- 下载tab 空态页面-->
+    <string name="downloads_no_video">No downloaded video</string>
+    <string name="downloads_no_player">You don\'t have a video player installed</string>
+    <!-- 单视频删除-->
+    <string name="downloads_video_delete_single">Are you sure to delete the video?</string>
+    <!-- 多视频删除-->
+    <string name="downloads_video_delete_multiple">Are you sure to delete these videos?</string>
+
+    <!-- 设置页面-->
+    <string name="languages_dialog_title">Select a language</string>
+    <string name="download_wifi">Remind me when using mobile data to download</string>
+    <string name="download_location">Storage Location</string>
+
+    <!-- 帮助引导-->
+    <string name="guide_use_description">You only need two steps to download favorite videos from websites.</string>
+    <string name="guide_use_step_one">Step 1:</string>
+    <string name="guide_use_step_one_summary">Open the video link in our app. You can enter/paste the video link in the search bar, or share videos directly to %1$s.</string>
+    <string name="guide_use_step_one_copy_link">Open website</string>
+    <string name="guide_use_step_one_share_link">Share video</string>
+    <string name="guide_use_step_two">Step 2:</string>
+    <string name="guide_use_step_two_summary">Play the video, then click the shiny download button.</string>
+    <string name="guide_use_step_note">Note:</string>
+    <string name="url_not_supported">URL not supported</string>
+    <string name="choose_sdcard_sd_card_unable_msg">Files can\'t be saved to your internal storage.</string>
+    <string name="exit_tips">Tap again to exit</string>
+</resources>

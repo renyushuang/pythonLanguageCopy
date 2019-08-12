@@ -15,7 +15,6 @@ targetList = ['durec_recorder_noti_start',
               'durec_setting_show_touches']
 
 
-
 def writeXmlNewString(pathAndroiid, list):
     doc = minidom.Document()
 
@@ -33,7 +32,7 @@ def writeXmlNewString(pathAndroiid, list):
         element.appendChild(doc.createTextNode(ele.firstChild.data))
         doc.documentElement.appendChild(element)
     # 将新增加的内容copy进来
-    for k, v in list .items():
+    for k, v in list.items():
         element = doc.createElement('string')
         element.setAttribute("name", k)
         element.appendChild(doc.createTextNode(v))
@@ -65,14 +64,17 @@ def main():
         androidResDir = os.path.exists(os.path.join(pathAndroidDir, dir))
 
         if not androidResDir:
-            os.mkdir(os.path.join(pathAndroidDir, dir))
+            continue
+            # os.mkdir(os.path.join(pathAndroidDir, dir))
 
-
-        if len(transMap)!=0:
+        if len(transMap) != 0:
             androiidResFile = os.path.join(pathAndroidDir, dir, pathAndroidFile)
             print(androiidResFile)
+            if not os.path.exists(androiidResFile):
+                continue
             writeXmlNewString(androiidResFile, transMap)
         else:
             print('没有匹配的字段')
+
 
 main()

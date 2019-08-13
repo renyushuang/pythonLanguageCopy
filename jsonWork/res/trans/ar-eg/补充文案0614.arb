@@ -1,0 +1,21 @@
+{
+  "@@last_modified": "2019-06-03T16:09:00.048442",
+"drinkStatPerDay": "يوم",
+"@drinkStatPerDay": {
+  "description": "饮水统计-每日",
+  "type": "text",
+  "placeholders": {}
+},
+"notificationTitle": "جان الوقب لشرب الماء",
+  "@notificationTitle": {
+    "description": "通知的标题",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notificationBody": "اشرب الماء لتسترخي وتحافظ على صحتك.",
+  "@notificationBody": {
+    "description": "通知的内容",
+    "type": "text",
+    "placeholders": {}
+  }
+}

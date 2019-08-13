@@ -1,0 +1,655 @@
+{
+    "@@last_modified": "2019-06-03T16:09:00.048442",
+    "commonML": "ml",
+    "@commonML": {
+        "description": "毫升单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "waterML": "{num}ml",
+    "@waterML": {
+        "description": "毫升单位文案",
+        "type": "text",
+        "placeholders": {
+            "num": {}
+        }
+    },
+    "commonKg": "kg",
+    "@commonKg": {
+        "description": "公斤单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonLbs": "lbs",
+    "@commonLbs": {
+        "description": "磅单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonOz": "uncie",
+    "@commonOz": {
+        "description": "盎司单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonNext": "Următor",
+    "@commonNext": {
+        "description": "文案Next",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonAuthorize": "Autorizează",
+    "@commonAuthorize": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonSkip": "Șterge",
+    "@commonSkip": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonConfirm": "Confirmă",
+    "@commonConfirm": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonWeek": "Săptămână",
+    "@commonWeek": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonMonth": "Lună",
+    "@commonMonth": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonYear": "An",
+    "@commonYear": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonSettings": "Setările",
+    "@commonSettings": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonSubscription": "Abonament",
+    "@commonSubscription": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonRestore": "Restaurează",
+    "@commonRestore": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonNotifications": "Notificări",
+    "@commonNotifications": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonMinute": "minut",
+    "@commonMinute": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonDialog": "Dialog",
+    "@commonDialog": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "gdprAgree": "Acceptați și continuați",
+    "@gdprAgree": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "gdprDescription": "Înțeleg și sunt de acord cu ",
+    "@gdprDescription": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "privacyPolicy": "Politica de confidențialitate",
+    "@privacyPolicy": {
+        "description": "关于我们-隐私政策",
+        "type": "text",
+        "placeholders": {}
+    },
+    "userAgreement": "Acordul Utilizatorului",
+    "@userAgreement": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "waterInTake": "Consumul",
+    "@waterInTake": {
+        "description": "首页progress上面的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "waterTarget": "Scopul",
+    "@waterTarget": {
+        "description": "首页progress上面的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "lastTimeDrinkText": "Ultimul",
+    "@lastTimeDrinkText": {
+        "description": "上一次饮水时间的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "completionDrinkText": "Completat",
+    "@completionDrinkText": {
+        "description": "已完成饮水量的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "nextTimeDrinkText": "Ultimul",
+    "@nextTimeDrinkText": {
+        "description": "下一次饮水时间的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideGenderDesc": "Salut! Sunt ajutorul dvs. pentru băutul apei. Am nevoie de răspunsurile dvs. la câteva întrebări pentru a vă ajuta să beți apă într-un mod sănătos. Toate informațiile vor fi salvate numai pe propriul dispozitivul dvs.",
+    "@guideGenderDesc": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideGenderTitle": "Alegeți sexul dvs.:",
+    "@guideGenderTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideMan": "Masculin",
+    "@guideMan": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideWoman": "Feminin",
+    "@guideWoman": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideWeightTitle": "Ce greutate aveți?",
+    "@guideWeightTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideOccupationTitle": "Sunteți…",
+    "@guideOccupationTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideMentalWorker": "Muncitor intelectual",
+    "@guideMentalWorker": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideManualWorker": "Muncitor manual",
+    "@guideManualWorker": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideWakeUpTimeTitle": "Când vă treziți?",
+    "@guideWakeUpTimeTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideBedTimeTitle": "Când vă culcați?",
+    "@guideBedTimeTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideCupCapacityTitle": "De obicei, ce ceașcă folosiți pentru a bea?",
+    "@guideCupCapacityTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideCalculatingIntakeText": "Calculează consumul dvs. zilnic de apă…",
+    "@guideCalculatingIntakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideRecommendIntakeText": "Consumul zilnic de apă recomandat pentru dvs. este:",
+    "@guideRecommendIntakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideNotificationPermissionText": "Pentru a vă reaminti să beți apă, vă rog să îmi dați permisiunea de a trimite o notificare.",
+    "@guideNotificationPermissionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "intakeResultWellDoneText": "Bravo!",
+    "@intakeResultWellDoneText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "intakeResultFinishPercentText": "Ai terminat {percent}% din scopul de consum al apei de astăzi!",
+    "@intakeResultFinishPercentText": {
+        "description": "完成百分比文案",
+        "type": "text",
+        "placeholders": {
+            "percent": {}
+        }
+    },
+    "changeDrinkAndCupText": "Alege băutură și capacitate",
+    "@changeDrinkAndCupText": {
+        "description": "更改饮料和杯子的标题",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageWaterText": "Apă",
+    "@beverageWaterText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCoffeeText": "Cafea",
+    "@beverageCoffeeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageMilkText": "Lapte",
+    "@beverageMilkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageTeaText": "Ceai",
+    "@beverageTeaText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageSoftDrinkText": "Băutură răcoritoare",
+    "@beverageSoftDrinkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageJuiceText": "Suc",
+    "@beverageJuiceText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageSmoothieText": "Smoothie",
+    "@beverageSmoothieText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageWineText": "Vin",
+    "@beverageWineText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCacaoText": "Cacao",
+    "@beverageCacaoText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageMilkshakeText": "Milkshake",
+    "@beverageMilkshakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageBeerText": "Bere",
+    "@beverageBeerText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageLemonadeText": "Limonadă",
+    "@beverageLemonadeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageEnergyDrinkText": "Băutură energizantă",
+    "@beverageEnergyDrinkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageChampagneText": "Șampanie",
+    "@beverageChampagneText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCoconutWaterText": "Suc de cocos",
+    "@beverageCoconutWaterText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCocktailText": "Cocktail",
+    "@beverageCocktailText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageStrongDrinkText": "Băutură puternică",
+    "@beverageStrongDrinkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageYogurtText": "Iaurt",
+    "@beverageYogurtText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "drinkStatisticsText": "Statistica de băut",
+    "@drinkStatisticsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dailyStatisticsText": "Statistica zilnică",
+    "@dailyStatisticsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dailyIntakeText": "Consum zilnic",
+    "@dailyIntakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dailyDrinkTimesText": "Ori de băutul zilnic",
+    "@dailyDrinkTimesText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "upgradeToPremiumText": "Upgradează la Premium",
+    "@upgradeToPremiumText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderOptionText": "Opțiune de Memento",
+    "@reminderOptionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderIntervalText": "Interval de Memento",
+    "@reminderIntervalText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderSoundText": "Sunet de Memento",
+    "@reminderSoundText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "noSoundText": "Niciun sunet",
+    "@noSoundText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "furtherReminderText": "Memento Suplimentar",
+    "@furtherReminderText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderTypeText": "Tip de Memento",
+    "@reminderTypeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "personalInformationText": "Informații personale",
+    "@personalInformationText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonGender": "Sex",
+    "@commonGender": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonWeight": "Greutate",
+    "@commonWeight": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "wakeupTimeText": "Timpul de trezire",
+    "@wakeupTimeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "bedTimeText": "Timpul de culcare",
+    "@bedTimeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "workTypeText": "Tip de muncă",
+    "@workTypeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonMental": "Intelectuală",
+    "@commonMental": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonManual": "Manuală",
+    "@commonManual": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "defaultCupText": "Cească implicită",
+    "@defaultCupText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "intakeTargetText": "Scopul de consum",
+    "@intakeTargetText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonCancel": "Anulează",
+    "@commonCancel": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonOthers": "Altele",
+    "@commonOthers": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonLanguages": "Limbile",
+    "@commonLanguages": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonFeedback": "Feedback",
+    "@commonFeedback": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "userExperienceProgramText": "Program de experiența utilizatorilor",
+    "@userExperienceProgramText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonPremium": "Premium",
+    "@commonPremium": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "noAdsText": "Fără reclame",
+    "@noAdsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "unlockAllBeveragesText": "Deblochează toate băuturile",
+    "@unlockAllBeveragesText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "unlockStatisticsText": "Deblochează statisticile săptămânale / lunare / anuale de băut",
+    "@unlockStatisticsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dayFreeTrialText": "{day}-zi de încercare gratuită",
+    "@dayFreeTrialText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {
+            "day": {}
+        }
+    },
+    "commonThen": "Atunci",
+    "@commonThen": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonContinue": "Continuă",
+    "@commonContinue": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "subscribedSuccessText": "V-ați abonat cu succes {appName} Premium. Bucurați-vă de toate caracteristicile Premium acum!",
+    "@subscribedSuccessText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {
+            "appName": {}
+        }
+    },
+    "subscribedFailedText": "Nu s-a putut abona. Încercați din nou...",
+    "@subscribedFailedText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "restoreSuccessText": "Abonamentul dvs. a fost restaurat cu succes.",
+    "@restoreSuccessText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "restoreFailedText": "Nu a reușit restaurarea. Contul dvs. nu are niciun abonament al aplicației.",
+    "@restoreFailedText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "subscriptionPolicyText": "Politica de abonament",
+    "@subscriptionPolicyText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "subscribeInstructionText": "După ce achiziționați {appName} Premium, puteți utiliza toate caracteristicile și materialele plătite. Taxele de abonament sunt percepute săptămânal, lunar sau anual, în funcție de program. Conform politicii Apple Store, abonamentul dvs. va fi reînnoit automat după terminarea încercării gratuite. Plata va fi debitată în contul iTunes la confirmarea achiziției. Abonamentele vor fi reînnoite automat, cu excepția cazului în care reînnoirea automată este oprită cu cel puțin 24 de ore înainte de sfârșitul perioadei curente. Contul dvs. va fi taxat în conformitate cu planul dvs. de reînnoire cu 24 de ore înainte de sfârșitul perioadei curente. Puteți să gestionați sau să dezactivați reînnoirea automată în setările contului dvs. Apple ID în orice moment după achiziționare. Acceptați pentru ca dvs. să continuați s-o utilizați ",
+    "@subscribeInstructionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {
+            "appName": {}
+        }
+    },
+    "privacyInstructionText": "Informațiile pe care le-am colectat vor fi utilizate exclusiv pentru a analiza, evalua, testa și promova experiența utilizatorilor produsului nostru. Vă respectăm confidențialitatea și nu vom furniza astfel de informații altei terțe părți și nici nu le vom folosi în alte scopuri comerciale fără permisiunea dvs.",
+    "@privacyInstructionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "furtherReminderDetailText": "Mai amintește-mi atunci când obiectivul este atins",
+    "@furtherReminderDetailText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "settingFeedBackTitle": "Dacă aveți întrebări sau sugestii, vă rugăm să trimiteți un e-mail la adresa aqualy2019@gmail.com. Vă mulțumim foarte mult pentru sprijinul dvs.",
+    "@settingFeedBackTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "drinkStatPerDay": "zi",
+    "@drinkStatPerDay": {
+        "description": "饮水统计-每日",
+        "type": "text",
+        "placeholders": {}
+    },
+    "notificationTitle": "E timpul să beți niște apă!",
+    "@notificationTitle": {
+        "description": "通知的标题",
+        "type": "text",
+        "placeholders": {}
+    },
+    "notificationBody": "Beți apă pentru a vă relaxa și a vă menține sănătos.",
+    "@notificationBody": {
+        "description": "通知的内容",
+        "type": "text",
+        "placeholders": {}
+    }
+}

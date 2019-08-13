@@ -1,0 +1,21 @@
+{
+  "@@last_modified": "2019-06-03T16:09:00.048442",
+"drinkStatPerDay": "jour",
+"@drinkStatPerDay": {
+  "description": "饮水统计-每日",
+  "type": "text",
+  "placeholders": {}
+},
+"notificationTitle": "C'est le temps de boire de l'eau!",
+  "@notificationTitle": {
+    "description": "通知的标题",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notificationBody": "Buvez de l'eau pour vous reposer et rester en bonne santé.",
+  "@notificationBody": {
+    "description": "通知的内容",
+    "type": "text",
+    "placeholders": {}
+  }
+}

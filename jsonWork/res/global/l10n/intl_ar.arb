@@ -1,0 +1,655 @@
+{
+    "@@last_modified": "2019-06-03T16:09:00.048442",
+    "commonML": "ml",
+    "@commonML": {
+        "description": "毫升单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "waterML": "{num}مل",
+    "@waterML": {
+        "description": "毫升单位文案",
+        "type": "text",
+        "placeholders": {
+            "num": {}
+        }
+    },
+    "commonKg": "كيرو",
+    "@commonKg": {
+        "description": "公斤单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonLbs": "رطل",
+    "@commonLbs": {
+        "description": "磅单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonOz": "أوقية",
+    "@commonOz": {
+        "description": "盎司单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonNext": "القادم",
+    "@commonNext": {
+        "description": "文案Next",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonAuthorize": "منح الإذن",
+    "@commonAuthorize": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonSkip": "تخطى",
+    "@commonSkip": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonConfirm": "تأكد",
+    "@commonConfirm": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonWeek": "أسبوع",
+    "@commonWeek": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonMonth": "شهر",
+    "@commonMonth": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonYear": "سنة",
+    "@commonYear": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonSettings": "إعدادات",
+    "@commonSettings": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonSubscription": "اشتراك",
+    "@commonSubscription": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonRestore": "استعادة",
+    "@commonRestore": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonNotifications": "إخطارات",
+    "@commonNotifications": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonMinute": "الأقل",
+    "@commonMinute": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonDialog": "حوار",
+    "@commonDialog": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "gdprAgree": "موافقة وامواصلة",
+    "@gdprAgree": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "gdprDescription": "فهمت ووافقت ",
+    "@gdprDescription": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "privacyPolicy": "سياسة الخصوصية",
+    "@privacyPolicy": {
+        "description": "关于我们-隐私政策",
+        "type": "text",
+        "placeholders": {}
+    },
+    "userAgreement": "موافقة المستخدم",
+    "@userAgreement": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "waterInTake": "تناول",
+    "@waterInTake": {
+        "description": "首页progress上面的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "waterTarget": "هدف",
+    "@waterTarget": {
+        "description": "首页progress上面的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "lastTimeDrinkText": "السابق",
+    "@lastTimeDrinkText": {
+        "description": "上一次饮水时间的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "completionDrinkText": "إكمال",
+    "@completionDrinkText": {
+        "description": "已完成饮水量的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "nextTimeDrinkText": "القادم",
+    "@nextTimeDrinkText": {
+        "description": "下一次饮水时间的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideGenderDesc": "مرحبا! هذا هو مساعدك لشرب الماء. أنا في حاجة إلى إجابتك على بعض الأسئلة لمساعدتك في شرب الماء بطريقة صحية. وستم حفظ جميع المعلومات فقط عفي جهازك.",
+    "@guideGenderDesc": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideGenderTitle": "يرجى تحديد جنسيتك:",
+    "@guideGenderTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideMan": "الذكر",
+    "@guideMan": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideWoman": "الأنثى",
+    "@guideWoman": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideWeightTitle": "كم وزنك؟",
+    "@guideWeightTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideOccupationTitle": "أنت…",
+    "@guideOccupationTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideMentalWorker": "عامل عقلي",
+    "@guideMentalWorker": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideManualWorker": "عامل جسمي",
+    "@guideManualWorker": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideWakeUpTimeTitle": "في أي وقت تيقظ؟",
+    "@guideWakeUpTimeTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideBedTimeTitle": "في أي وقت تنام؟",
+    "@guideBedTimeTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideCupCapacityTitle": "ما الكأس الذي تستخدمه عادة للشرب؟",
+    "@guideCupCapacityTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideCalculatingIntakeText": "محاسبة شرب الماء يوميا",
+    "@guideCalculatingIntakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideRecommendIntakeText": "كمية المياة اليومية الموصى بها هي:",
+    "@guideRecommendIntakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideNotificationPermissionText": "يرجى منح الإذن بإرسال الإخطارات لتذكيرك بشرب الماء.",
+    "@guideNotificationPermissionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "intakeResultWellDoneText": "أحسنت!",
+    "@intakeResultWellDoneText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "intakeResultFinishPercentText": "تم إكمال {percent}% من هدفك لشرب الماء هذا اليوم!",
+    "@intakeResultFinishPercentText": {
+        "description": "完成百分比文案",
+        "type": "text",
+        "placeholders": {
+            "percent": {}
+        }
+    },
+    "changeDrinkAndCupText": "تحديد المشروبات والحجم",
+    "@changeDrinkAndCupText": {
+        "description": "更改饮料和杯子的标题",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageWaterText": "الماء",
+    "@beverageWaterText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCoffeeText": "القهوة",
+    "@beverageCoffeeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageMilkText": "الحليب",
+    "@beverageMilkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageTeaText": "الشاي",
+    "@beverageTeaText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageSoftDrinkText": "المشروبات الغازية",
+    "@beverageSoftDrinkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageJuiceText": "العصير",
+    "@beverageJuiceText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageSmoothieText": "سموزي",
+    "@beverageSmoothieText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageWineText": "الخمر",
+    "@beverageWineText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCacaoText": "الكاكاو",
+    "@beverageCacaoText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageMilkshakeText": "ميلك شيك",
+    "@beverageMilkshakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageBeerText": "البيرة",
+    "@beverageBeerText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageLemonadeText": "عصير الليمون",
+    "@beverageLemonadeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageEnergyDrinkText": "مشروب الطاقة",
+    "@beverageEnergyDrinkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageChampagneText": "شامبانيا",
+    "@beverageChampagneText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCoconutWaterText": "ماء جوز الهند",
+    "@beverageCoconutWaterText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCocktailText": "كوكتيل",
+    "@beverageCocktailText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageStrongDrinkText": "شراب قوي",
+    "@beverageStrongDrinkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageYogurtText": "زبادي",
+    "@beverageYogurtText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "drinkStatisticsText": "إحصاءات الشرب",
+    "@drinkStatisticsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dailyStatisticsText": "الإحصاءات اليومية",
+    "@dailyStatisticsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dailyIntakeText": "الشرب اليومي",
+    "@dailyIntakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dailyDrinkTimesText": "مرات الشرب اليومية",
+    "@dailyDrinkTimesText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "upgradeToPremiumText": "ترقية إلى Premium",
+    "@upgradeToPremiumText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderOptionText": "إعدادات التذكير",
+    "@reminderOptionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderIntervalText": "فواصل التذكير",
+    "@reminderIntervalText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderSoundText": "أصوات التذكير",
+    "@reminderSoundText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "noSoundText": "لا صوت",
+    "@noSoundText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "furtherReminderText": "مزيد من التذكير",
+    "@furtherReminderText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderTypeText": "نمط التذكير",
+    "@reminderTypeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "personalInformationText": "المعلومات الشخصية",
+    "@personalInformationText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonGender": "الجنسية",
+    "@commonGender": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonWeight": "الوزن",
+    "@commonWeight": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "wakeupTimeText": "وقت اليقظ",
+    "@wakeupTimeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "bedTimeText": "وقت النوم",
+    "@bedTimeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "workTypeText": "شكل العمل",
+    "@workTypeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonMental": "العقلي",
+    "@commonMental": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonManual": "الجسمي",
+    "@commonManual": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "defaultCupText": "الكأس الافتراضي",
+    "@defaultCupText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "intakeTargetText": "هدف الشرب",
+    "@intakeTargetText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonCancel": "إلغاء",
+    "@commonCancel": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonOthers": "الأخرى",
+    "@commonOthers": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonLanguages": "اللغات",
+    "@commonLanguages": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonFeedback": "الملاحظات",
+    "@commonFeedback": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "userExperienceProgramText": "برنامج تجربة المستخدم",
+    "@userExperienceProgramText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonPremium": "Premium",
+    "@commonPremium": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "noAdsText": "يدون الإعلانات",
+    "@noAdsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "unlockAllBeveragesText": "إلغاء القفل لجميع المشروبات",
+    "@unlockAllBeveragesText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "unlockStatisticsText": "إلغاء القفل لإحصاءات الشرب أسبوعيا وشهريا وسنويا",
+    "@unlockStatisticsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dayFreeTrialText": "{day}-يوم تجربة مجانية",
+    "@dayFreeTrialText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {
+            "day": {}
+        }
+    },
+    "commonThen": "التالي",
+    "@commonThen": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonContinue": "مواصلة",
+    "@commonContinue": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "subscribedSuccessText": "تم اشتراكك في {appName} Premium. تمتع بجميع الـPremium features الآن!",
+    "@subscribedSuccessText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {
+            "appName": {}
+        }
+    },
+    "subscribedFailedText": "فشل الاشتراك. الرجاء محاولة لاحقا.",
+    "@subscribedFailedText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "restoreSuccessText": "تم استعادة اشتراكك بنجاح.",
+    "@restoreSuccessText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "restoreFailedText": "فشل الاستعادة. لا يوجد اشتراك فعند حسابك.",
+    "@restoreFailedText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "subscriptionPolicyText": "سياسة الاشتراك",
+    "@subscriptionPolicyText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "subscribeInstructionText": "بعد شراء {appName} Premium، يمكنك استخدام جميع الميزات والمواد المدفوعة. وسيتم دفع رسوم الاشتراك على أساس أسبوعي أو شهري أو سنوي حسب البرنامج. ووفقا لسياسة  Apple Store، سيتم تجديد اشتراكك تلقائيا بعد انتهاء التجربة المجانية. وسيتمم الدفع على  حساب iTunes عند تأكيد الشراء. وسيتم تجديد الاشتراك تلقائيا ما لم يتم إيقاف ه قبل 24 ساعة على الأقل من نهاية الفترة الحالية. سيتم دفع الرسوم على حسابك وفقا لخطة التجديد الخاصة بك في غضون 24 ساعة قبل نهاية الفترة الحالية. يمكنك إدارة أوإيقاف التجديد التلقائي في إعدادات  حساب Apple ID في أي وقت بعد الشراء. مواصلة الاستخدام يعني الموافقة على   الخاصة بنا",
+    "@subscribeInstructionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {
+            "appName": {}
+        }
+    },
+    "privacyInstructionText": "سيتم استخدام المعلومات التي جمعناها حصريا في تحليل وتقييم واختبار وتعزيز تجربة المستخدم لمنتجنا. نحت نحترم خصوصيتك ولن نقدم هذه المعلومات إلى أي طرف ثالث ولا نستخدمها لأي غرض تجاري آخر دون إذنك.",
+    "@privacyInstructionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "furtherReminderDetailText": "لا يزال يذكرك بعد تحقق هدفك",
+    "@furtherReminderDetailText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "settingFeedBackTitle": "إذا كان لديك أي ملاحظة أو اقتراح، يرجى إرسال بريد الإلكتروني إلى aqualy2019@gmail.com. شكرا جزيلا لدعمك!",
+    "@settingFeedBackTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "drinkStatPerDay": "يوم",
+    "@drinkStatPerDay": {
+        "description": "饮水统计-每日",
+        "type": "text",
+        "placeholders": {}
+    },
+    "notificationTitle": "جان الوقب لشرب الماء",
+    "@notificationTitle": {
+        "description": "通知的标题",
+        "type": "text",
+        "placeholders": {}
+    },
+    "notificationBody": "اشرب الماء لتسترخي وتحافظ على صحتك.",
+    "@notificationBody": {
+        "description": "通知的内容",
+        "type": "text",
+        "placeholders": {}
+    }
+}

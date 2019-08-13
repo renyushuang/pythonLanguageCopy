@@ -1,0 +1,655 @@
+{
+    "@@last_modified": "2019-06-03T16:09:00.048442",
+    "commonML": "ml",
+    "@commonML": {
+        "description": "毫升单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "waterML": "{num}ml",
+    "@waterML": {
+        "description": "毫升单位文案",
+        "type": "text",
+        "placeholders": {
+            "num": {}
+        }
+    },
+    "commonKg": "kg",
+    "@commonKg": {
+        "description": "公斤单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonLbs": "lbs",
+    "@commonLbs": {
+        "description": "磅单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonOz": "fl oz",
+    "@commonOz": {
+        "description": "盎司单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonNext": "Próximo",
+    "@commonNext": {
+        "description": "文案Next",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonAuthorize": "Autorizar",
+    "@commonAuthorize": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonSkip": "Saltar",
+    "@commonSkip": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonConfirm": "Confirmar",
+    "@commonConfirm": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonWeek": "Semana",
+    "@commonWeek": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonMonth": "Mês",
+    "@commonMonth": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonYear": "Ano",
+    "@commonYear": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonSettings": "Definições",
+    "@commonSettings": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonSubscription": "Assinatura",
+    "@commonSubscription": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonRestore": "Recuperar",
+    "@commonRestore": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonNotifications": "Notificações",
+    "@commonNotifications": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonMinute": "min",
+    "@commonMinute": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonDialog": "Diálogo",
+    "@commonDialog": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "gdprAgree": "Concordar e Continuar",
+    "@gdprAgree": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "gdprDescription": "Entendo e concordo com ",
+    "@gdprDescription": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "privacyPolicy": "Política de Privacidade",
+    "@privacyPolicy": {
+        "description": "关于我们-隐私政策",
+        "type": "text",
+        "placeholders": {}
+    },
+    "userAgreement": "Acordo de Usuário",
+    "@userAgreement": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "waterInTake": "Ingestão",
+    "@waterInTake": {
+        "description": "首页progress上面的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "waterTarget": "Alvo",
+    "@waterTarget": {
+        "description": "首页progress上面的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "lastTimeDrinkText": "Último",
+    "@lastTimeDrinkText": {
+        "description": "上一次饮水时间的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "completionDrinkText": "Realização",
+    "@completionDrinkText": {
+        "description": "已完成饮水量的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "nextTimeDrinkText": "Próximo",
+    "@nextTimeDrinkText": {
+        "description": "下一次饮水时间的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideGenderDesc": "Oi! Sou o seu ajudante de beber água. É preciso que você responda àlgumas perguntas para ajudar você a beber água de forma saudável. Todas as informações serão salvadas apenas no seu próprio dispositivo.",
+    "@guideGenderDesc": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideGenderTitle": "Por favor, escolhe o seu gênero:",
+    "@guideGenderTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideMan": "Masculino",
+    "@guideMan": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideWoman": "Feminino",
+    "@guideWoman": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideWeightTitle": "Qual é o seu peso?",
+    "@guideWeightTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideOccupationTitle": "Você é…",
+    "@guideOccupationTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideMentalWorker": "Trabalhador Intelectual",
+    "@guideMentalWorker": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideManualWorker": "Trabalhador Braçal",
+    "@guideManualWorker": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideWakeUpTimeTitle": "Levanta-se a que horas?",
+    "@guideWakeUpTimeTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideBedTimeTitle": "Deita-se a que horas?",
+    "@guideBedTimeTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideCupCapacityTitle": "Costuma beber água com que copo?",
+    "@guideCupCapacityTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideCalculatingIntakeText": "Calculando sua ingestão diária de água…",
+    "@guideCalculatingIntakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideRecommendIntakeText": "A sua diária ingestão de água recomendada é:",
+    "@guideRecommendIntakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideNotificationPermissionText": "Para lembrar você a beber água, por favor, dê-me a permissão para enviar notificações.",
+    "@guideNotificationPermissionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "intakeResultWellDoneText": "Muito bem!",
+    "@intakeResultWellDoneText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "intakeResultFinishPercentText": "Você concoluiu {percent}% do alvo de ingestão de água hoje!",
+    "@intakeResultFinishPercentText": {
+        "description": "完成百分比文案",
+        "type": "text",
+        "placeholders": {
+            "percent": {}
+        }
+    },
+    "changeDrinkAndCupText": "Escolher bebidas e capacidade",
+    "@changeDrinkAndCupText": {
+        "description": "更改饮料和杯子的标题",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageWaterText": "Água",
+    "@beverageWaterText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCoffeeText": "Café",
+    "@beverageCoffeeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageMilkText": "Leite",
+    "@beverageMilkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageTeaText": "Chá",
+    "@beverageTeaText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageSoftDrinkText": "Refrigerante",
+    "@beverageSoftDrinkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageJuiceText": "Sumo",
+    "@beverageJuiceText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageSmoothieText": "Batido",
+    "@beverageSmoothieText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageWineText": "Vinho",
+    "@beverageWineText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCacaoText": "Cacau",
+    "@beverageCacaoText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageMilkshakeText": "Milkshake",
+    "@beverageMilkshakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageBeerText": "Cerveja",
+    "@beverageBeerText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageLemonadeText": "Limonada",
+    "@beverageLemonadeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageEnergyDrinkText": "Bebida energética",
+    "@beverageEnergyDrinkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageChampagneText": "Champanhe",
+    "@beverageChampagneText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCoconutWaterText": "Água de coco",
+    "@beverageCoconutWaterText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCocktailText": "Coquetel",
+    "@beverageCocktailText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageStrongDrinkText": "Bebida forte",
+    "@beverageStrongDrinkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageYogurtText": "Iogurte",
+    "@beverageYogurtText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "drinkStatisticsText": "Estatística de Beber",
+    "@drinkStatisticsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dailyStatisticsText": "Estatística Diária",
+    "@dailyStatisticsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dailyIntakeText": "Ingestão Diária",
+    "@dailyIntakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dailyDrinkTimesText": "Vezes de Beber por Dia",
+    "@dailyDrinkTimesText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "upgradeToPremiumText": "Atualizar para Premium",
+    "@upgradeToPremiumText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderOptionText": "Opção de Lembrete",
+    "@reminderOptionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderIntervalText": "Intervalo de Lembrete",
+    "@reminderIntervalText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderSoundText": "Som de Lembrete",
+    "@reminderSoundText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "noSoundText": "Sem Som",
+    "@noSoundText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "furtherReminderText": "Lembrete Posterior",
+    "@furtherReminderText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderTypeText": "Tipo de Lembrete",
+    "@reminderTypeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "personalInformationText": "Informações Pessoais",
+    "@personalInformationText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonGender": "Gênero",
+    "@commonGender": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonWeight": "Peso",
+    "@commonWeight": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "wakeupTimeText": "Hora de Acordar",
+    "@wakeupTimeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "bedTimeText": "Hora de Dormir",
+    "@bedTimeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "workTypeText": "Tipo de Trabalho",
+    "@workTypeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonMental": "Intelectual",
+    "@commonMental": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonManual": "Braçal",
+    "@commonManual": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "defaultCupText": "Copo Predefinido",
+    "@defaultCupText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "intakeTargetText": "Alvo de Ingestão",
+    "@intakeTargetText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonCancel": "Cancelar",
+    "@commonCancel": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonOthers": "Outros",
+    "@commonOthers": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonLanguages": "Idiomas",
+    "@commonLanguages": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonFeedback": "Feedback",
+    "@commonFeedback": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "userExperienceProgramText": "Programa de Experiência de Usuário",
+    "@userExperienceProgramText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonPremium": "Premium",
+    "@commonPremium": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "noAdsText": "Sem publicidade",
+    "@noAdsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "unlockAllBeveragesText": "Desbloquear todas as bebidas",
+    "@unlockAllBeveragesText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "unlockStatisticsText": "Desbloquear estatística de beber semanal/mensal/anual",
+    "@unlockStatisticsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dayFreeTrialText": "{day}-dias de avaliação gratuita",
+    "@dayFreeTrialText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {
+            "day": {}
+        }
+    },
+    "commonThen": "depois",
+    "@commonThen": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonContinue": "Continuar",
+    "@commonContinue": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "subscribedSuccessText": "Você assinou {appName} Premium. Desfrute de todos os Premium features agora!",
+    "@subscribedSuccessText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {
+            "appName": {}
+        }
+    },
+    "subscribedFailedText": "Falhou em assinar. Por favor, tente novamente.",
+    "@subscribedFailedText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "restoreSuccessText": "A sua assinatura foi recuperada com sucesso.",
+    "@restoreSuccessText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "restoreFailedText": "Falhou em recuperar. A sua conta não tem qualquer assinatura do app.",
+    "@restoreFailedText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "subscriptionPolicyText": "Política de Assinatura",
+    "@subscriptionPolicyText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "subscribeInstructionText": "Depois de comprar {appName} Premium, você pode utilizar todos os features e materiais pagos. Taxas de assinatura são cobradas numa base seminal/mensal/anual dependendo do programa. De acordo com a política da Apple Store, sua assinatura será renovada automaticamente depois de terminar a avaliação gratuita. Pagamento será cobrado na Conta do iTunes na confirmação de compra. Assinatura será automaticamente renovada, a menos que a renovação automática seja desativada pelo menos 24 horas antes do fim do período atual. Sua conta será cobrada de acordo com seu plano de renovação dentro de 24 horas antes do fim do período atual. Você pode gerenciar ou desativar a renovação automática nas definições da sua conta do ID Apple a qualquer momento depois da compra. Continuar a usar e aceitar o nosso ",
+    "@subscribeInstructionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {
+            "appName": {}
+        }
+    },
+    "privacyInstructionText": "As informações que coletamos serão utilizadas exclusivamente para analisar, avaliar, testar e promover a experiência de usuário do nosso produto. Nós respeitamos a sua privacidade, e não forneceremos tais informações a nenhum terceiro, nem as usaremos para qualquer finalidade sem sua permissão.",
+    "@privacyInstructionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "furtherReminderDetailText": "Ainda lembra você quando o seu alvo estiver atingido",
+    "@furtherReminderDetailText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "settingFeedBackTitle": "Se você tiver quaisquer questões ou sugestões, por favor, envie um e-mail para aqualy2019@gmail.com. Muito obrigado pelo seu apoio.",
+    "@settingFeedBackTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "drinkStatPerDay": "dia",
+    "@drinkStatPerDay": {
+        "description": "饮水统计-每日",
+        "type": "text",
+        "placeholders": {}
+    },
+    "notificationTitle": "É hora de beber água!",
+    "@notificationTitle": {
+        "description": "通知的标题",
+        "type": "text",
+        "placeholders": {}
+    },
+    "notificationBody": "Beba água para descansar e manter-se saudável.",
+    "@notificationBody": {
+        "description": "通知的内容",
+        "type": "text",
+        "placeholders": {}
+    }
+}

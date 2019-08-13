@@ -1,0 +1,655 @@
+{
+    "@@last_modified": "2019-06-03T16:09:00.048442",
+    "commonML": "มล.",
+    "@commonML": {
+        "description": "毫升单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "waterML": "{num}มล.",
+    "@waterML": {
+        "description": "毫升单位文案",
+        "type": "text",
+        "placeholders": {
+            "num": {}
+        }
+    },
+    "commonKg": "กิโล",
+    "@commonKg": {
+        "description": "公斤单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonLbs": "ปอนด์",
+    "@commonLbs": {
+        "description": "磅单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonOz": "ออนซ์",
+    "@commonOz": {
+        "description": "盎司单位文案",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonNext": "ต่อไป",
+    "@commonNext": {
+        "description": "文案Next",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonAuthorize": "อนุญาต",
+    "@commonAuthorize": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonSkip": "โดดข้าม",
+    "@commonSkip": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonConfirm": "ยืนยัน",
+    "@commonConfirm": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonWeek": "สัปดาห์",
+    "@commonWeek": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonMonth": "เดือน",
+    "@commonMonth": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonYear": "ปี",
+    "@commonYear": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonSettings": "การตั้งค่า",
+    "@commonSettings": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonSubscription": "การสมัครสมาชิก",
+    "@commonSubscription": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonRestore": "ฟื้นฟู",
+    "@commonRestore": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonNotifications": "การแจ้งเตือน",
+    "@commonNotifications": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonMinute": "นาที",
+    "@commonMinute": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonDialog": "บทสนทนา",
+    "@commonDialog": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "gdprAgree": "เห็นด้วยและดำเนินการต่อ",
+    "@gdprAgree": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "gdprDescription": "ฉันเข้าใจและเห็นด้วยกับ ",
+    "@gdprDescription": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "privacyPolicy": "นโยบายความเป็นส่วนตัว",
+    "@privacyPolicy": {
+        "description": "关于我们-隐私政策",
+        "type": "text",
+        "placeholders": {}
+    },
+    "userAgreement": "ข้อตกลงผู้ใช้",
+    "@userAgreement": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "waterInTake": "น้ำดื่ม",
+    "@waterInTake": {
+        "description": "首页progress上面的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "waterTarget": "เป้าหมาย",
+    "@waterTarget": {
+        "description": "首页progress上面的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "lastTimeDrinkText": "ล่าสุด",
+    "@lastTimeDrinkText": {
+        "description": "上一次饮水时间的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "completionDrinkText": "น้ำที่ดื่มแล้ว",
+    "@completionDrinkText": {
+        "description": "已完成饮水量的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "nextTimeDrinkText": "ครั้งหน้า",
+    "@nextTimeDrinkText": {
+        "description": "下一次饮水时间的文字",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideGenderDesc": "สวัสดี! นี่คือผู้ช่วยดื่มน้ำของคุณ ฉันต้องขอให้คุณตอบหลายคำถามเพื่อช่วยให้คุณดื่มน้ำอย่างถูกวิธี ข้อมูลทั้งหมดจะถูกบันทึกไว้ในอุปกรณ์ของคุณเท่านั้น",
+    "@guideGenderDesc": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideGenderTitle": "โปรดเลือกเพศของคุณ:",
+    "@guideGenderTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideMan": "ชาย",
+    "@guideMan": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideWoman": "หญิง",
+    "@guideWoman": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideWeightTitle": "คุณมีน้ำหนักเท่าไหร่?",
+    "@guideWeightTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideOccupationTitle": "คุณเป็น…",
+    "@guideOccupationTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideMentalWorker": "พนักงานทางจิตใจ",
+    "@guideMentalWorker": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideManualWorker": "พนักงานที่ต้องใช้กำลัง",
+    "@guideManualWorker": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideWakeUpTimeTitle": "คุณตื่นนอนกี่โมง?",
+    "@guideWakeUpTimeTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideBedTimeTitle": "คุณนอนกี่โมง?",
+    "@guideBedTimeTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideCupCapacityTitle": "คุณใช้ถ้วยอะไรเวลาดื่มน้ำ?",
+    "@guideCupCapacityTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideCalculatingIntakeText": "กำลังคำนวณปริมาณน้ำที่คุณดื่มทุกวัน…",
+    "@guideCalculatingIntakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideRecommendIntakeText": "ปริมาณน้ำที่แนะนำคุณดื่มประจำวันคือ:",
+    "@guideRecommendIntakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "guideNotificationPermissionText": "เพื่อเตือนให้คุณดื่มน้ำ โปรดให้สิทธิ์ฉันในการส่งการแจ้งเตือน",
+    "@guideNotificationPermissionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "intakeResultWellDoneText": "ทำได้ดีค่ะ!",
+    "@intakeResultWellDoneText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "intakeResultFinishPercentText": "วันนี้คุณได้รับน้ำ {percent}% ของปริมาณเป้าหมายแล้ว!",
+    "@intakeResultFinishPercentText": {
+        "description": "完成百分比文案",
+        "type": "text",
+        "placeholders": {
+            "percent": {}
+        }
+    },
+    "changeDrinkAndCupText": "เลือกเครื่องดื่มและความจุ",
+    "@changeDrinkAndCupText": {
+        "description": "更改饮料和杯子的标题",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageWaterText": "น้ำ",
+    "@beverageWaterText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCoffeeText": "กาแฟ",
+    "@beverageCoffeeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageMilkText": "นม",
+    "@beverageMilkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageTeaText": "น้ำชา",
+    "@beverageTeaText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageSoftDrinkText": "น้ำอัดลม",
+    "@beverageSoftDrinkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageJuiceText": "น้ำผลไม้",
+    "@beverageJuiceText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageSmoothieText": "น้ำปั่น",
+    "@beverageSmoothieText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageWineText": "ไวน์",
+    "@beverageWineText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCacaoText": "โกโก้",
+    "@beverageCacaoText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageMilkshakeText": "มิลค์เชค",
+    "@beverageMilkshakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageBeerText": "เบียร์",
+    "@beverageBeerText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageLemonadeText": "น้ำมะนาว",
+    "@beverageLemonadeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageEnergyDrinkText": "เครื่องดื่มชูกำลัง",
+    "@beverageEnergyDrinkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageChampagneText": "แชมเปญ",
+    "@beverageChampagneText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCoconutWaterText": "น้ำมะพร้าว",
+    "@beverageCoconutWaterText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageCocktailText": "ค็อกเทล",
+    "@beverageCocktailText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageStrongDrinkText": "มัชชะ",
+    "@beverageStrongDrinkText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "beverageYogurtText": "โยเกิร์ต",
+    "@beverageYogurtText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "drinkStatisticsText": "สถิติการดื่ม",
+    "@drinkStatisticsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dailyStatisticsText": "สถิติรายวัน",
+    "@dailyStatisticsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dailyIntakeText": "การดื่มประจำวัน",
+    "@dailyIntakeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dailyDrinkTimesText": "จำนวนครั้งที่ดื่มประจำวัน",
+    "@dailyDrinkTimesText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "upgradeToPremiumText": "อัปเกรดเป็น Premium",
+    "@upgradeToPremiumText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderOptionText": "ตัวเลือกการแจ้งเตือน",
+    "@reminderOptionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderIntervalText": "ช่วงเวลาการแจ้งเตือน",
+    "@reminderIntervalText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderSoundText": "เสียงเตือน",
+    "@reminderSoundText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "noSoundText": "ไม่มีเสียง",
+    "@noSoundText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "furtherReminderText": "การแจ้งเตือนเพิ่มเติม",
+    "@furtherReminderText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "reminderTypeText": "ประเภทการแจ้งเตือน",
+    "@reminderTypeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "personalInformationText": "ข้อมูลส่วนบุคคล",
+    "@personalInformationText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonGender": "เพศ",
+    "@commonGender": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonWeight": "น้ำหนัก",
+    "@commonWeight": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "wakeupTimeText": "เวลาตื่นนอน",
+    "@wakeupTimeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "bedTimeText": "เวลานอน",
+    "@bedTimeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "workTypeText": "ประเภทของงาน",
+    "@workTypeText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonMental": "ทางจิตใจ",
+    "@commonMental": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonManual": "ที่ต้องใช้กำลัง",
+    "@commonManual": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "defaultCupText": "ถ้วยเริ่มต้น",
+    "@defaultCupText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "intakeTargetText": "เป้าหมายการดื่ม",
+    "@intakeTargetText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonCancel": "ยกเลิก",
+    "@commonCancel": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonOthers": "อื่น ๆ",
+    "@commonOthers": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonLanguages": "ภาษา",
+    "@commonLanguages": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonFeedback": "ฟีดแบค",
+    "@commonFeedback": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "userExperienceProgramText": "โปรแกรมประสบการณ์ผู้ใช้",
+    "@userExperienceProgramText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonPremium": "Premium",
+    "@commonPremium": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "noAdsText": "ไม่มีโฆษณา",
+    "@noAdsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "unlockAllBeveragesText": "ปลดล็อคเครื่องดื่มทั้งหมด",
+    "@unlockAllBeveragesText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "unlockStatisticsText": "ปลดล็อกสถิติการดื่มรายสัปดาห์/รายเดือน/รายปี",
+    "@unlockStatisticsText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "dayFreeTrialText": "{day}-วันทดลองใช้ฟรี",
+    "@dayFreeTrialText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {
+            "day": {}
+        }
+    },
+    "commonThen": "แล้วก็",
+    "@commonThen": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "commonContinue": "ดำเนินการต่อไป",
+    "@commonContinue": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "subscribedSuccessText": "คุณสมัครเป็นสมาชิก Premium ของ {appName} แล้ว เพลิดเพลินไปกับฟีเจอร์พิเศษทั้งหมดในขณะนี้!",
+    "@subscribedSuccessText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {
+            "appName": {}
+        }
+    },
+    "subscribedFailedText": "สมัครสมาชิกล้มเหลว กรุณาลองอีกครั้ง",
+    "@subscribedFailedText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "restoreSuccessText": "การสมัครของคุณได้รับการกู้คืนสำเร็จแล้ว",
+    "@restoreSuccessText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "restoreFailedText": "ไม่สามารถกู้คืนได้ บัญชีของคุณไม่ได้สมัครสมาชิกของแอพ",
+    "@restoreFailedText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "subscriptionPolicyText": "นโยบายการสมัครสมาชิก",
+    "@subscriptionPolicyText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "subscribeInstructionText": "หลังจากซื้อ Premium {appName}  คุณสามารถใช้ฟีเจอร์และวัสดุที่ต้องชำระทั้งหมด ค่าธรรมเนียมการสมัครสมาชิกจะคิดค่าบริการเป็นรายสัปดาห์ รายเดือนหรือรายปีขึ้นอยู่กับโปรแกรม ตามนโยบายของ Apple Store การสมัครของคุณจะได้รับการต่ออายุโดยอัตโนมัติหลังจากสิ้นสุดการทดลองใช้ฟรี การชำระเงินจะถูกหักออกจากบัญชี iTunes หลังจากยืนยันการสั่งซื้อ การสมัครสมาชิกจะได้รับการต่ออายุโดยอัตโนมัติ เว้นแต่การต่ออายุอัตโนมัติถูกปิดอย่างน้อย 24 ชั่วโมงก่อนสิ้นงวดปัจจุบัน บัญชีของคุณจะถูกเรียกเก็บเงินตามแผนของคุณภายใน 24 ชั่วโมงก่อนสิ้นสุดระยะเวลาปัจจุบัน คุณสามารถจัดการหรือปิดการต่ออายุอัตโนมัติในการตั้งค่าบัญชี Apple ID ของคุณได้ตลอดเวลาหลังจากการซื้อ ใช้งานต่อไปเพื่อยอมรับ ของเรา",
+    "@subscribeInstructionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {
+            "appName": {}
+        }
+    },
+    "privacyInstructionText": "ข้อมูลที่เรารวบรวมจะถูกใช้เพื่อวิเคราะห์ ประเมิน ทดสอบและส่งเสริมประสบการณ์ผู้ใช้ผลิตภัณฑ์ของเราเท่านั้น เราเคารพความเป็นส่วนตัวของคุณและจะไม่ให้ข้อมูลดังกล่าวแก่บุคคลที่สามอื่น ๆ หรือใช้เพื่อวัตถุประสงค์ทางการค้าอื่น ๆ โดยไม่ได้รับอนุญาตจากคุณ",
+    "@privacyInstructionText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "furtherReminderDetailText": "ยังคงเตือนคุณเมื่อบรรลุเป้าหมาย",
+    "@furtherReminderDetailText": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "settingFeedBackTitle": "หากคุณมีคำถามหรือข้อเสนอแนะโปรดส่งอีเมลไปที่ aqualy2019@gmail.com. ขอบคุณมากสำหรับการสนับสนุนของคุณ",
+    "@settingFeedBackTitle": {
+        "description": "",
+        "type": "text",
+        "placeholders": {}
+    },
+    "drinkStatPerDay": "วัน",
+    "@drinkStatPerDay": {
+        "description": "饮水统计-每日",
+        "type": "text",
+        "placeholders": {}
+    },
+    "notificationTitle": "ถึงเวลาดื่มน้ำแล้ว!",
+    "@notificationTitle": {
+        "description": "通知的标题",
+        "type": "text",
+        "placeholders": {}
+    },
+    "notificationBody": "ดื่มน้ำเพื่อพักผ่อนและรักษาสุขภาพ",
+    "@notificationBody": {
+        "description": "通知的内容",
+        "type": "text",
+        "placeholders": {}
+    }
+}

@@ -1,0 +1,21 @@
+{
+  "@@last_modified": "2019-06-03T16:09:00.048442",
+"drinkStatPerDay": "Ngày",
+"@drinkStatPerDay": {
+  "description": "饮水统计-每日",
+  "type": "text",
+  "placeholders": {}
+},
+"notificationTitle": "Đến giờ uống nước rồi!",
+  "@notificationTitle": {
+    "description": "通知的标题",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notificationBody": "Uống nước để nghỉ giải lao và giữ gìn sức khỏe.",
+  "@notificationBody": {
+    "description": "通知的内容",
+    "type": "text",
+    "placeholders": {}
+  }
+}

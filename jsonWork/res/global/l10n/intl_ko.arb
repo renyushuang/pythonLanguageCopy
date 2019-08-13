@@ -1,0 +1,655 @@
+{
+  "@@last_modified": "2019-06-11T14:30:14.436240",
+  "commonML": "ml",
+  "@commonML": {
+    "description": "毫升单位文案",
+    "type": "text",
+    "placeholders": {}
+  },
+  "waterML": "{num}ml",
+  "@waterML": {
+    "description": "毫升单位文案",
+    "type": "text",
+    "placeholders": {
+      "num": {}
+    }
+  },
+  "commonKg": "kg",
+  "@commonKg": {
+    "description": "公斤单位文案",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonLbs": "lbs",
+  "@commonLbs": {
+    "description": "磅单位文案",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonOz": "fl oz",
+  "@commonOz": {
+    "description": "盎司单位文案",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonNext": "다음",
+  "@commonNext": {
+    "description": "文案Next",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonAuthorize": "권한부여",
+  "@commonAuthorize": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonSkip": "스킵",
+  "@commonSkip": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonConfirm": "확인",
+  "@commonConfirm": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonWeek": "주",
+  "@commonWeek": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonMonth": "월",
+  "@commonMonth": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonYear": "년",
+  "@commonYear": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonSettings": "설정",
+  "@commonSettings": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonSubscription": "구독",
+  "@commonSubscription": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonRestore": "리스토어",
+  "@commonRestore": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonNotifications": "알림",
+  "@commonNotifications": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonMinute": "분",
+  "@commonMinute": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonDialog": "대화",
+  "@commonDialog": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "gdprAgree": "동의 및 계속",
+  "@gdprAgree": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "gdprDescription": "에 동의하고 이해 합니다 ",
+  "@gdprDescription": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "privacyPolicy": "프라이버시 정책",
+  "@privacyPolicy": {
+    "description": "关于我们-隐私政策",
+    "type": "text",
+    "placeholders": {}
+  },
+  "userAgreement": "유저 이용약관",
+  "@userAgreement": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "waterInTake": "섭취",
+  "@waterInTake": {
+    "description": "首页progress上面的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "waterTarget": "목표",
+  "@waterTarget": {
+    "description": "首页progress上面的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastTimeDrinkText": "마지막",
+  "@lastTimeDrinkText": {
+    "description": "上一次饮水时间的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "completionDrinkText": "완료",
+  "@completionDrinkText": {
+    "description": "已完成饮水量的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "nextTimeDrinkText": "다음",
+  "@nextTimeDrinkText": {
+    "description": "下一次饮水时间的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideGenderDesc": "안녕! 물 마시기 도움이 입니다. 몇가지 질문에 대답해 주시면 더욱 건강하게 물의 섭취를 도와 드리겠습니다. 모든 정보는 오직 당신의 설비에만 저장이 됩니다.",
+  "@guideGenderDesc": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideGenderTitle": "당신의 성별을 선택하세요:",
+  "@guideGenderTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideMan": "남성",
+  "@guideMan": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideWoman": "여성",
+  "@guideWoman": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideWeightTitle": "체중이 어떻게 되나요?",
+  "@guideWeightTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideOccupationTitle": "당신은 …",
+  "@guideOccupationTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideMentalWorker": "멘탈 작업자",
+  "@guideMentalWorker": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideManualWorker": "수동 작업자",
+  "@guideManualWorker": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideWakeUpTimeTitle": "몇시에 일어나나요?",
+  "@guideWakeUpTimeTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideBedTimeTitle": "몇시에 주무시나요?",
+  "@guideBedTimeTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideCupCapacityTitle": "어떤 컵을 이용해서 물을 마시나요?",
+  "@guideCupCapacityTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideCalculatingIntakeText": "당신의 데일리 물 섭취량 계산 중…",
+  "@guideCalculatingIntakeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideRecommendIntakeText": "당신이 권장되는 하루 물 섭취량은:",
+  "@guideRecommendIntakeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideNotificationPermissionText": "물 마시는 알림을 보내드리기 위해서는 알림에 허용해 주세요",
+  "@guideNotificationPermissionText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "intakeResultWellDoneText": "잘 하셨어요!",
+  "@intakeResultWellDoneText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "intakeResultFinishPercentText": "당신은 이미 {percent}% 의 물섭취 목표를 달성 하셨어요!",
+  "@intakeResultFinishPercentText": {
+    "description": "完成百分比文案",
+    "type": "text",
+    "placeholders": {
+      "percent": {}
+    }
+  },
+  "changeDrinkAndCupText": "음료 및 용량 선택",
+  "@changeDrinkAndCupText": {
+    "description": "更改饮料和杯子的标题",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageWaterText": "물",
+  "@beverageWaterText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageCoffeeText": "커피",
+  "@beverageCoffeeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageMilkText": "우유",
+  "@beverageMilkText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageTeaText": "티",
+  "@beverageTeaText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageSoftDrinkText": "소프츠 음료",
+  "@beverageSoftDrinkText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageJuiceText": "주스",
+  "@beverageJuiceText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageSmoothieText": "스무디",
+  "@beverageSmoothieText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageWineText": "와인",
+  "@beverageWineText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageCacaoText": "카카오",
+  "@beverageCacaoText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageMilkshakeText": "밀크쉐이크",
+  "@beverageMilkshakeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageBeerText": "맥주",
+  "@beverageBeerText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageLemonadeText": "레몬네이드",
+  "@beverageLemonadeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageEnergyDrinkText": "에너지 음료",
+  "@beverageEnergyDrinkText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageChampagneText": "샴페인",
+  "@beverageChampagneText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageCoconutWaterText": "코코넛 음료",
+  "@beverageCoconutWaterText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageCocktailText": "칵테일",
+  "@beverageCocktailText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageStrongDrinkText": "독한 술",
+  "@beverageStrongDrinkText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageYogurtText": "요거트",
+  "@beverageYogurtText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "drinkStatisticsText": "음료통계",
+  "@drinkStatisticsText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyStatisticsText": "데일리 통계",
+  "@dailyStatisticsText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyIntakeText": "데일리 섭취",
+  "@dailyIntakeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyDrinkTimesText": "데일리 먹는 타임",
+  "@dailyDrinkTimesText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "upgradeToPremiumText": "프리미엄으로 업데이트",
+  "@upgradeToPremiumText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderOptionText": "알림선택",
+  "@reminderOptionText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderIntervalText": "알림간격",
+  "@reminderIntervalText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderSoundText": "알림음",
+  "@reminderSoundText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noSoundText": "무음",
+  "@noSoundText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "furtherReminderText": "추가알림",
+  "@furtherReminderText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderTypeText": "알림 타입",
+  "@reminderTypeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "personalInformationText": "개인정보",
+  "@personalInformationText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonGender": "성별",
+  "@commonGender": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonWeight": "체중",
+  "@commonWeight": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "wakeupTimeText": "일어나는 시간",
+  "@wakeupTimeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "bedTimeText": "자는 시간",
+  "@bedTimeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "workTypeText": "직장 타입",
+  "@workTypeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonMental": "멘탈",
+  "@commonMental": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonManual": "매뉴얼",
+  "@commonManual": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "defaultCupText": "기본 컵",
+  "@defaultCupText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "intakeTargetText": "섭취목표",
+  "@intakeTargetText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonCancel": "취소",
+  "@commonCancel": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonOthers": "기타",
+  "@commonOthers": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonLanguages": "언어",
+  "@commonLanguages": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonFeedback": "피드백",
+  "@commonFeedback": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "userExperienceProgramText": "사용자 경험 프로그램",
+  "@userExperienceProgramText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonPremium": "프리미엄",
+  "@commonPremium": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noAdsText": "광고제거",
+  "@noAdsText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "unlockAllBeveragesText": "모든 음료의 잠금 해제",
+  "@unlockAllBeveragesText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "unlockStatisticsText": "주간/월별/연간 음료 통계의 잠금해제",
+  "@unlockStatisticsText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dayFreeTrialText": "{day}-무료체험",
+  "@dayFreeTrialText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {
+      "day": {}
+    }
+  },
+  "commonThen": "다음",
+  "@commonThen": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonContinue": "계속",
+  "@commonContinue": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "subscribedSuccessText": "{appName} 프리미엄을 구독하셨습니다. 모든 Premium features을 누릴수 있습니다!",
+  "@subscribedSuccessText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "subscribedFailedText": "구독하지 못했습니다. 다시 시고하세요.",
+  "@subscribedFailedText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "restoreSuccessText": "당신의 구독이 이미 성공적으로 회복 되었습니다.",
+  "@restoreSuccessText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "restoreFailedText": "회복되지 못했습니다. 당신의 계정은 해당 어플의 그 어떤 구독도 하지 않았습니다.",
+  "@restoreFailedText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "subscriptionPolicyText": "구독정책",
+  "@subscriptionPolicyText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "subscribeInstructionText": "{appName} 프리미엄을 지불하신 후 당신은 모든 유료기능과 소재를 사용하실수 있습니다. 구독 수수료는 프로그램에 따라 주, 월, 연을 단위로 지불 됩니다. 애플 스토어 정책에 따르면, 무료 체험이 끝나면 당신의 구독이 자동으로 갱신 됩니다. 구매 확인 시 iTunes 계정에서 지불이 됩니다. 자동 갱신 기능이 현재 기간이 끝나기 최소 24시간 전에 해제되지 않는 한 가입은 자동으로 갱신이 됩니다. 당신의 계정은 기간이 끝나기 24시간 안으로 당신의 갱신 계획에 따라 지불이 됩니다. 구매 후 언제든지 Apple ID 계정 설정에서 자동 갱신을 관리하거나 해제할 수 있습니다.저희 에 동의해 주시고 계속 사용해 주십시오",
+  "@subscribeInstructionText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "privacyInstructionText": "저희가 수집한 정보는 오직 어플 사용자의 경험을 분석, 평가, 테스트 및 홍보하는 데만 사용될 것입니다. 고객님의 프라이버시를 존중하며, 그러한 정보를 다른 제3자에게 제공하지 않을 것이며, 고객님의 허락 없이 다른 상업적 목적으로도 절대 사용하지 않을 것 입니다.",
+  "@privacyInstructionText": {
+  "description": "",
+  "type": "text",
+  "placeholders": {}
+  },
+  "furtherReminderDetailText": "당신의 목표가 달성이 되어도 계속 알림하기",
+  "@furtherReminderDetailText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "settingFeedBackTitle": "문의사항은aqualy2019@gmail.com로 부탁 드리겠습니다. 사용해 주셔서 감사합니다",
+  "@settingFeedBackTitle": {
+      "description": "",
+      "type": "text",
+      "placeholders": {}
+  },
+  "drinkStatPerDay": "일",
+  "@drinkStatPerDay": {
+    "description": "饮水统计-每日",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notificationTitle": "물 마시는 시간입니다!",
+  "@notificationTitle": {
+      "description": "通知的标题",
+      "type": "text",
+      "placeholders": {}
+  },
+  "notificationBody": "물을 마시면서 건강해지고 잠간의 휴식을 가져보세요.",
+  "@notificationBody": {
+      "description": "通知的内容",
+      "type": "text",
+      "placeholders": {}
+  }
+}

@@ -1,0 +1,655 @@
+{
+  "@@last_modified": "2019-06-11T14:30:14.436240",
+  "commonML": "ml",
+  "@commonML": {
+    "description": "毫升单位文案",
+    "type": "text",
+    "placeholders": {}
+  },
+  "waterML": "{num}ml",
+  "@waterML": {
+    "description": "毫升单位文案",
+    "type": "text",
+    "placeholders": {
+      "num": {}
+    }
+  },
+  "commonKg": "kg",
+  "@commonKg": {
+    "description": "公斤单位文案",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonLbs": "lbs",
+  "@commonLbs": {
+    "description": "磅单位文案",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonOz": "fl oz",
+  "@commonOz": {
+    "description": "盎司单位文案",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonNext": "Sonraki",
+  "@commonNext": {
+    "description": "文案Next",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonAuthorize": "Yetki ver",
+  "@commonAuthorize": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonSkip": "Atla",
+  "@commonSkip": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonConfirm": "Onayla",
+  "@commonConfirm": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonWeek": "Hafta",
+  "@commonWeek": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonMonth": "Ay",
+  "@commonMonth": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonYear": "Yıl",
+  "@commonYear": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonSettings": "Ayarlar",
+  "@commonSettings": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonSubscription": "Abone",
+  "@commonSubscription": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonRestore": "Restore",
+  "@commonRestore": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonNotifications": "Bildirimler",
+  "@commonNotifications": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonMinute": "dk",
+  "@commonMinute": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonDialog": "Diyalog",
+  "@commonDialog": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "gdprAgree": "Katıl ve Devam et",
+  "@gdprAgree": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "gdprDescription": " anlıyorum ve katılıyorum",
+  "@gdprDescription": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "privacyPolicy": "Gizlilik Politikası",
+  "@privacyPolicy": {
+    "description": "关于我们-隐私政策",
+    "type": "text",
+    "placeholders": {}
+  },
+  "userAgreement": "Kullanıcı Sözleşmesi",
+  "@userAgreement": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "waterInTake": "Alım",
+  "@waterInTake": {
+    "description": "首页progress上面的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "waterTarget": "Hedef",
+  "@waterTarget": {
+    "description": "首页progress上面的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastTimeDrinkText": "Önceki",
+  "@lastTimeDrinkText": {
+    "description": "上一次饮水时间的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "completionDrinkText": "Tamamlama",
+  "@completionDrinkText": {
+    "description": "已完成饮水量的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "nextTimeDrinkText": "Sonraki",
+  "@nextTimeDrinkText": {
+    "description": "下一次饮水时间的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideGenderDesc": "Merhaba! Bu, sizin su içme yardımcısı. Sağlıklı bir şekilde su içmenize yardımcı olacak bazı soruları yanıtlamanıza ihtiyacım var. Tüm bilgiler sadece kendi cihazınıza kaydedilecektir.",
+  "@guideGenderDesc": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideGenderTitle": "Lütfen cinsiyetinizi seçiniz:",
+  "@guideGenderTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideMan": "Bay",
+  "@guideMan": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideWoman": "Bayan",
+  "@guideWoman": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideWeightTitle": "Kaç kilosunuz?",
+  "@guideWeightTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideOccupationTitle": "Siz bir…",
+  "@guideOccupationTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideMentalWorker": "Zihinsel işçisiniz",
+  "@guideMentalWorker": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideManualWorker": "Manuel işçisiniz",
+  "@guideManualWorker": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideWakeUpTimeTitle": "Ne zaman uyanıyorsunuz?",
+  "@guideWakeUpTimeTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideBedTimeTitle": "Ne zaman yatıyorsunuz?",
+  "@guideBedTimeTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideCupCapacityTitle": "Genellikle hangi bardak kullanırsınız?",
+  "@guideCupCapacityTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideCalculatingIntakeText": "Günlük su alımınızı hesaplıyor…",
+  "@guideCalculatingIntakeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideRecommendIntakeText": "Önerilen günlük su alım miktarınız:",
+  "@guideRecommendIntakeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideNotificationPermissionText": "Size su içmenizi hatırlatmak için lütfen bize bildirim gönderme izni verin.",
+  "@guideNotificationPermissionText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "intakeResultWellDoneText": "Aferin!",
+  "@intakeResultWellDoneText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "intakeResultFinishPercentText": "Bugün {percent}% su alım hedefini bitirdiniz!",
+  "@intakeResultFinishPercentText": {
+    "description": "完成百分比文案",
+    "type": "text",
+    "placeholders": {
+      "percent": {}
+    }
+  },
+  "changeDrinkAndCupText": "İçecek ve kapasiteyi seçin",
+  "@changeDrinkAndCupText": {
+    "description": "更改饮料和杯子的标题",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageWaterText": "Su",
+  "@beverageWaterText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageCoffeeText": "Kahve",
+  "@beverageCoffeeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageMilkText": "Süt",
+  "@beverageMilkText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageTeaText": "Çay",
+  "@beverageTeaText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageSoftDrinkText": "Alkolsüz içki",
+  "@beverageSoftDrinkText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageJuiceText": "Meyve suyu",
+  "@beverageJuiceText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageSmoothieText": "Smoothie",
+  "@beverageSmoothieText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageWineText": "Şarap",
+  "@beverageWineText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageCacaoText": "Kakao",
+  "@beverageCacaoText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageMilkshakeText": "Milkshake",
+  "@beverageMilkshakeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageBeerText": "Bira",
+  "@beverageBeerText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageLemonadeText": "Limonata",
+  "@beverageLemonadeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageEnergyDrinkText": "Enerji içeceği",
+  "@beverageEnergyDrinkText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageChampagneText": "Şampanya",
+  "@beverageChampagneText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageCoconutWaterText": "Hindistan cevizi suyu",
+  "@beverageCoconutWaterText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageCocktailText": "Kokteyl",
+  "@beverageCocktailText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageStrongDrinkText": "Sert içki",
+  "@beverageStrongDrinkText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageYogurtText": "Yoğurt",
+  "@beverageYogurtText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "drinkStatisticsText": "İçme İstatistikleri",
+  "@drinkStatisticsText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyStatisticsText": "Günlük İstatistikler",
+  "@dailyStatisticsText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyIntakeText": "Günlük alım",
+  "@dailyIntakeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyDrinkTimesText": "Günlük İçme Defası",
+  "@dailyDrinkTimesText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "upgradeToPremiumText": "Premiuma Yükselt",
+  "@upgradeToPremiumText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderOptionText": "Hatırlatma Seçeneği",
+  "@reminderOptionText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderIntervalText": "Hatırlatma Aralığı",
+  "@reminderIntervalText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderSoundText": "Hatırlatma Sesi",
+  "@reminderSoundText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noSoundText": "Ses yok",
+  "@noSoundText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "furtherReminderText": "Ek Hatırlatma",
+  "@furtherReminderText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderTypeText": "Hatırlatma Türü",
+  "@reminderTypeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "personalInformationText": "Kişisel Bilgi",
+  "@personalInformationText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonGender": "Cinsiyet",
+  "@commonGender": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonWeight": "Ağırlık",
+  "@commonWeight": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "wakeupTimeText": "Uyanma zamanı",
+  "@wakeupTimeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "bedTimeText": "Yatma zamanı",
+  "@bedTimeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "workTypeText": "İş tipi",
+  "@workTypeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonMental": "Zihinsel",
+  "@commonMental": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonManual": "Manuel",
+  "@commonManual": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "defaultCupText": "Varsayılan Kupa",
+  "@defaultCupText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "intakeTargetText": "Hedef alımı",
+  "@intakeTargetText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonCancel": "İptal et",
+  "@commonCancel": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonOthers": "Diğerleri",
+  "@commonOthers": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonLanguages": "Diller",
+  "@commonLanguages": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonFeedback": "Geri bildirim",
+  "@commonFeedback": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "userExperienceProgramText": "Kullanıcı Deneyimi Programı",
+  "@userExperienceProgramText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonPremium": "Premium",
+  "@commonPremium": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noAdsText": "Reklamsız",
+  "@noAdsText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "unlockAllBeveragesText": "Tüm içeceklerin kilidini aç",
+  "@unlockAllBeveragesText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "unlockStatisticsText": "Haftalık / aylık / yıllık içecek istatistiklerinin kilidini aç",
+  "@unlockStatisticsText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dayFreeTrialText": "{day} günlük ücretsiz deneme",
+  "@dayFreeTrialText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {
+      "day": {}
+    }
+  },
+  "commonThen": "sonra",
+  "@commonThen": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonContinue": "Devam et",
+  "@commonContinue": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "subscribedSuccessText": "{appName} Premium'a abone oldunuz. Şimdi tüm Premium özelliklerin tadını çıkarabilirsiniz!",
+  "@subscribedSuccessText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "subscribedFailedText": "Abone olunamadı. Lütfen tekrar deneyin.",
+  "@subscribedFailedText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "restoreSuccessText": "Aboneliğiniz başarıyla geri yüklendi.",
+  "@restoreSuccessText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "restoreFailedText": "Geri yüklenemedi. Hesabınızda herhangi bir uygulama aboneliği bulunmuyor.",
+  "@restoreFailedText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "subscriptionPolicyText": "Abonelik Politikası",
+  "@subscriptionPolicyText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "subscribeInstructionText": "{appName} Premium'u satın aldıktan sonra, tüm ücretli özellikleri ve malzemeleri kullanabilirsiniz. Abonelik ücretleri, programa bağlı olarak haftalık, aylık veya yıllık olarak tahsil edilir. Apple Store politikasına göre, ücretsiz deneme sona erdikten sonra aboneliğiniz otomatik olarak yenilenecektir. Satın alma onayı ile ödeme iTunes hesabınızdan tahsil edilecektir. Otomatik yenileme, cari dönemin bitiminden en az 24 saat önce kapatılmadığı sürece, abonelikler otomatik olarak yenilenecektir. Hesabınız cari dönemin bitiminden 24 saat önce yenileme planınıza göre tahsil edilecektir. Satın aldıktan sonra Apple ID hesap ayarlarında otomatik yenilemeyi yönetebilir veya kapatabilirsiniz. kabul edilip kullanılmaya devam edilir",
+  "@subscribeInstructionText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "privacyInstructionText": "Topladığımız bilgiler yalnızca ürünümüzün kullanıcı deneyimini analiz etmek, değerlendirmek, test etmek ve tanıtmak için kullanılacaktır. Gizliliğinize saygı duyuyoruz ve bu bilgileri başka hiçbir üçüncü tarafa sunmayacağız veya izniniz olmadan başka bir ticari amaç için kullanmayacağız.",
+  "@privacyInstructionText": {
+  "description": "",
+  "type": "text",
+  "placeholders": {}
+  },
+  "furtherReminderDetailText": "Hedefinize ulaşıldığında size hala hatırlatır",
+  "@furtherReminderDetailText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "settingFeedBackTitle": "Herhangi bir sorunuz veya öneriniz varsa, lütfen aqualy2019@gmail.com adresine bir e-posta gönderin. Desteğiniz için çok teşekkür ederiz.",
+  "@settingFeedBackTitle": {
+      "description": "",
+      "type": "text",
+      "placeholders": {}
+  },
+  "drinkStatPerDay": "günlük",
+  "@drinkStatPerDay": {
+    "description": "饮水统计-每日",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notificationTitle": "Su içmenin zamanı geldi!",
+    "@notificationTitle": {
+      "description": "通知的标题",
+      "type": "text",
+      "placeholders": {}
+    },
+  "notificationBody": "Rahatlamak ve sağlıklı kalmak için su için.",
+  "@notificationBody": {
+      "description": "通知的内容",
+      "type": "text",
+      "placeholders": {}
+  }
+}

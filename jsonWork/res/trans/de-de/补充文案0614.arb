@@ -1,0 +1,21 @@
+{
+  "@@last_modified": "2019-06-03T16:09:00.048442",
+"drinkStatPerDay": "Tag",
+"@drinkStatPerDay": {
+  "description": "饮水统计-每日",
+  "type": "text",
+  "placeholders": {}
+},
+"notificationTitle": "Zeit für Wassertrinken!",
+  "@notificationTitle": {
+    "description": "通知的标题",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notificationBody": "Trinken Sie Wasser, um sich zu entspannen und gesund zu bleiben.",
+  "@notificationBody": {
+    "description": "通知的内容",
+    "type": "text",
+    "placeholders": {}
+  }
+}

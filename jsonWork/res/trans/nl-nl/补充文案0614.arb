@@ -1,0 +1,21 @@
+{
+  "@@last_modified": "2019-06-03T16:09:00.048442",
+"drinkStatPerDay": "dag",
+"@drinkStatPerDay": {
+  "description": "饮水统计-每日",
+  "type": "text",
+  "placeholders": {}
+},
+"notificationTitle": "Het is tijd om water te drinken!",
+  "@notificationTitle": {
+    "description": "通知的标题",
+    "type": "text",
+    "placeholders": {}
+  },
+  "notificationBody": "Drink water om te ontspannen en gezond te blijven.",
+  "@notificationBody": {
+    "description": "通知的内容",
+    "type": "text",
+    "placeholders": {}
+  }
+}

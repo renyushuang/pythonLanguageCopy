@@ -1,0 +1,633 @@
+{
+  "@@last_modified": "2019-06-03T16:09:00.048442",
+  "commonML": "毫升",
+  "@commonML": {
+    "description": "毫升单位文案",
+    "type": "text",
+    "placeholders": {}
+  },
+  "waterML": "{num} 毫升",
+  "@waterML": {
+    "description": "毫升单位文案",
+    "type": "text",
+    "placeholders": {
+      "num": {}
+    }
+  },
+  "commonKg": "千克",
+  "@commonKg": {
+    "description": "公斤单位文案",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonLbs": "磅",
+  "@commonLbs": {
+    "description": "磅单位文案",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonOz": "盎司",
+  "@commonOz": {
+    "description": "盎司单位文案",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonNext": "继续",
+  "@commonNext": {
+    "description": "文案Next",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonAuthorize": "授权",
+  "@commonAuthorize": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonSkip": "跳过",
+  "@commonSkip": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonConfirm": "确定",
+  "@commonConfirm": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonWeek": "周",
+  "@commonWeek": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonMonth": "月",
+  "@commonMonth": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonYear": "年",
+  "@commonYear": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonSettings": "设置",
+  "@commonSettings": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonSubscription": "订阅",
+  "@commonSubscription": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonRestore": "恢复订阅",
+  "@commonRestore": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonNotifications": "通知",
+  "@commonNotifications": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonMinute": "分钟",
+  "@commonMinute": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonDialog": "弹窗",
+  "@commonDialog": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "gdprAgree": "同意并继续",
+  "@gdprAgree": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "gdprDescription": "我理解并同意 ",
+  "@gdprDescription": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "privacyPolicy": "隐私权政策",
+  "@privacyPolicy": {
+    "description": "关于我们-隐私政策",
+    "type": "text",
+    "placeholders": {}
+  },
+  "userAgreement": "用户协议",
+  "@userAgreement": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "waterInTake": "饮水量",
+  "@waterInTake": {
+    "description": "首页progress上面的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "waterTarget": "目标",
+  "@waterTarget": {
+    "description": "首页progress上面的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "lastTimeDrinkText": "上一次",
+  "@lastTimeDrinkText": {
+    "description": "上一次饮水时间的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "completionDrinkText": "完成度",
+  "@completionDrinkText": {
+    "description": "已完成饮水量的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "nextTimeDrinkText": "下一次",
+  "@nextTimeDrinkText": {
+    "description": "下一次饮水时间的文字",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideGenderDesc": "你好！我是你的饮水小助手。我需要你回答一些问题，以便帮助你更健康地饮水。所有信息仅会保存在你的设备上。",
+  "@guideGenderDesc": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideGenderTitle": "请选择你的性别：",
+  "@guideGenderTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideMan": "男",
+  "@guideMan": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideWoman": "女",
+  "@guideWoman": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideWeightTitle": "你的体重是？",
+  "@guideWeightTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideOccupationTitle": "你是一个…",
+  "@guideOccupationTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideMentalWorker": "脑力工作者",
+  "@guideMentalWorker": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideManualWorker": "体力工作者",
+  "@guideManualWorker": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideWakeUpTimeTitle": "你的起床时间是？",
+  "@guideWakeUpTimeTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideBedTimeTitle": "你的睡觉时间是？",
+  "@guideBedTimeTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideCupCapacityTitle": "你平时使用多大的杯子喝水？",
+  "@guideCupCapacityTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideCalculatingIntakeText": "正在计算你每天所需的饮水量…",
+  "@guideCalculatingIntakeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideRecommendIntakeText": "你的每日建议饮水量是：",
+  "@guideRecommendIntakeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "guideNotificationPermissionText": "请授予我通知权限，以便对你进行饮水提醒。",
+  "@guideNotificationPermissionText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "intakeResultWellDoneText": "做得不错！",
+  "@intakeResultWellDoneText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "intakeResultFinishPercentText": "你已经完成了今日饮水目标的 {percent}。",
+  "@intakeResultFinishPercentText": {
+    "description": "完成百分比文案",
+    "type": "text",
+    "placeholders": {
+      "percent": {}
+    }
+  },
+  "changeDrinkAndCupText": "选择饮料与容量",
+  "@changeDrinkAndCupText": {
+    "description": "更改饮料和杯子的标题",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageWaterText": "水",
+  "@beverageWaterText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageCoffeeText": "咖啡",
+  "@beverageCoffeeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageMilkText": "牛奶",
+  "@beverageMilkText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageTeaText": "茶",
+  "@beverageTeaText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageSoftDrinkText": "碳酸饮料",
+  "@beverageSoftDrinkText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageJuiceText": "果汁",
+  "@beverageJuiceText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageSmoothieText": "冰沙",
+  "@beverageSmoothieText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageWineText": "红酒",
+  "@beverageWineText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageCacaoText": "可可",
+  "@beverageCacaoText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageMilkshakeText": "奶昔",
+  "@beverageMilkshakeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageBeerText": "啤酒",
+  "@beverageBeerText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageLemonadeText": "柠檬水",
+  "@beverageLemonadeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageEnergyDrinkText": "能量饮料",
+  "@beverageEnergyDrinkText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageChampagneText": "香槟",
+  "@beverageChampagneText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageCoconutWaterText": "椰子水",
+  "@beverageCoconutWaterText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageCocktailText": "鸡尾酒",
+  "@beverageCocktailText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageStrongDrinkText": "酒精饮料",
+  "@beverageStrongDrinkText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "beverageYogurtText": "酸奶",
+  "@beverageYogurtText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "drinkStatisticsText": "饮水统计",
+  "@drinkStatisticsText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyStatisticsText": "每日统计",
+  "@dailyStatisticsText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyIntakeText": "每日饮水量",
+  "@dailyIntakeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dailyDrinkTimesText": "每日饮水次数",
+  "@dailyDrinkTimesText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "upgradeToPremiumText": "升级到高级版",
+  "@upgradeToPremiumText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderOptionText": "提醒开关",
+  "@reminderOptionText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderIntervalText": "提醒间隔",
+  "@reminderIntervalText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderSoundText": "提醒音效",
+  "@reminderSoundText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noSoundText": "无音效",
+  "@noSoundText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "furtherReminderText": "继续提醒",
+  "@furtherReminderText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "reminderTypeText": "提醒类型",
+  "@reminderTypeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "personalInformationText": "个人信息",
+  "@personalInformationText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonGender": "性别",
+  "@commonGender": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonWeight": "体重",
+  "@commonWeight": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "wakeupTimeText": "起床时间",
+  "@wakeupTimeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "bedTimeText": "睡觉时间",
+  "@bedTimeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "workTypeText": "工作类型",
+  "@workTypeText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonMental": "脑力工作者",
+  "@commonMental": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonManual": "体力工作者",
+  "@commonManual": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "defaultCupText": "默认杯子",
+  "@defaultCupText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "intakeTargetText": "饮水目标",
+  "@intakeTargetText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonCancel": "取消",
+  "@commonCancel": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonOthers": "其它",
+  "@commonOthers": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonLanguages": "语言",
+  "@commonLanguages": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonFeedback": "用户反馈",
+  "@commonFeedback": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "userExperienceProgramText": "用户体验计划",
+  "@userExperienceProgramText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonPremium": "高级版",
+  "@commonPremium": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "noAdsText": "无广告",
+  "@noAdsText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "unlockAllBeveragesText": "解锁所有饮料",
+  "@unlockAllBeveragesText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "unlockStatisticsText": "解锁周/月/年饮水统计",
+  "@unlockStatisticsText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "dayFreeTrialText": "{day}-天免费试用",
+  "@dayFreeTrialText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {
+      "day": {}
+    }
+  },
+  "commonThen": "之后",
+  "@commonThen": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "commonContinue": "继续",
+  "@commonContinue": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "subscribedSuccessText": "你已成功订阅 {appName} 高级版，可使用全部高级功能！",
+  "@subscribedSuccessText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {
+      "appName": {}
+    }
+  },
+  "subscribedFailedText": "订阅失败。请重试。",
+  "@subscribedFailedText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "restoreSuccessText": "你的订阅已成功恢复。",
+  "@restoreSuccessText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "restoreFailedText": "恢复订阅失败。你的账号下没有此产品的订阅。",
+  "@restoreFailedText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "subscriptionPolicyText": "订阅政策",
+  "@subscriptionPolicyText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "subscribeInstructionText": "订阅 {appName} 高级版后，你可以使用所有付费功能及素材。根据所选择的不同套餐，订阅费用将按照每周/每月/每年进行收取。根据苹果商店的政策，你的订阅会在免费试用期结束后自动续约。付款将在确认购买时从你的iTunes账户中扣除。除非在当前订阅期结束前至少24小时关闭自动续订，否则订阅将自动续订。你的账户会在当前订阅期结束前24小时内根据你的续订计划扣款。你可以在购买后随时管理或关闭Apple ID账户设置中的自动续订。继续使用代表你接受我们的{agreement}和{privacy}。",
+  "@subscribeInstructionText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {
+      "appName": {},
+      "agreement": {},
+      "privacy": {}
+    }
+  },
+  "settingFeedBackTitle": "如果您有任何疑问或建议，请发送电邮至aqualy2019@gmail.com。感谢您的支持！",
+"@settingFeedBackTitle": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  },
+  "furtherReminderDetailText": "在饮水目标达成后继续提醒",
+  "@furtherReminderDetailText": {
+    "description": "",
+    "type": "text",
+    "placeholders": {}
+  }
+}

@@ -4,23 +4,28 @@ import os, logging, json
 
 logging.basicConfig(level=logging.INFO)
 
-pathTransDir = "/Users/renyushuang/Downloads/PDF_1.0.2_多语"
+pathTransDir = "/Users/renyushuang/Downloads/PDF_1.0.2"
 
 chinaName = {'波斯语': "fa",
              '罗马尼亚': "ro",
+             '罗马尼亚语': "ro",
              '波兰语': "pl",
              '英文': "en",
              '简体中文': "zh",
+             '简中': "zh",
              '西班牙语': "es",
              '法语': "fr",
              '马来语': "ms",
+             '马来文': "ms",
              '希腊语': "el",
              '韩语': "ko",
              '孟加拉': "bn",
              '俄语': "ru",
+             '俄文': "ru",
              '日语': "ja",
              '印地语': "hi",
              '印尼语': "id",
+             '印尼文': "id",
              '菲律宾': "tl",
              '意大利语': "it",
              '乌克兰语': "uk",
@@ -34,7 +39,6 @@ chinaName = {'波斯语': "fa",
              '土耳其语': "tr",
              '台湾繁体': "zh_Hant_TW",
              '香港繁体': "zh_Hant_HK", }
-
 targetDict = {}
 
 listdir = os.listdir(pathTransDir)
@@ -80,10 +84,13 @@ for (key, value) in targetDict.items():
     if argValue > 0:
         args = args + "],"
 
+
+
     resultString = "String " + key + "(" + args1 + ") => Intl.message(" \
                    + "\'" + value + "\'," + \
                    "name:" + "\'" + key.strip() + "\'," \
                    + "desc:" + "\'" + "\'," \
                    + "locale:" + "_localeName," + args + ");"
+
     print(resultString)
 

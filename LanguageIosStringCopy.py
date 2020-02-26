@@ -4,23 +4,28 @@ import os, logging, json
 
 logging.basicConfig(level=logging.INFO)
 
-pathTransDir = "/Users/renyushuang/Downloads/PDF_1.0.2_多语"
+pathTransDir = "/Users/renyushuang/Downloads/PDF_1.0.2"
 
 chinaName = {'波斯语': "fa",
              '罗马尼亚': "ro",
+             '罗马尼亚语': "ro",
              '波兰语': "pl",
              '英文': "en",
              '简体中文': "zh",
+             '简中': "zh",
              '西班牙语': "es",
              '法语': "fr",
              '马来语': "ms",
+             '马来文': "ms",
              '希腊语': "el",
              '韩语': "ko",
              '孟加拉': "bn",
              '俄语': "ru",
+             '俄文': "ru",
              '日语': "ja",
              '印地语': "hi",
              '印尼语': "id",
+             '印尼文': "id",
              '菲律宾': "tl",
              '意大利语': "it",
              '乌克兰语': "uk",
@@ -71,8 +76,8 @@ for i in listdir:
         sourceSplit = sourceLine.split("=")
         if len(sourceSplit) < 2:
             continue
-        split_0 = sourceSplit[0].replace('\"', "")
-        split_1 = sourceSplit[1].split(";")[0].replace('\"', "")
+        split_0 = sourceSplit[0].replace('\"', "").replace("「","").replace("」","")
+        split_1 = sourceSplit[1].split(";")[0].replace('\"', "").replace("「","").replace("」","")
 
         find2 = str(split_1).find("%@")
 
@@ -83,9 +88,12 @@ for i in listdir:
             find2 = str(split_1).find("%@")
 
         # 将解析的数据转换为目标文件格式
-        targetDict[split_0] = split_1
+        targetDict[split_0.strip()] = split_1.strip()
         content = {}
-        targetDict["@" + split_0] = content
+        targetDict.get("@" + split_0.strip())
+
+
+        targetDict["@" + split_0.strip()] = content
         content["description"] = ""
         content["type"] = "text"
         content["placeholders"] = {}

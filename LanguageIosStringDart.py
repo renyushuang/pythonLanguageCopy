@@ -1,6 +1,6 @@
 #!/usr/bin/python
 # -*- coding: UTF-8 -*-
-import os, logging, json
+import os, logging, json, re
 
 logging.basicConfig(level=logging.INFO)
 
@@ -84,13 +84,23 @@ for (key, value) in targetDict.items():
     if argValue > 0:
         args = args + "],"
 
+    if args == "" or args1 == "":
 
+        phoneNumRegex = re.compile(r'{arg\d}')
+        mo = phoneNumRegex.findall(value)
+        if mo:
+            args = "args: ["
+            for moValue in mo:
+                moValue = moValue.replace("{", "").replace("}", "")
+                args1 = args1 + " String" + " " + moValue + ","
+                args = args + moValue + ","
+
+            args = args + "],"
 
     resultString = "String " + key + "(" + args1 + ") => Intl.message(" \
                    + "\'" + value + "\'," + \
                    "name:" + "\'" + key.strip() + "\'," \
                    + "desc:" + "\'" + "\'," \
                    + "locale:" + "_localeName," + args + ");"
-
-    print(resultString)
-
+    if args != "" or args1 != "":
+        print(resultString)

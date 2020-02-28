@@ -77,5 +77,5 @@ for i in listdir:
             for copyItem in copyList:
                 if sourceLine.find(copyItem) >= 0:
                     targetFile = open(targetFilePath, "a")
-                    targetFile.write(sourceLine)
+                    targetFile.write(sourceLine.replace("「", "\"").replace("」", "\""))
                     targetFile.close()

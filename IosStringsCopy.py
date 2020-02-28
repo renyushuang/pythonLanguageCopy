@@ -6,7 +6,7 @@ pathTargetPath = "/Users/renyushuang/custom/projectDo/FlutterPDF/flutter_pdf/ios
 
 pathTransDir = "/Users/renyushuang/Downloads/PDF_v1.0.0_多语文案"
 
-targetFilename = "Localizable.strings"
+targetFilename = "InfoPlist.strings"
 
 
 chinaName = {'波斯语': "fa",
@@ -70,7 +70,7 @@ for i in listdir:
 
     if os.path.exists(targetFilePath):
         sourceFile = open(sourceFilePath)
-        sourceReadAll = sourceFile.read()
+        sourceReadAll = sourceFile.read().replace("「", "\"").replace("」", "\"")
         sourceFile.close()
 
         targetFile = open(targetFilePath, "a")

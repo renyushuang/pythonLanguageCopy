@@ -8,7 +8,6 @@ pathTransDir = "/Users/renyushuang/Downloads/PDF_v1.0.0_多语文案"
 
 targetFilename = "InfoPlist.strings"
 
-
 chinaName = {'波斯语': "fa",
              '罗马尼亚': "ro",
              '罗马尼亚语': "ro",
@@ -76,3 +75,7 @@ for i in listdir:
         targetFile = open(targetFilePath, "a")
         targetFile.write(sourceReadAll)
         targetFile.close()
+    else:
+        print("这个语言路径没有找到 = " + str(targetFilePath))
+
+print("拷贝完成")

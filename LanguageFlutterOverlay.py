@@ -10,7 +10,7 @@
 import os, logging, json, sys
 from json import JSONDecodeError
 
-transDir = "/Users/renyushuang/Downloads/aaaaaaaa"
+transDir = "/Users/renyushuang/Downloads/多语文件夹"
 file_name = "多语"
 flutter_dir = "/Users/renyushuang/custom/projectDo/FlutterPDF/flutter_pdf/lib/res/global/l10n"
 
@@ -31,7 +31,7 @@ def copyDataTiFlutter(jsonData, flutterFilePath):
 def readDirFileData(languageDir):
     for home, dirs, files in os.walk(os.path.join(transDir, languageDir)):
         for file in files:
-            if file.find(file_name) != -1:
+            if file.find(file_name) != -1 and file.find("json") != -1:
                 try:
                     t = open(os.path.join(home, file))
                     jsonData = json.loads(t.read().replace("”", "\""))
@@ -55,21 +55,25 @@ def readDirFileData(languageDir):
 for languageDir in os.listdir(transDir):
     languageCode = None
 
-    if os.path.isdir(os.path.join(transDir, languageDir)):
-        # 文件夹
-        languageCode = languageDir.split("-")[0]
-    elif os.path.isfile(os.path.join(transDir, languageDir)):
-        # 文件
-        name = os.path.splitext(languageDir)[0]
-        # 文件以文件名字名字进行区分
-        languageCode = name.split("-")[1]
-        # 文件的文件夹就是翻译的文件
-        languageDir = transDir
-        print("filename = " + str(languageCode))
+    join = os.path.join(transDir, languageDir)
+    try:
+        if os.path.isdir(join):
+            # 文件夹
+            languageCode = languageDir.split("-")[0]
+        elif os.path.isfile(join):
+            # 文件
+            name = os.path.splitext(languageDir)[0]
+            # 文件以文件名字名字进行区分
+            languageCode = name.split("-")[1]
+            # 文件的文件夹就是翻译的文件
+            languageDir = transDir
+            print("filename = " + str(languageCode))
 
-    # flutter file 路径
-    flutterFile = os.path.join(flutter_dir, "intl_" + languageCode + '.arb')
-    if os.path.exists(flutterFile):
-        readDirFileData(languageDir)
-    else:
-        print("不存在该文件路径" + flutterFile)
+        # flutter file 路径
+        flutterFile = os.path.join(flutter_dir, "intl_" + languageCode + '.arb')
+        if os.path.exists(flutterFile):
+            readDirFileData(languageDir)
+        else:
+            print("不存在该文件路径" + flutterFile)
+    except:
+        print("不支持的类型 = " + join)
